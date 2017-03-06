@@ -1,0 +1,1 @@
+$('[data-toggle="tt"]').tooltip();
