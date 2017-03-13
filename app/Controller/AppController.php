@@ -280,44 +280,35 @@ class AppController extends Controller {
 	}
 
 	function pageInit($isSP = null) {
-		// 都道府県を取得する
-		$this->getPrefs();
-		// 都道府県を取得する
-		$this->getPrefsWithRegion();
-		// 政令指定都市を取得す
-		$this->getGovCity();
 
-		$_name = strtolower(implode("_", $this->explodeCase($this->name)));
-		if ($isSP == 'sp') {
-			$this->set([
-				'title'        => $this->pages[$this->params->params['controller']]['title'] . SEP . SITENAME,
-				'keywords'     => false,
-				'description'  => '「' . $this->pages[$this->params->params['controller']]['title'] . '」' . DESCRIPTION,
-				'current'      => $_name,
-			]);
-			$this->layout = 'Sp';
-		} else {
-			$this->set([
-				'title'        => $this->pages[$this->params->params['controller']]['title'] . SEP . SITENAME,
-				'keywords'     => false,
-				'description'  => '「' . $this->pages[$this->params->params['controller']]['title'] . '」' . DESCRIPTION,
-				'h1'           => H1,
-				'current'      => $_name,
-				// 'left_column' => [
-				// 	'side_nav'
-				// ],
-				'right_column' => [
-					'side_common'
-				]
-			]);
-			if ($_name != "root") {
-				$this->topicPath(
-					[$this->pages[$_name]['title']],
-					[$this->pages[$_name]['url']]
-				);
-			}
+		// $_name = strtolower(implode("_", $this->explodeCase($this->name)));
+		// if ($isSP == 'sp') {
+		// 	$this->set([
+		// 		'title'        => $this->pages[$this->params->params['controller']]['title'] . SEP . SITENAME,
+		// 		'keywords'     => false,
+		// 		'description'  => '「' . $this->pages[$this->params->params['controller']]['title'] . '」' . DESCRIPTION,
+		// 		'current'      => $_name,
+		// 	]);
+		// 	$this->layout = 'Sp';
+		// } else {
+		// 	$this->set([
+		// 		'title'        => $this->pages[$this->params->params['controller']]['title'] . SEP . SITENAME,
+		// 		'keywords'     => false,
+		// 		'description'  => '「' . $this->pages[$this->params->params['controller']]['title'] . '」' . DESCRIPTION,
+		// 		'h1'           => H1,
+		// 		'current'      => $_name,
+		// 		'right_column' => [
+		// 			'side_common'
+		// 		]
+		// 	]);
+		// 	if ($_name != "root") {
+		// 		$this->topicPath(
+		// 			[$this->pages[$_name]['title']],
+		// 			[$this->pages[$_name]['url']]
+		// 		);
+		// 	}
 			$this->layout = 'Pane1';
-		}
+		// }
 	}
 
 	function adminInit() {

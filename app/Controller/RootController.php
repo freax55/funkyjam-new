@@ -12,7 +12,7 @@ class RootController extends AppController {
 	public function index() {
 		// // エリア一覧取得
 		// $this->getAreas();
-		// $this->pageInit();
+		$this->pageInit();
 		// $this->set([
 		// 	'title' => '交際クラブを徹底比較',
 		// 	'description' => DESCRIPTION,
