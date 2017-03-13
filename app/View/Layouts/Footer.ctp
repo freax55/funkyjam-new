@@ -1,6 +1,31 @@
-<footer id="footer" class="bg-black p15 tac">
-	<p class="white">&copy;交際クラブランキング</p>
-</footer>
+<div id="footer">
+  <div class="container">
+      <div class="col-md-5">
+    <p>Privacy Policy</p></div>
+        <div class="col-md-7"><p>Copyright &copy; Funky Jam All rights reserved.</p></div>
+  </div>
+</div>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+
+<!-- Javascripts
+    ================================================== --> 
+<script type="text/javascript" src="js/main.js"></script>
+
+
+
+
 <script src="/js/jquery.min.js"></script>
 <script src="/js/common.js?v=<?= VERSION_JS ?>"></script>
 <script src="/js/jquery.tada.js"></script>
