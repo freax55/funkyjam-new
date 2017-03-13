@@ -8,7 +8,7 @@
 *.sublime-workspace
 app/Vendor
 app/tmp
-app/webroot
+
 docs
 config.rb
 sftp-config.json
