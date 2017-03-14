@@ -8,76 +8,109 @@ class AppController extends Controller {
 		'root' => [
 			'title' => "ホーム",
 			'url' => "/",
-			'gnav' => 1,
-			'footer' => 0,
-			'submenu' => 0
+			'submenu' => 0,
 		],
-		'pref' => [
-			'title' => "都道府県",
-			'url' => "/pref/",
-			'gnav' => 0,
-			'footer' => 0,
-			'submenu' => 0
+		'artist' => [
+			'title' => "アーティスト",
+			'url' => "/artist/",
+			'submenu' => [
+				'news' => [
+					'title' => "ニュース",
+					'url' => "/news/",
+					'submenu' => 0,
+				],
+				'profile' => [
+					'title' => "プロフィール",
+					'url' => "/profile/",
+					'submenu' => 0,
+				],
+				'discography' => [
+					'title' => "ディスコグラフィ",
+					'url' => "fanclub/discography/",
+					'submenu' => 0,
+				],
+				'performance' => [
+					'title' => "出演情報",
+					'url' => "/performance/",
+					'submenu' => 0,
+				],
+				'fanclub' => [
+					'title' => "オフィシャルファンクラブ",
+					'url' => "/fanclub/",
+					'submenu' => 0,
+				],
+			]
 		],
-		'inquiry' => [
+		'company' => [
+			'title' => "会社概要",
+			'url' => "/company/",
+			'submenu' => 0,
+		],
+		'recruit' => [
+			'title' => "採用情報",
+			'url' => "/recruit/",
+			'submenu' => 0,
+		],
+		'scout' => [
+			'title' => "新人募集",
+			'url' => "/scout/",
+			'submenu' => 0,
+		],
+		'studio' => [
+			'title' => "スタジオ",
+			'url' => "/studio/",
+			'submenu' => 0,
+		],
+		'contact' => [
 			'title' => "お問い合わせ",
-			'url' => "/inquiry/",
-			'gnav' => 0,
-			'footer' => 0,
-			'submenu' => 0
-		],
-		'link' => [
-			'title' => "リンクについて",
-			'url' => "/link/",
-			'gnav' => 0,
-			'footer' => 0,
-			'submenu' => 0
+			'url' => "/contact/",
+			'submenu' => 0,
 		],
 	];
 
-	var $pages_admin = [
-		'login' => [
-			'url' => 'login',
-			'title' => 'ログイン',
-			'status' => false,
-		],
-		'text' => [
-			'url' => 'text',
-			'title' => '汎用テキスト管理',
-			'status' => true,
-			'submenu' => [
-				'view',
-				'add',
-			]
-		],
-		'area' => [
-			'url' => 'area',
-			'title' => 'エリア管理',
-			'status' => true,
-			'submenu' => [
-				'view',
-				'add',
-			]
-		],
-		'user' => [
-			'url' => 'user',
-			'title' => 'ユーザー管理',
-			'status' => true,
-			'submenu' => [
-				'view',
-				'add',
-			]
-		],
-		'role' => [
-			'url' => 'role',
-			'title' => 'アクセス権限管理',
-			'status' => true,
-			'submenu' => [
-				'view',
-				'add',
-			]
-		]
-	];
+	// var $pages_admin = [
+	// 	'login' => [
+	// 		'url' => 'login',
+	// 		'title' => 'ログイン',
+	// 		'status' => false,
+	// 	],
+	// 	'text' => [
+	// 		'url' => 'text',
+	// 		'title' => '汎用テキスト管理',
+	// 		'status' => true,
+	// 		'submenu' => [
+	// 			'view',
+	// 			'add',
+	// 		]
+	// 	],
+	// 	'area' => [
+	// 		'url' => 'area',
+	// 		'title' => 'エリア管理',
+	// 		'status' => true,
+	// 		'submenu' => [
+	// 			'view',
+	// 			'add',
+	// 		]
+	// 	],
+	// 	'user' => [
+	// 		'url' => 'user',
+	// 		'title' => 'ユーザー管理',
+	// 		'status' => true,
+	// 		'submenu' => [
+	// 			'view',
+	// 			'add',
+	// 		]
+	// 	],
+	// 	'role' => [
+	// 		'url' => 'role',
+	// 		'title' => 'アクセス権限管理',
+	// 		'status' => true,
+	// 		'submenu' => [
+	// 			'view',
+	// 			'add',
+	// 		]
+	// 	]
+	// ];
 
 	/*
 	 * 認証不要に初期化
@@ -92,22 +125,22 @@ class AppController extends Controller {
 		 * 管理画面ログイン認証
 		 * URLが管理画面だった場合にチェックを行い、直アクセス・認証なしPOSTでのDB操作を防止する。
 		 */
-		if (strpos($this->params->url, 'admin') !== false) {
-			if ($this->params->params['controller'] != 'user') {
-				$this->needAuth = (bool)true;
-				if (!$this->getAuth()) {
-					$this->redirect('/admin/');
-				}
-			}
-			if ($this->needAuth === true) {
-				$auth_user = $this->Session->read('User');
-				if ($auth_user != null) {
-					if ($auth_user['Role'][$this->params->params['controller'] . '_status'] == 'n') {
-						$this->redirect('/admin/');
-					}
-				}
-			}
-		}
+		// if (strpos($this->params->url, 'admin') !== false) {
+		// 	if ($this->params->params['controller'] != 'user') {
+		// 		$this->needAuth = (bool)true;
+		// 		if (!$this->getAuth()) {
+		// 			$this->redirect('/admin/');
+		// 		}
+		// 	}
+		// 	if ($this->needAuth === true) {
+		// 		$auth_user = $this->Session->read('User');
+		// 		if ($auth_user != null) {
+		// 			if ($auth_user['Role'][$this->params->params['controller'] . '_status'] == 'n') {
+		// 				$this->redirect('/admin/');
+		// 			}
+		// 		}
+		// 	}
+		// }
 		// グローバル変数定義
 		$this->set([
 			'params'                => $this->params->params,
