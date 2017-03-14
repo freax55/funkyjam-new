@@ -11,6 +11,7 @@ Router::connect('/', array('controller' => 'root', 'action' => 'index'));
 
 // Router::connect('/admin', array('controller' => 'user', 'action' => 'login'));
 // Router::connect('/admin/logout', array('controller' => 'user', 'action' => 'logout'));
+Router::connect('//*/news', array('controller' => 'artist', 'action' => 'news'));
 
 CakePlugin::routes();
 require CAKE . 'Config' . DS . 'routes.php';
