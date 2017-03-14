@@ -1,0 +1,268 @@
+@charset "utf-8";
+#wrap article h2 {
+	padding-bottom: 5px;
+}
+
+#local ul li {
+	float: left;
+	padding-right: 1px;
+}
+
+#list {
+	padding-top: 50px;
+	clear: both;
+}
+#wrap article #list .tmb_wrap {
+	width: 100px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	float: left;
+	height: 165px;
+}
+
+#wrap article #list .tmb_wrap ul li {
+	font-size: 10px;
+	line-height: 13px;
+	color: #CCC;
+}
+#wrap article #list .tmb_wrap img {
+	padding-bottom: 5px;
+}
+
+#local ul .select {
+	background-image: none;
+}
+#wrap article #local ul .select a {
+	background-image: none;
+}
+
+#wrap article #detail .comment h3 {
+	color: #CCC;
+	font-family: 'BenchNine', sans-serif;
+}
+#detail .cover {
+	float: left;
+	width: 300px;
+	position: relative;
+	z-index: 1;
+}
+#detail {
+	clear: both;
+	padding-top: 30px;
+}
+#detail .summary {
+	float: right;
+	width: 100%;
+	margin-left: -330px;
+	position: relative;
+}
+#detail .summary .copy p {
+	font-size: 11px;
+	color: #CCC;
+	line-height: 20px;
+	padding-bottom: 15px;
+}
+#wrap article #detail .summary .comment p {
+	font-size: 11px;
+	line-height: 20px;
+	color: #CCC;
+}
+#wrap article #detail .cover table tr .songtitle {
+	font-size: 11px;
+	color: #CCC;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: bold;
+}
+#wrap article #detail .cover table tr td {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #474850;
+	padding-left: 10px;
+}
+#wrap article #detail .cover table {
+	width: 100%;
+	margin-bottom: 30px;
+}
+#wrap article #detail .summary .songnumber {
+	font-size: 10px;
+	color: #232323;
+	background-color: #CCC;
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-left: 330px;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-right: 7px;
+	padding-bottom: 2px;
+	padding-left: 7px;
+}
+#wrap article #detail .summary h3 {
+	font-size: 22px;
+	color: #FFF;
+	padding-left: 330px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+#wrap article #detail .summary .notes p {
+	font-size: 11px;
+	line-height: 20px;
+	color: #CCC;
+	padding-bottom: 15px;
+}
+#wrap article #detail .summary .songinfo {
+	font-size: 10px;
+	color: #CCC;
+	padding-bottom: 20px;
+	padding-left: 330px;
+	padding-top: 5px;
+}
+#wrap article #detail .summary .copy {
+	padding-bottom: 30px;
+	padding-left: 330px;
+	padding-right: 50px;
+}
+#wrap article #detail .summary .notes {
+	padding-bottom: 30px;
+	padding-right: 50px;
+	padding-left: 330px;
+}
+#wrap article #detail .summary .comment {
+	padding-bottom: 50px;
+	padding-right: 50px;
+	padding-left: 330px;
+}
+#wrap article #detail .summary .comment h5 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #CCC;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+#wrap article #detail .summary .comment h4 {
+	font-size: 18px;
+	font-family: 'BenchNine', sans-serif;
+	color: #FFF;
+	padding-bottom: 20px;
+}
+#wrap article #detail .summary .notes h5 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #CCC;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+#wrap article #detail .summary .notes h4 {
+	font-size: 18px;
+	font-family: 'BenchNine', sans-serif;
+	color: #FFF;
+	padding-bottom: 20px;
+}
+#wrap article #detail .summary .copy h4 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #CCC;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	line-height: 18px;
+}
+#wrap article #detail .cover .itunes {
+	padding-bottom: 10px;
+	clear: none;
+	padding-top: 3px;
+}
+
+#wrap article #detail .summary .notes {
+	padding-right: 50px;
+	padding-left: 330px;
+}
+#back_bt {
+	font-size: 10px;
+	font-weight: bold;
+	color: #CCC;
+	margin-left: 330px;
+	background-color: #555;
+	display: inline-block;
+	padding-top: 3px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	margin-bottom: 50px;
+}
+#wrap article #detail .cover .sony {
+	float: left;
+	width: 150px;
+	padding-top: 10px;
+}
+#wrap article #detail .cover .amazon {
+	float: right;
+	width: 150px;
+	padding-top: 10px;
+}
+#wrap article #newrelease .cover_wrap {
+	float: left;
+	width: 350px;
+	padding-right: 40px;
+}
+#wrap article #newrelease .summary_wrap h3 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFF;
+	line-height: 24px;
+	padding-bottom: 10px;
+	padding-left: 390px;
+}
+#wrap article #newrelease .summary_wrap h4 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFF;
+	line-height: 18px;
+	padding-bottom: 10px;
+	padding-left: 390px;
+}
+#wrap article #newrelease .summary_wrap p {
+	font-size: 12px;
+	color: #999;
+	padding-bottom: 15px;
+	line-height: 16px;
+	padding-left: 390px;
+}
+#wrap article #newrelease .summary_wrap .sony a img {
+	float: left;
+	width: 150px;
+}
+#wrap article #newrelease .summary_wrap .amazon {
+	float: left;
+	width: 150px;
+}
+#wrap article #newrelease .summary_wrap .itunes {
+	width: 150px;
+	float: left;
+	padding-left: 7px;
+}
+#wrap article #newrelease .summary_wrap {
+	width: 100%;
+	float: left;
+	margin-left: -390px;
+}
+#wrap article #newrelease .summary_wrap .btwrap {
+	padding-left: 390px;
+}
+
+
+
+
+
+
+
+
+#wrap article #newrelease {
+	clear: both;
+	padding-top: 50px;
+}

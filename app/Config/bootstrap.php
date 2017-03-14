@@ -50,7 +50,7 @@ define('NOW_DATE_TIME', date("H:i:s"));
 define('ONE_WEEK_AGO', date('Y-m-d H:i:s', strtotime('-1 week')));
 
 // ファイル更新時のキャッシュ問題をクリアするためのバージョン番号
-define('VERSION_JS', '1.0.0');
-define('VERSION_CSS', '1.0.2');
+define('VERSION_JS', '1.0.1');
+define('VERSION_CSS', '1.0.3');
 
 define('ANONYMOUSE', '匿名');
