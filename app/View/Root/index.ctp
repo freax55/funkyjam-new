@@ -1,6 +1,7 @@
 
 
 <!-- Header -->
+<div class="home">
 <header class="text-center carousel mainslide" id="carousel-example" data-ride="carousel" name="home">
   <div id="carousel-example" class="intro-text carousel slide" data-ride="carousel" data-interval="2000">
     <h1>THE BADDEST</span></h1>
@@ -23,7 +24,7 @@
   </a>
   </div>
 </header>
-
+</div>
 
 
 <!-- Banner Section -->

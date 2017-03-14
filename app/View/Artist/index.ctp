@@ -1,10 +1,12 @@
 
 
 <!-- Header -->
+<div class="news">
 <header class="text-center">
   <div class="artist-intro-text">
     <div class="clearfix"></div>
 </header>
+</div>
 
 <div id="breadcrumb">
   <div class="container">
