@@ -16,7 +16,6 @@ $artist = 'kubota';
 			<div class="col-md-8 col-md-offset-2 leftzero">
 				<ol class="breadcrumb">
 					<li><a href="#">Home</a></li>
-					<li><a href="#">Artist</a></li>
 					<li><a href="#">Toshinobu Kubota</a></li>
 					<li class="active">News</li>
 				</ol>
