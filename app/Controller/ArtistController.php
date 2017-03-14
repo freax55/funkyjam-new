@@ -89,16 +89,5 @@ class ArtistController extends AppController {
 		]);
 	}
 
-	public function ()
-	{
-		$this->pageInit();
-		$this->set([
-			'title' => 'fankyjam',
-			// 'description' => DESCRIPTION,
-		]);
-	}
-
-
-
 
 }
