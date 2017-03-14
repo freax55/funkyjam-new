@@ -17,7 +17,6 @@ h1 {
 	color: #666;
 }
 h2 {
-	line-height: 20px;
 	margin: 0;
 	font-size: 36px;
 	font-weight: 300;
@@ -61,7 +60,7 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	color: #666;
 	font-size: 36px;
-	margin-top: 30px;
+	margin-top: 0px;
 	margin-bottom: 30px;
 }
 .artist-title {
@@ -77,11 +76,70 @@ p {
 	font-size: 36px;
 	margin-top: 0px;
 	margin-bottom: 30px;
-	line-height: 40px;"
+	line-height: 40px;
+}
+.artist-title3 {
+	font-family: 'Open Sans', sans-serif;
+	color: #666;
+	font-size: 36px;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+.artist-title4 {
+	font-family: 'Open Sans', sans-serif;
+	color: #666;
+	font-size: 36px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	line-height: 40px;
 }
 a {
-	color: #5E5E5E;
+	color: #1a233f;
+	text-decoration:underline;
 }
+.section-title a {
+	color: #5e5e5e;
+	text-decoration:none;
+}
+.snsbar a {
+	color: #5e5e5e;
+	text-decoration:none;
+}
+.snsicon {
+	font-size: 28px; 
+	margin-right: 5px
+	text-decoration:none;
+}
+.breadcrumb a {
+	color: #111111;
+	text-decoration:none;
+}
+.pager a {
+	color: #111111;
+	text-decoration:none;
+}
+.storenav2 a {
+	text-decoration:none;
+	color: #111111;
+}
+.container a {
+	text-decoration:none;
+	color: #111111;
+}
+.storehead3 {
+	color: #111111;
+	text-align: center;
+	margin-bottom: 0px
+}
+
+
+#storenav2.nav. navbar-nav > li > a {
+	text-transform: uppercase;
+	color: #111111;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
 a:hover, a:focus {
 	text-decoration: none;
 	color: #222;
@@ -147,6 +205,7 @@ hr {
 	font-size: 22px;
 	color: #ddd;
 	font-weight: 700;
+	text-decoration:none;
 }
 #menu a.navbar-brand i.fa {
 	color: #88bb45;
@@ -160,23 +219,36 @@ hr {
 #menu.navbar-default .navbar-nav > li > a:hover {
 	color: #c1c1c1;
 }
+.otherartist a {
+	color: #ccc;
+	text-decoration:none;	
+}
 .artistnav a {
 	color: #ccc;
+	text-decoration:none;
 }
 .artistnav a:hover {
 	color: #f6f6f6;
 }
 .btn-baribari a {
 	color: #f6f6f6;
+	text-decoration:none;
 }
 .btn-baribari a:hover {
 	color: #eee;
+	text-decoration:none;
 }
 .btn-baribari2 a {
+	text-decoration:none;
 	color: #f6f6f6;
 }
 .btn-baribari2 a:hover {
+	text-decoration:none;
 	color: #eee;
+}
+.nav a {
+	text-decoration:none;
+	color: #111111;
 }
 .on {
 	background-color: #222222 !important;
@@ -219,7 +291,7 @@ header {
 	background-size: cover;
 	color: #cfcfcf;
 	position: relative;
-	height: 300px;
+	height: 200px;
 	width: 100%;
 }
 .other header {
@@ -227,7 +299,15 @@ header {
 	background-size: cover;
 	color: #cfcfcf;
 	position: relative;
-	height: 300px;
+	height: 200px;
+	width: 100%;
+}
+.news header {
+	background: url(../img/artist-header-bg.jpg) no-repeat bottom center;
+	background-size: cover;
+	color: #cfcfcf;
+	position: relative;
+	height: 200px;
 	width: 100%;
 }
 .premium header {
@@ -235,7 +315,7 @@ header {
 	background-size: cover;
 	color: #cfcfcf;
 	position: relative;
-	height: 300px;
+	height: 200px;
 	width: 100%;
 }
 .store header {
@@ -243,7 +323,7 @@ header {
 	background-size: cover;
 	color: #cfcfcf;
 	position: relative;
-	height: 300px;
+	height: 200px;
 	width: 100%;
 }
 .home header {
@@ -251,21 +331,35 @@ header {
 	background-size: cover;
 	color: #cfcfcf;
 	position: relative;
-	height: 550px;
+	height: 500px;
+}
+.urashima header {
+	background: url(../img/urashima-header-bg.jpg) no-repeat bottom center;
+	background-size: cover;
+	color: #cfcfcf;
+	position: relative;
+	height: 500px;
+}
+.mori header {
+	background: url(../img/mori-header-bg.jpg) no-repeat bottom center;
+	background-size: cover;
+	color: #cfcfcf;
+	position: relative;
+	height: 500px;
 }
 header p {
 	color: rgba(255,255,255,0.5);
 	font-size: 18px;
 	font-weight: 300;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 	padding: 0 4px;
 }
 .intro-text {
 	position: relative;
-	padding-top: 350px;
+	padding-top: 380px;
 	padding-right: 0;
 	padding-left: 0;
-	padding-bottom: 30px;
+	padding-bottom: 40px;
 }
 .artist-intro-text {
 	position: relative;
@@ -275,9 +369,10 @@ header p {
 	padding-bottom: 30px;
 }
 .intro-text H1 {
-	font-size: 50px;
+	font-size: 35px;
 	color: #eeeeee;
 	font-weight: 600;
+	margin-bottom: 15px; 
 }
 .color {
 	color: #c1c1c1;
@@ -300,12 +395,10 @@ header p {
 	color: #c1c1c1;
 	font-family: 'Open Sans', sans-serif;
 	background-color: #111111;
-	border: 1px solid #111111;
+	border: 2px solid #fff;
 	border-radius: 4px;
-	margin-right: 2px;
 	margin-top: 5px;
-	font-size: 18px;
-	width: 140px;
+	font-size: 15px;
 	transition: all 0.5s;
 }
 .btn-artist2 {
@@ -318,6 +411,16 @@ header p {
 	margin-top: 5px;
 	font-size: 18px;
 	width: 176px;
+	transition: all 0.5s;
+}
+.btn-artist3 {
+	color: #c1c1c1;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #111111;
+	border: 2px solid #fff;
+	border-radius: 4px;
+	margin-top: 1px;
+	font-size: 11px;
 	transition: all 0.5s;
 }
 .btn-premium {
@@ -336,12 +439,10 @@ header p {
 	color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
 	background-color: #e0b300;
-	border: 1px solid #e0b300;
+	border: 2px solid #fff;
 	border-radius: 4px;
-	margin-right: 2px;
 	margin-top: 5px;
-	font-size: 18px;
-	width: 140px;
+	font-size: 15px;
 	transition: all 0.5s;
 }
 .btn-baribari2 {
@@ -361,12 +462,10 @@ header p {
 	color: #c1c1c1;
 	font-family: 'Open Sans', sans-serif;
 	background-color: #444444;
-	border: 1px solid #444444;
+	border: 2px solid #fff;
 	border-radius: 4px;
-	margin-right: 2px;
 	margin-top: 5px;
-	font-size: 18px;
-	width: 138px;
+	font-size: 15px;
 	transition: all 0.5s;
 }
 .btn-on2 {
@@ -379,6 +478,36 @@ header p {
 	margin-top: 5px;
 	font-size: 18px;
 	width: 176px;
+	transition: all 0.5s;
+}
+.btn-on3 {
+	color: #eee;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #000;
+	border: 2px solid #eee;
+	border-radius: 4px;
+	margin-top: 0px;
+	font-size: 15px;
+	transition: all 0.5s;
+}
+.btn-on4 {
+	color: #eee;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #111;
+	border: 2px solid #eee;
+	border-radius: 4px;
+	margin-top: 0px;
+	font-size: 15px;
+	transition: all 0.5s;
+}
+.btn-on5 {
+	color: #eee;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #444444;
+	border: 2px solid #eee;
+	border-radius: 4px;
+	margin-top: 0px;
+	font-size: 15px;
 	transition: all 0.5s;
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
@@ -505,6 +634,10 @@ img.team-img {
 	padding: 30px 0;
 	background-color: #f6f6f6;
 }
+#pager {
+	padding: 30px 0;
+	background-color: #f6f6f6;
+}
 #company-page-section {
 	padding: 30px 0;
 	background-color: #f6f6f6;
@@ -517,6 +650,10 @@ img.team-img {
 	padding: 0px 0;
 	background-color: #f6f6f6;
 }
+#otherartist {
+	padding: 0px 0;
+	background-color: #f6f6f6;
+}
 #breadcrumb2 {
 	padding: 0px 0;
 	background-color: #f6f6f6;
@@ -525,7 +662,15 @@ img.team-img {
 	padding: 0px 0;
 	background-color: #f6f6f6;
 }
+#storenav2 {
+	padding: 0px 0;
+	background-color: #e6e6e6;
+}
 #news-section {
+	padding: 30px 0;
+	background-color: #f6f6f6;
+}
+#store-section {
 	padding: 30px 0;
 	background-color: #f6f6f6;
 }
@@ -776,7 +921,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     font-size: 15px;
 	color: #888;
     border: 1px solid #ddd;
-    padding: 10px 15px 3px 15px;
+    padding: 10px 15px 10px 15px;
 }
 
 .rowzero {
@@ -830,12 +975,11 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     height: auto;
 }
 
-.home-news-item>a:hover .home-news-overlay, .home-news-item>a:focus .home-news-overlay {
+.home-news-item>a:focus .home-news-overlay {
     background: none;
 }
 
 .home-news-overlay {
-    background: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
     right: 0;
@@ -844,6 +988,14 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     color: #fff;
     text-align: center;
     padding: 30px 30px;
+}
+.home-news-item>a:hover .home-news-overlay{
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#services-section a.home-introduction-item:hover i.fa {
+    color: #ccc;
+	text-decoration:none;    
 }
 
 .home-news-date {
@@ -1121,9 +1273,183 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
   text-align: center;
   font-size: 16px;
 }
-.button_wrapper{
+.button_wrapper {
    text-align:center;
 }
+.store-title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.store-title2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #888;
+    line-height: 28px;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.store-title3 {
+	background-color: #000; 
+	padding-left: 10px;
+	font-weight: bold;
+	color: #FFF;
+    margin-bottom: 30px;
+}
+.store-title4 {
+	font-size: 14px;
+	line-height: 24px;
+    margin-bottom: 3px;
+}
+.store-title5 {
+	background-color: #000; 
+	padding-left: 0px;
+	font-weight: bold;
+	color: #FFF;
+    margin-bottom: 15px;
+}
+.store-title6 {
+	background-color: #000; 
+	padding-left: 10px;
+	font-weight: bold;
+	color: #FFF;
+    margin-bottom: 15px;
+}
+.store-link {
+    background-color: #eee;
+}
+
+.box{
+	background:#ddd; 
+	border: 1px #ff0000 
+	solid; padding:15px;
+}
+.storehead{
+	padding-bottom: 10px; 
+	padding-top: 10px;
+}
+.icon-facebook2:before {
+	content: "\ea91";
+	font-size: 25px;
+	margin-right: 10px;
+}
+.icon-twitter:before {
+	content: "\ea96";
+	font-size: 25px;
+	margin-right: 10px;
+}
+.icon-youtube:before {
+  	content: "\ea9d";
+  	font-size: 25px;
+	margin-right: 10px;
+}
+.snsbar{
+	padding: 27px 0px 25px 0px;
+	vertical-align: middle;
+	text-align: right;
+	color: #eee;
+}
+
+#pageTop {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+}
+ 
+#pageTop a {
+  display: block;
+  z-index: 999;
+  padding: 8px 0 0 8px;
+  border-radius: 30px;
+  width: 35px;
+  height: 35px;
+  background-color: #5e5e5e;
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+}
+ 
+#pageTop a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.list2 {
+	width: 110px;
+	float: left;
+	padding: 10px 5px;
+	border-top:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+	margin-top: -1px;
+}
+.absolute {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+.border-left-bottom {
+   	margin:30px 0px 15px 0px;
+	position: relative;
+	padding: .25em 0 .5em .75em;
+	border-left: 10px solid #000;
+	font-size: 17px;
+	font-weight: bold;
+}
+.border-left-bottom::after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	content: '';
+	width: 100%;
+	height: 0;
+	border-bottom: 1px solid #ccc;
+}
+.grytext{
+	font-family: 'Open Sans', sans-serif;
+    color: #888;
+    line-height: 28px;
+    font-size: 15px;
+}
+.leftzero{
+	padding-left: 0px; padding-right: 0px;
+}
+.left15{ 
+	padding-left:15px; padding-right: 0px;
+}
+
+.scroll{
+overflow: auto;　　　　/*tableをスクロールさせる*/
+white-space: nowrap;　　/*tableのセル内にある文字の折り返しを禁止*/
+}
+.scroll::-webkit-scrollbar{　　/*tableにスクロールバーを追加*/
+ height: 5px;
+}
+.scroll::-webkit-scrollbar-track{　　/*tableにスクロールバーを追加*/
+ background: #F1F1F1;
+}
+.scroll::-webkit-scrollbar-thumb {　　/*tableにスクロールバーを追加*/
+ background: #BCBCBC;
+}
+.ggmap {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+ 
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
 
 @-webkit-keyframes blink{
     0% {opacity:0;}
@@ -1165,8 +1491,58 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }*/
 } 
 
+@media (max-width: 768px){
+.snsbar{
+	padding: 0px 0px 0px 0px;
+	vertical-align: middle;
+	text-align: right;
+	color: #eee;
+}
+} 
+
+@media (max-width: 768px){
+.intro-text H1 {
+	font-size: 25px;
+	color: #eeeeee;
+	font-weight: 600;
+	line-height: 30px;
+}
+}
 
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?xwvuca');
+  src:  url('fonts/icomoon.eot?xwvuca#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?xwvuca') format('truetype'),
+    url('fonts/icomoon.woff?xwvuca') format('woff'),
+    url('fonts/icomoon.svg?xwvuca#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
 
