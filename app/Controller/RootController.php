@@ -10,20 +10,43 @@ class RootController extends AppController {
 	// );
 
 	public function index() {
-		// // エリア一覧取得
-		// $this->getAreas();
 		$this->pageInit();
-		// $this->set([
-		// 	'title' => '交際クラブを徹底比較',
-		// 	'description' => DESCRIPTION,
-		// 	// 'data_area' => $data_areas,
-		// 	'right_column' => [
-		// 		'side_ad'
-		// 	],
-		// 	'left_column' => [
-		// 		'side_area_nav'
-		// 	]
-		// ]);
-		// $this->layout = 'Pane3';
+		$this->set([
+			'title' => 'fankyjam',
+			// 'description' => DESCRIPTION,
+		]);
 	}
+
+	public function company() {
+		$this->pageInit();
+		$this->set([
+			'title' => 'fankyjam',
+			// 'description' => DESCRIPTION,
+		]);
+	}
+
+	public function recruit() {
+		$this->pageInit();
+		$this->set([
+			'title' => 'fankyjam',
+			// 'description' => DESCRIPTION,
+		]);
+	}
+
+	public function scout() {
+		$this->pageInit();
+		$this->set([
+			'title' => 'fankyjam',
+			// 'description' => DESCRIPTION,
+		]);
+	}
+
+	public function studio() {
+		$this->pageInit();
+		$this->set([
+			'title' => 'fankyjam',
+			// 'description' => DESCRIPTION,
+		]);
+	}
+
 }
