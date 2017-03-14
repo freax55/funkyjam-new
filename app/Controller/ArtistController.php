@@ -17,14 +17,6 @@ class ArtistController extends AppController {
 		]);
 	}
 
-	public function news()
-	{
-		$this->pageInit();
-		$this->set([
-			'title' => 'fankyjam',
-			// 'description' => DESCRIPTION,
-		]);
-	}
 
 	public function profile()
 	{
@@ -33,6 +25,7 @@ class ArtistController extends AppController {
 			'title' => 'fankyjam',
 			// 'description' => DESCRIPTION,
 		]);
+		$this->render('contents');
 	}
 
 	public function profile_detail()
@@ -42,6 +35,7 @@ class ArtistController extends AppController {
 			'title' => 'fankyjam',
 			// 'description' => DESCRIPTION,
 		]);
+		$this->render('contents');
 	}
 
 	public function producing()
@@ -51,6 +45,7 @@ class ArtistController extends AppController {
 			'title' => 'fankyjam',
 			// 'description' => DESCRIPTION,
 		]);
+		$this->render('contents');
 	}
 
 	public function media()
@@ -60,6 +55,7 @@ class ArtistController extends AppController {
 			'title' => 'fankyjam',
 			// 'description' => DESCRIPTION,
 		]);
+		$this->render('contents');
 	}
 
 	public function discography()
@@ -69,6 +65,7 @@ class ArtistController extends AppController {
 			'title' => 'fankyjam',
 			// 'description' => DESCRIPTION,
 		]);
+		$this->render('contents');
 	}
 
 	public function performance()
@@ -78,6 +75,7 @@ class ArtistController extends AppController {
 			'title' => 'fankyjam',
 			// 'description' => DESCRIPTION,
 		]);
+		$this->render('contents');
 	}
 
 	public function fanclub()
@@ -87,6 +85,7 @@ class ArtistController extends AppController {
 			'title' => 'fankyjam',
 			// 'description' => DESCRIPTION,
 		]);
+		$this->render('contents');
 	}
 
 

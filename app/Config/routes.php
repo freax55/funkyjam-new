@@ -11,7 +11,21 @@ Router::connect('/', array('controller' => 'root', 'action' => 'index'));
 
 // Router::connect('/admin', array('controller' => 'user', 'action' => 'login'));
 // Router::connect('/admin/logout', array('controller' => 'user', 'action' => 'logout'));
-Router::connect('//*/news', array('controller' => 'artist', 'action' => 'news'));
+$artists = [
+	'kubota',
+	'urashima',
+	'mori',
+	'bse'
+];
+foreach($artists as $v){
+	Router::connect('/artist/' . $v . '/profile', array('controller' => 'artist', 'action' => 'profile'));
+	Router::connect('/artist/' . $v . '/discography', array('controller' => 'artist', 'action' => 'discography'));
+	Router::connect('/artist/' . $v . '/performance', array('controller' => 'artist', 'action' => 'performance'));
+}
+// Router::connect('/artist/' . $v . '/profile', array('controller' => 'artist', 'action' => 'profile'));
+// Router::connect('/artist/' . $v . '/profile', array('controller' => 'artist', 'action' => 'profile'));
+// Router::connect('/artist/' . $v . '/profile', array('controller' => 'artist', 'action' => 'profile'));
+
 
 CakePlugin::routes();
 require CAKE . 'Config' . DS . 'routes.php';
