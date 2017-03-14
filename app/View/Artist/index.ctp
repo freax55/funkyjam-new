@@ -1,30 +1,4 @@
 
-<!-- Navigation
-    ==========================================-->
-<nav id="menu" class="navbar navbar-default navbar-fixed-top">
-  <div class="container"> 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="index.html">Funky Jam</a> </div>
-    
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html#home" class="page-scroll">Home</a></li>
-        <li><a href="company.html" class="page-scroll">Company</a></li>
-        <li><a href="store.html" >FJ Shop</a></li>
-        <li><a href="recruit.html" >Recruit</a></li>
-        <li><a href="scout.html" >Scout</a></li>
-        <li><a href="studio.html" >Studio</a></li>
-        <li><a href="index.html#contact-section" class="page-scroll">Contact</a></li>
-        <li><a href="http://cooljapanmusic.com/toshi-kubota-update/" ><span style="color:#FF9933;">English</span></a></li>
-        </ul>
-    </div>
-    <!-- /.navbar-collapse --> 
-  </div>
-  <!-- /.container-fluid --> 
-</nav>
 
 <!-- Header -->
 <header class="text-center">
