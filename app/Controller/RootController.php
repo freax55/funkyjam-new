@@ -23,6 +23,7 @@ class RootController extends AppController {
 			'title' => 'fankyjam',
 			// 'description' => DESCRIPTION,
 		]);
+		$this->render('contents');
 	}
 
 	public function recruit() {
@@ -31,6 +32,7 @@ class RootController extends AppController {
 			'title' => 'fankyjam',
 			// 'description' => DESCRIPTION,
 		]);
+		$this->render('contents');
 	}
 
 	public function scout() {
@@ -39,6 +41,7 @@ class RootController extends AppController {
 			'title' => 'fankyjam',
 			// 'description' => DESCRIPTION,
 		]);
+		$this->render('contents');
 	}
 
 	public function studio() {
@@ -47,6 +50,7 @@ class RootController extends AppController {
 			'title' => 'fankyjam',
 			// 'description' => DESCRIPTION,
 		]);
+		$this->render('contents');
 	}
 
 }

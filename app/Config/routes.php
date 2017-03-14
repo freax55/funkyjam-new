@@ -1,6 +1,11 @@
 <?php
 Router::parseExtensions('xml', 'rss');
 Router::connect('/', array('controller' => 'root', 'action' => 'index'));
+Router::connect('/company', array('controller' => 'root', 'action' => 'company'));
+Router::connect('/recruit', array('controller' => 'root', 'action' => 'recruit'));
+Router::connect('/scout', array('controller' => 'root', 'action' => 'scout'));
+Router::connect('/studio', array('controller' => 'root', 'action' => 'studio'));
+
 
 // App::uses('AppController', 'Controller');
 // $App = new AppController();
