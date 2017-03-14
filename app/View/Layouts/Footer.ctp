@@ -1,10 +1,8 @@
-<div id="footer">
-  <div class="container">
-      <div class="col-md-5">
-    <p>Privacy Policy</p></div>
-        <div class="col-md-7"><p>Copyright &copy; Funky Jam All rights reserved.</p></div>
+<div id="footer" style="padding-bottom: 20px;">
+  <div class="container" style="text-align: center;">
+    <p style="margin-bottom: 0px;">Copyright &copy; Funky Jam All rights reserved.</p>
+    <a href="privacy.html">Privacy Policy</a></div>
   </div>
-</div>
 
 
 
