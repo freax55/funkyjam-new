@@ -64,9 +64,9 @@ $artist = 'kubota';
         <div class="btn btn-on col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/<?= $artist ?>">News</a></div>
         <div class="btn btn-artist col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/<?= $artist ?>/profile">Profile</a></div>
         <div class="btn btn-artist col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/<?= $artist ?>/discography">Discography</a></div>
-        <div class="btn btn-artist col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="performance.html">Performance</a></div>
-        <div class="btn btn-artist col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="performance.html">Other Work</a></div>
-        <div class="btn btn-baribari col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="baribaricrew.html">Bari Bari Crew</a></div>
+        <div class="btn btn-artist col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/<?= $artist ?>/performance">Performance</a></div>
+        <div class="btn btn-artist col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/<?= $artist ?>/otherwork">Other Work</a></div>
+        <div class="btn btn-baribari col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/<?= $artist ?>/baribaricrew">Bari Bari Crew</a></div>
     </div>
 </div>
 </div>
