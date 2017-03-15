@@ -78,6 +78,14 @@ p {
 	margin-bottom: 30px;
 	line-height: 40px;
 }
+.menu {
+	font-family: 'Open Sans', sans-serif;
+	color: #666;
+	font-size: 36px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	line-height: 40px;
+}
 .artist-title3 {
 	font-family: 'Open Sans', sans-serif;
 	color: #666;
@@ -917,11 +925,12 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 
 .tableP {
-    text-align: center;
     font-size: 15px;
 	color: #888;
     border: 1px solid #ddd;
     padding: 10px 15px 10px 15px;
+    text-align: left; 
+    vertical-align: middle;"
 }
 
 .rowzero {
