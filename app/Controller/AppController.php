@@ -145,13 +145,12 @@ class AppController extends Controller {
 		$this->set([
 			'params'                => $this->params->params,
 			'pages'                 => $this->pages,
-			'pages_admin'           => $this->pages_admin,
 			'controller_camel_case' => Inflector::camelize($this->params->params['controller']),
+			// 'action_camel_case'     => Inflector::camelize($this->params->params['action']),			
 			'body_css_class'        => null,
 			'current'               => $this->params->params['controller'],
 			'noindex'               => false,
 			'canonical'             => false,
-			'pg_num'                => 8
 		]);
 	}
 
@@ -314,7 +313,7 @@ class AppController extends Controller {
 
 	function pageInit($isSP = null) {
 
-		// $_name = strtolower(implode("_", $this->explodeCase($this->name)));
+		$_name = strtolower(implode("_", $this->explodeCase($this->name)));
 		// if ($isSP == 'sp') {
 		// 	$this->set([
 		// 		'title'        => $this->pages[$this->params->params['controller']]['title'] . SEP . SITENAME,
@@ -334,12 +333,12 @@ class AppController extends Controller {
 		// 			'side_common'
 		// 		]
 		// 	]);
-		// 	if ($_name != "root") {
-		// 		$this->topicPath(
-		// 			[$this->pages[$_name]['title']],
-		// 			[$this->pages[$_name]['url']]
-		// 		);
-		// 	}
+			if ($_name != "root") {
+				$this->topicPath(
+					[$this->pages[$_name]['title']],
+					[$this->pages[$_name]['url']]
+				);
+			}
 			$this->layout = 'Pane1';
 		// }
 	}

@@ -17,15 +17,16 @@ CakeLog::config('error', array(
 ));
 
 define('MYDOMAIN', 'fj-new.untamed.com');
+define('MYDOMAIN_DEV', 'fj-new.dev');
 define('MYHOST', env('HTTP_HOST'));
 
 define('SEP', ' | ');
-define('SITENAME', 'ファンキージャム');
-define('SITENAMESHORT', 'ファンキージャム');
-define('SITENAMEMETA', SEP . 'ファンキージャム');
+define('SITENAME', 'FunkyJam');
+define('SITENAMESHORT', 'FunkyJam');
+define('SITENAMEMETA', SEP . 'FunkyJam');
 define('SITENAMEADMIN', SEP . SITENAME);
 define('TITLE', SITENAMEMETA);
-define('DESCRIPTION', 'funkyjam公式サイト');
+define('DESCRIPTION', 'FunkyJam公式サイト');
 define('H1', TITLE);
 
 define('LAT', '35.659612');

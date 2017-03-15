@@ -10,16 +10,18 @@
 <div id="breadcrumb">
   <div class="container">
       <div class="col-md-8 col-md-offset-2 leftzero">
-          <ol class="breadcrumb">
-              <li><a href="#">Home</a></li>
-              <li class="active"><a href="#">Company</a></li>
-          </ol>
+      <?= $this->BreadCrumb->show($path) ?>
       </div>
   </div>
 </div>
 
 
 <!-- Company Section -->
+<?php
+print $content['Post']['post_content'];
+/*
+?>
+
 <div id="company-page-section">
   <div class="container"> <!-- Container -->
      <div class="col-md-8 col-md-offset-2 leftzero">
@@ -61,7 +63,9 @@
                     </div>
                 </div>
 
-
+<?php
+*/
+?>
 
 
 
