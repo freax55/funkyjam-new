@@ -618,5 +618,11 @@ table th[class*="col-"] {
     }
 }
 
+@media (min-width: 1200px) {
+  .container-txt {
+    width: 1170px;
+  }
+}
+
 
 
