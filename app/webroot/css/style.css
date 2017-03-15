@@ -548,7 +548,7 @@ header p {
 	padding: 30px 0;
 }
 .banner-title {
-	padding: 30px 0px 30px 0px;
+	padding: 30px 15px 30px 15px;
 }
 .article-title {
 	padding: 30px 0;
@@ -777,7 +777,7 @@ ol.type li a:hover {
 	transition-property: transform, opacity;
 }
 .portfolio-item {
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 }
 .contact-bottom {
 	margin-bottom: 5px;
@@ -1344,6 +1344,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .store-link {
     background-color: #eee;
 }
+.top-padding {
+	padding-right: 15px;
+}
+
 
 .box{
 	background:#ddd; 

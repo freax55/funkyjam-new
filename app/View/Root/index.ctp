@@ -3,109 +3,94 @@
 <!-- Header -->
 <div class="home">
     <header class="text-center carousel mainslide" id="carousel-example" data-ride="carousel" name="home">
-      <div id="carousel-example" class="intro-text carousel slide" data-ride="carousel" data-interval="2000">
-        <h1>THE BADDEST</span></h1>
-        <p>久保田利伸デビュー30周年特別企画第2弾</p>
-        <div class="clearfix"></div>
-
-        <!-- インジケーターの設置。下部の○●ボタン。 -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example" data-slide-to="1"></li>
-            ...
-        </ol>
-        
-        <!-- 左右の移動ボタン -->
-        <a class="left carousel-control" href="#carousel-example" data-slide="prev">
-            <i class="fa fa-chevron-left glyphicon glyphicon-chevron-left" aria-hidden="true"></i>
-        </a>
-        <a class="right carousel-control" href="#carousel-example" data-slide="next">
-            <i class="fa fa-chevron-right glyphicon glyphicon-chevron-right" aria-hidden="true"></i>
-        </a>
-    </div>
-</header>
+        <div id="carousel-example" class="intro-text carousel slide" data-ride="carousel" data-interval="2000">
+            <h1>THE BADDEST</span></h1>
+            <p>久保田利伸デビュー30周年特別企画第2弾</p>
+        </div>
+    </header>
 </div>
 
 
 <!-- Banner Section -->
 <div id="bar-section">
-  <div class="container"> <!-- Container -->
-    <div class="banner-title">
-        <div class="row">
-          <div class="col-md-4">
-              <a href="baribaricrew.html">
-                  <img src="img/portfolio/Baribari-top.jpg" class="img-responsive" alt="Project Title"> </a> 
-              </div>
-              <div class="col-md-4">
-                  <a href="https://www.funkyjam.com/mori/">
-                      <img src="img/portfolio/morinobanner.jpg" class="img-responsive" alt="Project Title"> </a> 
-                  </div>
-                  <div class="col-md-4">
-                      <a href="https://www.funkyjam.com/shop">
-                          <img src="img/portfolio/FJ-Banner.jpg" class="img-responsive" alt="Project Title"> </a> 
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-
-
-      <!-- Artist Section -->
-      <div id="artist-section-top">
-          <div class="container"> <!-- Container -->
-              <h2>Artist</h2>
-              <div class="row">
-                  <div class="portfolio-items">
-                    <div class="col-sm-6 col-md-3 col-lg-3">
-                      <div class="portfolio-item">
-                        <div class="hover-bg">
-                          <a href="kubota-news.html">
-                              <div class="hover-text">
-                                <h4>Toshinobu Kubota</h4>
-                                <small>久保田利伸</small>
-                                <div class="clearfix"></div>
-                            </div>
-                            <img src="img/portfolio/KubotaTop.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 col-lg-3">
-                      <div class="portfolio-item">
-                        <div class="hover-bg"> <a href="img/portfolio/Urashima_Top.jpg" rel="prettyPhoto">
-                          <div class="hover-text">
-                            <h4>Rinko Urashima</h4>
-                            <small>浦嶋りんこ</small>
-                            <div class="clearfix"></div>
-                        </div>
-                        <img src="img/portfolio/Urashima_Top.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                    </div>
+    <div class="container topthirty">
+                <div class="col-md-4">
+                    <a href="baribaricrew.html">
+                    <img src="img/portfolio/Baribari-top.jpg" class="img-responsive" alt="Project Title"> </a> 
                 </div>
-                <div class="col-sm-6 col-md-3 col-lg-3 web">
-                  <div class="portfolio-item">
-                    <div class="hover-bg"> <a href="img/portfolio/MoriTop.jpg" rel="prettyPhoto">
-                      <div class="hover-text">
-                        <h4>Daisuke Mori</h4>
-                        <small>森大輔</small>
-                        <div class="clearfix"></div>
-                    </div>
-                    <img src="img/portfolio/MoriTop.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                <div class="col-md-4">
+                    <a href="https://www.funkyjam.com/mori/">
+                    <img src="img/portfolio/morinobanner.jpg" class="img-responsive" alt="Project Title"> </a> 
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.funkyjam.com/shop">
+                    <img src="img/portfolio/FJ-Banner.jpg" class="img-responsive" alt="Project Title"> </a> 
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 web">
-              <div class="portfolio-item">
-                <div class="hover-bg"> <a href="img/portfolio/BROWN-EYED-SOUL_Top.jpg" rel="prettyPhoto">
-                  <div class="hover-text">
-                    <h4>BROWN EYED SOUL</h4>
-                    <small>ブラウン・アイド・ソウル</small>
-                    <div class="clearfix"></div>
-                </div>
-                <img src="img/portfolio/BROWN-EYED-SOUL_Top.jpg" class="img-responsive" alt="Project Title"> </a> 
-            </div>
-        </div> 
+        </div>
     </div>
 </div>
-</div>
-</div>
+
+
+
+<!-- Artist Section -->
+    <div id="artist-section-top">
+        <div class="container">
+            <h2>Artist</h2>
+                    <div class="portfolio-items">
+                        <div class="col-sm-6 col-md-3 col-lg-3 web">
+                            <div class="portfolio-item">
+                                <div class="hover-bg">
+                                    <a href="kubota-news.html">
+                                <div class="hover-text">
+                                <h4>Toshinobu Kubota</h4>
+                                <small>久保田利伸</small>
+                                <div class="clearfix">
+                                </div>
+                            </div>
+                                <img src="img/portfolio/KubotaTop.jpg" class="img-responsive" alt="Project Title"> </a> 
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3 web">
+                        <div class="portfolio-item">
+                            <div class="hover-bg"> <a href="img/portfolio/Urashima_Top.jpg" rel="prettyPhoto">
+                                <div class="hover-text">
+                                <h4>Rinko Urashima</h4>
+                                <small>浦嶋りんこ</small>
+                                <div class="clearfix">
+                                </div>
+                            </div>
+                        <img src="img/portfolio/Urashima_Top.jpg" class="img-responsive" alt="Project Title"> </a> 
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3 web">
+                    <div class="portfolio-item">
+                        <div class="hover-bg"> <a href="img/portfolio/MoriTop.jpg" rel="prettyPhoto">
+                            <div class="hover-text">
+                                <h4>Daisuke Mori</h4>
+                                <small>森大輔</small>
+                            <div class="clearfix"></div>
+                        </div>
+                        <img src="img/portfolio/MoriTop.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                    </div>
+                </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 web">
+                <div class="portfolio-item">
+                    <div class="hover-bg"> <a href="img/portfolio/BROWN-EYED-SOUL_Top.jpg" rel="prettyPhoto">
+                        <div class="hover-text">
+                                <h4>BROWN EYED SOUL</h4>
+                                <small>ブラウン・アイド・ソウル</small>
+                            <div class="clearfix"></div>
+                        </div>
+                        <img src="img/portfolio/BROWN-EYED-SOUL_Top.jpg" class="img-responsive" alt="Project Title"> </a> 
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </div>
 
@@ -285,7 +270,7 @@
 
                       <div class="col-sm-6 col-md-3 col-lg-3 web">
                           <div class="portfolio-item">
-                           <a href="https://www.facebook.com/BESofficial" target="_blank" >
+                             <a href="https://www.facebook.com/BESofficial" target="_blank" >
                               <img src="img/portfolio/BESFacebook.jpg" class="img-responsive" alt="Project Title"> </a> </div>
                           </div>
                       </div>
@@ -311,42 +296,42 @@
                     <p class="col-md-11">東京都港区西麻布1丁目14番2号疋田ビル302号</p>
                 </div>
                 <div class="space row">
-                 <div class="col-md-1"><i class="fa fa-envelope-o"></i></div>
-                 <p class="col-md-11">info@funkyjam.com</p>
-             </div>
-             <div class="space row">
-              <div class="col-md-1"><i class="fa fa-phone"></i></div>
-              <p class="col-md-11">03-3470-7707</p>
+                   <div class="col-md-1"><i class="fa fa-envelope-o"></i></div>
+                   <p class="col-md-11">info@funkyjam.com</p>
+               </div>
+               <div class="space row">
+                  <div class="col-md-1"><i class="fa fa-phone"></i></div>
+                  <p class="col-md-11">03-3470-7707</p>
+              </div>
           </div>
       </div>
-  </div>
 
 
 
-  <!-- Message Section -->
-  <div class="col-md-6">
-      <h4>Message</h4>
-      <form name="sentMessage" id="contactForm" novalidate>
-        <div class="row">
+      <!-- Message Section -->
+      <div class="col-md-6">
+          <h4>Message</h4>
+          <form name="sentMessage" id="contactForm" novalidate>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                  <p class="help-block text-danger"></p>
+              </div>
+          </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
               <p class="help-block text-danger"></p>
           </div>
       </div>
-      <div class="col-md-6">
-        <div class="form-group">
-          <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-          <p class="help-block text-danger"></p>
-      </div>
   </div>
-</div>
-<div class="form-group">
-  <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-  <p class="help-block text-danger"></p>
-</div>
-<div id="success"></div>
-<button type="submit" class="btn btn-default">Send Message</button>
+  <div class="form-group">
+      <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+      <p class="help-block text-danger"></p>
+  </div>
+  <div id="success"></div>
+  <button type="submit" class="btn btn-default">Send Message</button>
 </form>
 </div>
 </div>
