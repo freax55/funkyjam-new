@@ -1409,6 +1409,12 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     margin-top: 60px;
     margin-bottom: 15px;
 }
+.staff-m {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
 
 .list2 {
 	width: 110px;
