@@ -635,12 +635,12 @@ table th[class*="col-"] {
 }
 @media (min-width: 768px) {
   .container-txt {
-    width: 750px;
+    width: 760px;
   }
 }
 @media (min-width: 992px) {
   .container-txt {
-    width: 970px;
+    width: 760px;
   }
 }
 @media (min-width: 1200px) {
