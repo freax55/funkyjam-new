@@ -9,19 +9,9 @@
 </div>
 
 <div id="breadcrumb">
-<<<<<<< Updated upstream
   <div class="container">
       <div class="col-md-8 col-md-offset-2 leftzero">
       <?= $this->BreadCrumb->show($path) ?>
-=======
-      <div class="container">
-          <div class="col-md-8 col-md-offset-2 leftzero">
-              <ol class="breadcrumb">
-                  <li><a href="#">Home</a></li>
-                  <li class="active"><a href="#">Company</a></li>
-              </ol>
-          </div>
->>>>>>> Stashed changes
       </div>
 </div>
 
