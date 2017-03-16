@@ -103,7 +103,6 @@ p {
 }
 a {
 	color: #1a233f;
-	text-decoration:underline;
 }
 .section-title a {
 	color: #5e5e5e;
@@ -285,6 +284,9 @@ hr {
 .section-title2 {
 	padding-bottom: 10px;
 }
+.section-contact {
+	padding-bottom: 10px;
+}
 .disco-title {
 	padding-top: 60px;
 }
@@ -370,7 +372,7 @@ header p {
 	padding-top: 380px;
 	padding-right: 0;
 	padding-left: 0;
-	padding-bottom: 40px;
+	padding-bottom: 0px;
 }
 .artist-intro-text {
 	position: relative;
@@ -378,6 +380,10 @@ header p {
 	padding-right: 0;
 	padding-left: 0;
 	padding-bottom: 30px;
+}
+.left-right {
+	padding-right: 0;
+	padding-left: 0;
 }
 .intro-text H1 {
 	font-size: 35px;
@@ -607,7 +613,7 @@ img.team-img {
 #services-section i.fa {
 	font-size: 50px;
 	margin-right: 15px;
-	color: #c1c1c1;
+	color: #888;
 	padding-bottom: 10px;
 	display: block;
 }
@@ -777,13 +783,13 @@ ol.type li a:hover {
 	transition-property: transform, opacity;
 }
 .portfolio-item {
-	margin-bottom: 0px;
+	margin-bottom: 5px;
 }
 .contact-bottom {
 	margin-bottom: 5px;
 }	
 .portfolio-item .hover-bg {
-	height: 200px;
+	height: 100%;
 	overflow: hidden;
 	position: relative;
 }
@@ -969,6 +975,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .bottom-ten {
     margin-bottom: 20px;
+}
+.top-ten {
+    margin-top: 10px;
+    color: #888;
 }
 .topsixty {
     margin-top: 60px;
