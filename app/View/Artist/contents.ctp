@@ -1,5 +1,6 @@
 <?php
 $artist = 'kubota';
+// pr($current);
 ?>
 
 <!-- Header -->
@@ -20,7 +21,7 @@ $artist = 'kubota';
     </div>
 </div>
 
-
+<?= view::element('part_artist_nav') ?>
 <!-- Name Navigation -->
 <div id="namenav">
     <div class="container-txt">
@@ -39,7 +40,6 @@ $artist = 'kubota';
         </div>
     </div>
 </div>
-
 
 <div id="otherartist">
     <div class="container-txt">
@@ -65,7 +65,6 @@ $artist = 'kubota';
         </div>
     </div>
 </div>
-
 
 
 <!-- text Section -->

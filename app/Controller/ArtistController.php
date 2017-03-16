@@ -21,13 +21,13 @@ class ArtistController extends AppController {
 
 	public function profile()
 	{
+		$data = $this->_artistsData();
 		$term_id = null;
-		$ary_artists = $this->getArtists();
+		$ary_artists = $data[1];
 		$action = $this->action;
-		$controller = $this->params['controller'];
-		$artist = str_replace([$action, $controller, '/'], ['', '', ''], $this->params->url);
+		$artist = $data[2];
 		$ary_name = $ary_artists[$artist];
-		$term = $this->Term->getTerm($artist . '/' . $action);
+		$term = $this->Term->getTerm($artist . '/' . $data[3]);
 		if($term){
 			$term_id = $term['Term']['term_id'];
 		} else {
@@ -65,7 +65,7 @@ class ArtistController extends AppController {
 		$this->set([
 			'content' => $content,
 			'title' => 'fankyjam',
-			'ary_name' => $ary_name,
+			// 'ary_name' => $ary_name,
 			// 'description' => DESCRIPTION,
 		]);
 		$this->render('contents');
@@ -113,13 +113,13 @@ class ArtistController extends AppController {
 
 	public function performance()
 	{
+		$data = $this->_artistsData();
 		$term_id = null;
-		$ary_artists = $this->getArtists();
+		$ary_artists = $data[1];
 		$action = $this->action;
-		$controller = $this->params['controller'];
-		$artist = str_replace([$action, $controller, '/'], ['', '', ''], $this->params->url);
+		$artist = $data[2];
 		$ary_name = $ary_artists[$artist];
-		$term = $this->Term->getTerm($artist . '/' . $action);
+		$term = $this->Term->getTerm($artist . '/' . $data[3]);
 		if($term){
 			$term_id = $term['Term']['term_id'];
 		} else {
@@ -157,7 +157,7 @@ class ArtistController extends AppController {
 		$this->set([
 			'content' => $content,
 			'title' => 'fankyjam',
-			'ary_name' => $ary_name,
+			// 'ary_name' => $ary_name,
 			// 'description' => DESCRIPTION,
 		]);
 		$this->render('contents');
@@ -171,6 +171,20 @@ class ArtistController extends AppController {
 			// 'description' => DESCRIPTION,
 		]);
 		$this->render('contents');
+	}
+
+	public function _artistsData(){
+		$ary_path = $this->getArtistPath();
+		$ary_artist = $this->getArtists();
+		$action = $this->params['action'];
+		$controller = $this->params['controller'];
+		$artist = str_replace([$action, $controller, '/'], ['', '', ''], $this->params->url);
+		$this->set([
+			'ary_path' => $ary_path,
+			'ary_artist' => $ary_artist,
+			'current' => $artist,
+		]);
+		return array($ary_path, $ary_artist, $artist, $action);
 	}
 
 
