@@ -384,6 +384,36 @@ class AppController extends Controller {
 		exit;
 	}
 
+	function getArtistPath() {
+		return array(
+			'kubota',
+			'urashima',
+			'mori',
+			'bes'
+		);
+	}
+
+	function getArtists(){
+		return array(
+			'kubota' => [
+				'jp' => '久保田利伸',
+				'en' => 'Toshinobu Kubota'
+			],
+			'urashima' => [
+				'jp' => '浦島りんこ',
+				'en' => 'Rinko Urashima'
+			],
+			'mori' => [
+				'jp' => '森大輔',
+				'en' => 'Daisuke Mori'
+			],
+			'bes' => [
+				'jp' => 'ブラウンアイドソウル',
+				'en' => 'Brown Eyed Soul'
+			]
+		);
+	}
+
 	/*
 	 * 都道府配列取得
 	 */

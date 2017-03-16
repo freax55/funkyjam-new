@@ -13,12 +13,10 @@ $artist = 'kubota';
 
 
 <div id="breadcrumb">
-    <div class="container-txt">
-            <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Toshinobu Kubota</a></li>
-            <li class="active">News</li>
-        </ol>
+    <div class="container">
+        <div class="col-md-8 col-md-offset-2 leftzero">
+        <?= $this->BreadCrumb->show($path) ?>
+        </div>
     </div>
 </div>
 
@@ -73,6 +71,9 @@ $artist = 'kubota';
 <!-- text Section -->
 <div id="text-section">
     <div class="container-txt">
+    <?php
+    print $content['post_content'];
+    /*
         <h2 class="artistnews4" >4月28日よりNHK-FMにてパーソナリティ番組スタート！</h2>
         <img src="img/portfolio/Kubota original.jpg" class="img-responsive">
         <h3 class="border-left-bottom">RADIO</h3>
@@ -129,6 +130,8 @@ $artist = 'kubota';
             <a href="https://youtu.be/nb5g09_VLMA" target="_blank">https://youtu.be/nb5g09_VLMA</a>
         </p>
     </div>
+    */
+    ?>
 
 
 
