@@ -163,16 +163,6 @@ class ArtistController extends AppController {
 		$this->render('contents');
 	}
 
-	public function profile_detail()
-	{
-		$this->pageInit();
-		$this->set([
-			'title' => 'fankyjam',
-			// 'description' => DESCRIPTION,
-		]);
-		$this->render('contents');
-	}
-
 	public function fanclub()
 	{
 		$this->pageInit();
