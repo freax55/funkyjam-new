@@ -297,6 +297,12 @@ hr {
 	padding-top: 0px; 
 	padding-left: 0px;
 }
+.line {
+	text-decoration: none;
+   	border-bottom: 1px solid;
+   	border-color: #ddd;
+   	padding-bottom: 4px;
+}
 
 /* Home Style */
 header {
