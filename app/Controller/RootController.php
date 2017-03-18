@@ -14,7 +14,7 @@ class RootController extends AppController {
 		// $this->prd($pst);
 		$this->set([
 			'title' => 'fankyjam',
-			// 'description' => DESCRIPTION,
+			'description' => 'ファンキージャム',//DESCRIPTION,
 		]);
 	}
 

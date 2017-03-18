@@ -24,6 +24,8 @@ $artist = 'kubota';
 	</div>
 </div>
 
+
+<?= view::element('part_artist_nav') ?>
 <!-- Artist Navigation -->
 <div id="artistnav">
 	<div class="container">

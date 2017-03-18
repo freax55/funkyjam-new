@@ -1424,16 +1424,20 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 
 .staff {
-    font-size: 26px;
+    font-size: 25px;
     font-weight: 300;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 15px;
+    line-height: 35px;
 }
 .staff-m {
     font-size: 20px;
     font-weight: 300;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 15px;
+}
+.bold {
+	font-weight: 600;
 }
 
 .list2 {
@@ -1453,7 +1457,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
    	margin:30px 0px 15px 0px;
 	position: relative;
 	padding: .25em 0 .5em .75em;
-	border-left: 10px solid #000;
+	border-left: 10px solid #5E5E5E;
 	font-size: 17px;
 	font-weight: bold;
 }
