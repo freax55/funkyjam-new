@@ -18,6 +18,16 @@ class ArtistController extends AppController {
 		]);
 	}
 
+	public function news()
+	{
+		$this->pageInit();
+		$this->set([
+			'title' => 'fankyjam',
+			// 'description' => DESCRIPTION,
+		]);
+	}
+
+
 	public function contents()
 	{
 		// 各種変数取得
@@ -52,8 +62,8 @@ class ArtistController extends AppController {
 				$_action
 			],
 			[
-				'/',
-				'/'
+				// '/',
+				'/artist/' . $data['current']
 			]
 		);
 		

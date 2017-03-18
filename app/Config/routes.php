@@ -23,10 +23,11 @@ $artists = $App->getArtistParams();
 // 	'bes'
 // ];
 foreach($artists as $v){
-	Router::connect('/artist/' . $v . '/profile', array('controller' => 'artist', 'action' => 'contents'));
-	Router::connect('/artist/' . $v . '/discography', array('controller' => 'artist', 'action' => 'discography'));
-	Router::connect('/artist/' . $v . '/performance', array('controller' => 'artist', 'action' => 'contents'));
 	Router::connect('/artist/' . $v , array('controller' => 'artist', 'action' => 'index'));	
+	Router::connect('/artist/' . $v . '/*', array('controller' => 'artist', 'action' => 'contents'));
+	// Router::connect('/artist/' . $v . '/profile', array('controller' => 'artist', 'action' => 'contents'));
+	// Router::connect('/artist/' . $v . '/discography', array('controller' => 'artist', 'action' => 'discography'));
+	// Router::connect('/artist/' . $v . '/performance', array('controller' => 'artist', 'action' => 'contents'));
 }
 // Router::connect('/artist/' . $v . '/profile', array('controller' => 'artist', 'action' => 'profile'));
 // Router::connect('/artist/' . $v . '/profile', array('controller' => 'artist', 'action' => 'profile'));

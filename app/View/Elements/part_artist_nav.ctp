@@ -5,10 +5,10 @@
 <div id="namenav">
     <div class="container-txt">
         <div class="name">
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">     
+            <div class="">     
             <h1><?= $ary_names[$current]['en'] ?></h1>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 snsbar">
+            <div class="">
                 <a href="https://www.facebook.com/toshinobukubota" target="_blank">
                 <i class="fa fa-facebook-official snsicon" aria-hidden="true"></i></a>
                 <a href="https://twitter.com/kubota_4_real" target="_blank">

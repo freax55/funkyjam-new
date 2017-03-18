@@ -41,7 +41,7 @@
                 <div class="col-sm-6 col-md-3 col-lg-3 web">
                     <article class="portfolio-item">
                         <div class="hover-bg">
-                            <a href="kubota-news.html">
+                            <a href="/artist/kubota">
                             <div class="hover-text">
                                 <h4>Toshinobu Kubota</h4>
                                 <small>久保田利伸</small>
@@ -55,7 +55,7 @@
                 <div class="col-sm-6 col-md-3 col-lg-3 web">
                     <article class="portfolio-item">
                         <div class="hover-bg"> 
-                            <a href="img/portfolio/Urashima_Top.jpg">
+                            <a href="/artist/urashima">
                                 <div class="hover-text">
                                 <h4>Rinko Urashima</h4>
                                 <small>浦嶋りんこ</small>
@@ -69,7 +69,7 @@
                 <div class="col-sm-6 col-md-3 col-lg-3 web">
                     <article class="portfolio-item">
                         <div class="hover-bg"> 
-                            <a href="img/portfolio/MoriTop.jpg">
+                            <a href="/artist/mori">
                                 <div class="hover-text">
                                 <h4>Daisuke Mori</h4>
                                 <small>森大輔</small>
@@ -83,7 +83,7 @@
                 <div class="col-sm-6 col-md-3 col-lg-3 web">
                     <article class="portfolio-item">
                         <div class="hover-bg"> 
-                            <a href="img/portfolio/BROWN-EYED-SOUL_Top.jpg">
+                            <a href="/artist/bes">
                                 <div class="hover-text">
                                 <h4>BROWN EYED SOUL</h4>
                                 <small>ブラウン・アイド・ソウル</small>
