@@ -384,7 +384,7 @@ class AppController extends Controller {
 		exit;
 	}
 
-	function getArtistPath() {
+	function getArtistParams() {
 		return array(
 			'kubota',
 			'urashima',
@@ -393,7 +393,7 @@ class AppController extends Controller {
 		);
 	}
 
-	function getArtists(){
+	function getArtistNames(){
 		return array(
 			'kubota' => [
 				'jp' => '久保田利伸',

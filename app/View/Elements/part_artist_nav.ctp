@@ -6,7 +6,7 @@
     <div class="container-txt">
         <div class="name">
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">     
-            <h1><?= $ary_artist[$current]['en'] ?></h1>
+            <h1><?= $ary_names[$current]['en'] ?></h1>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 snsbar">
                 <a href="https://www.facebook.com/toshinobukubota" target="_blank">
@@ -24,11 +24,11 @@
     <div class="container-txt">
         <div class="artistnav">
         <?php
-        foreach($ary_path as $v) {
+        foreach($ary_params as $v) {
             $color = ($v == $current)?'btn-on5':'btn-on4';
             print '<div class="btn ' . $color . ' col-xs-6 col-sm-3 col-md-3 col-lg-3">';
             print '<a href="/artist/' . $v . '">';
-            print $ary_artist[$v]['en'];
+            print $ary_names[$v]['en'];
             print '</a></div>';
         }
             // <div class="btn btn-on5 col-xs-6 col-sm-3 col-md-3 col-lg-3"><a href="profile.html">Toshinobu Kubota</a></div>

@@ -3,6 +3,7 @@ class Term extends AppModel {
 	var $name = "Term";
 	var $useTable = 'terms';
 	var $useDbConfig = 'dbwp';
+	var $primaryKey = 'term_id';
 
 	function getTerm($name) {
 		$term = $this->find('first', [

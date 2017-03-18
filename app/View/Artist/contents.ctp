@@ -22,6 +22,8 @@ $artist = 'kubota';
 </div>
 
 <?= view::element('part_artist_nav') ?>
+<?php
+/*
 <!-- Name Navigation -->
 <div id="namenav">
     <div class="container-txt">
@@ -65,13 +67,20 @@ $artist = 'kubota';
         </div>
     </div>
 </div>
-
-
+*/
+?>
 <!-- text Section -->
 <div id="text-section">
     <div class="container-txt">
     <?php
-    print $content['post_content'];
+    // ワードプレスに該当する投稿がなければ予備のページを呼び出す
+    if ($is_contents === true) {
+        print $content['post_content'];
+    } else {
+        $file_term = str_replace('/', '_', $term_name);
+        print view::element('content_' . $file_term);
+    }
+    
     /*
         <h2 class="artistnews4" >4月28日よりNHK-FMにてパーソナリティ番組スタート！</h2>
         <img src="img/portfolio/Kubota original.jpg" class="img-responsive">
@@ -130,28 +139,10 @@ $artist = 'kubota';
         </p>
     </div>
     */
-    ?>
 
 
-
+?>
 <!-- Pagination Section -->
-<div id="pagination-section">
-    <div class="container-txt"> 
-        <div class="pager">
-            <ul>
-                <li><a href="#">prev</a></li>
-                <li><span>1</span></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><span>...</span></li>
-                <li><a href="#">12</a></li>
-                <li><a href="#">next</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-
 <!-- label Section -->
 <div id="label-section">
     <div class="container-txt"> 

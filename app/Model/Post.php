@@ -3,6 +3,7 @@ class Post extends AppModel {
 	var $name = "Post";
 	var $useTable = 'posts';
 	var $useDbConfig = 'dbwp';
+	var $primaryKey = 'ID';
 
 	function getPostsById($ids) {
 		$posts = $this->find('all', [

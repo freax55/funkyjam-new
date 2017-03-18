@@ -3,6 +3,7 @@ class Postmeta extends AppModel {
 	var $name = "Postmeta";
 	var $useTable = 'postmeta';
 	var $useDbConfig = 'dbwp';
+	var $primaryKey = 'meta_id';
 
 	// var $belongsTo = array(
 	// 	"Post" => array(
