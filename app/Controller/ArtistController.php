@@ -38,18 +38,10 @@ class ArtistController extends AppController {
 				$content = $posts[0]['Post'];
 			} else {
 				$is_contents = false;
-				// throw new NotFoundException();
 			}
 		} else {
 			$is_contents = false;
-			// throw new NotFoundException();
 		}
-		// $posts = $this->Post->getPostsById($ids);
-		// if($posts) {
-		// 	$content = $posts[0]['Post'];
-		// } else {
-		// 	throw new NotFoundException();
-		// }
 
 		// ページ表示データ
 		$this->pageInit();
