@@ -5,10 +5,10 @@
 <div id="namenav">
     <div class="container-txt">
         <div class="name">
-            <div class="">     
+            <div class="row resp">     
             <h1><?= $ary_names[$current]['en'] ?></h1>
             </div>
-            <div class="">
+            <div class="row resp">
                 <a href="https://www.facebook.com/toshinobukubota" target="_blank">
                 <i class="fa fa-facebook-official snsicon" aria-hidden="true"></i></a>
                 <a href="https://twitter.com/kubota_4_real" target="_blank">
@@ -22,7 +22,7 @@
 
 <div id="otherartist">
     <div class="container-txt">
-        <div class="artistnav">
+        <div class="row resp artistnav">
         <?php
         foreach($ary_params as $v) {
             $color = ($v == $current)?'btn-on5':'btn-on4';
@@ -43,7 +43,7 @@
 
 <div id="artistnav">
     <div class="container-txt">
-        <div class="artistnav">
+        <div class="row resp artistnav">
             <div class="btn btn-on col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/<?= $current ?>">News</a></div>
             <div class="btn btn-artist col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/<?= $current ?>/profile">Profile</a></div>
             <div class="btn btn-artist col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/<?= $current ?>/discography">Discography</a></div>
