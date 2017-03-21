@@ -1,8 +1,3 @@
-<?php
-$artist = 'kubota';
-// pr($current);
-?>
-
 <!-- Header -->
 <div class="news">
     <header class="text-center">

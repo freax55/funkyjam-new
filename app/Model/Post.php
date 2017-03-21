@@ -23,4 +23,19 @@ class Post extends AppModel {
 		}
 	}
 
+	function getNewsOptionsById($ids) {
+		$options = array(
+			'conditions' => [
+				'ID' => $ids,
+				'post_status' => 'publish',
+				'post_type' => 'post'
+			],
+			'order' => [
+				'ID' => 'ASC'
+			],
+			'limit' => 1
+		);
+		return $options;
+	}
+
 }
