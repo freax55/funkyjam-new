@@ -1521,6 +1521,18 @@ margin-top: 30px;
 margin-bottom: 10px;
 text-align: center;
 }
+.footer-text{
+font-size: 16px;
+margin-top: 20px;
+margin-bottom: 0px;
+text-align: center;
+}
+.footer-text2{
+font-size: 16px;
+margin-top: 0px;
+margin-bottom: 20px;
+text-align: center;
+}
 
 .ggmap iframe,
 .ggmap object,

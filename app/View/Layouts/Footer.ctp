@@ -1,8 +1,10 @@
 
 <div id="footer">
-	<div class="container" style="text-align: center;">
-		<p style="margin-bottom: 0px;">Copyright &copy; Funky Jam All rights reserved.</p>
-		<a href="privacy">Privacy Policy</a>
+	<div class="container">
+		<p class="footer-text">Copyright &copy; Funky Jam All rights reserved.</p>
+	</div>
+	<div class="footer-text2">
+		<a href="/privacy">Privacy Policy</a>
 	</div>
 </div>
 
