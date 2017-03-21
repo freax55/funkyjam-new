@@ -9,9 +9,11 @@
 
 <div id="breadcrumb">
 	<div class="container">
-		<div class="col-md-8 col-md-offset-2 leftzero">
-		<?= $this->BreadCrumb->show($path) ?>
-		</div>
+        <div class="row">
+    		<div class="col-md-8 col-md-offset-2 leftzero">
+    		<?= $this->BreadCrumb->show($path) ?>
+    		</div>
+        </div>
 	</div>
 </div>
 
