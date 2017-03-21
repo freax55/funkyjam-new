@@ -640,6 +640,14 @@ table th[class*="col-"] {
   margin-left: auto;
   background-color: #f6f6f6;
 }
+
+@media (max-width: 544px) {
+  .navbar-nav {
+  margin: 7.5px -15px;
+  background-color: rgba(0,0,0,0.8);
+  }
+}
+
 @media (min-width: 768px) {
   .container-txt {
     width: 760px;
