@@ -1,4 +1,5 @@
-<div id="footer" style="padding-bottom: 20px;">
+
+<div id="footer">
 	<div class="container" style="text-align: center;">
 		<p style="margin-bottom: 0px;">Copyright &copy; Funky Jam All rights reserved.</p>
 		<a href="privacy">Privacy Policy</a>

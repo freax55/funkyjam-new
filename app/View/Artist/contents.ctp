@@ -149,7 +149,6 @@ $artist = 'kubota';
             <a href="http://www.sonymusic.co.jp/artist/ToshinobuKubota/" target="_blank">
             <img src="img/portfolio/Sony-Logo.jpg" class="img-responsive" alt="Project Title"> </a> 
         </div>
-        </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
             <a href="http://cooljapanmusic.com/toshi-kubota-update/" target="_blank">
             <img src="img/portfolio/Englis-Kubota.jpg" class="img-responsive" alt="Project Title"> </a>

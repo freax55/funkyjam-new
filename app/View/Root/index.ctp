@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row topthirty">
             <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
-                <a href="baribaricrew.html">
+                <a href="/baribaricrew">
                 <img src="img/portfolio/Baribari-top.jpg" class="img-responsive" alt="Bari Bari Crew"> </a> 
             </div>
             <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
@@ -24,7 +24,7 @@
                 <img src="img/portfolio/morinobanner.jpg" class="img-responsive" alt="Mori no Nakama"> </a> 
             </div>
             <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
-                <a href="https://www.funkyjam.com/shop">
+                <a href="/shop">
                 <img src="img/portfolio/FJ-Banner.jpg" class="img-responsive" alt="FJ Shop"> </a> 
             </div>
         </div>
@@ -231,19 +231,19 @@
                     <p>久保田利伸、森大輔、浦嶋りんこ、ファンキー・ジャムアーティストの熱い最新情報をいち早くお届けします！Twitterでしか見れない写真も多数ありますので、是非フォローして下さい。</p>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a class="home-introduction-item" href="mailmagazine.html" ><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <a class="home-introduction-item" href="/mailmagazine" ><i class="fa fa-envelope-o" aria-hidden="true"></i>
                     <h3 class="top-ten">Mail Magazine</h4>
                     </a>
                     <p>ファンキー・ジャムのアーティストの最新情報を、いち早く皆様にメールマガジンでお届け致します。登録は無料で、簡単な質問にお答え頂くだけで、すぐに登録することが出来ます。</p>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a class="home-introduction-item" href="art.html" ><i class="fa fa-pencil" aria-hidden="true"></i>
+                    <a class="home-introduction-item" href="/art" ><i class="fa fa-pencil" aria-hidden="true"></i>
                     <h3 class="top-ten">Airt Master</h4>
                     </a>
                     <p>久保田利伸のFC会報表誌イラストでお馴染みの墨絵アーチストや、人形作家、さらに、政治＆スポーツ＆グルメから芸能まで、多彩な分野を広く浅く知る文筆系ラーメン屋をご紹介。</p>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a class="home-introduction-item" href="fanletter.html" ><i class="fa fa-comment-o" aria-hidden="true"></i>
+                    <a class="home-introduction-item" href="/fanletter" ><i class="fa fa-comment-o" aria-hidden="true"></i>
                     <h3 class="top-ten">Fan Letter</h4>
                     </a>
                     <p>ファンキー・ジャム所属の久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULへのファンレターはこちらからお願いします。</p>

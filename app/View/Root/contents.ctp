@@ -77,7 +77,7 @@ print $content['Post']['post_content'];
                 <div class="col-sm-6 col-md-3 col-lg-3 web">
                     <article class="portfolio-item">
                         <div class="hover-bg">
-                            <a href="kubota-news.html">
+                            <a href="http://funkyjam.dev/artist/kubota">
                             <div class="hover-text">
                                 <h4>Toshinobu Kubota</h4>
                                 <small>久保田利伸</small>
@@ -91,7 +91,7 @@ print $content['Post']['post_content'];
                 <div class="col-sm-6 col-md-3 col-lg-3 web">
                     <article class="portfolio-item">
                         <div class="hover-bg"> 
-                            <a href="img/portfolio/Urashima_Top.jpg">
+                            <a href="http://funkyjam.dev/artist/urashima">
                                 <div class="hover-text">
                                 <h4>Rinko Urashima</h4>
                                 <small>浦嶋りんこ</small>
@@ -105,7 +105,7 @@ print $content['Post']['post_content'];
                 <div class="col-sm-6 col-md-3 col-lg-3 web">
                     <article class="portfolio-item">
                         <div class="hover-bg"> 
-                            <a href="img/portfolio/MoriTop.jpg">
+                            <a href="http://funkyjam.dev/artist/mori">
                                 <div class="hover-text">
                                 <h4>Daisuke Mori</h4>
                                 <small>森大輔</small>
@@ -119,7 +119,7 @@ print $content['Post']['post_content'];
                 <div class="col-sm-6 col-md-3 col-lg-3 web">
                     <article class="portfolio-item">
                         <div class="hover-bg"> 
-                            <a href="img/portfolio/BROWN-EYED-SOUL_Top.jpg">
+                            <a href="http://funkyjam.dev/artist/bes">
                                 <div class="hover-text">
                                 <h4>BROWN EYED SOUL</h4>
                                 <small>ブラウン・アイド・ソウル</small>
@@ -152,19 +152,19 @@ print $content['Post']['post_content'];
                     <p>久保田利伸、森大輔、浦嶋りんこ、ファンキー・ジャムアーティストの熱い最新情報をいち早くお届けします！Twitterでしか見れない写真も多数ありますので、是非フォローして下さい。</p>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a class="home-introduction-item" href="mailmagazine.html" ><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <a class="home-introduction-item" href="/mailmagazine" ><i class="fa fa-envelope-o" aria-hidden="true"></i>
                     <h3 class="top-ten">Mail Magazine</h4>
                     </a>
                     <p>ファンキー・ジャムのアーティストの最新情報を、いち早く皆様にメールマガジンでお届け致します。登録は無料で、簡単な質問にお答え頂くだけで、すぐに登録することが出来ます。</p>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a class="home-introduction-item" href="art.html" ><i class="fa fa-pencil" aria-hidden="true"></i>
+                    <a class="home-introduction-item" href="/art" ><i class="fa fa-pencil" aria-hidden="true"></i>
                     <h3 class="top-ten">Airt Master</h4>
                     </a>
                     <p>久保田利伸のFC会報表誌イラストでお馴染みの墨絵アーチストや、人形作家、さらに、政治＆スポーツ＆グルメから芸能まで、多彩な分野を広く浅く知る文筆系ラーメン屋をご紹介。</p>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a class="home-introduction-item" href="fanletter.html" ><i class="fa fa-comment-o" aria-hidden="true"></i>
+                    <a class="home-introduction-item" href="/fanletter" ><i class="fa fa-comment-o" aria-hidden="true"></i>
                     <h3 class="top-ten">Fan Letter</h4>
                     </a>
                     <p>ファンキー・ジャム所属の久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULへのファンレターはこちらからお願いします。</p>
