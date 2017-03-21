@@ -209,6 +209,9 @@ th {
   text-align: left; 
   vertical-align: middle;"
 }
+th {
+  width:100px;
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -626,6 +629,10 @@ table th[class*="col-"] {
     }
 }
 
+.pad-zero {
+  padding: 0px 0;
+  background-color: #f6f6f6;
+}
 .container-txt {
   padding-right: 15px;
   padding-left: 15px;

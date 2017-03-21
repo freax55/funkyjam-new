@@ -7,15 +7,14 @@ $artist = 'kubota';
 <div class="news">
     <header class="text-center">
         <div class="artist-intro-text">
-        <div class="clearfix">
         </div>
     </header>
 </div>
 
 
 <div id="breadcrumb">
-    <div class="container">
-        <div class="col-md-8 col-md-offset-2 leftzero">
+    <div class="container-txt">
+        <div class="row resp"> 
         <?= $this->BreadCrumb->show($path) ?>
         </div>
     </div>
@@ -148,11 +147,12 @@ $artist = 'kubota';
     <div class="container-txt"> 
         <div class="col-sm-12 col-md-6 col-lg-6">
             <a href="http://www.sonymusic.co.jp/artist/ToshinobuKubota/" target="_blank">
-            <img src="img/portfolio/Sony-Logo.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+            <img src="img/portfolio/Sony-Logo.jpg" class="img-responsive" alt="Project Title"> </a> 
+        </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
             <a href="http://cooljapanmusic.com/toshi-kubota-update/" target="_blank">
-            <img src="img/portfolio/Englis-Kubota.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+            <img src="img/portfolio/Englis-Kubota.jpg" class="img-responsive" alt="Project Title"> </a>
         </div>
     </div>
 </div>
@@ -164,6 +164,7 @@ $artist = 'kubota';
         <i class="fa fa-angle-double-up" aria-hidden="true"></i>
     </a>
 </div>
+
 
 
 
