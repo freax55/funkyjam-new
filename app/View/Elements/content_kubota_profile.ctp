@@ -2,7 +2,7 @@
 <div id="artist-page-section">
     <p class="artist-tit">Profile</p>
     <img src="http://funkyjam.dev/img/Kubota-profile.jpg" alt="久保田利伸" class="img-responsive size-full" />
-    <h3 class="text-center">久保田利伸</h3>
+    <h2 class="profile-title">久保田利伸</h2>
     <p class="text-center">
     くぼたとしのぶ<br>
     静岡県出身　7月24日生まれ</p>
