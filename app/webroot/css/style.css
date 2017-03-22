@@ -244,6 +244,13 @@ hr {
 .artistnav a:hover {
 	color: #f6f6f6;
 }
+.artistnav2 a {
+	color: #111;
+	text-decoration:none;
+}
+.artistnav2 a:hover {
+	color: #c1c1c1;
+}
 .btn-baribari a {
 	color: #f6f6f6;
 	text-decoration:none;
@@ -678,6 +685,10 @@ img.team-img {
 	background-color: #f6f6f6;
 }
 #artistnav {
+	padding: 0px 0;
+	background-color: #f6f6f6;
+}
+#artistnav2 {
 	padding: 0px 0;
 	background-color: #f6f6f6;
 }
