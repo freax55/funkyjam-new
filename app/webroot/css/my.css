@@ -607,6 +607,9 @@ table th[class*="col-"] {
   padding-left: 15px;
 }
 
+p {
+  margin: 0 0 5px;
+}
 
 @media only screen and (max-width:420px){
     .table tbody tr{
