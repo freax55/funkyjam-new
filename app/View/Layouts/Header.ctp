@@ -46,11 +46,11 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                 <li><a href="/">Home</a></li>
-                <li><a href="company">Company</a></li>
-                <li><a href="shop">FJ Shop</a></li>
-                <li><a href="recruit">Recruit</a></li>
-                <li><a href="scout">Scout</a></li>
-                <li><a href="studio">Studio</a></li>
+                <li><a href="/company">Company</a></li>
+                <li><a href="/shop">FJ Shop</a></li>
+                <li><a href="/recruit">Recruit</a></li>
+                <li><a href="/scout">Scout</a></li>
+                <li><a href="/studio">Studio</a></li>
                 <li><a href="/#contact-section">Contact</a></li>
                 <li><a href="http://cooljapanmusic.com/toshi-kubota-update/" ><span style="color:#FF9933;">English</span></a></li>
                 </ul>

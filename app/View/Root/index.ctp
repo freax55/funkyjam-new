@@ -32,26 +32,24 @@
 </div>
 
 
-
 <!-- Artist Section -->
 <div id="artist-section-top">
     <div class="container">
         <h2>Artist</h2>
             <div class="row">
-                <div class="col-sm-6 col-md-3 col-lg-3 web">
-                    <article class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="/artist/kubota">
-                            <div class="hover-text">
-                                <h4>Toshinobu Kubota</h4>
-                                <small>久保田利伸</small>
-                            <div class="clearfix">
-                            </div>
-                            </div>
-                            <img src="img/portfolio/KubotaTop.jpg" class="img-responsive" alt="Toshinobu Kubota"></a> 
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <article class="home-news-item sample5">
+                        <a class="showf" href="/artist/kubota">
+                        <img src="img/portfolio/KubotaTop.jpg" class="img-responsive" alt="Toshinobu Kubota">   
+                        <div class="home-news-overlay f18">
+                        <h3 class="en">Toshinobu Kubota</h3>
+                            <div class="mask">
+                            <h3 class="caption">久保田利伸</h3>
+                                </div>
                         </div>
-                    </article>
                 </div>
+                        </a>
+                    </article>
                 <div class="col-sm-6 col-md-3 col-lg-3 web">
                     <article class="portfolio-item">
                         <div class="hover-bg"> 

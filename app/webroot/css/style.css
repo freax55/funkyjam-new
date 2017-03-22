@@ -1069,6 +1069,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     font-size: 16px;
 }
 
+
 .home-news-overlay h3 {
     font-size: 15px;
     font-weight: 900;
@@ -1078,6 +1079,54 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     right: 30px;
     bottom: 30px;
     transition: all 0.5s ease;
+}
+.f18 h3{
+	font-size: 19px;
+}
+a.showf h3.en{ 
+	display:inline; 
+}
+a.showf:hover h3.en{ 
+	display:none; 
+}
+a.showf h3.jp{ 
+	display:none; 
+}
+a.showf:hover h3.jp{ 
+	display:inline; 
+	font-weight: 900;
+    margin-bottom: 0;
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    transition: all 0.5s ease;
+    -webkit-transform: scale(2);
+}
+
+.sample5 {
+	overflow: hidden;
+	position: relative;
+}
+.sample5 .caption {
+	font-size: 150%;
+	color: #fff;
+}
+.sample5 .mask {
+	width: 100%;
+	height:	100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.1);
+	-webkit-transition:	all 0.4s ease;
+	transition:	all 0.4s ease;
+	-webkit-transform: scale(0);	/* 大きさを０にして表示しない */
+	transform: scale(0);
+}
+.sample5:hover .mask {
+	-webkit-transform:	scale(1);	/* 大きさを１にして表示する */
+	transform:		scale(1);
 }
 
 .home-news-overlay:hover h3, home-news-overlay:focus h3 {
@@ -1557,6 +1606,52 @@ height: 100%;
 
 .padding-zero{
 	padding: 0px 0px 0px 0px;
+}
+
+
+.button span {
+	display: inline-block;
+	position: absolute;
+	width: 200px;
+	height: 60px;
+	border: 2px solid #333;
+	text-align: center;
+	line-height: 60px;
+}
+.button span:nth-child(1) {
+	background-color: #fff;
+	color: #333;
+
+}
+.button span:nth-child(2) {
+	background-color: #333;
+	color: #fff;
+
+}
+.button:hover span:nth-child(2) {
+	display: none;
+}
+.button span {
+	display: inline-block;
+	position: absolute;
+	width: 200px;
+	height: 60px;
+	border: 2px solid #333;
+	text-align: center;
+	line-height: 60px;
+}
+.button span:nth-child(1) {
+	background-color: #fff;
+	color: #333;
+ 
+}
+.button span:nth-child(2) {
+	background-color: #333;
+	color: #fff;
+ 
+}
+.button:hover span:nth-child(2) {
+	display: none;
 }
 
 @-webkit-keyframes blink{
