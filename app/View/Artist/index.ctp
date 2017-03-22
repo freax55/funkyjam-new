@@ -13,12 +13,14 @@ $artist = 'kubota';
 
 	<div id="breadcrumb">
 		<div class="container">
-			<div class="col-md-8 col-md-offset-2 leftzero">
-				<ol class="breadcrumb">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Toshinobu Kubota</a></li>
-					<li class="active">News</li>
-				</ol>
+			<div class="row resp">
+				<div class="col-md-8 col-md-offset-2">
+					<ol class="breadcrumb">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Toshinobu Kubota</a></li>
+						<li class="active">News</li>
+					</ol>
+				</div>
 			</div>
 		</div>
 	</div>
