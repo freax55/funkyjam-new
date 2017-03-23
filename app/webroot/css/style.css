@@ -1052,6 +1052,9 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     text-align: center;
     padding: 30px 30px;
 }
+.blk-back {
+    background: rgba(0, 0, 0, 0.2);
+}
 .home-news-item>a:hover .home-news-overlay{
     background: rgba(0, 0, 0, 0.7);
 }
@@ -1081,10 +1084,11 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     transition: all 0.5s ease;
 }
 .f18 h3{
-	font-size: 19px;
+	font-size: 21px;
 }
 a.showf h3.en{ 
 	display:inline; 
+	color: #fff;
 }
 a.showf:hover h3.en{ 
 	display:none; 
@@ -1103,13 +1107,13 @@ a.showf:hover h3.jp{
     transition: all 0.5s ease;
     -webkit-transform: scale(2);
 }
-
+ 
 .sample5 {
 	overflow: hidden;
 	position: relative;
 }
 .sample5 .caption {
-	font-size: 150%;
+	font-size: 200%;
 	color: #fff;
 }
 .sample5 .mask {

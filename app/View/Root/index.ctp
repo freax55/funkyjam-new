@@ -39,58 +39,55 @@
             <div class="row">
                 <div class="col-sm-6 col-md-3 col-lg-3">
                     <article class="home-news-item sample5">
-                        <a class="showf" href="/artist/kubota">
-                        <img src="img/portfolio/KubotaTop.jpg" class="img-responsive" alt="Toshinobu Kubota">   
-                        <div class="home-news-overlay f18">
-                        <h3 class="en">Toshinobu Kubota</h3>
-                            <div class="mask">
-                            <h3 class="caption">久保田利伸</h3>
-                                </div>
+                    <a class="showf" href="/artist/kubota">
+                    <img src="img/portfolio/KubotaTop.jpg" class="img-responsive" alt="Toshinobu Kubota">
+                    <div class="home-news-overlay blk-back f18">
+                    <h3 class="en">Toshinobu Kubota</h3>
+                        <div class="mask">
+                        <h3 class="caption">久保田利伸</h3>
                         </div>
-                </div>
-                        </a>
-                    </article>
-                <div class="col-sm-6 col-md-3 col-lg-3 web">
-                    <article class="portfolio-item">
-                        <div class="hover-bg"> 
-                            <a href="/artist/urashima">
-                                <div class="hover-text">
-                                <h4>Rinko Urashima</h4>
-                                <small>浦嶋りんこ</small>
-                            <div class="clearfix">
-                            </div>
-                            </div>
-                            <img src="img/portfolio/Urashima_Top.jpg" class="img-responsive" alt="Rinko Urashima"></a> 
-                        </div>
+                    </div>
+                    </a>
                     </article>
                 </div>
-                <div class="col-sm-6 col-md-3 col-lg-3 web">
-                    <article class="portfolio-item">
-                        <div class="hover-bg"> 
-                            <a href="/artist/mori">
-                                <div class="hover-text">
-                                <h4>Daisuke Mori</h4>
-                                <small>森大輔</small>
-                            <div class="clearfix">
-                            </div>
-                            </div>
-                            <img src="img/portfolio/MoriTop.jpg" class="img-responsive" alt="Daisuke Mori"></a> 
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <article class="home-news-item sample5">
+                    <a class="showf" href="/artist/urashima">
+                    <img src="img/portfolio/Urashima_Top.jpg" class="img-responsive" alt="Rinko Urashima">
+                    <div class="home-news-overlay blk-back f18">
+                    <h3 class="en">Rinko Urashima</h3>
+                        <div class="mask">
+                        <h3 class="caption">浦嶋りんこ</h3>
                         </div>
+                    </div>
+                    </a>
                     </article>
                 </div>
-                <div class="col-sm-6 col-md-3 col-lg-3 web">
-                    <article class="portfolio-item">
-                        <div class="hover-bg"> 
-                            <a href="/artist/bes">
-                                <div class="hover-text">
-                                <h4>BROWN EYED SOUL</h4>
-                                <small>ブラウン・アイド・ソウル</small>
-                            <div class="clearfix">
-                            </div>
-                            </div>
-                            <img src="img/portfolio/BROWN-EYED-SOUL_Top.jpg" class="img-responsive" alt="BROWN EYED SOUL"> </a> 
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <article class="home-news-item sample5">
+                    <a class="showf" href="/artist/mori">
+                    <img src="img/portfolio/MoriTop.jpg" class="img-responsive" alt="Daisuke Mori">
+                    <div class="home-news-overlay blk-back f18">
+                    <h3 class="en">Daisuke Mori</h3>
+                        <div class="mask">
+                        <h3 class="caption">森大輔</h3>
                         </div>
-                    </article> 
+                    </div>
+                    </a>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <article class="home-news-item sample5">
+                    <a class="showf" href="/artist/bes">
+                    <img src="img/portfolio/BROWN-EYED-SOUL_Top.jpg" class="img-responsive" alt="BROWN EYED SOUL">
+                    <div class="home-news-overlay blk-back f18">
+                    <h3 class="en">BROWN EYED SOUL</h3>
+                        <div class="mask">
+                        <h3 class="caption">ブラウン・<br>アイド・ソウル</h3>
+                        </div>
+                    </div>
+                    </a>
+                    </article>
                 </div>
             </div>
         </div>
