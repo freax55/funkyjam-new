@@ -248,9 +248,10 @@
     </div>
 </div>
 
-<div id="media-section">
+<div id="Media-section">
     <div class="container"> 
         <div class="section-title">
+            <h2>Media</h2>
             <div class="row">
                 <div class="col-sm-6 col-md-3 col-lg-3">
                     <div class="portfolio-item">
