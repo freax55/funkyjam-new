@@ -11,7 +11,7 @@ class RootController extends AppController {
 		$this->pageInit();
 		// $pst = $this->Postmeta->find('all');
 
-$this->prd($_POST);
+$this->prd($_REQUEST);
 
 		// $this->prd($pst);
 		$this->set([
