@@ -1,11 +1,8 @@
 
 <!-- Header -->
-<div class="other">
-    <header class="text-center">
-        <div class="artist-intro-text clearfix">
-        </div>
-    </header>
-</div>
+<header class="text-center" name="home">
+    <img class="other-banner" src="/img/company-header-bg.jpg" alt="Funkyjam">
+</header>
 
 <div id="breadcrumb">
 	<div class="container">

@@ -138,7 +138,6 @@ a {
 }
 .container a {
 	text-decoration:none;
-	color: #111111;
 }
 .storehead3 {
 	color: #111111;
@@ -321,68 +320,7 @@ hr {
    	padding-bottom: 4px;
 }
 
-/* Home Style */
-header {
-	background: url(../img/artist-header-bg.jpg) no-repeat bottom center;
-	background-size: cover;
-	color: #cfcfcf;
-	position: relative;
-	height: 200px;
-	width: 100%;
-}
-.other header {
-	background: url(../img/company-header-bg.jpg) no-repeat bottom center;
-	background-size: cover;
-	color: #cfcfcf;
-	position: relative;
-	height: 200px;
-	width: 100%;
-}
-.news header {
-	background: url(../img/artist-header-bg.jpg) no-repeat bottom center;
-	background-size: cover;
-	color: #cfcfcf;
-	position: relative;
-	height: 200px;
-	width: 100%;
-}
-.premium header {
-	background: url(../img/premium-header-bg.jpg) no-repeat bottom center;
-	background-size: cover;
-	color: #cfcfcf;
-	position: relative;
-	height: 200px;
-	width: 100%;
-}
-.store header {
-	background: url(../img/store-header-bg.jpg) no-repeat bottom center;
-	background-size: cover;
-	color: #cfcfcf;
-	position: relative;
-	height: 200px;
-	width: 100%;
-}
-.home header {
-	background: url(../img/header-bg.jpg) no-repeat bottom center;
-	background-size: cover;
-	color: #cfcfcf;
-	position: relative;
-	height: 500px;
-}
-.urashima header {
-	background: url(../img/urashima-header-bg.jpg) no-repeat bottom center;
-	background-size: cover;
-	color: #cfcfcf;
-	position: relative;
-	height: 500px;
-}
-.mori header {
-	background: url(../img/mori-header-bg.jpg) no-repeat bottom center;
-	background-size: cover;
-	color: #cfcfcf;
-	position: relative;
-	height: 500px;
-}
+
 header p {
 	color: rgba(255,255,255,0.5);
 	font-size: 18px;
@@ -392,7 +330,7 @@ header p {
 }
 .intro-text {
 	position: relative;
-	padding-top: 380px;
+	padding-top: 220px;
 	padding-right: 0;
 	padding-left: 0;
 	padding-bottom: 0px;
@@ -1771,4 +1709,27 @@ height: 100%;
 .icon-youtube:before {
   content: "\ea9d";
 }
+.top-banner {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.other-banner {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+}
+.company-banner {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+}
+
 

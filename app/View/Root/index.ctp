@@ -1,14 +1,19 @@
 
 
 <!-- Header -->
-<div class="home">
-    <header class="text-center carousel" id="carousel-example" data-ride="carousel">
-        <div class="intro-text carousel slide" data-interval="2000">
-            <h1>THE BADDEST</h1>
-            <p>久保田利伸デビュー30周年特別企画第2弾</p>
+<header class="text-center" name="home">
+    <div class="container">
+        <div class="row">
+            <img class="top-banner" src="../img/header-bg.jpg" alt="久保田利伸デビュー30周年特別企画第2弾">
+            <div class="intro-text bottomthirty">
+                <h1>THE BADDEST</h1>
+                <p>久保田利伸デビュー30周年特別企画第2弾</p>
+                <div class="clearfix"></div>
+                <a href="" class="btn btn-default top">Learn More</a> 
+            </div>
         </div>
-    </header>
-</div>
+    </div>
+</header>
 
 
 <!-- Artist Section -->

@@ -1,10 +1,7 @@
 <!-- Header -->
-<div class="news">
-    <header class="text-center">
-        <div class="artist-intro-text">
-        </div>
-    </header>
-</div>
+<header class="text-center" name="home">
+    <img class="other-banner" src="/img/artist-header-bg.jpg" alt="Funkyjam">
+</header>
 
 
 <div id="breadcrumb">
