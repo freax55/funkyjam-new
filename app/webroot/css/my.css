@@ -666,6 +666,21 @@ p {
     width: 760px;
   }
 }
-
-
+@media (max-width: 768px){
+  .leftbar {
+    padding-right:2.5px;
+    padding-left:15px;
+}
+}
+@media (max-width: 768px){
+  .rightbar {
+    padding-right:15px;
+    padding-left:2.5px;
+}
+}
+@media (max-width: 768px){
+  .banner-pad {
+    padding: 0px 0px 0px 0px;
+}
+}
 
