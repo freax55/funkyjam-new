@@ -1730,5 +1730,10 @@ height: 100%;
     left: 0;
     top: 0;
 }
-
+.navbar-brand-top {
+  float: left;
+  height: 50px;
+  padding: 10px 15px 15px 15px;
+  line-height: 20px;
+}
 
