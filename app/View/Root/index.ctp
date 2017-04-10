@@ -252,28 +252,28 @@
             <div class="row banner-pad">
                 <div class="col-xs-6 col-md-3 col-lg-3 leftbar">
                     <div class="portfolio-item">
-                    <a href="https://www.facebook.com/toshinobukubota" target="_blank" >
+                    <a href="/artist/kubota/news/" target="_blank" >
                     <img src="img/portfolio/TK_media.jpg" class="img-responsive" alt="Toshinobu Kubota Facebook"> 
                     </a> 
                     </div>
                 </div>
                 <div class="col-xs-6 col-md-3 col-lg-3 rightbar">
                     <div class="portfolio-item">
-                    <a href="https://www.facebook.com/urashimarinko" target="_blank" >
+                    <a href="/artist/urashima/news" target="_blank" >
                     <img src="img/portfolio/RU_media.jpg" class="img-responsive" alt="Rinko Urashima Facebook"> 
                     </a> 
                     </div>
                 </div>
                 <div class="col-xs-6 col-md-3 col-lg-3 leftbar">
                     <div class="portfolio-item">
-                    <a href="https://www.facebook.com/moridaisukeofficial" target="_blank" >
+                    <a href="/artist/mori/news" target="_blank" >
                     <img src="img/portfolio/DM_media.jpg" class="img-responsive" alt="Daisuke Mori Facebook"> 
                     </a> 
                     </div>
                 </div>
                 <div class="col-xs-6 col-md-3 col-lg-3 rightbar">
                     <div class="portfolio-item">
-                    <a href="https://www.facebook.com/BESofficial" target="_blank" >
+                    <a href="/artist/bes/news" target="_blank" >
                     <img src="img/portfolio/BES_media.jpg" class="img-responsive" alt="BSE Facebook"> 
                     </a> 
                     </div>
@@ -299,7 +299,7 @@
                     <img src="img/portfolio/morinobanner.jpg" class="img-responsive" alt="Mori no Nakama"> </a> 
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
-                    <a href="https://www.funkyjam.com/premium/">
+                    <a href="http://www.funkyjam.com/premium/">
                     <img src="img/portfolio/Premium-Banner.jpg" class="img-responsive" alt="FJ Premium"> </a> 
                 </div>
             </div>
