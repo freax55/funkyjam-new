@@ -207,15 +207,15 @@ class ArtistController extends AppController {
 		$this->render('contents');
 	}
 
-	public function discography()
-	{
-		$this->pageInit();
-		$this->set([
-			'title' => 'fankyjam',
-			'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',
-		]);
-		$this->render('contents');
-	}
+	// public function discography()
+	// {
+	// 	$this->pageInit();
+	// 	$this->set([
+	// 		'title' => 'fankyjam',
+	// 		'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',
+	// 	]);
+	// 	$this->render('contents');
+	// }
 
 	// public function performance()
 	// {
@@ -286,36 +286,36 @@ class ArtistController extends AppController {
 		$path = explode('/', $url);
 		$controll = $path[0];
 		if(isset($path[1]) && isset(array_flip($ary_params)[$path[1]])) {
-
-			$action = isset($path[2])?$path[2]:'index';//str_replace(array_merge($ary_path,[$controller, '/']), ['', '', '', '', '', ''], $url);
+			$action = !empty($path[2])?$path[2]:'index';//str_replace(array_merge($ary_path,[$controller, '/']), ['', '', '', '', '', ''], $url);
 			$this->set([
 				'ary_params' => $ary_params,
 				'ary_names' => $ary_names,
 				'current' => $path[1],
+				'action' => $action
 			]);
-			return array('params' => $ary_params, 'names' => $ary_names, 'controller' => $path[0], 'current' => $path[1], 'action' => $path[2]);
+			return array('params' => $ary_params, 'names' => $ary_names, 'controller' => $path[0], 'current' => $path[1], 'action' => $action);
 		} else {
 			throw new NotFoundException();
 		}
 	}
 
-	function makefile(){
-		$terms = $this->Term->find('list', [
-			'conditions' => [
-				'Term.name LIKE ' => '%' . '/' . '%',
-			],
-			'fields' => [
-				'name'
-			],
-			'recursive' => -1
-		]);
+	// function makefile(){
+	// 	$terms = $this->Term->find('list', [
+	// 		'conditions' => [
+	// 			'Term.name LIKE ' => '%' . '/' . '%',
+	// 		],
+	// 		'fields' => [
+	// 			'name'
+	// 		],
+	// 		'recursive' => -1
+	// 	]);
 
-		foreach($terms as $k => $v) {
-			$terms[$k] = str_replace('/', '_', $v);
-			exec('touch /Users/yasushi/Projects/funkyjam-new/app/View/Elements/content_' . str_replace('/', '_', $v) . '.ctp');
-			exec("echo 'fix contents' | tee /Users/yasushi/Projects/funkyjam-new/app/View/Elements/content_" . str_replace('/', '_', $v) . '.ctp');
-		}
-	}
+	// 	foreach($terms as $k => $v) {
+	// 		$terms[$k] = str_replace('/', '_', $v);
+	// 		exec('touch /Users/yasushi/Projects/funkyjam-new/app/View/Elements/content_' . str_replace('/', '_', $v) . '.ctp');
+	// 		exec("echo 'fix contents' | tee /Users/yasushi/Projects/funkyjam-new/app/View/Elements/content_" . str_replace('/', '_', $v) . '.ctp');
+	// 	}
+	// }
 
 
 }

@@ -399,48 +399,6 @@ class CommonHelper extends AppHelper {
 		return $countList;
 	}
 
-	function getRibbon($plan_id=null, $founded=null, $created=null, $call_per=0){
-		if ($plan_id != null) {
-			$date_founded = $this->dateTime2UnixTime($founded . ' 00:00:00');
-			$date_issue   = $this->dateTime2UnixTime($created);
-			$date_now     = time();
-
-			// 登録日から一週間以内
-			if (($date_now - $date_issue) <= (86400 * 7)) {
-				$ribbon = '<div class="ribbon"><span class="ribbon-red">NEW</span></div>';
-			// Aプランで老舗は殿堂
-			} else if (($date_now - $date_founded) >= ((86400 * 365)) * 5 && $plan_id == 1) {
-				$ribbon = '<div class="ribbon"><span class="ribbon-gold">殿堂</span></div>';
-			// Aプランは超優良
-			} else if ($plan_id == 2) {
-				$ribbon = '<div class="ribbon"><span class="ribbon-silver">超優良</span></div>';
-			// Bプランは優良
-			} else if ($plan_id == 1) {
-				$ribbon = '<div class="ribbon"><span class="ribbon-bronze">優良</span></div>';
-			} else {
-				$ribbon = "";
-			}
-		} else {
-			if ($call_per == null) {
-				$ribbon = '<div class="ribbon"><span class="ribbon-default"><i class="fa fa-question-circle"></i> 不明</i></span></div>';
-			} else {
-				if ($call_per >= 51) {
-					$ribbon = '<div class="ribbon"><span class="ribbon-primary"><i class="fa fa-thumbs-up"></i> 呼べる</i></span></div>';
-				} else if ($call_per == 50) {
-					$ribbon = '<div class="ribbon"><span class="ribbon-default"><i class="fa fa-question-circle"></i> 不明</i></span></div>';
-				} else {
-					$ribbon = '<div class="ribbon"><span class="ribbon-danger"><i class="fa fa-thumbs-down"></i> 呼べない</i></span></div>';
-				}
-			}
-		}
-		return $ribbon;
-	}
-
-	function getRibbon2($type, $str=null){
-		$ribbon = '<p class="ribbon2">' . $str . '</p>';
-		return $ribbon;
-	}
-
 	function calendar($year='', $month='', $day='', $path=null) {
 		if (empty($year) && empty($month)) {
 			$year = date('Y');
@@ -549,28 +507,6 @@ EOM;
 		return $ua;
 	}
 
-	 /*
-	  * 駅IDから駅名（複数）を取得する
-	  */
-	 function getStations($pref_id, $pref, $station_ids=array()) {
-		$stations = array();
-	 	if (!empty($station_ids)) {
-			// JSONファイルから駅名（複数）を取得する
-			$json = file_get_contents(JSON_DIR_STATION . $pref_id . '.json');
-			$obj = json_decode($json, true);
-
-			foreach ($station_ids as $v) {
-				foreach ($obj as $v2) {
-					if ($v2['station_id'] == $v) {
-						$stations[] = '<a href="/' . $pref . '/station/' . $v2['station_id'] . '/">' . $v2['name'] . '</a>';
-						continue 2;
-					}
-				}
-			}
-	 	}
-		return $stations;
-	 }
-
 	// タグを受け取ったら各リンクの末尾に追加するタグリンクURLを取得する
 	function namedToTagUrl ($params) {
 		$named = '';
@@ -606,78 +542,6 @@ EOM;
 
 	function ifnotBlankReturn ($element) {
 		return ($element != '') ? $element : '';
-	}
-
-
-	// 都道府県ごとのcntを返す
-	function getShopCntPref($pref_cnt, $pref_id) {
-		foreach ($pref_cnt as $v) {
-			$v = $v['Prefecture'];
-			if ($pref_id == $v['id']) {
-				return $v['cnt'];
-			}
-		}
-	}
-
-	// 都道府県リンクリストを返す
-	function getList($pref_id_range=[], $prefs, $pref_cnt, $sort) {
-		$range = range($pref_id_range[0], $pref_id_range[1]);
-
-		// 地方ごとの都道府県配列を再作成する
-		foreach ($prefs as $pref_id => $pref) {
-			if (!in_array($pref_id, $range)) {
-				unset($prefs[$pref_id]);
-			}
-		}
-		//pr($prefs);
-		// 任意の都道府県でソートする
-		if ($sort) {
-			$new_prefs = [];
-			// ソート順を配列で指定する
-			if (in_array(13, $range)) {
-				// 首都圏
-				$pref_ids = [13, 14, 12, 11, 8, 10, 9];
-			} else if (in_array(1, $range)) {
-				// 北海道・東北
-				$pref_ids = [1, 2, 3, 4, 5, 6, 7];
-			} else if (in_array(15, $range)) {
-				// 北陸・甲信越
-				$pref_ids = [15, 16, 17, 18, 19, 20];
-			} else if (in_array(21, $range)) {
-				// 北陸・甲信越
-				$pref_ids = [21, 22, 23, 24];
-			} else if (in_array(27, $range)) {
-				// 関西
-				$pref_ids = [27, 25, 26, 28, 29, 30];
-			} else if (in_array(31, $range)) {
-				// 中国
-				$pref_ids = [33, 34, 35, 31, 32];
-			} else if (in_array(36, $range)) {
-				// 四国
-				$pref_ids = [36, 37, 38, 39];
-			} else if (in_array(40, $range)) {
-				// 九州・沖縄
-				$pref_ids = [40, 41, 42, 43, 44, 45, 46, 47];
-			}
-			// 任意の順序の都道府県配列を作成する
-			foreach ($pref_ids as $v) {
-				$new_prefs[$v] = $prefs[$v];
-			}
-			$prefs = $new_prefs;
-		}
-
-		// リストを組み立てる
-		$li  = '';
-		foreach ($prefs as $pref_id => $pref) {
-			$f_pref_id = sprintf('%02d', $pref_id);
-			$li.= '<td>';
-			$li.= '<input type="checkbox" name="Pref[' . $pref_id . ']" value="1" id="pref' . $f_pref_id . '" onclick="$(\'#boxPref' . $f_pref_id . '\').toggle(\'fast\');" class="va1">';
-			$li.= '<label for="pref' . $f_pref_id . '">' . $pref . '&nbsp;<span class="badge va1">' . $this->getShopCntPref($pref_cnt, $pref_id) . '</span></label>';
-			$li.= '</td>';
-		}
-		$li.= '';
-
-		return $li;
 	}
 
 	// URLに$elementを突っ込む
@@ -825,5 +689,16 @@ EOM;
 		} else {
 			return $words['n'];
 		}
+	}
+
+	function getContentList() {
+		$contents = array(
+			'index' => 'News',
+			'profile' => 'Profile',
+			'discography' => 'Discography',
+			'performance' => 'Performance',
+			'otherwork' => 'Other Works'
+		);
+		return $contents;
 	}
 }

@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <div id="namenav">
     <div class="container-txt">
         <div class="row">
@@ -21,8 +17,6 @@
         </div>
     </div>
 </div>
-
-
 <div id="otherartist">
     <div class="container-txt">
         <div class="row resp artistnav">
@@ -34,26 +28,22 @@
             print $ary_names[$v]['en'];
             print '</a></div>';
         }
-            // <div class="btn btn-on5 col-xs-6 col-sm-3 col-md-3 col-lg-3"><a href="profile.html">Toshinobu Kubota</a></div>
-            // <div class="btn btn-on4 col-xs-6 col-sm-3 col-md-3 col-lg-3"><a href="profile.html">Rinko Urashima</a></div>
-            // <div class="btn btn-on4 col-xs-6 col-sm-3 col-md-3 col-lg-3"><a href="discography.html">Daisuke Mori</a></div>
-            // <div class="btn btn-on4 col-xs-6 col-sm-3 col-md-3 col-lg-3"><a href="performance.html">Brown Eyed Soul</a></div>
-            ?>
+        ?>
         </div>
     </div>
 </div>
-
-
 <div id="artistnav">
     <div class="container-txt">
         <div class="row resp artistnav">
-            <div class="btn btn-on col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/<?= $current ?>">News</a></div>
-            <div class="btn btn-artist col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/<?= $current ?>/profile">Profile</a></div>
-            <div class="btn btn-artist col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/<?= $current ?>/discography">Discography</a></div>
-            <div class="btn btn-artist col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/<?= $current ?>/performance">Performance</a></div>
-            <div class="btn btn-artist col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/<?= $current ?>/otherwork">Other Work</a></div>
+            <?php
+            $list_contents =$this->common->getContentList();
+            foreach($list_contents as $path => $label) {
+                $btn_color = ($path == $action)? 'btn-on':'btn-artist';
+                $path = ($path == 'index')? '' : $path ;
+                print '<div class="btn ' . $btn_color . ' col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/' . $current . '/' . $path . '">' . $label . '</a></div>';
+            }
+            ?>
             <div class="btn btn-baribari col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/kubota/fanclub">Bari Bari Crew</a></div>
         </div>
     </div>
 </div>
-
