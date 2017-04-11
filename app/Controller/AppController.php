@@ -806,4 +806,19 @@ class AppController extends Controller {
 		return $budget;
 	}
 
+	function getContactType(){
+		$type_contact = array(
+			1 => "久保田利伸について",
+			2 => "森大輔について",
+			3 => "浦嶋りんこについて",
+			4 => "BROWN EYED SOULについて",
+			5 => "新人募集について",
+			6 => "採用について",
+			7 => "ホームページについて",
+			8 => "その他"
+		);
+		// $this->set(compact('type_contact'));
+		return $type_contact;
+	}
+
 }

@@ -2,7 +2,9 @@
 class Magazine extends AppModel {
 	var $name = "Magazine";
 	var $useDbConfig = 'pg';
-	var $useTable = 'magazin';
+	var $useTable = 'magazine';
 	var $primaryKey = 'account_no';
+
+	
 }
 ?>
