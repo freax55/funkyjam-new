@@ -51,7 +51,7 @@
                 <li><a href="/recruit">Recruit</a></li>
                 <li><a href="/scout">Scout</a></li>
                 <li><a href="/studio">Rental Studio</a></li>
-                <li><a href="/#contact-section">Contact</a></li>
+                <li><a href="/contact">Contact</a></li>
                 <li><a href="http://cooljapanmusic.com/toshi-kubota-update/" ><span style="color:#FF9933;">English</span></a></li>
                 </ul>
             </div>
