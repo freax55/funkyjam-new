@@ -9,7 +9,6 @@
 app/Vendor
 app/tmp
 
-docs
 config.rb
 sftp-config.json
 x

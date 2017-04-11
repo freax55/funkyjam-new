@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+/* initialize
+------------------------------------------------------------------------------*/
+* {
+	margin:0;
+	padding:0;
+}
+
+html,
+body {
+	height:100%;
+}
+
+body {
+	font-family:"ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+ul,
+ol,
+dl {
+	list-style-type:none;
+}
+
+img,
+a img {
+	border:0;
+	vertical-align:middle;
+}
+
+table {
+	border-collapse:collapse;
+}
+
+textarea {
+	font-size:100%;
+}
+
+br {
+	letter-spacing:0;
+}
+
+option {
+	padding:0 10px 0 0;
+}
+
+
+/* clearfix
+------------------------------------------------------------------------------*/
+.clearfix:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+
+/* clearfix IE6 and IE7
+------------------------------------------------------------------------------*/
+.clearfix {
+	/zoom:1;
+}
+
+
+/* tag
+------------------------------------------------------------------------------*/
+body {
+	background-color:#000;
+	line-height:1.5;
+	letter-spacing:normal;
+	font-size:75%;
+	color:#FFF;
+}
+a {
+	color:#2D76A2;
+	text-decoration:underline;
+}
+a:hover {
+	text-decoration:none;
+}
+
+/* page & container
+------------------------------------------------------------------------------*/
+#page {
+	width:;
+	margin:0 auto;
+	background-image:;
+	background-repeat:repeat-y;
+	background-position:left top;
+}
+#container {
+	width:;
+}
+
+
+/* header
+------------------------------------------------------------------------------*/
+#header {
+	width:950px;
+	height:93px;
+	margin:0 auto;
+}
+#header #logo {
+	float:left;
+	padding-top:23px;
+}
+#header .txt {
+	float:right;
+	padding-top:45px;
+}
+#header .login {
+	float:right;
+	width:294px;
+	padding-top:9px;
+}
+#header .login ul {
+	float:right;
+	padding-bottom:12px;
+}
+#header .login li {
+	float:left;
+	padding-left:18px;
+}
+#header .login table{
+	width: 100%;
+}
+#header .login th{
+	height:28px;
+	background-color:#202020;
+}
+#header .login td{
+	padding-right: 10px;
+	height:28px;
+	background-color:#202020;
+	color:#969696;
+	vertical-align: middle;
+}
+
+/* footer
+------------------------------------------------------------------------------*/
+#footWrap {
+	width:100%;
+	height:51px;
+	background-image:url(/premium/images/common/bg_footer.gif);
+	background-repeat:repeat-x;
+	background-position:0 0;
+}
+#footer {
+	width:950px;
+	margin:0 auto;
+}
+#footer #policy {
+	float:left;
+	padding-top:18px;
+}
+#footer #policy .agreementBtn {
+	padding-left: 20px;
+}
+
+
+#footer #copy {
+	float:right;
+	padding-top:21px;
+}
