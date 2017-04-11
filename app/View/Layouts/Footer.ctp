@@ -71,7 +71,9 @@ if (!empty($scripts)) {
 	$('.toggle-content-sp').slideToggle();
 	});
 </script>
-<?= View::element('part_analytics'); ?>
+<?php
+// print View::element('part_analytics'); 
+?>
 <?php
 // print $this->element('sql_dump');
 // <script src="/js/responsive-sidemenu.js"></script>
