@@ -338,7 +338,7 @@
                     <p>久保田利伸、森大輔、浦嶋りんこ、ファンキー・ジャムアーティストの熱い最新情報をいち早くお届けします！Twitterでしか見れない写真も多数ありますので、是非フォローして下さい。</p>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a class="home-introduction-item" href="/mailmagazine" ><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <a class="home-introduction-item" href="/magazine" ><i class="fa fa-envelope-o" aria-hidden="true"></i>
                     <h3 class="top-ten">Mail Magazine</h4>
                     </a>
                     <p>ファンキー・ジャムのアーティストの最新情報を、いち早く皆様にメールマガジンでお届け致します。登録は無料で、簡単な質問にお答え頂くだけで、すぐに登録することが出来ます。</p>
