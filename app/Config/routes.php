@@ -12,7 +12,10 @@ $App = new AppController();
 $artists = $App->getArtistParams();
 foreach($artists as $v){
 	Router::connect('/artist/:name' , array('controller' => 'artist', 'name' => $v, 'action' => 'index'));
+	Router::connect('/artist/:name/media', array('controller' => 'artist', 'name' => $v, 'action' => 'contents'));
+	Router::connect('/artist/:name/producing', array('controller' => 'artist', 'name' => $v, 'action' => 'contents'));
 	Router::connect('/artist/:name/profile', array('controller' => 'artist', 'name' => $v, 'action' => 'contents'));
+	Router::connect('/artist/:name/profile_detail', array('controller' => 'artist', 'name' => $v, 'action' => 'contents'));
 	Router::connect('/artist/:name/discography', array('controller' => 'artist', 'name' => $v, 'action' => 'contents'));
 	Router::connect('/artist/:name/performance', array('controller' => 'artist', 'name' => $v, 'action' => 'contents'));
 	Router::connect('/artist/:name/otherwork', array('controller' => 'artist', 'name' => $v, 'action' => 'contents'));	
