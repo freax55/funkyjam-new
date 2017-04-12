@@ -160,3 +160,7 @@ a:hover {
 	float:right;
 	padding-top:21px;
 }
+
+.error-message {
+	color: red;
+}

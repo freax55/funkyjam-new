@@ -820,5 +820,8 @@ class AppController extends Controller {
 		// $this->set(compact('type_contact'));
 		return $type_contact;
 	}
-
+	function getTimeMill(){
+		$arrTime = explode('.',microtime(true));
+		return date('Y-m-d H:i:s', $arrTime[0]) . '.' .$arrTime[1];
+	}
 }

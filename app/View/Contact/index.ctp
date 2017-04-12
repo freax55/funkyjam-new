@@ -1,4 +1,3 @@
-
 <!-- Header -->
 <header class="text-center" name="home">
     <img class="other-banner" src="/img/company-header-bg.jpg" alt="Funkyjam">
@@ -21,7 +20,7 @@
             <div class="col-md-8 col-md-offset-2">
 
 			<h1 class="artist-title2">お問合わせ</h1>
-				<?= $this->Form->create('Magazine', array('type' => 'post')) ?>
+				<?= $this->Form->create('Magazine', array('novalidate' => true,'type' => 'post', 'action' => 'confirm', 'url' => '/contact/confirm/')) ?>
 				<table width=100% frame="box">
 					<tbody>
 						<tr>
@@ -30,6 +29,7 @@
 							<?= $this->Form->error("Magazine.name") ?>
 							<?php
 							print $this->Form->input('name', array(
+								'required' => false,
 								'error' => false,
 								'label' => false,
 								'style' => 'width: 224px;',
@@ -46,11 +46,10 @@
 							<?= $this->Form->error("Magazine.mail") ?>
 							<?php
 							print $this->Form->input('mail', array(
+								'required' => false,
 								'error' => false,
 								'label' => false,
 								'style' => 'width: 224px;',
-								'class' => '',
-								'div' =>'',
 								'type' => 'text',
 								'value' => isset($data['Magazine']['mail'])? $data['Magazine']['mail']:null,
 							));
@@ -64,6 +63,7 @@
 							<?= $this->Form->error("Magazine.mail2") ?>
 							<?php
 							print $this->Form->input('mail2', array(
+								'required' => false,
 								'error' => false,
 								'type' => 'text',
 								'label' => false,
@@ -79,13 +79,10 @@
 							<td>
 							<?php
 							print $this->Form->input('sex', array(
-								// 'label' => false,
+								'required' => false,
 								'legend' => false,
 								'type' => 'radio',
-								'options' => [
-									'女性',
-									'男性'
-								],
+								'options' => $select_sex
 							));
 							?>
 							</td>
@@ -95,15 +92,12 @@
 							<td>
 							<?php
 							print $this->Form->input('age', array(
+								'required' => false,
 								'type' => 'text',
 								'label' => false,
-								'style' => 'width: 54px;',
 								'after' => '歳',
-								'options' => [
-									'女性',
-									'男性'
-								],
 								'value' => isset($data['Magazine']['age'])? $data['Magazine']['age']:null,
+								'style' => 'width: 54px;',
 							));
 							?>
 							<div class="contact-txt">半角数字でご記入ください。</div>
@@ -114,11 +108,13 @@
 							<td>
 							<?php
 							print $this->Form->input('job', array(
+								'required' => false,
 								'error' => false,
 								'label' => false,
-								'style' => 'width: 224px;',
 								'type' => 'text',
 								'value' => isset($data['Magazine']['job'])? $data['Magazine']['job']:null,
+								'style' => 'width: 224px;',
+								'type' => 'text',
 							));
 							?>
 							</td>
@@ -128,14 +124,17 @@
 							<td>
 							<?= $this->Form->error("Magazine.type") ?>
 							<?php
+							$type_contact[0] = "下記からお選びください";
+							ksort($type_contact);
+							$selected = isset($data['Magazine']['type']) ? $data['Magazine']['type'] : 0;
 							print $this->Form->input('type', array(
-									'label' => false,
-									'type' => 'select',
-									'selected' => isset($data['Magazine']['type']) ? $data['Magazine']['type'] : 0,
-									'options' => array(0 => "下記からお選びください",  "" => $type_contact),
-									'div' => false,
-									'error' => false,
-								));
+								'required' => false,
+								'label' => false,
+								'type' => 'select',
+								'options' => $type_contact,
+								'selected' => $selected,
+								'error' => false,
+							));
 							?>
 							</td>
 						</tr>
@@ -145,11 +144,13 @@
 							<?= $this->Form->error("Magazine.content") ?>
 							<?php
 							print $this->Form->input('content', array(
+								'required' => false,
 								'label' => false,
-								'style' => 'width: 100%;',
 								'error' => false,
 								'type' => 'textarea',
 								'value' => isset($data['Magazine']['content'])? $data['Magazine']['content']:null,
+								'style' => 'width: 100%;',
+								'type' => 'textarea',
 							));
 							?>
 							</td>
@@ -179,7 +180,3 @@
 		</div>
 	</div>
 </div>
-
-
-
-
