@@ -1,126 +1,27 @@
-<!-- News Section -->
-<div id="news-section">
 
-        <div class="section-title">
-            <h2>News</h2>
-            <div class="row">
-                <section id="home-news" class="clearfix">
-                    <div class="col-sm-12 col-md-4 col-lg-4 web">
-                    <article class="home-news-item">
-                    <span class="bg-red p3-5 white blink blink-left box-shadow">NEW</span>
-                    <a href="kubota-news1.html">
-                    <img src="/img/portfolio/Kubota2.jpg" alt="" 0="img-responsive" />   
-                        <div class="home-news-overlay">
-                        <span class="home-news-date">Aug 10 2016</span>
-                            <h3>久保田利伸、出演情報<br>TBS 深夜番組</h3>
-                        </div>
-                    </div>
-                    </a>
-                    </article>
-                    <div class="col-sm-12 col-md-4 col-lg-4 web">
-                    <article class="home-news-item">
-                    <span class="bg-red p3-5 white blink blink-left box-shadow">NEW</span>
-                    <a href="kubota-news1.html">
-                    <img src="/img/portfolio/KubotaTee.jpg" alt="" 0="img-responsive" />   
-                        <div class="home-news-overlay">
-                        <span class="home-news-date">Dec 16 2016</span>
-                            <h3>久保田利伸30周年記念<br>オフィシャル応援グッズ</h3>
-                        </div>
-                    </div>
-                    </a>
-                    </article>
-                    <div class="col-sm-12 col-md-4 col-lg-4 web">
-                    <article class="home-news-item">
-                    <a href="kubota-news1.html">
-                    <img src="/img/portfolio/IN-KOREA.jpg" alt="" 0="img-responsive" />   
-                        <div class="home-news-overlay">
-                        <span class="home-news-date">Jun 19 2016</span>
-                            <h3>ヨンジュン新曲配信中！<br>タルバム（月夜）</h3>
-                        </div>
-                    </div>
-                    </a>
-                    </article>
-                </section>  
-            </div>
+<p>2017.04.07
 
-            <div class="row">
-                <section id="home-news" class="clearfix">
-                    <div class="col-sm-12 col-md-4 col-lg-4 web">
-                    <article class="home-news-item">
-                    <a href="kubota-news1.html">
-                    <img src="/img/portfolio/Kubota2.jpg" alt="" 0="img-responsive" />   
-                        <div class="home-news-overlay">
-                        <span class="home-news-date">Aug 10 2016</span>
-                            <h3>久保田利伸、出演情報<br>TBS 深夜番組</h3>
-                        </div>
-                    </div>
-                    </a>
-                    </article>
-                    <div class="col-sm-12 col-md-4 col-lg-4 web">
-                    <article class="home-news-item">
-                    <a href="kubota-news1.html">
-                    <img src="/img/portfolio/KubotaTee.jpg" alt="" 0="img-responsive" />   
-                        <div class="home-news-overlay">
-                        <span class="home-news-date">Dec 16 2016</span>
-                            <h3>久保田利伸30周年記念<br>オフィシャル応援グッズ</h3>
-                        </div>
-                    </div>
-                    </a>
-                    </article>
-                    <div class="col-sm-12 col-md-4 col-lg-4 web">
-                    <article class="home-news-item">
-                    <a href="kubota-news1.html">
-                    <img src="/img/portfolio/IN-KOREA.jpg" alt="" 0="img-responsive" />   
-                        <div class="home-news-overlay">
-                        <span class="home-news-date">Jun 19 2016</span>
-                            <h3>ヨンジュン新曲配信中！<br>タルバム（月夜）</h3>
-                        </div>
-                    </div>
-                    </a>
-                    </article>
-                </section>  
-            </div>
+<h1>Netflix オリジナルドラマ「ゲットダウン」Part2の
+スペシャルトークショーに出演決定！</h1>
 
-            <div class="row">
-                <section id="home-news" class="clearfix">
-                    <div class="col-sm-12 col-md-4 col-lg-4 web">
-                    <article class="home-news-item">
-                    <a href="kubota-news1.html">
-                    <img src="/img/portfolio/Kubota2.jpg" alt="" 0="img-responsive" />   
-                        <div class="home-news-overlay">
-                        <span class="home-news-date">Aug 10 2016</span>
-                            <h3>久保田利伸、出演情報<br>TBS 深夜番組</h3>
-                        </div>
-                    </div>
-                    </a>
-                    </article>
-                    <div class="col-sm-12 col-md-4 col-lg-4 web">
-                    <article class="home-news-item">
-                    <a href="kubota-news1.html">
-                    <img src="/img/portfolio/KubotaTee.jpg" alt="" 0="img-responsive" />   
-                        <div class="home-news-overlay">
-                        <span class="home-news-date">Dec 16 2016</span>
-                            <h3>久保田利伸30周年記念<br>オフィシャル応援グッズ</h3>
-                        </div>
-                    </div>
-                    </a>
-                    </article>
-                    <div class="col-sm-12 col-md-4 col-lg-4 web">
-                    <article class="home-news-item">
-                    <a href="kubota-news1.html">
-                    <img src="/img/portfolio/IN-KOREA.jpg" alt="" 0="img-responsive" />   
-                        <div class="home-news-overlay">
-                        <span class="home-news-date">Jun 19 2016</span>
-                            <h3>ヨンジュン新曲配信中！<br>タルバム（月夜）</h3>
-                        </div>
-                    </div>
-                    </a>
-                    </article>
-                </section>  
-            </div>
-        </div>
-    </div>
-</div>
+<p>前編配信開始と同時にそのクオリティの高さと斬新な映像美で、映画・ドラマファン、ヒップホップやラップのファンはもちろん、幅広い音楽やファッション、ダンスカルチャーの世界でも注目され、新しいミュージックドラマの誕生として大きな話題となり、世界中の視聴者を魅了している「ゲットダウン」。
 
+<p>続編の配信開始を記念して、スペシャルトークショーに久保田利伸がゲスト出演致します。
 
-    fix contents
+<p>公式サイトにてご応募いただいた方の中から抽選で25組50名の方を本イベントにご招待！（〜4/11まで）
+
+<p>ご応募はこちらから
+https://www.netflix-cp.jp/getdown_kubota/
+
+<p>■イベント詳細■
+
+<p>-日時：4月19日（水） 
+　　18：30 開場 / 19：00 イベント / 19時30分上映（20時30分終映予定）
+<p>-場所：都内某所
+<p>-応募人数：25組50名様
+<p>-応募終了期間：4月11日（火）
+<p>※ご応募は日本在住の方のみが可能です。
+<p>※当選者の発表は、試写状の発送をもって代えさせていただきます。</p>
+
+<img src="http://funkyjam.dev/img/Kubota-profile.jpg" alt="久保田利伸" class="img-responsive size-full" />
+

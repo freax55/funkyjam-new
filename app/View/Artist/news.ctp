@@ -1,12 +1,8 @@
 
 <!-- Header -->
-<div class="news">
-    <header class="text-center">
-        <div class="artist-intro-text">
-        <div class="clearfix">
-        </div>
-    </header>
-</div>
+<header class="text-center" name="home">
+    <img class="other-banner" src="/img/artist-header-bg.jpg" alt="Funkyjam">
+</header>
 
 
 <div id="breadcrumb">
@@ -21,7 +17,7 @@
 <?php
 ?>
 <!-- text Section -->
-<div id="text-section">
+<div id="news-section">
     <div class="container-txt">
     <?php
     // ワードプレスに該当する投稿がなければ予備のページを呼び出す
@@ -35,21 +31,9 @@
 
 <!-- Pagination Section -->
 <?= View::element('pagination'); ?>
-<!-- label Section -->
-<div id="label-section">
-    <div class="container-txt"> 
-        <div class="col-sm-12 col-md-6 col-lg-6">
-            <a href="http://www.sonymusic.co.jp/artist/ToshinobuKubota/" target="_blank">
-            <img src="img/portfolio/Sony-Logo.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">
-            <a href="http://cooljapanmusic.com/toshi-kubota-update/" target="_blank">
-            <img src="img/portfolio/Englis-Kubota.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-        </div>
+
     </div>
 </div>
-
-
 
 <div id="pageTop">
     <a class="topnav" href="menu">
