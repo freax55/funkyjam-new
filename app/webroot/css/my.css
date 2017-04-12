@@ -684,3 +684,21 @@ p {
 }
 }
 
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: static;
+  margin-top: 4px \9;
+  margin-left: 0px;
+}
+.radio label,
+.checkbox label {
+  min-height: 20px;
+  padding: 0px 20px 0px 8px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+

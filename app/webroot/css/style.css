@@ -1747,3 +1747,15 @@ height: 100%;
 .artist-b2 {
     margin-top: 30px;
 }
+.contact-txt{
+	 font-size: 14px;
+    padding-top: 5px;
+}
+.btn-fix{
+    width: 124px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+

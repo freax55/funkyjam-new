@@ -32,11 +32,12 @@
 							print $this->Form->input('name', array(
 								'error' => false,
 								'label' => false,
+								'style' => 'width: 224px;',
 								'type' => 'text',
 								'value' => isset($data['Magazine']['name'])? $data['Magazine']['name']:null,
 							));
 							?>
-							記入例：久保田利伸
+							<div class="contact-txt">記入例：久保田利伸</div>
 							</td>
 						</tr>
 						<tr>
@@ -47,13 +48,14 @@
 							print $this->Form->input('mail', array(
 								'error' => false,
 								'label' => false,
+								'style' => 'width: 224px;',
 								'class' => '',
 								'div' =>'',
 								'type' => 'text',
 								'value' => isset($data['Magazine']['mail'])? $data['Magazine']['mail']:null,
 							));
 							?>
-							半角英数字でご記入ください。
+							<div class="contact-txt">半角英数字でご記入ください。</div>
 							</td>
 						</tr>
 						<tr>
@@ -65,10 +67,11 @@
 								'error' => false,
 								'type' => 'text',
 								'label' => false,
+								'style' => 'width: 224px;',
 								'value' => isset($data['Magazine']['mail2'])? $data['Magazine']['mail2']:null,
 							));
 							?>
-							確認のため再度ご記入ください。半角英数字でご記入ください。
+							<div class="contact-txt">確認のため再度ご記入ください。半角英数字でご記入ください。</div>
 							</td>
 						</tr>
 						<tr>
@@ -94,6 +97,7 @@
 							print $this->Form->input('age', array(
 								'type' => 'text',
 								'label' => false,
+								'style' => 'width: 54px;',
 								'after' => '歳',
 								'options' => [
 									'女性',
@@ -102,7 +106,7 @@
 								'value' => isset($data['Magazine']['age'])? $data['Magazine']['age']:null,
 							));
 							?>
-							半角数字でご記入ください。
+							<div class="contact-txt">半角数字でご記入ください。</div>
 							</td>
 						</tr>
 						<tr>
@@ -112,6 +116,7 @@
 							print $this->Form->input('job', array(
 								'error' => false,
 								'label' => false,
+								'style' => 'width: 224px;',
 								'type' => 'text',
 								'value' => isset($data['Magazine']['job'])? $data['Magazine']['job']:null,
 							));
@@ -141,6 +146,7 @@
 							<?php
 							print $this->Form->input('content', array(
 								'label' => false,
+								'style' => 'width: 100%;',
 								'error' => false,
 								'type' => 'textarea',
 								'value' => isset($data['Magazine']['content'])? $data['Magazine']['content']:null,
@@ -159,12 +165,15 @@
 								'value' => isset($data['Magazine']['magazine'])? $data['Magazine']['magazine']:'1',
 							));
 							?>
-							ファンキー・ジャム所属アーティストの最新情報をお届けします。<br>不要な方はチェックをはずして下さい。</p>
+							<div class="contact-txt">ファンキー・ジャム所属アーティストの最新情報をお届けします。<br>不要な方はチェックをはずして下さい。</div>
 							</td>
 						</tr>
 					</tbody>
 				</table>
-				<?= $this->Form->button('内容を確認する', array('type' => 'submit')); ?>
+				<?= $this->Form->button('内容を確認する', array(
+				'type' => 'submit',
+				'class' => 'btn-fix',
+				)); ?>
 				<?= $this->Form->end() ?>
 			</div>
 		</div>
