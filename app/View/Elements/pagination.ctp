@@ -1,5 +1,5 @@
 <div id="artist-page-section">
-  	<div class="container-txt topthirty">
+  	<div class="container-txt">
    		<div class="col-md-8 col-md-offset-2">
       		<div class="pager">
 		        <ol>

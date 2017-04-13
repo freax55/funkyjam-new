@@ -252,28 +252,28 @@
             <div class="row banner-pad">
                 <div class="col-xs-6 col-md-3 col-lg-3 leftbar">
                     <div class="portfolio-item">
-                    <a href="/artist/kubota/news/" target="_blank" >
+                    <a href="/artist/kubota/news/">
                     <img src="img/portfolio/TK_media.jpg" class="img-responsive" alt="Toshinobu Kubota Facebook"> 
                     </a> 
                     </div>
                 </div>
                 <div class="col-xs-6 col-md-3 col-lg-3 rightbar">
                     <div class="portfolio-item">
-                    <a href="/artist/urashima/news" target="_blank" >
+                    <a href="/artist/urashima/news">
                     <img src="img/portfolio/RU_media.jpg" class="img-responsive" alt="Rinko Urashima Facebook"> 
                     </a> 
                     </div>
                 </div>
                 <div class="col-xs-6 col-md-3 col-lg-3 leftbar">
                     <div class="portfolio-item">
-                    <a href="/artist/mori/news" target="_blank" >
+                    <a href="/artist/mori/news">
                     <img src="img/portfolio/DM_media.jpg" class="img-responsive" alt="Daisuke Mori Facebook"> 
                     </a> 
                     </div>
                 </div>
                 <div class="col-xs-6 col-md-3 col-lg-3 rightbar">
                     <div class="portfolio-item">
-                    <a href="/artist/bes/news" target="_blank" >
+                    <a href="/artist/bes/news">
                     <img src="img/portfolio/BES_media.jpg" class="img-responsive" alt="BSE Facebook"> 
                     </a> 
                     </div>
