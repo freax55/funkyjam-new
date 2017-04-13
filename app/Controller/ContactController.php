@@ -9,7 +9,7 @@ class ContactController extends AppController {
 
 	private function _pageInit() {
 		$this->pageInit();
-		$this->layout = 'Pane1';
+		// $this->layout = 'Pane1';
 		$select_sex = ['女性', '男性'];
 		$wish_magazine = ['しない', 'する'];
 		$this->topicPath(
@@ -55,21 +55,22 @@ class ContactController extends AppController {
 			if($this->Magazine->validates()){
 				$this->set([
 					'data' => $this->data,
-					'title' => 'fankyjam',
-					'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',//DESCRIPTION,
+					// 'title' => 'fankyjam',
+					// 'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',//DESCRIPTION,
 				]);
 				$this->render('add');
 			} else {
 				$this->set([
 					'data' => $this->data,
-					'title' => 'fankyjam',
-					'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',//DESCRIPTION,
+					// 'title' => 'fankyjam',
+					// 'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',//DESCRIPTION,
 				]);
 
 				$this->render('index');				
 			}
 		} else {			
 			$this->redirect('/contact/');
+			// $this->render('add');
 		}
 	}
 

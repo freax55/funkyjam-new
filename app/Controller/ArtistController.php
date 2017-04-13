@@ -21,6 +21,11 @@ class ArtistController extends AppController {
 
 	public function news_contents()
 	{
+		// $this->prd($this->params->here);
+		if(isset($this->params->named['sort']) || isset($this->params->named['direction'])) {
+			$here = str_replace(['/sort:' . $this->params->named['sort'], '/direction:' . $this->params->named['direction']], ['', ''], $this->params->here);
+			$this->redirect($here);
+		}
 		// 各種変数取得
 		$data = $this->_artistsData();
 		$action = $data['action'];
