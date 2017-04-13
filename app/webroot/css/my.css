@@ -75,6 +75,7 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   color: #666;
   font-size: 36px;
+  line-height: 40px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -609,7 +610,9 @@ table th[class*="col-"] {
 }
 
 p {
-  margin: 0 0 5px;
+  margin: 0 0 5px;  
+  margin-bottom: 30px;
+
 }
 
 @media only screen and (max-width:420px){

@@ -47,7 +47,7 @@ li {
 p {
 	font-family: 'Open Sans', sans-serif;
 	color: #888;
-	line-height: 28px;
+	line-height: 26px;
 	font-size: 15px;
 }
 .home p {
@@ -1764,4 +1764,11 @@ height: 100%;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
+.news-section h1{
+	font-family: 'Open Sans', sans-serif;
+    color: #666;
+    font-size: 36px;
+    margin-top: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
