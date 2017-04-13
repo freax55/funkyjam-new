@@ -2,7 +2,7 @@
     <div class="container-txt">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">   
-                <h1><?= $ary_names[$current]['en'] ?></h1>
+                <p class="news-name"><?= $ary_names[$current]['en'] ?></p>
             </div>
             <div class="snsbar">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -17,6 +17,7 @@
         </div>
     </div>
 </div>
+
 <div id="otherartist">
     <div class="container-txt">
         <div class="row resp artistnav">
@@ -32,6 +33,7 @@
         </div>
     </div>
 </div>
+
 <div id="artistnav">
     <div class="container-txt">
         <div class="row resp artistnav">
@@ -43,7 +45,8 @@
                 print '<div class="btn ' . $btn_color . ' col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/' . $current . '/' . $path . '">' . $label . '</a></div>';
             }
             ?>
-            <div class="btn btn-baribari col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/kubota/fanclub">Bari Bari Crew</a></div>
+            <div class="btn btn-baribari col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/kubota/fanclub">Bari Bari Crew</a>
+            </div>
         </div>
     </div>
 </div>

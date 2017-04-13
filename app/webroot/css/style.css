@@ -1757,5 +1757,11 @@ height: 100%;
     margin-top: 20px;
     margin-bottom: 30px;
 }
-
+.news-name{
+	font-family: 'Open Sans', sans-serif;
+    color: #666;
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
