@@ -913,7 +913,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 #footer p {
 	font-size: 13px;
-	margin-top: 10px;
+	margin-top: 0px;
 }
 #footer a {
 	color: #aaa;
@@ -1538,14 +1538,14 @@ text-align: center;
 }
 .footer-text{
 font-size: 16px;
-margin-top: 20px;
+margin-top: 0px;
 margin-bottom: 0px;
 text-align: center;
 }
 .footer-text2{
-font-size: 16px;
+font-size: 14px;
 margin-top: 0px;
-margin-bottom: 20px;
+margin-bottom: 10px;
 text-align: center;
 }
 
