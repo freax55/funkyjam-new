@@ -1,7 +1,7 @@
 <!-- Artist Section -->
 <div id="artist-section-top">
     <div class="container">
-        <h2>Artist</h2>
+        <h2>Artists</h2>
             <div class="row">
                 <div class="col-sm-6 col-md-3 col-lg-3">
                     <article class="home-news-item sample5">

@@ -160,7 +160,7 @@
 <div id="SNS-section">
     <div class="container"> 
         <div class="section-title">
-            <h2>SNS & Media</h2>
+            <h2>Official Facebook & Fanclub</h2>
             <div class="row">
                 <div class="col-xs-6 col-md-3 col-lg-3 leftbar">
                     <div class="portfolio-item">
@@ -192,33 +192,13 @@
                 </div>
             </div>
             <div class="row banner-pad">
-                <div class="col-xs-6 col-md-3 col-lg-3 leftbar">
-                    <div class="portfolio-item">
-                    <a href="/artist/kubota/news/">
-                    <img src="img/portfolio/TK_media.jpg" class="img-responsive" alt="Toshinobu Kubota Facebook"> 
-                    </a> 
-                    </div>
+                <div class="col-sm-4 col-md-4 col-lg-6 portfolio-item">
+                    <a href="/baribaricrew">
+                    <img src="img/portfolio/Baribari-top.jpg" class="img-responsive" alt="Bari Bari Crew"> </a> 
                 </div>
-                <div class="col-xs-6 col-md-3 col-lg-3 rightbar">
-                    <div class="portfolio-item">
-                    <a href="/artist/urashima/news">
-                    <img src="img/portfolio/RU_media.jpg" class="img-responsive" alt="Rinko Urashima Facebook"> 
-                    </a> 
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3 col-lg-3 leftbar">
-                    <div class="portfolio-item">
-                    <a href="/artist/mori/news">
-                    <img src="img/portfolio/DM_media.jpg" class="img-responsive" alt="Daisuke Mori Facebook"> 
-                    </a> 
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3 col-lg-3 rightbar">
-                    <div class="portfolio-item">
-                    <a href="/artist/bes/news">
-                    <img src="img/portfolio/BES_media.jpg" class="img-responsive" alt="BSE Facebook"> 
-                    </a> 
-                    </div>
+                <div class="col-sm-4 col-md-4 col-lg-6 portfolio-item">
+                    <a href="https://www.funkyjam.com/mori/">
+                    <img src="img/portfolio/morinobanner.jpg" class="img-responsive" alt="Mori no Nakama"> </a> 
                 </div>
             </div>
         </div>
@@ -233,20 +213,6 @@
             <h2>Official Contents</h2>
             <div class="row">
                 <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
-                    <a href="/baribaricrew">
-                    <img src="img/portfolio/Baribari-top.jpg" class="img-responsive" alt="Bari Bari Crew"> </a> 
-                </div>
-                <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
-                    <a href="https://www.funkyjam.com/mori/">
-                    <img src="img/portfolio/morinobanner.jpg" class="img-responsive" alt="Mori no Nakama"> </a> 
-                </div>
-                <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
-                    <a href="http://www.funkyjam.com/premium/">
-                    <img src="img/portfolio/Premium-Banner.jpg" class="img-responsive" alt="FJ Premium"> </a> 
-                </div>
-            </div>
-            <div class="row banner-pad">
-                <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
                     <a href="/shop">
                     <img src="img/portfolio/FJ-Banner.jpg" class="img-responsive" alt="FJ Shop"> </a> 
                 </div>
@@ -257,6 +223,20 @@
                 <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
                     <a href="http://cooljapanmusic.com/jammin/">
                     <img src="img/portfolio/Jammin.jpg" class="img-responsive" alt="Studio"> </a> 
+                </div>
+            </div>
+            <div class="row banner-pad">
+                <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
+                    <a href="https://twitter.com/funky_manager">
+                    <img src="img/portfolio/Twitter-Banner.png" class="img-responsive" alt="Twitter"> </a> 
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
+                    <a href="/art">
+                    <img src="img/portfolio/Art-Banner.png" class="img-responsive" alt="Art"> </a> 
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
+                    <a href="http://www.funkyjam.com/premium/">
+                    <img src="img/portfolio/Premium-Banner.jpg" class="img-responsive" alt="FJ Premium"> </a> 
                 </div>
             </div>
         </div>

@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a class="home-introduction-item" href="/art" ><i class="fa fa-pencil" aria-hidden="true"></i>
-                    <h3 class="top-ten">Airt Master</h4>
+                    <h3 class="top-ten">FJ Supprter ART MASTERS</h4>
                     </a>
                     <p>久保田利伸のFC会報表誌イラストでお馴染みの墨絵アーチストや、人形作家、さらに、政治＆スポーツ＆グルメから芸能まで、多彩な分野を広く浅く知る文筆系ラーメン屋をご紹介。</p>
                 </div>
