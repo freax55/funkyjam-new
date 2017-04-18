@@ -160,7 +160,7 @@
 <div id="SNS-section">
     <div class="container"> 
         <div class="section-title">
-            <h2>Official Facebook & Fanclub</h2>
+            <h2>Facebook & Fanclub</h2>
             <div class="row">
                 <div class="col-xs-6 col-md-3 col-lg-3 leftbar">
                     <div class="portfolio-item">
