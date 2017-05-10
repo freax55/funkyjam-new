@@ -1,19 +1,61 @@
 
 
 <!-- Header -->
-<header class="text-center" name="home">
-    <div class="container">
-        <div class="row">
-            <img class="top-banner" src="../img/header-bg.jpg" alt="久保田利伸デビュー30周年特別企画第2弾">
-            <div class="intro-text bottomthirty">
-                <h1>THE BADDEST</h1>
-                <p>久保田利伸デビュー30周年特別企画第2弾</p>
-                <div class="clearfix"></div>
-                <a href="" class="btn btn-default top">Learn More</a> 
+<script>
+ $( document ).ready(function( $ ) {
+  $('#thumb-h').sliderPro({
+    width:1140,//横幅
+    height: 420,
+    buttons: false,//ナビゲーションボタン
+    shuffle: true,//スライドのシャッフル
+    thumbnailWidth: 225,//サムネイルの横幅
+    thumbnailHeight: 80,//サムネイルの縦幅
+    slideDistance:0,//スライド同士の距離
+    breakpoints: {
+      480: {//表示方法を変えるサイズ
+    thumbnailWidth: 110,
+    thumbnailHeight: 40
+      }
+    }
+  });
+});
+</script>
+
+<div id="slider-section-top">
+    <header class="text-center" name="home">
+        <div id="thumb-h" class="slider-pro">
+            <div class="sp-slides">
+                <div class="sp-slide">
+                <a href="artist/kubota">
+                <img class="sp-image" src="img/portfolio/header-bg.jpg" /></a>
+                </div>
+                <div class="sp-slide">
+                <a href="artist/kubota">
+                <img class="sp-image" src="img/portfolio/header-bg2.jpg" /></a>
+                </div>
+                <div class="sp-slide">
+                <a href="artist/kubota">
+                <img class="sp-image" src="img/portfolio/header-bg3.jpg" /></a>
+                </div>
+                <div class="sp-slide">
+                <a href="artist/kubota">
+                <img class="sp-image" src="img/portfolio/header-bg4.jpg" /></a>
+                </div>
+                <div class="sp-slide">
+                <a href="artist/kubota">
+                <img class="sp-image" src="img/portfolio/header-bg5.jpg" /></a>
+                </div>
+            </div>
+            <div class="sp-thumbnails">
+                <img class="sp-thumbnail" src="img/portfolio/header-bg.jpg"/>
+                <img class="sp-thumbnail" src="img/portfolio/header-bg2.jpg"/>
+                <img class="sp-thumbnail" src="img/portfolio/header-bg3.jpg"/>
+                <img class="sp-thumbnail" src="img/portfolio/header-bg4.jpg"/>
+                <img class="sp-thumbnail" src="img/portfolio/header-bg5.jpg"/>
             </div>
         </div>
-    </div>
-</header>
+    </header>
+</div>
 
 
 <!-- Artist Section -->
