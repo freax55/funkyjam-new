@@ -697,7 +697,6 @@ EOM;
 			'profile' => 'Profile',
 			'discography' => 'Discography',
 			'performance' => 'Performance',
-			'otherwork' => 'Other Works'
 		);
 		return $contents;
 	}

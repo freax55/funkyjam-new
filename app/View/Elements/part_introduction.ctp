@@ -4,7 +4,7 @@
         <div class="section-title">
             <h2>Introduction</h2>
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-lg-4">
+                <div class="col-md-4 col-sm-4 col-lg-4">
                     <table>
                         <tr>
                             <td class="introduction">
@@ -19,7 +19,7 @@
                     </table>
                     <p>ファンキー・ジャムのアーティストの最新情報を、いち早く皆様にメールマガジンでお届け致します。登録は無料で、簡単な質問にお答え頂くだけで、すぐに登録することが出来ます。</p>
                 </div>
-                <div class="col-md-3 col-sm-6 col-lg-4">
+                <div class="col-md-4 col-sm-4 col-lg-4">
                     <table>
                         <tr>
                             <td class="introduction">
@@ -34,7 +34,7 @@
                     </table>
                     <p>ファンキー・ジャム所属の久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULへのファンレターはこちらからお願いします。頂いたファンレターはアーティストまでお届けします。</p>
                 </div>
-                <div class="col-md-3 col-sm-6 col-lg-4">
+                <div class="col-md-4 col-sm-4 col-lg-4">
                     <table>
                         <tr>
                             <td class="introduction">

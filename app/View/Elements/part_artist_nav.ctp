@@ -28,11 +28,9 @@
             foreach($list_contents as $path => $label) {
                 $btn_color = ($path == $action)? 'btn-on':'btn-artist';
                 $path = ($path == 'index')? '' : $path ;
-                print '<div class="btn ' . $btn_color . ' col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/' . $current . '/' . $path . '">' . $label . '</a></div>';
+                print '<div class="btn ' . $btn_color . ' col-xs-6 col-sm-6 col-md-3 col-lg-3"><a href="/artist/' . $current . '/' . $path . '">' . $label . '</a></div>';
             }
             ?>
-            <div class="btn btn-baribari col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/artist/kubota/fanclub">Bari Bari Crew</a>
             </div>
         </div>
     </div>
-</div>
