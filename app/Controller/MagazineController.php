@@ -47,17 +47,17 @@ class MagazineController extends AppController {
 
 	// 登録
 	public function entyr() {
-
+		$this->_pageInit();
 	}
 
 	// 登録情報変更
 	public function change() {
-
+		$this->_pageInit();
 	}
 
 	// 退会
 	public function drop() {
-
+		$this->_pageInit();
 	}
 
 	public function confirm() {

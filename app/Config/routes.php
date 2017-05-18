@@ -5,6 +5,10 @@ Router::connect('/company', array('controller' => 'root', 'action' => 'company')
 Router::connect('/recruit', array('controller' => 'root', 'action' => 'recruit'));
 Router::connect('/scout', array('controller' => 'root', 'action' => 'scout'));
 Router::connect('/studio', array('controller' => 'root', 'action' => 'studio'));
+Router::connect('/privacy', array('controller' => 'root', 'action' => 'privacy'));
+Router::connect('/art', array('controller' => 'root', 'action' => 'art'));
+Router::connect('/baribaricrew', array('controller' => 'root', 'action' => 'baribaricrew'));
+Router::connect('/fanletter', array('controller' => 'root', 'action' => 'fanletter'));
 
 
 App::uses('AppController', 'Controller');
