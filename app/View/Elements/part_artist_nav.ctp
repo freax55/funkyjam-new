@@ -1,8 +1,8 @@
 <div id="namenav">
-    <div class="container-txt">
+    <div class="col-lg-12">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">   
-                <p class="news-name"><?= $ary_names[$current]['en'] ?></p>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">  
+            <p class="news-name"><?= $ary_names[$current]['en'] ?></p>
             </div>
             <div class="snsbar">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -18,25 +18,11 @@
     </div>
 </div>
 
-<div id="otherartist">
-    <div class="container-txt">
-        <div class="row resp artistnav">
-        <?php
-        foreach($ary_params as $v) {
-            $color = ($v == $current)?'btn-on5':'btn-on4';
-            print '<div class="btn ' . $color . ' col-xs-6 col-sm-3 col-md-3 col-lg-3">';
-            print '<a href="/artist/' . $v . '">';
-            print $ary_names[$v]['en'];
-            print '</a></div>';
-        }
-        ?>
-        </div>
-    </div>
-</div>
 
-<div id="artistnav">
-    <div class="container-txt">
-        <div class="row resp artistnav">
+<div class="col-lg-9">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="artistnav">
             <?php
             $list_contents =$this->common->getContentList();
             foreach($list_contents as $path => $label) {
