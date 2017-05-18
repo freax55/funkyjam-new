@@ -62,6 +62,10 @@
         </div>
         <!-- /.container-fluid --> 
     </nav>
+                    <?php
+                // echo $this->element('sql_dump');
+                ?>
+
 <?php
 /*
 <!DOCTYPE html>

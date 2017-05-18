@@ -66,6 +66,11 @@ class AppController extends Controller {
 			'url' => "/contact/",
 			'submenu' => 0,
 		],
+		'magazine' => [
+			'title' => "メールマガジン",
+			'url' => "/magazine/",
+			'submenu' => 0,
+		],
 	];
 
 	// var $pages_admin = [

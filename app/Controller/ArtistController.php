@@ -6,13 +6,68 @@ class ArtistController extends AppController {
 		'Post',
 		'Postmeta',
 		'Term',
-		'TermRelationship'
+		'TermRelationship',
 	];
 
 	public function index()
 	{
-		$data = $this->_artistsData();
+		$d = $this->Term->find('list', [
+			'conditions' => [
+				'Term.name LIKE' => '%' . 'news',
+			],
+			'fields' => [
+				'Term.term_id',
+				'Term.term_id',
+			]
+			// 'recursive' => -1
+		]);
+
+		$n = $this->TermRelationship->find('list', [
+			'conditions' => [
+			 	'TermRelationship.term_taxonomy_id' => $d
+			],
+			'fields' => [
+				'object_id',
+				'object_id'
+			]
+		]);
+
+		$ne = $this->Post->find('all', [
+			'conditions' => [
+				'post_status' => 'publish',
+				'ID' => $n
+			],
+			'fields' => [
+				'ID',
+				'post_title'
+			]
+		]);
+
+		// $this->prd($ne);
+
+
+		// $this->prd($n);
+
+		// $this->prd($d);
 		$this->pageInit();
+		$data = $this->_artistsData();
+		$action = $data['action'];
+		$term_name = $data['current'] . '/news';
+		$is_contents = true;
+		$content = null;
+		// $this->prd($term_name);
+		$ob_ids = $this->TermRelationship->getObjectIds($term_name);
+		// $this->prd($ob_ids);
+		if($ob_ids){
+			foreach($ob_ids as $id) {
+				$ids[] = $id['TermRelationship']['object_id'];
+			}
+		} else {
+			$is_contents = false;
+		}
+		// $this->prd($ids);
+
+
 		$this->set([
 			'title' => 'fankyjam',
 			'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',

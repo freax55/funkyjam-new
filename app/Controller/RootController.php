@@ -7,7 +7,128 @@ class RootController extends AppController {
 		'Postmeta'
 	);
 
+	function getInnerHtml($node){
+		$children = $node->childNodes;
+		$html = '';
+		foreach($children as $child){
+			$html .= $node->ownerDocument->saveHTML($child);
+		}
+		return $html;
+	}
+
 	public function index() {
+		// $this->args[0] = 'kubota';
+		// $this->prd($this->args);
+		// 	$name = 'kubota';
+		// // if (isset($this->args[0]) && $this->args[0] != "") {
+		// 	// $html = fopen(ASSETS . 'files/html/' . $this->args[0] . '.html', 'r');
+		// 	// $html = fopen(ASSETS . 'files/html/' . $name . '.html', 'r');
+		// 	$file = ASSETS . 'files/html/' . $name . '.html';
+		// 	$html = file_get_contents($file);
+		// 	$html = mb_convert_encoding($html, "UTF-8");
+		// 	// $this->prd($html);
+		// 	if(!$html){
+		// 		$this->out('is not exist ' . $html);
+		// 	}
+		// 	// $this->prd($html);
+		// 	$dom = new DOMDocument;
+		// 	$dom->preserveWhiteSpace = false; 
+		// 	// @$dom->loadHtml(file_get_contents($html));
+		// 	@$dom->loadHtml($html);
+
+		// 	$xpath = new DOMXPath($dom);
+		// 	$sections = $entries = $queries = array();
+
+		// 	$sections = $xpath->query('//body//article/div[@id="contentBox"]//section');
+		// 	// $sections = $xpath->query('//body//article/div//section');
+
+		// 	foreach($sections as $sk => $section_path) {
+		// 		// sectionタグからディスクタイプ取得
+		// 		$type = $section_path->getAttribute('id');
+		// 		$entries = $xpath->query('.//div[@class="entry clearfix"]', $section_path);
+		// 		// $entries = $xpath->query('[' . $sk . ']', $sections);
+
+		// 		// $this->prd($section_path->nodeValue);
+
+				
+		// 	}
+		// 	$this->prd($ary);
+
+
+			// $ei = 0;
+			// foreach($sections as $section) {
+			// 	$ei++;
+			// 	// $h2 = $xpath->query('.//h2', $section);
+			// 	$type = $section->getAttribute('id');//ディスクタイプ
+			// 	$d_entries = $xpath->query('.//div[@class="entry clearfix"][' . $ei . ']', $section);
+			// 	$di = 0;
+			// 	foreach($d_entries as $entry) {
+			// 		$old_id = $entry->getAttribute('id');// 旧id
+			// 		$title = $xpath->query('.//h3', $entry)->item(0)->nodeValue;
+			// 		$release = $xpath->query('.//p[@class="release"]', $entry)->item(0)->nodeValue;
+			// 		// $this->prd($release);
+			// 		$r[] = $release;
+
+			// 		// $data = $xpath->query('.//div[@class="txt"]', $entry);
+			// 		// $ary = array();
+			// 		// foreach($data as $row) {
+			// 		// 	$rowhtml = $this->getInnerHtml($row);
+						
+			// 		// 	$ary[] = str_replace(['<','>'], ['****', '****'], $rowhtml);//nodeValue;
+			// 		// }
+			// 		// $this->prd($ary);
+			// 		// $title = $entry->
+			// 		// $this->prd($old_id);
+			// 	}
+			// 	// foreach()
+
+			// 	// $this->prd($type);
+			// }
+			// $this->prd($r);
+
+
+
+			// $this->prd($entries->item(0));
+
+
+
+
+
+
+
+
+
+
+
+			
+		// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		// ↑　kokomade
 		$this->pageInit();
 		// $pst = $this->Postmeta->find('all');
 

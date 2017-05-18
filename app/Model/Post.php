@@ -38,4 +38,25 @@ class Post extends AppModel {
 		return $options;
 	}
 
+	function bindThumbnail() {
+		$this->bindModel([
+			'hasOne' => [
+				'Postmeta' => [
+					'foreingKye' => 'post_id',
+					'conditions' => [
+						'meta_key' => '_thumbnail_id'
+					],
+				]
+			]
+		]);
+	}
+
+	// function getNewsList($aritst = null){
+	// 	$this->bindThumbnail();
+	// 	if($artist != null) {
+	// 		$
+	// 	}
+
+	// }
+
 }
