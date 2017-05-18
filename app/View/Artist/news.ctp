@@ -35,7 +35,6 @@
     </div>
 </div>
 
-<?= view::element('part_artist_menu') ?>
 
 <?= view::element('part_introduction') ?>
 

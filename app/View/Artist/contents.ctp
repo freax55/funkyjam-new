@@ -5,12 +5,12 @@
 
 
 <div id="breadcrumb">
-    <div class="container-txt">
-        <div class="row resp"> 
-        <?= $this->BreadCrumb->show($path) ?>
-        </div>
-    </div>
-</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+            <?= $this->BreadCrumb->show($path) ?>
+            </div>
+
 
 <?= view::element('part_artist_nav') ?>
 <?php
@@ -62,7 +62,6 @@
 ?>
 <!-- text Section -->
 <div id="text-section">
-    <div class="container-txt">
     <?php
     // ワードプレスに該当する投稿がなければ予備のページを呼び出す
     if ($is_contents === true) {
@@ -135,9 +134,9 @@
 ?>
 
 </div>
+</div>
 
-
-<?= view::element('part_artist_menu') ?>
+<?= view::element('part_side_artist') ?>
 
 <?= view::element('part_introduction') ?>
 
