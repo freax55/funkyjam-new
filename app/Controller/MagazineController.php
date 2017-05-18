@@ -46,7 +46,7 @@ class MagazineController extends AppController {
 	}
 
 	// 登録
-	public function entyr() {
+	public function entry() {
 		$this->_pageInit();
 	}
 
@@ -62,29 +62,29 @@ class MagazineController extends AppController {
 
 	public function confirm() {
 		$this->_pageInit();
-		if (isset($this->data) && !empty($this->data)) {
+		// if (isset($this->data) && !empty($this->data)) {
 
-			$this->request->data['Magazine'] = $this->preInsert($this->request->data['Magazine']);
-			$this->Magazine->set($this->data);
-			$this->Magazine->validate = $this->Magazine->validate_contact;
-			if($this->Magazine->validates()){
-				$this->set([
-					'data' => $this->data,
-					// 'title' => 'fankyjam',
-					// 'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',//DESCRIPTION,
-				]);
-				$this->render('add');
-			} else {
-				$this->set([
-					'data' => $this->data,
-					// 'title' => 'fankyjam',
-					// 'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',//DESCRIPTION,
-				]);
+		// 	$this->request->data['Magazine'] = $this->preInsert($this->request->data['Magazine']);
+		// 	$this->Magazine->set($this->data);
+		// 	$this->Magazine->validate = $this->Magazine->validate_contact;
+		// 	if($this->Magazine->validates()){
+		// 		$this->set([
+		// 			'data' => $this->data,
+		// 			// 'title' => 'fankyjam',
+		// 			// 'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',//DESCRIPTION,
+		// 		]);
+		// 		$this->render('add');
+		// 	} else {
+		// 		$this->set([
+		// 			'data' => $this->data,
+		// 			// 'title' => 'fankyjam',
+		// 			// 'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',//DESCRIPTION,
+		// 		]);
 
-				$this->render('index');				
-			}
-		} else {			
-			$this->redirect('/contact/');
+		// 		$this->render('index');				
+		// 	}
+		// } else {			
+		// 	$this->redirect('/contact/');
 			// $this->render('add');
 		}
 	}
