@@ -1350,7 +1350,6 @@ a.showf:hover h3.jp{
   color: #888;
 }
 .baribarith {
-  padding-right: 30px; 
   text-align: center;
   font-size: 16px;
 }
@@ -1818,4 +1817,19 @@ height: 100%;
 }
 .attn{
 	margin-bottom: 0px;
+}
+.imageCol{
+	text-align: center;
+}
+.shigemoto{
+	margin-top: 20px; 
+	text-align: center;
+}
+.shigemoto2{
+	background-color: #000; 
+	color:#FFF; 
+	text-align: center;
+}
+.shigemoto3{
+	text-align: center;
 }

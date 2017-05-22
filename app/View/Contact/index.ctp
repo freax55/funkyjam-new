@@ -95,7 +95,7 @@
 								'required' => false,
 								'type' => 'text',
 								'label' => false,
-								'after' => '歳',
+								'after' => ' 歳',
 								'value' => isset($data['Magazine']['age'])? $data['Magazine']['age']:null,
 								'style' => 'width: 54px;',
 							));
