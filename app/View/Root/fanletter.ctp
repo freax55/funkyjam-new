@@ -1,3 +1,19 @@
+<!-- Header -->
+<header class="text-center" name="home">
+    <img class="other-banner" src="/img/company-header-bg.jpg" alt="Funkyjam">
+</header>
+
+<div id="breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 leftzero">
+            <?= $this->BreadCrumb->show($path) ?>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!-- Company Section -->
 <div id="company-page-section">
     <div class="container">
@@ -7,32 +23,31 @@
 
                 <article id="contentArea">
                     <div id="contentBox">
-                        <p><span class="indispensability">*</span>は必ずお書きください。</p>
                         <form action="index.php" method="post">
-                            <table class="table">
+                            <table width=100% frame="box">
                                 <tr>
-                                    <th style="width: 166px;" >お名前<span class="indispensability">*</span></th>
+                                    <td style="width: 200px;" >お名前</td>
                                     <td>
                                     <input type="text" name="form[name]" value="" style="width: 250px" />
                                     <p class="attn">記入例：久保田利伸</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>メールアドレス<span class="indispensability">*</span></th>
+                                    <td>メールアドレス</td>
                                     <td>
                                     <input name="form[mail]" type="text" value="" style="width: 250px" />
                                     <p class="attn">半角英数字でご記入ください。</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>メールアドレス再確認<span class="indispensability">*</span></th>
+                                    <td>メールアドレス再確認</td>
                                     <td>
                                     <input name="form[mail2]" type="text" value="" style="width: 250px" />
                                     <p class="attn">確認のため再度ご記入ください。半角英数字でご記入ください。</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>宛先<span class="indispensability">*</span></th>
+                                    <td>宛先</td>
                                     <td>
                                         <ul class="clearfix">
                                         <li style="float: left; padding-right: 15px;" ><input name="form[to]" type="radio" value="kubota"  id="fromToArtist01" />&nbsp;<label style="float: none;" for="fromToArtist01">久保田利伸</label><br />
@@ -47,13 +62,13 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>ファンレター内容<span class="indispensability">*</span></th>
+                                    <td>ファンレター内容</td>
                                     <td> 
                                         <textarea name="form[content]" cols="75" rows="15"  style="width:100%; height:150px;"></textarea>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>メールマガジン<span class="indispensability">*</span></th>
+                                    <td>メールマガジン</td>
                                     <td>
                                         <input name="form[magazine]" type="hidden" value="" />
                                         <label><input name="form[magazine]" type="checkbox" value="1" checked='checked' />&nbsp;メルマガを購読する</label><br />
@@ -61,7 +76,7 @@
                                     </td>
                                 </tr>
                             </table>
-                            <p class="btn"><input type="submit" value="内容を確認する" /></p>
+                            <input class="btn-fix" type="submit" value="内容を確認する" />
                             <input type="hidden" name="action" value="confirm" />
                         </form>
                     </div>

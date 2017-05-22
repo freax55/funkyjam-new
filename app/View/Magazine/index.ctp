@@ -10,7 +10,7 @@
     <div class="container">
         <div class="col-md-8 col-md-offset-2 leftzero">
             <ol class="breadcrumb">
-                <li><a href="#">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li class="active"><a href="#">Mail Magazine</a></li>
             </ol>
         </div>
