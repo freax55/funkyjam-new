@@ -731,3 +731,28 @@ p {
     font-weight: 600;
 }
 
+
+@media (max-width: 768px) {
+  .home-news-item {
+      margin-bottom: 5px;
+  }
+  .smapho-none {display: none;}
+  .smapho-show{display: show;}
+/*  .bari-image{
+  background: url("img/portfolio/baribaricrew.png") no-repeat;
+}*/
+}
+
+@media (min-width: 768px){
+.navbar-nav{
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+}
+.smapho-none {display: block;}
+.smapho-show {display: none;}
+/*.bari-image{
+  background: url("img/portfolio/baribari768.png") no-repeat;
+}*/
+} 
