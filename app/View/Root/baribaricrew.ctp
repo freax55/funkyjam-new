@@ -12,9 +12,10 @@
             <p>久保田自身が編集長を務める豪華会報（年４回）、コンサートチケット優先販売、その他入会特典や継続特典も充実した”BARI BARI CREW”にあなたも入会しませんか？</p>
 
             <ul>
-            <li><b>入会金 ￥500 (税込)</b><br><font size="2">※新規入会時のみ</font></li>
-            <li><b>年会費 ￥5,000 (税込)</b></li>
+            <li class="baribari-top"><b>入会金 ￥500</b> (税込)
+            <b style="margin-left: 30px;">年会費 ￥5,000</b> (税込)</li>
             </ul>
+
 
             <div class="text-center">
                 <div class="btn btn-baribari2" >

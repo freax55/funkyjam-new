@@ -1769,6 +1769,13 @@ height: 100%;
     margin-top: 20px;
     margin-bottom: 30px;
 }
+.btn-fix2{
+    width: 124px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
 .news-name{
 	font-family: 'Open Sans', sans-serif;
     color: #666;
