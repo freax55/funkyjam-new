@@ -66,9 +66,6 @@ print $content['Post']['post_content'];
 
 
 
-<?= view::element('part_artist_menu') ?>
-
-<?= view::element('part_introduction') ?>
 
 
 
