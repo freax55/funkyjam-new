@@ -29,10 +29,10 @@
                 </ol>
 
                 <section id="benefitAll">
-                <h3>ファンクラブ入会・継続特典（共通）</h3>
+                <h3><b>ファンクラブ入会・継続特典（共通）</b></h3>
                     <table width=100% frame="box">
                         <tr>
-                            <th class="baribarith" style="padding-right: 5px; padding-left: 5px;">壽</th>
+                            <th class="baribarith">壽</th>
                             <td>
                             <dl>
                                 <dt class="baribaritext">入会から4年目継続前までの会員</dt>
@@ -44,7 +44,7 @@
                             </dl>
                             </td>
                             <td class="imageCol">
-                            <img src="img/portfolio/benefit01.jpg" alt="" />
+                            <img src="img/portfolio/benefit01.jpg" alt="久保田利伸ファンクラブ" />
                             </td>
                         </tr>
                         <tr>
@@ -58,7 +58,7 @@
                             </dl>
                             </td>
                             <td class="imageCol">
-                            <div class="imageWrapper"><img src="img/portfolio/benefit02.jpg" alt="" /></div>
+                            <img src="img/portfolio/benefit02.jpg" alt="久保田利伸ファンクラブ" />
                             </td>
                         </tr>
                         <tr>
@@ -72,7 +72,7 @@
                             </dl>
                             </td>
                             <td class="imageCol">
-                            <div class="imageWrapper"><img src="img/portfolio/benefit03.jpg" alt="" /></div>
+                            <img src="img/portfolio/benefit03.jpg" alt="久保田利伸ファンクラブ" />
                             </td>
                         </tr>
                         <tr>
@@ -86,7 +86,7 @@
                             </dl>
                             </td>
                             <td class="imageCol">
-                            <div class="imageWrapper"><img src="img/portfolio/benefit04.jpg" alt="" /></div>
+                            <img src="img/portfolio/benefit04.jpg" alt="久保田利伸ファンクラブ" />
                             </td>
                         </tr>
                         <tr>
@@ -100,7 +100,7 @@
                             </dl>
                             </td>
                             <td class="imageCol">
-                            <div class="imageWrapper"><img src="img/portfolio/benefit05.jpg" alt="" /></div>
+                            <img src="img/portfolio/benefit05.jpg" alt="久保田利伸ファンクラブ" />
                             </td>
                         </tr>
                         <tr>
@@ -115,7 +115,7 @@
                             </dl>
                             </td>
                             <td class="imageCol">
-                            <div class="imageWrapper"><img src="img/portfolio/benefit09.jpg" alt="" /></div>
+                            <img src="img/portfolio/benefit09.jpg" alt="久保田利伸ファンクラブ" />
                             </td>
                         </tr>
                         <tr>
@@ -129,7 +129,7 @@
                             </dl>
                             </td>
                             <td class="imageCol">
-                            <div class="imageWrapper"><img src="img/portfolio/benefit11.jpg" alt="" /></div>
+                            <img src="img/portfolio/benefit11.jpg" alt="久保田利伸ファンクラブ" />
                             </td>
                         </tr>
                         <tr>
@@ -144,19 +144,19 @@
                             </dl>
                             </td>
                             <td class="imageCol">
-                            <div class="imageWrapper"><img src="img/portfolio/benefit10.jpg" alt="" /></div>
+                            <img src="img/portfolio/benefit10.jpg" alt="久保田利伸ファンクラブ" />
                             </td>
                         </tr>
                     </table>
                 </section>
                 <section id="benefitCredit">
-                <h3 style="margin-top: 60px;">クレジットカードでの入会・継続特典</h3>
+                <h3 class="topsixty"><b>クレジットカードでの入会・継続特典</b></h3>
                 <ul>
                     <p class="bottomzero">■ カード年会費永年無料！</p>
                     <p class="bottomzero">■ ファンクラブ年会費（￥5,000）の自動引き落とし！</p>
                     <p class="bottomzero">■ コンサートチケットをお申し込みの方の中から抽選でスペシャルシートが当たる！</p>
                     <p>■ Bari Bari Crew CARDを使って貯まるポイントで、オリジナルグッズに交換！</p>
-                    <p style="margin-bottom: 60px;">日本中、世界中のOMC、Master Cardマークのあるお店でご利用いただくと、月間のカードショッピング利用金額200円（税込）につき1ポイントさしあげます。ポイントを集めると久保田のオリジナルグッズに交換できます。（ファンクラブ年会費も対象になります）※キャッシングの利用は対象外となります。</p>
+                    <p class="topthirty">日本中、世界中のOMC、Master Cardマークのあるお店でご利用いただくと、月間のカードショッピング利用金額200円（税込）につき1ポイントさしあげます。ポイントを集めると久保田のオリジナルグッズに交換できます。（ファンクラブ年会費も対象になります）※キャッシングの利用は対象外となります。</p>
                 </ul>
 
                 <table width=100% frame="box">
@@ -173,17 +173,17 @@
                     </tr>
                 </table>
                     <ul>
-                    <p class="bottomzero">その他の久保田のオリジナルグッズは<a href="http://www.cedyna.co.jp/card/lineup/detail/kubota/" target="_blank">こちら</a></p>
+                    <p class="topthirty bottomzero">その他の久保田のオリジナルグッズは<a href="http://www.cedyna.co.jp/card/lineup/detail/kubota/" target="_blank">こちら</a></p>
                     <p class="bottomzero">※ 商品内容・交換ポイントは変更になる場合がございます。</p>
                     <p class="bottomzero">■ BariBariCrew会員特典！</p>
                     </ul>
                 </section>
                 <section id="payMail">
-                <h3 style="margin-top: 60px;">入会方法（クレジットカード）</h3>
+                <h3 class="topthirty"><b>入会方法（クレジットカード）</b></h3>
                 <p>「BariBariCrew」会員限定の会員証兼クレジットカードのお申し込みをかねた入会方法です。特典多数！</p>
                 <div class="bari-image">
-                	<img class="smapho-none img-responsive bottom-ten" src="img/portfolio/baribaricrew.png" alt="" />
-                	<img class="smapho-show img-responsive bottom-ten" src="img/portfolio/baribari768.png" alt="" />
+                	<img class="smapho-none img-responsive bottom-ten" src="img/portfolio/baribaricrew.png" alt="久保田利伸ファンクラブ" />
+                	<img class="smapho-show img-responsive bottom-ten" src="img/portfolio/baribari768.png" alt="久保田利伸ファンクラブ" />
                 </div>
                     <ul>
                         <p>※お申し込み対象：BariBariCrew会員の方およびBariBariCrewに新たに入会される方。<br>18歳以上（高校生を除く）の方で、電話連絡が可能な方。</p>
@@ -192,13 +192,13 @@
                 </section>
 
                 <section id="payCredit">
-                <h3 style="margin-top: 60px;">入会方法（郵便振込）</h3>
+                <h3 class="topsixty"><b>入会方法（郵便振込）</b></h3>
                 <p>お近くの郵便局にて、こちらからお送りする専用の振込用紙に必要事項をご記入の上、お振込み頂く方法です。</p>
                 <div class="bari-image">
-                	<img class="smapho-none img-responsive bottom-ten" src="img/portfolio/baribaricrew-post.png" alt="" />
-                	<img class="smapho-show img-responsive bottom-ten" src="img/portfolio/baribari768-post.png" alt="" />
+                	<img class="smapho-none img-responsive bottom-ten" src="img/portfolio/baribaricrew-post.png" alt="久保田利伸ファンクラブ" />
+                	<img class="smapho-show img-responsive bottom-ten" src="img/portfolio/baribari768-post.png" alt="久保田利伸ファンクラブ" />
                 </div>
-                <p class="centerCont">※年会費（￥5,000）は毎年有効期限までに最寄りの郵便局からのお振込みとなります。</p>
+                <p>※年会費（￥5,000）は毎年有効期限までに最寄りの郵便局からのお振込みとなります。</p>
                 
                 <div class="text-center btn btn-baribari2" style="margin-bottom: 0px;" >
                   <a href="fanclub">お申込ページ</a>
@@ -209,10 +209,8 @@
                     ファンクラブ電話：03-3470-7709（15:00〜18:00）<br />
                     ※上記時間外はインフォメーションテープでの対応となります。</p>
                 </section>
-                <div id="bottomBorder">
                 </div>
             </div>
         </div>
     </div>
-</div>
 </div>
