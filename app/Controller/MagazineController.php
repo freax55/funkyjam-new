@@ -86,7 +86,7 @@ class MagazineController extends AppController {
 		// } else {			
 		// 	$this->redirect('/contact/');
 			// $this->render('add');
-		}
+		//}
 	}
 
 	public function complete() {
