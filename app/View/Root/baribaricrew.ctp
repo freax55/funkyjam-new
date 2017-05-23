@@ -18,7 +18,7 @@
 
                 <div class="text-center">
                     <div class="btn btn-baribari2" >
-                    <a href="fanclub.html">お申込ページ</a>
+                    <a href="fanclub">お申込ページ</a>
                 </div>
 
                 <ol class="breadcrumb topzero discocenter">
@@ -201,7 +201,7 @@
                 <p class="centerCont">※年会費（￥5,000）は毎年有効期限までに最寄りの郵便局からのお振込みとなります。</p>
                 
                 <div class="text-center btn btn-baribari2" style="margin-bottom: 0px;" >
-                  <a href="fanclub.html">お申込ページ</a>
+                  <a href="fanclub">お申込ページ</a>
                 </div>
 
                 <p class="topthirty">
