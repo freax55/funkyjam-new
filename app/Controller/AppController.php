@@ -71,6 +71,11 @@ class AppController extends Controller {
 			'url' => "/magazine/",
 			'submenu' => 0,
 		],
+		'fanclub' => [
+			'title' => "FANCLUB",
+			'url' => "/fanclub/",
+			'submenu' => 0,
+		],		
 	];
 
 	// var $pages_admin = [
