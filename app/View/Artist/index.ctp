@@ -54,12 +54,9 @@ $artist = 'kubota';
 			</div>
 
 
-
-
 <?= view::element('part_side_artist') ?>
 
-<?= view::element('part_introduction') ?>
-
+<?= view::element('part_artist_news') ?>
 
 <div id="pageTop">
 	<a style="padding-top: 8px; padding-left: 0px;" href="menu">
