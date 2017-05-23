@@ -172,13 +172,11 @@
                     </td>
                     </tr>
                 </table>
-                <div class="clearfix">
-                    <ul class="set left">
+                    <ul>
                     <p class="bottomzero">その他の久保田のオリジナルグッズは<a href="http://www.cedyna.co.jp/card/lineup/detail/kubota/" target="_blank">こちら</a></p>
-                    <p class="bottomzero">※商品内容・交換ポイントは変更になる場合がございます。</p>
-                    <p class="bottomzero">■BariBariCrew会員特典！</p>
+                    <p class="bottomzero">※ 商品内容・交換ポイントは変更になる場合がございます。</p>
+                    <p class="bottomzero">■ BariBariCrew会員特典！</p>
                     </ul>
-                </div>
                 </section>
                 <section id="payMail">
                 <h3 style="margin-top: 60px;">入会方法（クレジットカード）</h3>
@@ -192,6 +190,7 @@
                         <p>※ファンクラブ年会費5,000円（税込）は毎年会員期限終了月の27日にご指定の金融機関から自動引き落としになります。なお、金融機関休業日の場合は翌営業日になります。</p>
                     </ul>
                 </section>
+
                 <section id="payCredit">
                 <h3 style="margin-top: 60px;">入会方法（郵便振込）</h3>
                 <p>お近くの郵便局にて、こちらからお送りする専用の振込用紙に必要事項をご記入の上、お振込み頂く方法です。</p>
@@ -201,8 +200,7 @@
                 </div>
                 <p class="centerCont">※年会費（￥5,000）は毎年有効期限までに最寄りの郵便局からのお振込みとなります。</p>
                 
-                <div class="text-center">
-                <div class="btn btn-baribari2" style="margin-bottom: 0px;" >
+                <div class="text-center btn btn-baribari2" style="margin-bottom: 0px;" >
                   <a href="fanclub.html">お申込ページ</a>
                 </div>
 
@@ -216,4 +214,5 @@
             </div>
         </div>
     </div>
-
+</div>
+</div>
