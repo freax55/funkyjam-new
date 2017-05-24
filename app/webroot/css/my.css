@@ -756,3 +756,10 @@ p {
   background: url("img/portfolio/baribari768.png") no-repeat;
 }*/
 } 
+.lead {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
