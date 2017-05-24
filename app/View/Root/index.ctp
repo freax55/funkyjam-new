@@ -234,11 +234,11 @@
                 </div>
             </div>
             <div class="row banner-pad">
-                <div class="col-sm-4 col-md-4 col-lg-6 portfolio-item">
+                <div class="col-sm-6 col-md-6 col-lg-6 portfolio-item">
                     <a href="/baribaricrew">
                     <img src="img/portfolio/Baribari-top.jpg" class="img-responsive" alt="Bari Bari Crew"> </a> 
                 </div>
-                <div class="col-sm-4 col-md-4 col-lg-6 portfolio-item">
+                <div class="col-sm-6 col-md-6 col-lg-6 portfolio-item">
                     <a href="https://www.funkyjam.com/mori/">
                     <img src="img/portfolio/morinobanner.jpg" class="img-responsive" alt="Mori no Nakama"> </a> 
                 </div>
