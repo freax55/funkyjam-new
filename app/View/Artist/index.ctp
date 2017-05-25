@@ -24,8 +24,7 @@ $artist = 'kubota';
 <?= view::element('part_artist_nav') ?>
 
 
-
-				<div id="text-section">
+				<div id="news-section">
 				    <div class="row">
 						<div class="col-xs-12">
 							<p>2017.04.07</p>
