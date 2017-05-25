@@ -38,7 +38,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
 </head>
-
 <body>
     <nav id="menu" class="navbar navbar-default navbar-fixed-top">
         <div class="container"> 
@@ -57,16 +56,15 @@
                 <li><a href="/scout">Scout</a></li>
                 <li><a href="/studio">Rental Studio</a></li>
                 <li><a href="/contact">Contact</a></li>
-                <li><a href="http://cooljapanmusic.com/toshi-kubota-update/" >
-                <span style="color:#FF9933;">English</span></a></li>
+                <li><a href="http://cooljapanmusic.com/toshi-kubota-update/" ><span style="color:#FF9933;">English</span></a></li>
                 </ul>
             </div>
         <!-- /.navbar-collapse --> 
         </div>
         <!-- /.container-fluid --> 
     </nav>
-    
-        <!-- Header -->
+                    
+<!-- Header -->
 <header class="text-center" name="home">
     <img class="other-banner" src="/img/company-header-bg.jpg" alt="Funkyjam">
 </header>
@@ -75,143 +73,51 @@
 	<div class="container">
         <div class="row">
     		<div class="col-md-8 col-md-offset-2 leftzero">
-    		<?= $this->BreadCrumb->show($path) ?>
-    		</div>
+    		<ol class="breadcrumb"><li><a href="/" >Home</a></li>
+            <li class="active">Fanletter</li></ol>    		
+            </div>
         </div>
 	</div>
 </div>
 
 <div id="company-page-section">
     <div class="container">
-        <div class="row"> 
-            <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="row"> 
+                <h1 class="artist-title2">ファンレター</h1>
 
-
-			<h2>お問合わせ</h2>
-				<?= $this->Form->create('Magazine', array('novalidate' => true,'type' => 'index', 'action' => 'index', 'url' => '/contact/')) ?>
-				<table width=100%>
-					<tbody>
-						<tr>
-							<td class="wd137">お名前</td>
-							<td>
-							<?php
-							print $this->Form->input('name', array(
-								'type' => 'hidden',
-								'value' => $data['Magazine']['name'],
-							));
-							print $data['Magazine']['name'];
-							?>
-							</td>
-						</tr>
-						<tr>
-							<td>メールアドレス</td>
-							<td>
-							<?php
-							print $this->Form->input('mail', array(
-								'type' => 'hidden',
-								'value' => $data['Magazine']['mail'],
-							));
-							print $data['Magazine']['mail'];
-							print $this->Form->input('mail2', array(
-								'type' => 'hidden',
-								'value' => $data['Magazine']['mail2'],
-							));				
-							?>
-							</td>
-						</tr>
-						<tr>
-							<td>男女</td>
-							<td>
-							<?php
-							print $this->Form->input('sex', array(
-								'type' => 'hidden',
-								'value' => $data['Magazine']['sex'],
-							));
-							print ($data['Magazine']['sex'] != '')?$select_sex[$data['Magazine']['sex']]:'';
-							?>
-							</td>
-						</tr>
-						<tr>
-							<td>年齢</td>
-							<td>
-							<?php
-							print $this->Form->input('age', array(
-								'type' => 'hidden',
-								'value' => $data['Magazine']['age'],
-							));
-							print $data['Magazine']['age'];
-							?>
-							</td>
-						</tr>
-						<tr>
-							<td>職業</td>
-							<td>
-							<?php
-							print $this->Form->input('job', array(
-								'type' => 'hidden',
-								'value' => $data['Magazine']['job'],
-							));
-							print $data['Magazine']['job'];
-							?>
-							</td>
-						</tr>
-						<tr>
-							<td>お問合わせ種別</td>
-							<td>
-							<?php
-							print $this->Form->input('type', array(
-								'type' => 'hidden',
-								'value' => $data['Magazine']['type'],
-							));
-							print $type_contact[$data['Magazine']['type']];
-							?>
-							</td>
-						</tr>
-						<tr>
-							<td>お問合わせ内容</td>
-							<td>
-							<?php
-							print $this->Form->input('content', array(
-								'type' => 'hidden',
-								'value' => $data['Magazine']['content'],
-							));
-							print $data['Magazine']['content'];
-							?>
-							</td>
-						</tr>
-						<tr>
-							<td>メールマガジン</td>
-							<td>
-							<?php
-							print $this->Form->input('magazine', array(
-								'type' => 'hidden',
-								'value' => $data['Magazine']['magazine'],
-							));
-							print 'メルマガを購読' . $wish_magazine[$data['Magazine']['magazine']];
-							?>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				<div style="display:inline-flex">
-
-				<?php
-				print $this->Form->submit('送信する', [
-					'class' => 'btn-fix',
-					'name' => 'complete'
-				]);
-				print $this->Form->submit('戻る', [
-					'class' => 'btn-fix2',
-					'name' => 'edit'
-				]);	
-				?>
-				<?= $this->Form->end() ?>
-				</div>
+                <p class="lead">下記の内容で送信しますか？</p>
+                <form action="index.php" method="post">
+                    <h1><strong>ファンレター</strong></h1>
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th>お名前</th>
+                            <td>{$form.name|escape}</td>
+                        </tr>
+                        <tr>
+                            <th>メールアドレス</th>
+                            <td>{$form.mail|escape}</td>
+                        </tr>
+                        <tr>
+                            <th>宛先</th>
+                            <td>{$mailConfig[$form.to].nameJa|escape}</td>
+                        </tr>
+                        <tr>
+                            <th>ファンレター内容</th>
+                            <td>{$form.content|escape|nl2br}</td>
+                        </tr>
+                        <tr>
+                            <th>メールマガジン</th>
+                            <td>メルマガを購読{if $form.magazine}する{else}しない{/if}</td>
+                        </tr>
+                    </table>
+                    <p class="btn-fix">
+                        <input type="submit" value="上記の内容で送信する" />&nbsp;&nbsp;&nbsp;&nbsp;<input class="return" type="button" value="戻る" onclick="location.href='./?action=input';" />
+                    </p>
 			</div>
 		</div>
 	</div>
-</div>
-
+</div>	
 
 <div id="footer">
 	<div class="container">
