@@ -1352,8 +1352,15 @@ a.showf:hover h3.jp{
 .baribarith {
   text-align: center;
   background-color: #000;
+  padding: 5px 10px 5px 10px;
   color: #fff;
-  font-size: 16px;
+  font-size: 13px;
+}
+.cdtd {
+  background-color: #666;
+  padding: 5px 10px 5px 10px;
+  color: #fff;
+  font-size: 13px;
 }
 .button_wrapper {
    text-align:center;
