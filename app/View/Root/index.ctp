@@ -239,7 +239,7 @@
                     <img src="img/portfolio/Baribari-top.jpg" class="img-responsive" alt="Bari Bari Crew"> </a> 
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-6 portfolio-item">
-                    <a href="https://www.funkyjam.com/mori/">
+                    <a href="/mori/">
                     <img src="img/portfolio/morinobanner.jpg" class="img-responsive" alt="Mori no Nakama"> </a> 
                 </div>
             </div>
@@ -260,7 +260,7 @@
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
                     <a href="/studio">
-                    <img src="img/portfolio/studio-top.jpg" class="img-responsive" alt="Studio"> </a> 
+                    <img src="img/portfolio/studio-top.jpg" class="img-responsive" alt="Studio"></a> 
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
                     <a href="http://cooljapanmusic.com/jammin/">
@@ -277,7 +277,7 @@
                     <img src="img/portfolio/Art-Banner.png" class="img-responsive" alt="Art"> </a> 
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
-                    <a href="http://www.funkyjam.com/premium/">
+                    <a href="/premium/">
                     <img src="img/portfolio/Premium-Banner.jpg" class="img-responsive" alt="FJ Premium"> </a> 
                 </div>
             </div>

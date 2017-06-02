@@ -16,7 +16,7 @@
     <!-- Bootstrap -->
     <link href="/css/common2.css?v=<?= VERSION_CSS ?>" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.css?v=<?= VERSION_CSS ?>">
-    <link rel="stylesheet" type="text/css" href="/files/fonts/font-awesome.css?v=<?= VERSION_CSS ?>">
+    <link rel="stylesheet" type="text/css" href="/fonts/font-awesome/css/font-awesome.css?v=<?= VERSION_CSS ?>">
 
 <!-- Stylesheet
     ================================================== -->
