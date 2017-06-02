@@ -14,13 +14,13 @@
     <link rel="apple-touch-icon" sizes="114x114" src="/img/apple-touch-icon-114x114.png">
 
     <!-- Bootstrap -->
-    <link href="/css/common.css?v=<?= VERSION_CSS ?>" rel="stylesheet">
+    <link href="/css/common2.css?v=<?= VERSION_CSS ?>" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.css?v=<?= VERSION_CSS ?>">
     <link rel="stylesheet" type="text/css" href="/files/fonts/font-awesome.css?v=<?= VERSION_CSS ?>">
 
 <!-- Stylesheet
     ================================================== -->
-    <link rel="stylesheet" type="text/css"  href="/css/style.css">
+    <link rel="stylesheet" type="text/css"  href="/css/style2.css">
     <link rel="stylesheet" type="text/css" href="/css/prettyPhoto.css">
     <link rel="stylesheet" type="text/css"  href="/css/my.css">
     <link rel="stylesheet" type="text/css" href="css/slider-pro.min.css" media="screen" />
