@@ -15,17 +15,17 @@
 <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
 <!-- Bootstrap -->
-<link rel="stylesheet" type="text/css"  href="/Users/MasashiFunatsu/Projects/funkyjam-new/app/webroot/css/bootstrap.css">
+<link rel="stylesheet" type="text/css"  href="/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
 
 <!-- Stylesheet
 ================================================== -->
-<link rel="stylesheet" type="text/css"  href="/Users/MasashiFunatsu/Projects/funkyjam-new/app/webroot/css/style2.css">
-<link rel="stylesheet" type="text/css" href="/Users/MasashiFunatsu/Projects/funkyjam-new/app/webroot/css/prettyPhoto.css">
-<link rel="stylesheet" media="screen" href="/Users/MasashiFunatsu/Projects/funkyjam-new/app/webroot/css/my.css">
+<link rel="stylesheet" type="text/css"  href="/css/style2.css">
+<link rel="stylesheet" type="text/css" href="/css/prettyPhoto.css">
+<link rel="stylesheet" media="screen" href="/css/my.css">
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="/js/modernizr.custom.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,7 +46,7 @@
                 <span class="icon-bar"></span> 
                 <span class="icon-bar"></span> 
             </button>
-            <a class="navbar-brand-top" href="/"><img src="img/portfolio/FJ-Logo.png" alt="Funky Jam"></a> </div>
+            <a class="navbar-brand-top" href="/"><img src="/img/portfolio/FJ-Logo.png" alt="Funky Jam"></a> </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -126,11 +126,9 @@
 					商品の発送は在庫状況やお住まいの地域によってお手元に届くまで2〜3週間お時間いただく場合がございます。<br />
 					予めご了承くださいますよう、お願いいたします。</p>
 
-						<div id="items">
 							{foreach name=orderList from=$orderList item=order_name key=order_code}
 							{if $order_code|array_key_exists:$list}
 							<a name="{$order_code}" id="{$order_code}"></a> 
-							<div class="itemWrapper">
 
 								<p class="category">{$order_name|escape}</p>
 								<!--
@@ -159,10 +157,16 @@
 									{/if}
 								<div class="item{if $item.item_code == 'TKKB0010'} special{/if}"{if $item.item_code == 'TKKB0010'} id="kubotaPhotos"{/if}>
 
-									<div class="image">
+							</div>
+						</div>
+
+			            <div id="store-section">
+			                <div class="col-md-8 col-md-offset-2 leftzero">
+			                    <div class="row">
+			                        <div class="col-lg-3">
 										<table>
 											<tr>
-												<td>
+												<td border="0" cellpadding="0" cellspacing="0">
 													{if $item.image}
 													<div>
 														{if $item.item_code != 'TKTU0040' && $item.item_code != 'TKTU0070' && $item.item_code != 'TKTU0070' && $item.item_code != 'TKTU0010' && $item.item_code != 'TKTU0011' && $item.item_code != 'TKTU0012' && $item.item_code != 'TKTU0020' && $item.item_code != 'TKTU0021' && $item.item_code != 'TKTU0022' && $item.item_code != 'TKTU0050' && $item.item_code != 'TKTU0090' && $item.item_code != 'TKTU0110' && $item.item_code != 'TKGS9950' && $item.item_code != 'TKGS9980' && $item.item_code != 'TKGS9990' && $item.item_code != 'TKGS0010' && $item.item_code != 'TKGS9960' && $item.item_code != 'TKGS9970' && $item.item_code != 'TKGS0040' && $item.item_code != 'TKGS0020' && $item.item_code != 'TKGS0050' && $item.item_code != 'TKGS0090' && $item.item_code != 'TKGS0110' && $item.item_code != 'TKGS0120' && $item.item_code != 'TKGS0060' && $item.item_code != 'TKGS0070' && $item.item_code != 'TKGS0150' && $item.item_code != 'TKGS0130' && $item.item_code != 'TKTF0100' && $item.item_code != 'TKTF0310' && $item.item_code != 'TKTF0320' && $item.item_code != 'TKTF0110' && $item.item_code != 'UR0002' && $item.item_code != 'UR0001' && $item.item_code != 'TK2617'}<a href="{$item.image|replace:".jpg":"_b.jpg"|escape}" target="_blank">{/if}
@@ -185,31 +189,21 @@
 											</tr>
 											{/if}
 										</table>
-									</div>
-									<div class="textWrapper">
-										<div class="title">
-											<h2 class="name"><a name="{$item.item_code}" id="{$item.item_code}">{$item.name|escape}</a></h2>
-											<p class="code">（商品コード {$item.item_code|escape}）</p>
-										</div>
-										<div class="comment">{if $item.note}{$item.note|nl2br}{else}&nbsp;{/if}{if $item.item_code == 'TKTL0180' || $item.item_code == 'TKTL0152' || $item.item_code == 'TKTL0153'}<br /><strong style="color: #FF0000; font-size:137%;"> SOLD OUT </strong>{/if}</div>
-										<div class="quality">
+                        			</div>
+                        			<div class="col-lg-9">
+											<h3 class="store-title"><a name="{$item.item_code}" id="{$item.item_code}">{$item.name|escape}</a></h3>
+											<p class="store-title4">（商品コード {$item.item_code|escape}）</p>
+
+										{if $item.note}{$item.note|nl2br}{else}&nbsp;{/if}{if $item.item_code == 'TKTL0180' || $item.item_code == 'TKTL0152' || $item.item_code == 'TKTL0153'}<br /><strong style="color: #FF0000; font-size:137%;"> SOLD OUT </strong>{/if}
 											<table border="0" cellpadding="0" cellspacing="0">
 												<tr>
-													<th><p class="color">色</p></th>
-													<td>{$item.color|escape|default:'-'}</td>
+													<td border="0" cellpadding="0" cellspacing="0">
+													<p class="store-title4">色 / {$item.color|escape|default:'-'}</p>
+													<p class="store-title4">サイズ / {$item.size|default:'-'}</p>
+													<p class="store-title4">料金 {$item.price|number_format}円
+													</td>
 												</tr>
-												<tr>
-													<th><p class="size">サイズ</p></th>
-													<td>{$item.size|default:'-'}</td>
-												</tr>
-												<tr>
-													<th><p class="price">料金</p></th>
-													<td class="priceValue">{$item.price|number_format}円</td>
-												</tr>
-											</table>				
-										</div>
-										<div class="clear">&nbsp;</div>
-										<div class="cart">
+											</table>		
 											{if $item.item_code == 'TKTL0180' || $item.item_code == 'TKTL0152' || $item.item_code == 'TKTL0153'}
 											&nbsp;
 											{elseif $cart[$item.item_code]} 
@@ -233,9 +227,7 @@
 														<option value="{$smarty.section.stock.iteration}">{$smarty.section.stock.iteration}</option>
 														{/section}
 													</select>
-												</div>
-												<div class="btn"><input type="submit" value="カートにいれる" /></div>
-												<div class="clear">&nbsp;</div>
+												<input class="btn-fix" type="submit" value="カートにいれる" />
 											</form> 
 											{/if}
 										</div>
@@ -251,7 +243,6 @@
 							{/foreach}
 						</div>
 					</div>
-				</div>
 
 
 				<div id="store-section">
@@ -363,17 +354,17 @@
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-        <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+        <script type="text/javascript" src="/js/jquery.1.11.1.js"></script> 
         <!-- Include all compiled plugins (below), or include individual files as needed --> 
-        <script type="text/javascript" src="js/bootstrap.js"></script> 
-        <script type="text/javascript" src="js/SmoothScroll.js"></script> 
-        <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
-        <script type="text/javascript" src="js/jquery.isotope.js"></script> 
-        <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-        <script type="text/javascript" src="js/contact_me.js"></script> 
+        <script type="text/javascript" src="/js/bootstrap.js"></script> 
+        <script type="text/javascript" src="/js/SmoothScroll.js"></script> 
+        <script type="text/javascript" src="/js/jquery.prettyPhoto.js"></script> 
+        <script type="text/javascript" src="/js/jquery.isotope.js"></script> 
+        <script type="text/javascript" src="/js/jqBootstrapValidation.js"></script> 
+        <script type="text/javascript" src="/js/contact_me.js"></script> 
 
     <!-- Javascripts
     ================================================== --> 
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
 </body>
 </html>
