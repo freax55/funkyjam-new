@@ -23,7 +23,7 @@
                     <table>
                         <tr>
                             <td class="introduction">
-                            <a class="home-introduction-item" href="/fanletter" >
+                            <a class="home-introduction-item" href="/artist/fanletter" >
                             <i class="fa fa-comment-o" aria-hidden="true"></i>
                             </td>
                             <td class="introduction-txt">
