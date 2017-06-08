@@ -87,14 +87,14 @@
             <div class="row"> 
                 <h1 class="artist-title2">ファンレター</h1>
 
-                <p> *は必ずお書きください。</p>
+                <p class="attn">*は必ずお書きください。</p>
                     <form action="index.php" method="post">
                             <table width=100% frame="box">
                                 <tr>
-                                    <td style="width: 166px;">お名前<span class="indispensability">*</span></td>
+                                    <td style="width: 200px;">お名前<span class="indispensability">*</span></td>
                                     <td>
                                         {if $errors.name}<p class="error">{$errors.name}</p>{/if}
-                                        <input type="text" name="form[name]" value="{$form.name|escape}" class="w300" />
+                                        <input type="text" name="form[name]" value="{$form.name|escape}" style="width: 250px" />
                                         <p class="attn">記入例：久保田利伸</p>
                                     </td>
                                 </tr>
@@ -102,7 +102,7 @@
                                     <td>メールアドレス<span class="indispensability">*</span></td>
                                     <td>
                                         {if $errors.mail}<p class="error">{$errors.mail}</p>{/if}
-                                        <input name="form[mail]" type="text" value="{$form.mail|escape}" class="w420" />
+                                        <input name="form[mail]" type="text" value="{$form.mail|escape}" style="width: 250px" />
                                         <p class="attn">半角英数字でご記入ください。</p>
                                     </td>
                                 </tr>
@@ -110,7 +110,7 @@
                                     <td>メールアドレス再確認<span class="indispensability">*</span></td>
                                     <td>
                                         {if $errors.mail2}<p class="error">{$errors.mail2}</p>{/if}
-                                        <input name="form[mail2]" type="text" value="{$form.mail2|escape}" class="w420" />
+                                        <input name="form[mail2]" type="text" value="{$form.mail2|escape}" style="width: 250px" />
                                         <p class="attn">確認のため再度ご記入ください。半角英数字でご記入ください。</p>
                                     </td>
                                 </tr>
@@ -119,13 +119,13 @@
                                     <td>
                                         {if $errors.to}<p class="error">{$errors.to}</p>{/if}
                                         <ul class="clearfix">
-                                            <li><input name="form[to]" type="radio" value="kubota" {if $form.to == 'kubota'} checked="checked"{/if} id="fromToArtist01" />&nbsp;<label for="fromToArtist01">久保田利伸</label><br />
+                                            <li style="float: left; padding-right: 15px;"><input name="form[to]" type="radio" value="kubota" {if $form.to == 'kubota'} checked="checked"{/if} id="fromToArtist01" />&nbsp;<label for="fromToArtist01">久保田利伸</label><br />
                                             <img src="/images/fanletter/artist_01.jpg" alt="" /></li>
-                                            <li><input name="form[to]" type="radio" value="urashima" {if $form.to == 'urashima'} checked="checked"{/if} id="fromToArtist02" />&nbsp;<label for="fromToArtist02">浦嶋りんこ</label><br />
+                                            <li style="float: left; padding-right: 15px;"><input name="form[to]" type="radio" value="urashima" {if $form.to == 'urashima'} checked="checked"{/if} id="fromToArtist02" />&nbsp;<label for="fromToArtist02">浦嶋りんこ</label><br />
                                             <img src="/images/fanletter/artist_02.jpg" alt="" /></li>
-                                            <li><input name="form[to]" type="radio" value="mori" {if $form.to == 'mori'} checked="checked"{/if} id="fromToArtist03" />&nbsp;<label for="fromToArtist03">森大輔</label><br />
+                                            <li style="float: left; padding-right: 15px;"><input name="form[to]" type="radio" value="mori" {if $form.to == 'mori'} checked="checked"{/if} id="fromToArtist03" />&nbsp;<label for="fromToArtist03">森大輔</label><br />
                                             <img src="/images/fanletter/artist_03.jpg" alt="" /></li>
-                                            <li><input name="form[to]" type="radio" value="bes" {if $form.to == 'bes'} checked="checked"{/if} id="fromToArtist04" />&nbsp;<label for="fromToArtist04">BROWN EYED SOUL</label><br />
+                                            <li style="float: left; padding-right: 15px;"><input name="form[to]" type="radio" value="bes" {if $form.to == 'bes'} checked="checked"{/if} id="fromToArtist04" />&nbsp;<label for="fromToArtist04">BROWN EYED SOUL</label><br />
                                             <img src="/images/fanletter/artist_04.jpg" alt="" /></li>
                                         </ul>
                                     </td>
@@ -133,7 +133,7 @@
                                 <tr>
                                     <td>ファンレター内容<span class="indispensability">*</span></td>
                                     <td>{if $errors.content}<p class="error">{$errors.content}</p>{/if}
-                                        <textarea name="form[content]" cols="85" rows="15">{$form.content|escape}</textarea>
+                                        <textarea name="form[content]" cols="75" rows="10">{$form.content|escape}</textarea>
                                     </td>
                                 </tr>
                                 <tr>
