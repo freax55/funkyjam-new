@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>メールマガジン | FunkyJam</title>
+    <meta name="description" content="Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。">
+
+<!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" src="/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" src="/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" src="/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" src="/img/apple-touch-icon-114x114.png">
+
+    <!-- Bootstrap -->
+    <link href="/css/common2.css?v=1.0.4" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css?v=1.0.4">
+    <link rel="stylesheet" type="text/css" href="/files/fonts/font-awesome.css?v=1.0.4">
+
+<!-- Stylesheet
+    ================================================== -->
+    <link rel="stylesheet" type="text/css"  href="/css/style2.css">
+    <link rel="stylesheet" type="text/css" href="/css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css"  href="/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/css/slider-pro.min.css" media="screen" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.sliderPro.min.js"></script>
+    <script type="text/javascript" href="/js/modernizr.custom.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+<body>
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+        <div class="container"> 
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> 
+            <span class="icon-bar"></span> <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> </button>
+            <a class="navbar-brand-top" href="/"><img src="/img/portfolio/FJ-Logo.png" alt="Funky Jam"></a> </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Home</a></li>
+                <li><a href="/company">Company</a></li>
+                <li><a href="/shop">FJ Shop</a></li>
+                <li><a href="/recruit">Recruit</a></li>
+                <li><a href="/scout">Scout</a></li>
+                <li><a href="/studio">Studio</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="http://cooljapanmusic.com/toshi-kubota-update/" ><span style="color:#FF9933;">English</span></a></li>
+                </ul>
+            </div>
+        <!-- /.navbar-collapse --> 
+        </div>
+        <!-- /.container-fluid --> 
+    </nav>
+                    
+<!-- Header -->
+<header class="text-center" name="home">
+    <img class="other-banner" src="/img/company-header-bg.jpg" alt="Funkyjam">
+</header>
+
+<div id="breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 leftzero">
+            <ol class="breadcrumb"><li><a href="/" >Home</a></li>
+            <li class="active">Mail Magazine</li></ol>            
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Company Section -->
+<div id="company-page-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+            
+                <h1 class="artist-title2">メールマガジン登録</h1>
+                <article id="contentArea">
+                    <div id="contentBox">
+                        <form action="index.php" method="post">
+                            <table width=100% frame="box">
+                                                            <tr>
+                                <td class="wd137">メールアドレス</td>
+                                <td>
+                                    {if $errors.mail}<p class="error">{$errors.mail}</p>{/if}
+                                    <input style="width: 224px" name="form[mail]" type="text" value="{$form.mail|escape}" class="w420" />
+                                    <p class="attn">半角英数字でご記入ください。</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>メールアドレス再確認</td>
+                                <td>
+                                    {if $errors.mail2}<p class="error">{$errors.mail2}</p>{/if}
+                                    <input style="width: 224px" name="form[mail2]" type="text" value="{$form.mail2|escape}" class="w420" />
+                                    <p class="attn">確認のため再度ご記入ください。半角英数字でご記入ください。</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>性別</td>
+                                <td>
+                                    {if $errors.sex}<p class="error">{$errors.sex}</p>{/if}
+                                    <input type="radio" name="form[sex]" value="男性" id="formSexMale"{if $form.sex == '男性'} checked{/if} /><label for="formSexMale">男性</label>
+                                    <input type="radio" name="form[sex]" value="女性" id="formSexFemale"{if $form.sex == '女性'} checked{/if} /><label for="formSexFemale">女性</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>生年月日</td>
+                                <td>
+                                    {if $errors.birthday}<p class="error">{$errors.birthday}</p>{/if}
+                                    西暦<input style="width: 50px" name="form[birthday_year]" type="text" value="{$form.birthday_year|escape}" maxlength="4" class="w30" />年
+                                    <input style="width: 40px" name="form[birthday_month]" type="text" value="{$form.birthday_month|escape}" maxlength="2" class="w30" />月
+                                    <input style="width: 40px" name="form[birthday_day]" maxlength="2" class="w30" type="text" value="{$form.birthday_day|escape}" />日
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>都道府県</td>
+                                <td>
+                                    {if $errors.pref}<p class="error">{$errors.pref}</p>{/if}
+                                    <select name="form[pref]">
+                                    <option value="北海道"{if $form.pref == '北海道'} selected="selected"{/if}>北海道</option>
+
+                                    <option value="青森県"{if $form.pref == '青森県'} selected="selected"{/if}>青森県</option>
+                                    <option value="岩手県"{if $form.pref == '岩手県'} selected="selected"{/if}>岩手県</option>
+                                    <option value="宮城県"{if $form.pref == '宮城県'} selected="selected"{/if}>宮城県</option>
+                                    <option value="秋田県"{if $form.pref == '秋田県'} selected="selected"{/if}>秋田県</option>
+                                    <option value="山形県"{if $form.pref == '山形県'} selected="selected"{/if}>山形県</option>
+                                    <option value="福島県"{if $form.pref == '福島県'} selected="selected"{/if}>福島県</option>
+
+                                    <option value="茨城県"{if $form.pref == '茨城県'} selected="selected"{/if}>茨城県</option>
+                                    <option value="栃木県"{if $form.pref == '栃木県'} selected="selected"{/if}>栃木県</option>
+                                    <option value="群馬県"{if $form.pref == '群馬県'} selected="selected"{/if}>群馬県</option>
+                                    <option value="埼玉県"{if $form.pref == '埼玉県'} selected="selected"{/if}>埼玉県</option>
+                                    <option value="千葉県"{if $form.pref == '千葉県'} selected="selected"{/if}>千葉県</option>
+                                    <option value="東京都"{if $form.pref == '東京都'} selected="selected"{/if}>東京都</option>
+                                    <option value="神奈川県"{if $form.pref == '神奈川県'} selected="selected"{/if}>神奈川県</option>
+
+                                    <option value="新潟県"{if $form.pref == '新潟県'} selected="selected"{/if}>新潟県</option>
+                                    <option value="富山県"{if $form.pref == '富山県'} selected="selected"{/if}>富山県</option>
+                                    <option value="石川県"{if $form.pref == '石川県'} selected="selected"{/if}>石川県</option>
+                                    <option value="福井県"{if $form.pref == '福井県'} selected="selected"{/if}>福井県</option>
+                                    <option value="山梨県"{if $form.pref == '山梨県'} selected="selected"{/if}>山梨県</option>
+                                    <option value="長野県"{if $form.pref == '長野県'} selected="selected"{/if}>長野県</option>
+
+                                    <option value="岐阜県"{if $form.pref == '岐阜県'} selected="selected"{/if}>岐阜県</option>
+                                    <option value="静岡県"{if $form.pref == '静岡県'} selected="selected"{/if}>静岡県</option>
+                                    <option value="愛知県"{if $form.pref == '愛知県'} selected="selected"{/if}>愛知県</option>
+                                    <option value="三重県"{if $form.pref == '三重県'} selected="selected"{/if}>三重県</option>
+
+                                    <option value="滋賀県"{if $form.pref == '滋賀県'} selected="selected"{/if}>滋賀県</option>
+                                    <option value="京都府"{if $form.pref == '京都府'} selected="selected"{/if}>京都府</option>
+                                    <option value="大阪府"{if $form.pref == '大阪府'} selected="selected"{/if}>大阪府</option>
+                                    <option value="兵庫県"{if $form.pref == '兵庫県'} selected="selected"{/if}>兵庫県</option>
+                                    <option value="奈良県"{if $form.pref == '奈良県'} selected="selected"{/if}>奈良県</option>
+                                    <option value="和歌山県"{if $form.pref == '和歌山県'} selected="selected"{/if}>和歌山県</option>
+
+                                    <option value="鳥取県"{if $form.pref == '鳥取県'} selected="selected"{/if}>鳥取県</option>
+                                    <option value="島根県"{if $form.pref == '島根県'} selected="selected"{/if}>島根県</option>
+                                    <option value="岡山県"{if $form.pref == '岡山県'} selected="selected"{/if}>岡山県</option>
+                                    <option value="広島県"{if $form.pref == '広島県'} selected="selected"{/if}>広島県</option>
+                                    <option value="山口県"{if $form.pref == '山口県'} selected="selected"{/if}>山口県</option>
+
+                                    <option value="徳島県"{if $form.pref == '徳島県'} selected="selected"{/if}>徳島県</option>
+                                    <option value="香川県"{if $form.pref == '香川県'} selected="selected"{/if}>香川県</option>
+                                    <option value="愛媛県"{if $form.pref == '愛媛県'} selected="selected"{/if}>愛媛県</option>
+                                    <option value="高知県"{if $form.pref == '高知県'} selected="selected"{/if}>高知県</option>
+
+                                    <option value="福岡県"{if $form.pref == '福岡県'} selected="selected"{/if}>福岡県</option>
+                                    <option value="佐賀県"{if $form.pref == '佐賀県'} selected="selected"{/if}>佐賀県</option>
+                                    <option value="長崎県"{if $form.pref == '長崎県'} selected="selected"{/if}>長崎県</option>
+                                    <option value="熊本県"{if $form.pref == '熊本県'} selected="selected"{/if}>熊本県</option>
+                                    <option value="大分県"{if $form.pref == '大分県'} selected="selected"{/if}>大分県</option>
+                                    <option value="宮崎県"{if $form.pref == '宮崎県'} selected="selected"{/if}>宮崎県</option>
+                                    <option value="鹿児島県"{if $form.pref == '鹿児島県'} selected="selected"{/if}>鹿児島県</option>
+                                    <option value="沖縄県"{if $form.pref == '沖縄県'} selected="selected"{/if}>沖縄県</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>気になっているアーティスト</td>
+                                <td>
+                                    {if $errors.favorite}<p class="error">{$errors.favorite}</p>{/if}
+                                    <input type="hidden" name="form[fav_kubota]" value="" />
+                                    <input type="checkbox" name="form[fav_kubota]" value="久保田利伸" id="formKubota"{if $form.fav_kubota}checked="checked"{/if} /><label for="formKubota">久保田利伸</label>
+                                    <input type="hidden" name="form[fav_urashima]" value="" />
+                                    <input type="checkbox" name="form[fav_urashima]" value="浦嶋りんこ" id="formUrashima"{if $form.fav_urashima}checked="checked"{/if} /><label for="formUrashima">浦嶋りんこ</label>
+                                    <input type="hidden" name="form[fav_mori]" value="" />
+                                    <input type="checkbox" name="form[fav_mori]" value="森大輔" id="formMori"{if $form.fav_mori}checked="checked"{/if} /><label for="formMori">森大輔</label>
+                                    <input type="hidden" name="form[fav_bes]" value="" />
+                                    <input type="checkbox" name="form[fav_bes]" value="BROWN EYED SOUL" id="formBes"{if $form.fav_bes}checked="checked"{/if} /><label for="formBes">BROWN EYED SOUL</label>
+                                    <br />
+                                    <input type="hidden" name="form[fav_shigemoto]" value="" />
+                                    <input type="checkbox" name="form[fav_shigemoto]" value="茂本ヒデキチ" id="formShigemoto"{if $form.fav_shigemoto}checked="checked"{/if} /><label for="formShigemoto">茂本ヒデキチ</label>
+                                    <input type="hidden" name="form[fav_shima]" value="" />
+                                    <input type="checkbox" name="form[fav_shima]" value="島かおり" id="formShima"{if $form.fav_shima}checked="checked"{/if} /><label for="formShima">島かおり</label>
+                                    <input type="hidden" name="form[fav_wataru]" value="" />
+                                    <input type="checkbox" name="form[fav_wataru]" value="ワタル" id="formWataru"{if $form.fav_wataru}checked="checked"{/if} /><label for="formWataru">ワタル</label>
+                                </td>
+                            </tr>
+                        </table>
+                        <input class="btn-fix" type="submit" value="内容を確認する" />
+                    </div>
+                    <input type="hidden" name="action" value="confirm" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="footer">
+	<div class="container">
+		<p class="footer-text">Copyright &copy; Funky Jam All rights reserved.</p>
+	</div>
+	<div class="footer-text2">
+		<a href="/privacy">Privacy Policy</a>
+	</div>
+</div>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script type="text/javascript" src="/js/jquery.1.11.1.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script type="text/javascript" src="/js/bootstrap.js"></script> 
+<script type="text/javascript" src="/js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="/js/jquery.prettyPhoto.js"></script> 
+<script type="text/javascript" src="/js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="/js/jqBootstrapValidation.js"></script> 
+
+<!-- Javascripts
+    ================================================== --> 
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+</body>
+</html>

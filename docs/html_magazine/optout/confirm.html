@@ -55,7 +55,7 @@
                 <li><a href="/shop">FJ Shop</a></li>
                 <li><a href="/recruit">Recruit</a></li>
                 <li><a href="/scout">Scout</a></li>
-                <li><a href="/studio">Rental Studio</a></li>
+                <li><a href="/studio">Studio</a></li>
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="http://cooljapanmusic.com/toshi-kubota-update/" ><span style="color:#FF9933;">English</span></a></li>
                 </ul>
@@ -75,7 +75,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 leftzero">
             <ol class="breadcrumb"><li><a href="/" >Home</a></li>
-            <li class="active">メルマガ退会</li></ol>            
+            <li class="active">Drop</li></ol>            
             </div>
         </div>
     </div>
@@ -85,47 +85,51 @@
 <!-- Company Section -->
 <div id="company-page-section">
     <div class="container">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="row">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+            
             <h1 class="artist-title2">メールマガジン退会</h1>
-
-<!-- ここからcontentエリア -->
-            <div id="contentWrapper">
-                <p class="lead">下記の内容でメルマガの配信を停止しますか？</p>
-                <form action="index.php" method="post">
-                    <div class="dfTbl">
-                        <h1><strong>メルマガ退会</strong></h1>
-                        <table border="0" cellspacing="0" cellpadding="0">
+                <div id="contentWrapper">
+                    <p class="lead">下記の内容でメルマガの配信を停止しますか？</p>
+                    <form action="index.php" method="post">
+                        <table width=100% frame="box">
                             <tr>
-                                <th>メールアドレス</th>
-                                <td>masashi.funatsu@gmail.com</td>
+                                <td class="wd137">メールアドレス</td>
+                                <td>{$form.mail|escape}</td>
                             </tr>
                             <tr>
-                                <th>性別</th>
-                                <td>男性</td>
+                                <td>性別</td>
+                                <td>{$form.sex|escape}</td>
                             </tr>
                             <tr>
-                                <th>生年月日</th>
-                                <td>西暦1978年09月10日</td>
+                                <td>生年月日</td>
+                                <td>西暦{$form.birthday_year|escape}年{$form.birthday_month|escape}月{$form.birthday_day|escape}日</td>
                             </tr>
                             <tr>
-                                <th>都道府県</th>
-                                <td>東京都</td>
+                                <td>都道府県</td>
+                                <td>{$form.pref|escape}</td>
                             </tr>
                             <tr>
-                                <th>気になっているアーティスト</th>
+                                <td>気になっているアーティスト</td>
                                 <td>
+                                    {if $form.fav_kubota}久保田利伸<br />{/if}
+                                    {if $form.fav_mori}森大輔<br />{/if}
+                                    {if $form.fav_urashima}浦嶋りんこ<br />{/if}
+                                    {if $form.fav_bes}BROWN EYED SOUL<br />{/if}
+                                    {if $form.fav_shigemoto}茂本ヒデキチ<br />{/if}
+                                    {if $form.fav_shima}島かおり<br />{/if}
+                                    {if $form.fav_wataru}ワタル<br />{/if}
+                                </td>
                             </tr>
                         </table>
-                        <p class="btn"><input type="submit" value="配信を停止する" />&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="キャンセルする" onclick="location.href='http://www.funkyjam.com/';" /></p>
-                    </div>
-                    <input type="hidden" name="action" value="process" />
-                </form>
+                        <input class="btn-fix" type="submit" value="配信を停止する" />&nbsp;&nbsp;&nbsp;&nbsp;<input class="btn-fix" type="button" value="キャンセルする" onclick="location.href='http://www.funkyjam.com/';" /></p>
+                        <input class="btn-fix" type="hidden" name="action" value="process" />
+                    </form>
+                </div>
             </div>
         </div>
-    </article>
-<!-- ここまでcontentエリア -->
-
+    </div>
+</div>
 
 <div id="footer">
 	<div class="container">

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>お問い合わせ | FunkyJam</title>
+    <title>ファンレター | FunkyJam</title>
     <meta name="description" content="Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。">
 
 <!-- Favicons
@@ -54,7 +54,7 @@
                 <li><a href="/shop">FJ Shop</a></li>
                 <li><a href="/recruit">Recruit</a></li>
                 <li><a href="/scout">Scout</a></li>
-                <li><a href="/studio">Rental Studio</a></li>
+                <li><a href="/studio">Studio</a></li>
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="http://cooljapanmusic.com/toshi-kubota-update/" ><span style="color:#FF9933;">English</span></a></li>
                 </ul>
@@ -110,11 +110,13 @@
                             <td>メルマガを購読{if $form.magazine}する{else}しない{/if}</td>
                         </tr>
                     </table>
-                        <input class="btn-fix" type="submit" value="送信する" />&nbsp;&nbsp;&nbsp;&nbsp;<input class="return btn-fix" type="button" value="戻る" onclick="location.href='./?action=input';" />
-        			</div>
-        		</div>
-        	</div>
-        </div>	
+                        <input class="btn-fix" type="submit" value="送信する" />&nbsp;&nbsp;&nbsp;&nbsp;<input class="btn-fix" class="return" type="button" value="戻る" onclick="location.href='./?action=input';" />
+                    <input type="hidden" name="action" value="process" />
+                </form>
+    		</div>
+    	</div>
+    </div>	
+</div>
 
 <div id="footer">
 	<div class="container">

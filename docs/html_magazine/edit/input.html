@@ -54,7 +54,7 @@
                 <li><a href="/shop">FJ Shop</a></li>
                 <li><a href="/recruit">Recruit</a></li>
                 <li><a href="/scout">Scout</a></li>
-                <li><a href="/studio">Rental Studio</a></li>
+                <li><a href="/studio">Studio</a></li>
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="http://cooljapanmusic.com/toshi-kubota-update/" ><span style="color:#FF9933;">English</span></a></li>
                 </ul>
@@ -75,7 +75,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 leftzero">
             <ol class="breadcrumb"><li><a href="/" >Home</a></li>
-            <li class="active">登録情報変更</li></ol>            
+            <li class="active">Edit</li></ol>            
             </div>
         </div>
     </div>
@@ -85,31 +85,30 @@
 <!-- Company Section -->
 <div id="company-page-section">
     <div class="container"> 
-        <div class="col-md-8 col-md-offset-2">
-            <div class="row">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+            
             <h1 class="artist-title2">登録情報変更</h1>
-
-                <p> *は必ずお書きください。</p>
                 <form action="index.php" method="post">
                     <table width=100% frame="box">
                         <tr>
-                            <td>メールアドレス *</td>
+                            <td class="wd137">メールアドレス</td>
                             <td>
                                 {if $errors.mail}<p class="error">{$errors.mail}</p>{/if}
-                                <input name="form[mail]" type="text" value="{$form.mail|escape}" class="w420" />
+                                <input style="width: 224px" name="form[mail]" type="text" value="{$form.mail|escape}" class="w420" />
                                 <p class="attn">半角英数字でご記入ください。</p>
                             </td>
                         </tr>
                         <tr>
-                            <td>メールアドレス再確認 *</td>
+                            <td>メールアドレス再確認</td>
                             <td>
                                 {if $errors.mail2}<p class="error">{$errors.mail2}</p>{/if}
-                                <input name="form[mail2]" type="text" value="{$form.mail2|escape}" class="w420" />
+                                <input style="width: 224px" name="form[mail2]" type="text" value="{$form.mail2|escape}" class="w420" />
                                 <p class="attn">確認のため再度ご記入ください。半角英数字でご記入ください。</p>
                             </td>
                         </tr>
                         <tr>
-                            <td>性別 *</td>
+                            <td>性別</td>
                             <td>
                                 {if $errors.sex}<p class="error">{$errors.sex}</p>{/if}
                                 <input type="radio" name="form[sex]" value="男性" id="formSexMale"{if $form.sex == '男性'} checked{/if} /><label for="formSexMale">男性</label>
@@ -117,16 +116,16 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>生年月日 *</td>
+                            <td>生年月日</td>
                             <td>
                                 {if $errors.birthday}<p class="error">{$errors.birthday}</p>{/if}
-                                西暦<input name="form[birthday_year]" type="text" value="{$form.birthday_year|escape}" maxlength="4" class="w30" />年
-                                <input name="form[birthday_month]" type="text" value="{$form.birthday_month|escape}" smaxlength="2" class="w30" />月
-                                <input name="form[birthday_day]" type="text" value="{$form.birthday_day|escape}" maxlength="2" class="w30"  />日
+                                西暦<input style="width: 50px" name="form[birthday_year]" type="text" value="{$form.birthday_year|escape}" maxlength="4" class="w30" />年
+                                <input style="width: 40px" name="form[birthday_month]" type="text" value="{$form.birthday_month|escape}" smaxlength="2" class="w30" />月
+                                <input style="width: 40px" name="form[birthday_day]" type="text" value="{$form.birthday_day|escape}" maxlength="2" class="w30"  />日
                             </td>
                         </tr>
                         <tr>
-                            <td>都道府県 *</td>
+                            <td>都道府県</td>
                             <td>
                                 {if $errors.pref}<p class="error">{$errors.pref}</p>{/if}
                                 <select name="form[pref]">
@@ -189,7 +188,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>気になっているアーティスト *</td>
+                            <td>気になっているアーティスト</td>
                             <td>
                                 {if $errors.favorite}<p class="error">{$errors.favorite}</p>{/if}
                                 <input type="hidden" name="form[fav_kubota]" value="" />

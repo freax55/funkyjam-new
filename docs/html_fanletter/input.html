@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>お問い合わせ | FunkyJam</title>
+    <title>ファンレター | FunkyJam</title>
     <meta name="description" content="Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。">
 
 <!-- Favicons
@@ -55,7 +55,7 @@
                 <li><a href="/shop">FJ Shop</a></li>
                 <li><a href="/recruit">Recruit</a></li>
                 <li><a href="/scout">Scout</a></li>
-                <li><a href="/studio">Rental Studio</a></li>
+                <li><a href="/studio">Studio</a></li>
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="http://cooljapanmusic.com/toshi-kubota-update/" ><span style="color:#FF9933;">English</span></a></li>
                 </ul>
@@ -83,77 +83,76 @@
 
 <div id="company-page-section">
     <div class="container">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="row"> 
-                <h1 class="artist-title2">ファンレター</h1>
+        <div class="row"> 
+            <div class="col-md-8 col-md-offset-2">
 
-                <p class="attn">*は必ずお書きください。</p>
+                <h1 class="artist-title2">ファンレター</h1>
                     <form action="index.php" method="post">
-                            <table width=100% frame="box">
-                                <tr>
-                                    <td style="width: 200px;">お名前<span class="indispensability">*</span></td>
-                                    <td>
-                                        {if $errors.name}<p class="error">{$errors.name}</p>{/if}
-                                        <input type="text" name="form[name]" value="{$form.name|escape}" style="width: 250px" />
-                                        <p class="attn">記入例：久保田利伸</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>メールアドレス<span class="indispensability">*</span></td>
-                                    <td>
-                                        {if $errors.mail}<p class="error">{$errors.mail}</p>{/if}
-                                        <input name="form[mail]" type="text" value="{$form.mail|escape}" style="width: 250px" />
-                                        <p class="attn">半角英数字でご記入ください。</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>メールアドレス再確認<span class="indispensability">*</span></td>
-                                    <td>
-                                        {if $errors.mail2}<p class="error">{$errors.mail2}</p>{/if}
-                                        <input name="form[mail2]" type="text" value="{$form.mail2|escape}" style="width: 250px" />
-                                        <p class="attn">確認のため再度ご記入ください。半角英数字でご記入ください。</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>宛先<span class="indispensability">*</span></td>
-                                    <td>
-                                        {if $errors.to}<p class="error">{$errors.to}</p>{/if}
-                                        <ul class="clearfix">
-                                            <li style="float: left; padding-right: 15px;"><input name="form[to]" type="radio" value="kubota" {if $form.to == 'kubota'} checked="checked"{/if} id="fromToArtist01" />&nbsp;<label for="fromToArtist01">久保田利伸</label><br />
-                                            <img src="/images/fanletter/artist_01.jpg" alt="" /></li>
-                                            <li style="float: left; padding-right: 15px;"><input name="form[to]" type="radio" value="urashima" {if $form.to == 'urashima'} checked="checked"{/if} id="fromToArtist02" />&nbsp;<label for="fromToArtist02">浦嶋りんこ</label><br />
-                                            <img src="/images/fanletter/artist_02.jpg" alt="" /></li>
-                                            <li style="float: left; padding-right: 15px;"><input name="form[to]" type="radio" value="mori" {if $form.to == 'mori'} checked="checked"{/if} id="fromToArtist03" />&nbsp;<label for="fromToArtist03">森大輔</label><br />
-                                            <img src="/images/fanletter/artist_03.jpg" alt="" /></li>
-                                            <li style="float: left; padding-right: 15px;"><input name="form[to]" type="radio" value="bes" {if $form.to == 'bes'} checked="checked"{/if} id="fromToArtist04" />&nbsp;<label for="fromToArtist04">BROWN EYED SOUL</label><br />
-                                            <img src="/images/fanletter/artist_04.jpg" alt="" /></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>ファンレター内容<span class="indispensability">*</span></td>
-                                    <td>{if $errors.content}<p class="error">{$errors.content}</p>{/if}
-                                        <textarea name="form[content]" cols="75" rows="10">{$form.content|escape}</textarea>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>メールマガジン<span class="indispensability">*</span></td>
-                                    <td>
-                                        {if $errors.magazine}<p class="error">{$errors.magazine}</p>{/if}
-                                        <input name="form[magazine]" type="hidden" value="" />
-                                        <label><input name="form[magazine]" type="checkbox" value="1"{if $form.magazine || $form.magazine|is_null} checked='checked'{/if} />&nbsp;メルマガを購読する</label><br />
-                                        <p class="attn">ファンキー・ジャム所属アーティストの最新情報をお届けします。<br />不要な方はチェックをはずして下さい。</p>
-                                    </td>
-                                </tr>
-                            </table>
-                            <input class="btn-fix" type="submit" value="内容を確認する" />
-                        </div>
-                        <input type="hidden" name="action" value="confirm" />
-                    </form>
-                </div>
+                        <table width=100% frame="box">
+                            <tr>
+                                <td class="wd137">お名前</td>
+                                <td>
+                                    {if $errors.name}<p class="error">{$errors.name}</p>{/if}
+                                    <input type="text" name="form[name]" value="{$form.name|escape}" style="width: 224px" />
+                                    <p class="attn">記入例：久保田利伸</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>メールアドレス</td>
+                                <td>
+                                    {if $errors.mail}<p class="error">{$errors.mail}</p>{/if}
+                                    <input name="form[mail]" type="text" value="{$form.mail|escape}" style="width: 224px" />
+                                    <p class="attn">半角英数字でご記入ください。</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>メールアドレス再確認</td>
+                                <td>
+                                    {if $errors.mail2}<p class="error">{$errors.mail2}</p>{/if}
+                                    <input name="form[mail2]" type="text" value="{$form.mail2|escape}" style="width: 224px" />
+                                    <p class="attn">確認のため再度ご記入ください。半角英数字でご記入ください。</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>宛先</td>
+                                <td>
+                                    {if $errors.to}<p class="error">{$errors.to}</p>{/if}
+                                    <ul class="clearfix">
+                                        <li style="float: left; padding-right: 15px;"><input name="form[to]" type="radio" value="kubota" {if $form.to == 'kubota'} checked="checked"{/if} id="fromToArtist01" />&nbsp;<label for="fromToArtist01">久保田利伸</label><br />
+                                        <img src="/images/fanletter/artist_01.jpg" alt="" /></li>
+                                        <li style="float: left; padding-right: 15px;"><input name="form[to]" type="radio" value="urashima" {if $form.to == 'urashima'} checked="checked"{/if} id="fromToArtist02" />&nbsp;<label for="fromToArtist02">浦嶋りんこ</label><br />
+                                        <img src="/images/fanletter/artist_02.jpg" alt="" /></li>
+                                        <li style="float: left; padding-right: 15px;"><input name="form[to]" type="radio" value="mori" {if $form.to == 'mori'} checked="checked"{/if} id="fromToArtist03" />&nbsp;<label for="fromToArtist03">森大輔</label><br />
+                                        <img src="/images/fanletter/artist_03.jpg" alt="" /></li>
+                                        <li style="float: left; padding-right: 15px;"><input name="form[to]" type="radio" value="bes" {if $form.to == 'bes'} checked="checked"{/if} id="fromToArtist04" />&nbsp;<label for="fromToArtist04">BROWN EYED SOUL</label><br />
+                                        <img src="/images/fanletter/artist_04.jpg" alt="" /></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ファンレター内容</td>
+                                <td>{if $errors.content}<p class="error">{$errors.content}</p>{/if}
+                                    <textarea name="form[content]" cols="75" rows="10" style="width: 100%;">{$form.content|escape}</textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>メールマガジン</td>
+                                <td>
+                                    {if $errors.magazine}<p class="error">{$errors.magazine}</p>{/if}
+                                    <input name="form[magazine]" type="hidden" value="" />
+                                    <label><input name="form[magazine]" type="checkbox" value="1"{if $form.magazine || $form.magazine|is_null} checked='checked'{/if} />&nbsp;メルマガを購読する</label><br />
+                                    <p class="attn">ファンキー・ジャム所属アーティストの最新情報をお届けします。<br />不要な方はチェックをはずして下さい。</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <input class="btn-fix" type="submit" value="内容を確認する" />
+                    </div>
+                    <input type="hidden" name="action" value="confirm" />
+                </form>
             </div>
         </div>
     </div>
+</div>
 
 <div id="footer">
     <div class="container">

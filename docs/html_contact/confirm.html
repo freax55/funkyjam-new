@@ -55,7 +55,7 @@
                 <li><a href="/shop">FJ Shop</a></li>
                 <li><a href="/recruit">Recruit</a></li>
                 <li><a href="/scout">Scout</a></li>
-                <li><a href="/studio">Rental Studio</a></li>
+                <li><a href="/studio">Studio</a></li>
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="http://cooljapanmusic.com/toshi-kubota-update/" ><span style="color:#FF9933;">English</span></a></li>
                 </ul>
@@ -75,7 +75,7 @@
         <div class="row">
     		<div class="col-md-8 col-md-offset-2 leftzero">
     		<ol class="breadcrumb"><li><a href="http://fj-new.dev/" >Home</a></li>
-    		<li class="active">お問い合わせ</li></ol>    		
+    		<li class="active">Contact</li></ol>    		
     		</div>
         </div>
 	</div>
@@ -87,70 +87,59 @@
             <div class="col-md-8 col-md-offset-2">
 
 
-			<h2>お問合わせ</h2>
+			<h2>お問い合わせ</h2>
 				<form action="/contact/" novalidate="novalidate" id="MagazineIndexForm" method="post" accept-charset="utf-8">				
-				<table width=100%>
+				<table width=100% frame="box">
 					<tbody>
-						<tr>
-							<td class="wd137">お名前</td>
-							<td>
-							<input type="hidden" name="data[Magazine][name]" value="舟津政志" id="MagazineName"/>舟津政志							
-							</td>
-						</tr>
-						<tr>
-							<td>メールアドレス</td>
-							<td>
-							<input type="hidden" name="data[Magazine][mail]" value="masashi.funatsu@gmail.com" id="MagazineMail"/>masashi.funatsu@gmail.com<input type="hidden" name="data[Magazine][mail2]" value="masashi.funatsu@gmail.com" id="MagazineMail2"/>							</td>
-						</tr>
-						<tr>
-							<td>男女</td>
-							<td>
-							<input type="hidden" name="data[Magazine][sex]" value="1" id="MagazineSex"/>男性							
-							</td>
-						</tr>
-						<tr>
-							<td>年齢</td>
-							<td>
-							<input type="hidden" name="data[Magazine][age]" value="38" id="MagazineAge"/>38							
-							</td>
-						</tr>
-						<tr>
-							<td>職業</td>
-							<td>
-							<input type="hidden" name="data[Magazine][job]" value="会社員" id="MagazineJob"/>会社員							
-							</td>
-						</tr>
-						<tr>
-							<td>お問合わせ種別</td>
-							<td>
-							<input type="hidden" name="data[Magazine][type]" value="1" id="MagazineType"/>久保田利伸について							
-							</td>
-						</tr>
-						<tr>
-							<td>お問合わせ内容</td>
-							<td>
-							<input type="hidden" name="data[Magazine][content]" value="あ" id="MagazineContent"/>あ							
-							</td>
-						</tr>
-						<tr>
-							<td>メールマガジン</td>
-							<td>
-							<input type="hidden" name="data[Magazine][magazine]" value="0" id="MagazineMagazine"/>メルマガを購読しない							
-							</td>
-						</tr>
+							<tr>
+								<td class="wd137">お名前</td>
+								<td>{$form.name|escape}</td>
+							</tr>
+							<tr>
+								<td>メールアドレス</td>
+								<td>{$form.mail|escape}</td>
+							</tr>
+							{if $form.sex}
+							<tr>
+								<td>性別</td>
+								<td>{$form.sex}</td>
+							</tr>
+							{/if}
+							{if $form.age}
+							<tr>
+								<td>年齢</td>
+								<td>{$form.age|escape}&nbsp;歳</td>
+							</tr>
+							{/if}
+							{if $form.job}
+							<tr>
+								<td>職業</td>
+								<td>{$form.job|escape}</td>
+							</tr>
+							{/if}
+							<tr>
+								<td>種別</td>
+								<td>{$form.type|escape}</td>
+							</tr>
+							<tr>
+								<td>内容</td>
+								<td>{$form.content|escape|nl2br}</td>
+							</tr>
+							<tr>
+								<td>メールマガジン</td>
+								<td>メルマガを購読{if $form.magazine}する{else}しない{/if}</td>
+							</tr>
 					</tbody>
 				</table>
-				<div style="display:inline-flex">
-
-				<div class="submit"><input class="btn-fix" name="complete" type="submit" value="送信する"/></div>
-				<div class="submit"><input class="btn-fix2" name="edit" type="submit" value="戻る"/>
-				</div>				
-				</form>				
-				</div>
+                    <input class="btn-fix" type="submit" value="送信する" />&nbsp;&nbsp;&nbsp;&nbsp;<input class="return btn-fix" type="button" value="戻る" onclick="location.href='./?action=input';" />
+                    <input type="hidden" name="action" value="process" />		
+				</form>
 			</div>
 		</div>
 	</div>
 </div>
+
+
 <div id="footer">
 	<div class="container">
 		<p class="footer-text">Copyright &copy; Funky Jam All rights reserved.</p>

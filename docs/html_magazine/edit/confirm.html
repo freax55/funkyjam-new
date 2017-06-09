@@ -54,7 +54,7 @@
                 <li><a href="/shop">FJ Shop</a></li>
                 <li><a href="/recruit">Recruit</a></li>
                 <li><a href="/scout">Scout</a></li>
-                <li><a href="/studio">Rental Studio</a></li>
+                <li><a href="/studio">Studio</a></li>
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="http://cooljapanmusic.com/toshi-kubota-update/" ><span style="color:#FF9933;">English</span></a></li>
                 </ul>
@@ -75,7 +75,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 leftzero">
             <ol class="breadcrumb"><li><a href="/" >Home</a></li>
-            <li class="active">登録情報変更</li></ol>            
+            <li class="active">Edit</li></ol>            
             </div>
         </div>
     </div>
@@ -91,10 +91,9 @@
 
                 <p class="lead">下記の内容で変更しますか？</p>
                 <form action="index.php" method="post">
-                    <h1><strong>登録情報変更</strong></h1>
                     <table width=100% frame="box">
                         <tr>
-                            <td>メールアドレス</td>
+                            <td class="wd137">メールアドレス</td>
                             <td>{$form.mail|escape}</td>
                         </tr>
                         <tr>
@@ -118,7 +117,7 @@
                             </td>
                         </tr>
                         </table>
-                        <input class="btn-fix" type="submit" value="上記の内容で変更する" />&nbsp;&nbsp;&nbsp;&nbsp;<input  class="btn-fix" type="button" value="戻る" onclick="location.href='./?action=input';" /></p>
+                        <input class="btn-fix" type="submit" value="変更する" />&nbsp;&nbsp;&nbsp;&nbsp;<input  class="btn-fix" type="button" value="戻る" onclick="location.href='./?action=input';" /></p>
                     </div>
                     <input type="hidden" name="action" value="process" />
                 </form>
