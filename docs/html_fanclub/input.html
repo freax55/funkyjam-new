@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FANCLUB | FunkyJam</title>
+    <meta name="description" content="Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。">
+
+<!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" src="/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" src="/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" src="/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" src="/img/apple-touch-icon-114x114.png">
+
+    <!-- Bootstrap -->
+    <link href="/css/common2.css?v=1.0.4" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css?v=1.0.4">
+    <link rel="stylesheet" type="text/css" href="/files/fonts/font-awesome.css?v=1.0.4">
+
+<!-- Stylesheet
+    ================================================== -->
+    <link rel="stylesheet" type="text/css"  href="/css/style2.css">
+    <link rel="stylesheet" type="text/css" href="/css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css"  href="/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/css/slider-pro.min.css" media="screen" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.sliderPro.min.js"></script>
+    <script type="text/javascript" href="/js/modernizr.custom.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+<body>
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+        <div class="container"> 
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand-top" href="/"><img src="/img/portfolio/FJ-Logo.png" alt="Funky Jam"></a> </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Home</a></li>
+                <li><a href="/company">Company</a></li>
+                <li><a href="/shop">FJ Shop</a></li>
+                <li><a href="/recruit">Recruit</a></li>
+                <li><a href="/scout">Scout</a></li>
+                <li><a href="/studio">Studio</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="http://cooljapanmusic.com/toshi-kubota-update/" ><span style="color:#FF9933;">English</span></a></li>
+                </ul>
+            </div>
+        <!-- /.navbar-collapse --> 
+        </div>
+        <!-- /.container-fluid --> 
+    </nav>
+                    
+
+<!-- Header -->
+<header class="text-center" name="home">
+    <img class="other-banner" src="/img/company-header-bg.jpg" alt="Funkyjam">
+</header>
+
+<div id="breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 leftzero">
+            <ol class="breadcrumb"><li><a href="/" >Home</a></li>
+            <li class="active">Fanclub</li></ol>            
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Company Section -->
+<div id="company-page-section">
+    <div class="container"> 
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+            <h1 class="artist-title2">久保田利伸ファンクラブ登録</h1>
+
+                <p>久保田利伸ファンクラブBARI BARI CREWにご興味お持ちいただき、ありがとうございます。<br />
+                以下必要事項にご記入の上、「送信内容を確認する」ボタンを押してください。</p>
+                <p class="indispensability lead attn">*は必ずお書きください。</p>
+                <form action="index.php" method="post">
+                        <table width=100% frame="box">
+                            <tr>
+                                <td class="wd137">お名前<span class="indispensability">*</span></td>
+                                <td>
+                                    {if $errors.name}<p class="error">{$errors.name}</p>{/if}
+                                    <input type="text" name="form[name]" value="{$form.name|escape}" class="w300" />
+                                    <p class="attn">記入例：久保田利伸</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>お名前カナ<span class="indispensability">*</span></td>
+                                <td>
+                                    {if $errors.kana}<p class="error">{$errors.kana}</p>{/if}
+                                    <input type="text" name="form[kana]" value="{$form.kana|escape}" class="w300" />
+                                    <p class="attn">記入例：クボタ トシノブ</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ご住所<span class="indispensability">*</span></td>
+                                <td>
+                                    {if $errors.address}<p class="error">{$errors.address}</p>{/if}
+                                    <input style="width: 50px" type="text" name="form[zip1]" value="{$form.zip1|escape}" />&nbsp;-&nbsp;<input style="width: 50px" type="text" name="form[zip2]" value="{$form.zip2|escape}" />
+                                    <p class="attn">半角英数字でご記入ください。</p>
+                                    <select name="form[pref]">
+                                        <option value="">都道府県を選んでください</option>
+                                        {foreach from=$prefs item=pref}
+                                            <option {if $pref==$form.pref}selected="selected"{/if}>{$pref}</option>
+                                        {/foreach}
+                                    </select><br />
+                                    <div class="detail">
+                                        <input style="width: 100%" type="text" name="form[address1]" value="{$form.address1|escape}" />
+                                        <p class="attn">記入例：港区西麻布</p>
+                                        <input style="width: 100%" type="text" name="form[address2]" value="{$form.address2|escape}" />
+                                        <p class="attn">記入例：1丁目14番2号疋田ビル302号</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>お電話番号<span class="indispensability">*</span></td>
+                                <td>
+                                    {if $errors.tel}<p class="error">{$errors.tel}</p>{/if}
+                                    <input style="width: 50px" name="form[tel_1]" type="text" value="{$form.tel_1|escape}" maxlength="4" />&nbsp;-&nbsp;<input style="width: 60px" name="form[tel_2]" type="text" value="{$form.tel_2|escape}" maxlength="4" />&nbsp;-&nbsp;<input style="width: 60px" name="form[tel_3]" type="text" value="{$form.tel_3|escape}" maxlength="4" />
+                                    <p class="attn">日中連絡が取れる番号をお願いします。</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>メールアドレス<span class="indispensability">*</span></td>
+                                <td>
+                                    {if $errors.mail}<p class="error">{$errors.mail}</p>{/if}
+                                    <input style="width: 244px" name="form[mail]" type="text" value="{$form.mail|escape}" />
+                                    <p class="attn">半角英数字でご記入ください。<br>
+                                    メールが届かない場合はバリバリクルーまでお問い合わせください。</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>メールアドレス再確認<span class="indispensability">*</span></td>
+                                <td>
+                                    {if $errors.mail2}<p class="error">{$errors.mail2}</p>{/if}
+                                    <input style="width: 244px" name="form[mail2]" type="text" value="{$form.mail2|escape}" />
+                                    <p class="attn">確認のため再度ご記入ください。半角英数字でご記入ください。</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>性別<span class="indispensability">*</span></td>
+                                <td>
+                                    {if $errors.sex}<p class="error">{$errors.sex}</p>{/if}
+                                    <span><input name="form[sex]" type="radio" value="男性"{if $form.sex=='男性'} checked='checked'{/if} />&nbsp;男性</span><span>&nbsp;<input name="form[sex]" type="radio" value="女性"{if $form.sex=='女性'} checked='checked'{/if}  />&nbsp;女性</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>生年月日<span class="indispensability">*</span></td>
+                                <td>
+                                    {if $errors.birth}<p class="error">{$errors.birth}</p>{/if}
+                                    <span>西暦&nbsp;<input style="width: 40px" type="text" maxlength="4" name="form[birth_year]" value="{$form.birth_year}" />&nbsp;年</span>
+                                    <span><select name="form[birth_month]">
+                                        <option value="">▼</option>
+                                        <option value="1"{if $form.birth_month=='1'} selected="selected"{/if}>1</option>
+                                        <option value="2"{if $form.birth_month=='2'} selected="selected"{/if}>2</option>
+                                        <option value="3"{if $form.birth_month=='3'} selected="selected"{/if}>3</option>
+                                        <option value="4"{if $form.birth_month=='4'} selected="selected"{/if}>4</option>
+                                        <option value="5"{if $form.birth_month=='5'} selected="selected"{/if}>5</option>
+                                        <option value="6"{if $form.birth_month=='6'} selected="selected"{/if}>6</option>
+                                        <option value="7"{if $form.birth_month=='7'} selected="selected"{/if}>7</option>
+                                        <option value="8"{if $form.birth_month=='8'} selected="selected"{/if}>8</option>
+                                        <option value="9"{if $form.birth_month=='9'} selected="selected"{/if}>9</option>
+                                        <option value="10"{if $form.birth_month=='10'} selected="selected"{/if}>10</option>
+                                        <option value="11"{if $form.birth_month=='11'} selected="selected"{/if}>11</option>
+                                        <option value="12"{if $form.birth_month=='12'} selected="selected"{/if}>12</option>
+                                    </select>&nbsp;月</span>
+                                    <span><select name="form[birth_day]">
+                                        <option value="">▼</option>
+                                        <option value="1"{if $form.birth_day=='1'} selected="selected"{/if}>1</option>
+                                        <option value="2"{if $form.birth_day=='2'} selected="selected"{/if}>2</option>
+                                        <option value="3"{if $form.birth_day=='3'} selected="selected"{/if}>3</option>
+                                        <option value="4"{if $form.birth_day=='4'} selected="selected"{/if}>4</option>
+                                        <option value="5"{if $form.birth_day=='5'} selected="selected"{/if}>5</option>
+                                        <option value="6"{if $form.birth_day=='6'} selected="selected"{/if}>6</option>
+                                        <option value="7"{if $form.birth_day=='7'} selected="selected"{/if}>7</option>
+                                        <option value="8"{if $form.birth_day=='8'} selected="selected"{/if}>8</option>
+                                        <option value="9"{if $form.birth_day=='9'} selected="selected"{/if}>9</option>
+                                        <option value="10"{if $form.birth_day=='10'} selected="selected"{/if}>10</option>
+                                        <option value="11"{if $form.birth_day=='11'} selected="selected"{/if}>11</option>
+                                        <option value="12"{if $form.birth_day=='12'} selected="selected"{/if}>12</option>
+                                        <option value="13"{if $form.birth_day=='13'} selected="selected"{/if}>13</option>
+                                        <option value="14"{if $form.birth_day=='14'} selected="selected"{/if}>14</option>
+                                        <option value="15"{if $form.birth_day=='15'} selected="selected"{/if}>15</option>
+                                        <option value="16"{if $form.birth_day=='16'} selected="selected"{/if}>16</option>
+                                        <option value="17"{if $form.birth_day=='17'} selected="selected"{/if}>17</option>
+                                        <option value="18"{if $form.birth_day=='18'} selected="selected"{/if}>18</option>
+                                        <option value="19"{if $form.birth_day=='19'} selected="selected"{/if}>19</option>
+                                        <option value="20"{if $form.birth_day=='20'} selected="selected"{/if}>20</option>
+                                        <option value="21"{if $form.birth_day=='21'} selected="selected"{/if}>21</option>
+                                        <option value="22"{if $form.birth_day=='22'} selected="selected"{/if}>22</option>
+                                        <option value="23"{if $form.birth_day=='23'} selected="selected"{/if}>23</option>
+                                        <option value="24"{if $form.birth_day=='24'} selected="selected"{/if}>24</option>
+                                        <option value="25"{if $form.birth_day=='25'} selected="selected"{/if}>25</option>
+                                        <option value="26"{if $form.birth_day=='26'} selected="selected"{/if}>26</option>
+                                        <option value="27"{if $form.birth_day=='27'} selected="selected"{/if}>27</option>
+                                        <option value="28"{if $form.birth_day=='28'} selected="selected"{/if}>28</option>
+                                        <option value="29"{if $form.birth_day=='29'} selected="selected"{/if}>29</option>
+                                        <option value="30"{if $form.birth_day=='30'} selected="selected"{/if}>30</option>
+                                        <option value="31"{if $form.birth_day=='31'} selected="selected"{/if}>31</option>
+                                    </select>&nbsp;日</span>
+                                    <p class="attn">半角英数字でご記入ください。</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>会員番号</td>
+                                <td>
+                                    {if $errors.member_no}<p class="error">{$errors.member_no}</p>{/if}
+                                    <strong>※既存会員の方は会員番号をお願いします。</strong><br />
+                                    No.&nbsp;<input name="form[member_no]" maxlength="8" type="text" value="{$form.member_no|escape}" />
+                                    <p class="attn">半角数字でご記入ください。(8桁)</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Bari Bari Crewをどこでお知りになりましたか？<span class="indispensability">*</span></td>
+                                <td>
+                                    {if $errors.know}<p class="error">{$errors.know}</p>{/if}
+                                    <input name="form[know]" type="radio" value="ファンキージャムホームページ"{if $form.know=='ファンキージャムホームページ'} checked='checked'{/if} />&nbsp;ファンキー・ジャムホームページ<br />
+                                    <input name="form[know]" type="radio" value="友人、知人"{if $form.know=='友人、知人'} checked='checked'{/if} />&nbsp;友人、知人<br />
+                                    <input name="form[know]" type="radio" value="OMC"{if $form.know=='OMC'} checked='checked'{/if} />&nbsp;OMC<br />
+                                    <input name="form[know]" type="radio" value="雑誌"{if $form.know=='雑誌'} checked='checked'{/if} />&nbsp;雑誌<br />
+                                    <input name="form[know]" type="radio" value="その他"{if $form.know=='その他'} checked='checked'{/if} />&nbsp;その他<br />
+                                    <textarea name="form[know_other]" cols="85" rows="5" style="width: 100%">{$form.know_other|escape}</textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ご希望の申込み書類<span class="indispensability">*</span></td>
+                                <td>
+                                    {if $errors.doc}<p class="error">{$errors.doc}</p>{/if}
+                                    <input name="form[doc]" type="radio" value="Bari Bari Crew CARD （クレジット機能付き）入会案内書"{if $form.doc=='Bari Bari Crew CARD （クレジット機能付き）入会案内書'} checked='checked'{/if} />&nbsp;Bari Bari Crew CARD&nbsp;（クレジット機能付き）入会案内書<br />
+                                    <input name="form[doc]" type="radio" value="郵便振込入会案内書"{if $form.doc=='郵便振込入会案内書'} checked='checked'{/if} />&nbsp;郵便振込入会案内書<br />
+                                    <input name="form[doc]" type="radio" value="両方"{if $form.doc=='両方'} checked='checked'{/if} />&nbsp;両方<br />
+                                    <!-- ※Bari Bari CrewＣＡＲＤ(クレジット機能付き)をご希望の方は入会後切り替えが可能です。<br />
+                                    ご希望の方は上の「Ｂａｒｉ　Ｂａｒｉ　Ｃｒｅｗをどこでお知りになりましたか？」をその他を選択の上、<br />
+                                    コメント記入欄に「カード切り替え希望」とご記載ください。 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>メールマガジン</td>
+                                <td>
+                                    {if $errors.magazine}<p class="error">{$errors.magazine}</p>{/if}
+                                    <input name="form[magazine]" type="hidden" value="" />
+                                    <label><input name="form[magazine]" type="checkbox" value="1"{if $form.magazine || $form.magazine|is_null} checked='checked'{/if} />&nbsp;メルマガを購読する</label><br />
+                                    <p class="attn">ファンキー・ジャム所属アーティストの最新情報をお届けします。<br />不要な方はチェックをはずして下さい。</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <input class="btn-fix" type="submit" value="内容を確認する" /></p>
+                    <input type="hidden" name="action" value="confirm" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="footer">
+    <div class="container">
+        <p class="footer-text">Copyright &copy; Funky Jam All rights reserved.</p>
+    </div>
+    <div class="footer-text2">
+        <a href="/privacy">Privacy Policy</a>
+    </div>
+</div>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script type="text/javascript" src="/js/jquery.1.11.1.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script type="text/javascript" src="/js/bootstrap.js"></script> 
+<script type="text/javascript" src="/js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="/js/jquery.prettyPhoto.js"></script> 
+<script type="text/javascript" src="/js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="/js/jqBootstrapValidation.js"></script> 
+
+<!-- Javascripts
+    ================================================== --> 
+<script type="text/javascript" src="/js/main.js"></script>
+
+</body>
+</html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FANCLUB | FunkyJam</title>
+    <title>Fanclub | FunkyJam</title>
     <meta name="description" content="Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。">
 
 <!-- Favicons
@@ -54,7 +54,7 @@
                 <li><a href="/shop">FJ Shop</a></li>
                 <li><a href="/recruit">Recruit</a></li>
                 <li><a href="/scout">Scout</a></li>
-                <li><a href="/studio">Rental Studio</a></li>
+                <li><a href="/studio">Studio</a></li>
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="http://cooljapanmusic.com/toshi-kubota-update/" ><span style="color:#FF9933;">English</span></a></li>
                 </ul>
@@ -91,57 +91,56 @@
 
                 <p class="lead">下記の内容で送信しますか？</p>
                 <form action="index.php" method="post">
-                    <h1><strong>ファンクラブ</strong></h1>
                     <table width=100% frame="box">
                         <tr>
-                            <th>お名前</th>
+                            <td class="wd137">お名前</td>
                             <td>{$form.name|escape}</td>
                         </tr>
                         <tr>
-                            <th>お名前カナ</th>
+                            <td>お名前カナ</td>
                             <td>{$form.kana|escape}</td>
                         </tr>
                         <tr>
-                            <th>ご住所</th>
+                            <td>ご住所</td>
                             <td>{$form.zip1|escape}&nbsp;-&nbsp;{$form.zip2|escape}<br />
                             {$form.pref|escape}<br />
                             {$form.address1|escape}<br />
                             {$form.address2|escape}</td>
                         </tr>
                         <tr>
-                            <th>お電話番号</th>
+                            <td>お電話番号</td>
                             <td>{$form.tel_1|escape}&nbsp;-&nbsp;{$form.tel_2|escape}&nbsp;-&nbsp;{$form.tel_3|escape}</td>
                         </tr>
                         <tr>
-                            <th>メールアドレス</th>
+                            <td>メールアドレス</td>
                             <td>{$form.mail|escape}</td>
                         </tr>
                         <tr>
-                            <th>性別</th>
+                            <td>性別</td>
                             <td>{$form.sex|escape}</td>
                         </tr>
                         <tr>
-                            <th>生年月日</th>
+                            <td>生年月日</td>
                             <td>西暦&nbsp;{$form.birth_year|escape}年&nbsp;{$form.birth_month|escape}月&nbsp;{$form.birth_day|escape}月</td>
                         </tr>
                         <tr>
-                            <th>会員番号</th>
+                            <td>会員番号</td>
                             <td>{$form.member_no|escape}</td>
                         </tr>
                         <tr>
-                            <th>Bari Bari Crewを<br>どこでお知りになりましたか？</th>
+                            <td>Bari Bari Crewをどこでお知りになりましたか？</td>
                             <td>{$form.know|escape}{if $form.know_other}<br />{$form.know_other|escape|nl2br}{/if}</td>
                         </tr>
                         <tr>
-                            <th>ご希望の申込み書類</th>
+                            <td>ご希望の申込み書類</td>
                             <td>{$form.doc|escape}</td>
                         </tr>
                         <tr>
-                            <th>メールマガジン</th>
+                            <td>メールマガジン</td>
                             <td>メルマガを購読{if $form.magazine}する{else}しない{/if}</td>
                         </tr>
                     </table>
-                        <input class="btn-fix" type="submit" value="上記の内容で送信する" />&nbsp;&nbsp;&nbsp;&nbsp;<input class="return btn-fix" type="button" value="戻る" onclick="location.href='./?action=input';" />
+                        <input class="btn-fix" type="submit" value="送信する" />&nbsp;&nbsp;&nbsp;&nbsp;<input class="return btn-fix" type="button" value="戻る" onclick="location.href='./?action=input';" />
                     </div>
                     <input type="hidden" name="action" value="process" />
                     </form>
