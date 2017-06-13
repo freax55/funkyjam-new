@@ -98,7 +98,7 @@
         <!-- Artist Navigation -->
         <div id="artistnav">
             <div class="container">
-                <div class="col-md-8 col-md-offset-2 leftzero">
+                <div class="col-lg-10 col-md-offset-1 leftzero">
                     <div class="artistnav text-center">
                         <div class="btn btn-artist3 col-xs-6 col-sm-6 col-md-3 col-lg-3"><a class="store-title5" href="#A030">森大輔</a></div>
                         <div class="btn btn-artist3 col-xs-6 col-sm-6 col-md-3 col-lg-3"><a class="store-title5" href="#lok2">久保田 TOUR 2015 "L.O.K"</a></div>
@@ -117,14 +117,13 @@
 <!--コンテンツここから-->
 			<div id="contents">
 			    <div class="container" style="padding: 30px;"> <!-- Container -->
-                	<div class="col-md-8 col-md-offset-2">
+                	<div class="col-lg-10 col-md-offset-1">
 
 
 					<p class="lead" style="font-size:120%;">
 					<strong>お申込み前に必ずご確認ください</strong><br />
 					<br />
-					商品の発送は在庫状況やお住まいの地域によってお手元に届くまで2〜3週間お時間いただく場合がございます。<br />
-					予めご了承くださいますよう、お願いいたします。</p>
+					商品の発送は在庫状況やお住まいの地域によってお手元に届くまで2〜3週間お時間いただく場合がございます。予めご了承くださいますよう、お願いいたします。</p>
 
 							{foreach name=orderList from=$orderList item=order_name key=order_code}
 							{if $order_code|array_key_exists:$list}
@@ -161,12 +160,12 @@
 						</div>
 
 			            <div id="store-section">
-			                <div class="col-md-8 col-md-offset-2 leftzero">
+			                <div class="col-lg-10 col-md-offset-1 leftzero">
 			                    <div class="row">
-			                        <div class="col-lg-3">
+			                        <div class="col-lg-3 storewidth">
 										<table>
 											<tr>
-												<td border="0" cellpadding="0" cellspacing="0">
+												<td class="storetd">
 													{if $item.image}
 													<div>
 														{if $item.item_code != 'TKTU0040' && $item.item_code != 'TKTU0070' && $item.item_code != 'TKTU0070' && $item.item_code != 'TKTU0010' && $item.item_code != 'TKTU0011' && $item.item_code != 'TKTU0012' && $item.item_code != 'TKTU0020' && $item.item_code != 'TKTU0021' && $item.item_code != 'TKTU0022' && $item.item_code != 'TKTU0050' && $item.item_code != 'TKTU0090' && $item.item_code != 'TKTU0110' && $item.item_code != 'TKGS9950' && $item.item_code != 'TKGS9980' && $item.item_code != 'TKGS9990' && $item.item_code != 'TKGS0010' && $item.item_code != 'TKGS9960' && $item.item_code != 'TKGS9970' && $item.item_code != 'TKGS0040' && $item.item_code != 'TKGS0020' && $item.item_code != 'TKGS0050' && $item.item_code != 'TKGS0090' && $item.item_code != 'TKGS0110' && $item.item_code != 'TKGS0120' && $item.item_code != 'TKGS0060' && $item.item_code != 'TKGS0070' && $item.item_code != 'TKGS0150' && $item.item_code != 'TKGS0130' && $item.item_code != 'TKTF0100' && $item.item_code != 'TKTF0310' && $item.item_code != 'TKTF0320' && $item.item_code != 'TKTF0110' && $item.item_code != 'UR0002' && $item.item_code != 'UR0001' && $item.item_code != 'TK2617'}<a href="{$item.image|replace:".jpg":"_b.jpg"|escape}" target="_blank">{/if}
@@ -180,9 +179,9 @@
 											</tr>
 											{if $item.item_code != 'TKTU0040' && $item.item_code != 'TKTU0070' && $item.item_code != 'TKTU0070' && $item.item_code != 'TKTU0010' && $item.item_code != 'TKTU0011' && $item.item_code != 'TKTU0012' && $item.item_code != 'TKTU0020' && $item.item_code != 'TKTU0021' && $item.item_code != 'TKTU0022' && $item.item_code != 'TKTU0050' && $item.item_code != 'TKTU0090' && $item.item_code != 'TKTU0110' && $item.item_code != 'TKGS9950' && $item.item_code != 'TKGS9980' && $item.item_code != 'TKGS9990' && $item.item_code != 'TKGS0010' && $item.item_code != 'TKGS9960' && $item.item_code != 'TKGS9970' && $item.item_code != 'TKGS0040' && $item.item_code != 'TKGS0020' && $item.item_code != 'TKGS0050' && $item.item_code != 'TKGS0090' && $item.item_code != 'TKGS0110' && $item.item_code != 'TKGS0120' && $item.item_code != 'TKGS0060' && $item.item_code != 'TKGS0070' && $item.item_code != 'TKGS0150' && $item.item_code != 'TKGS0130' && $item.item_code != 'TKTF0100' && $item.item_code != 'TKTF0310' && $item.item_code != 'TKTF0320' && $item.item_code != 'TKTF0110' && $item.item_code != 'UR0002' && $item.item_code != 'UR0001' && $item.item_code != 'TK2617'}
 											<tr>
-												<td class="caption">
+												<td class="storetd">
 													{if $item.image}
-													<div>クリックすると画像が大きくなります</div>
+													<div style="font-size: 12px; line-height: 16px; margin-top: 5px;">クリックすると<br>画像が大きくなります</div>
 													{else}
 													{/if}
 												</td>
@@ -191,19 +190,24 @@
 										</table>
                         			</div>
                         			<div class="col-lg-9">
-											<h3 class="store-title"><a name="{$item.item_code}" id="{$item.item_code}">{$item.name|escape}</a></h3>
+                        				<div class="col-lg-8">
+											<h3 class="store-title"><div name="{$item.item_code}" id="{$item.item_code}">{$item.name|escape}</div></h3>
 											<p class="store-title4">（商品コード {$item.item_code|escape}）</p>
 
 										{if $item.note}{$item.note|nl2br}{else}&nbsp;{/if}{if $item.item_code == 'TKTL0180' || $item.item_code == 'TKTL0152' || $item.item_code == 'TKTL0153'}<br /><strong style="color: #FF0000; font-size:137%;"> SOLD OUT </strong>{/if}
+										</div>
+										<div class="col-lg-4">
 											<table border="0" cellpadding="0" cellspacing="0">
 												<tr>
-													<td border="0" cellpadding="0" cellspacing="0">
-													<p class="store-title4">色 / {$item.color|escape|default:'-'}</p>
+													<td class="storetd">
+													<p class="store-title4" style="margin-top: 10px;">色 / {$item.color|escape|default:'-'}</p>
 													<p class="store-title4">サイズ / {$item.size|default:'-'}</p>
 													<p class="store-title4">料金 {$item.price|number_format}円
 													</td>
 												</tr>
-											</table>		
+											</table>	
+										</div>	
+										<div class="col-lg-12">
 											{if $item.item_code == 'TKTL0180' || $item.item_code == 'TKTL0152' || $item.item_code == 'TKTL0153'}
 											&nbsp;
 											{elseif $cart[$item.item_code]} 
@@ -230,6 +234,7 @@
 												<input class="btn-fix" type="submit" value="カートにいれる" />
 											</form> 
 											{/if}
+											</div>
 										</div>
 									</div>
 									<div class="clear">&nbsp;</div>
@@ -248,7 +253,7 @@
 				<div id="store-section">
 				    <a name="anchorAttention"></a>
 				    <div class="container"> <!-- Container -->
-				        <div class="col-md-8 col-md-offset-2 leftzero" style="padding-bottom: 30px;">
+				        <div class="col-lg-10 col-md-offset-1 leftzero" style="padding-bottom: 30px;">
 				        <p class="category store-title6">ご注意</p>
 				        <p class="store-title4">* 商品のサイズ、色、規格等をよくご確認の上、お申し込み下さい。尚、お申し込み完了後の商品の交換/返品/サイズ変更は原則的に受け付けておりませんのでご了承下さい。</p>
 				        <p class="store-title4">* 原則的にお申し込み後のキャンセル・ご返金はお受け出来ませんので予めご了承下さい。</p>
@@ -264,7 +269,7 @@
 
 				<a name="anchorPayment"></a>
 				<div class="container"> <!-- Container -->
-				    <div class="col-md-8 col-md-offset-2 leftzero" style="padding-bottom: 30px;">
+				    <div class="col-lg-10 col-md-offset-1 leftzero" style="padding-bottom: 30px;">
 				    	<p class="category store-title6">お支払について</p>
 				    	<p class="store-title4">お支払いの方法は、代金引換またはBariBariCrewカードでのクレジット決済です。</p>
 
@@ -280,7 +285,7 @@
 
 				<a name="anchorShipping"></a>
 				<div class="container"> <!-- Container -->
-				    <div class="col-md-8 col-md-offset-2 leftzero" style="padding-bottom: 30px;">
+				    <div class="col-lg-10 col-md-offset-1 leftzero" style="padding-bottom: 30px;">
 				      	<p class="category store-title6">送料について</p>
 				      	<p class="store-title4">商品の大小に関わらず、発送梱包料として、以下の料金がかかります。ご了承下さい。</p>
 					    <p class="store-title4"><strong>●代金引換　¥1,000（代引代行料含）　●BariBariCrewカードでのクレジット決済　¥800</strong></p>
@@ -289,7 +294,7 @@
 
 				<a name="anchorContact"></a>
 				<div class="container"> <!-- Container -->
-				    <div class="col-md-8 col-md-offset-2 leftzero" style="padding-bottom: 30px;">
+				    <div class="col-lg-10 col-md-offset-1 leftzero" style="padding-bottom: 30px;">
 				      	<p class="category store-title6">商品についてのお問い合わせ</p>
 				      	<p class="store-title4">商品に関するお問合わせは、ファンキー・ジャム内 FJ SHOP係へお願い致します。 </p>
 				      	<p class="store-title4">TEL：03-3470-7707（平日10:30～18：30）</p>
@@ -300,7 +305,7 @@
 
 				<a name="anchorLaw"></a>
 				<div class="container"> <!-- Container -->
-				    <div class="col-md-8 col-md-offset-2 leftzero">
+				    <div class="col-lg-10 col-md-offset-1 leftzero">
 				      	<p class="category store-title6">特定商取引に基づく表記</p>
 				        <p class="topthirty"><b>株式会社ファンキー・ジャム</b></p>
 
