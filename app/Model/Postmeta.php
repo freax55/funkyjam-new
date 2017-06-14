@@ -32,7 +32,7 @@ class Postmeta extends AppModel {
 		return $this->find('all', [
 			'conditions' => [
 				'Postmeta.meta_value' => $type,
-				'post.post_status' => 'publish',
+				'Post.post_status' => 'publish',
 			],
 			// 'fields' => [
 			// 	'meta_id',

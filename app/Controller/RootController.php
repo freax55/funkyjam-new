@@ -7,14 +7,14 @@ class RootController extends AppController {
 		'Postmeta'
 	);
 
-	function getInnerHtml($node){
-		$children = $node->childNodes;
-		$html = '';
-		foreach($children as $child){
-			$html .= $node->ownerDocument->saveHTML($child);
-		}
-		return $html;
-	}
+	// function getInnerHtml($node){
+	// 	$children = $node->childNodes;
+	// 	$html = '';
+	// 	foreach($children as $child){
+	// 		$html .= $node->ownerDocument->saveHTML($child);
+	// 	}
+	// 	return $html;
+	// }
 
 	public function index() {
 		// $this->args[0] = 'kubota';
