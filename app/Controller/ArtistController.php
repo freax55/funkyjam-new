@@ -348,6 +348,7 @@ class ArtistController extends AppController {
 		if(isset($path[1]) && isset(array_flip($ary_params)[$path[1]])) {
 			$action = !empty($path[2])?$path[2]:'index';//str_replace(array_merge($ary_path,[$controller, '/']), ['', '', '', '', '', ''], $url);
 			$this->set([
+				'ary_sns' => $this->getArtistSNS(),
 				'ary_params' => $ary_params,
 				'ary_names' => $ary_names,
 				'current' => $path[1],

@@ -693,7 +693,7 @@ EOM;
 
 	function getContentList() {
 		$contents = array(
-			'index' => 'News',
+			'news' => 'News',
 			'profile' => 'Profile',
 			'discography' => 'Discography',
 			'performance' => 'Performance',

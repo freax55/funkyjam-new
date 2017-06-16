@@ -235,7 +235,7 @@
             </div>
             <div class="row banner-pad">
                 <div class="col-sm-6 col-md-6 col-lg-6 portfolio-item">
-                    <a href="/baribaricrew">
+                    <a href="/artist/kubota/fanclub.html">
                     <img src="img/portfolio/Baribari-top.jpg" class="img-responsive" alt="Bari Bari Crew"> </a> 
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-6 portfolio-item">

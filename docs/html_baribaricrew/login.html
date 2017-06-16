@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ファンクラブ | FunkyJam</title>
+    <title>久保田利伸FANCLUB | FunkyJam</title>
     <meta name="description" content="Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。">
 
 <!-- Favicons
@@ -72,7 +72,7 @@
 <div id="breadcrumb">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2 leftzero">
+            <div class="col-md-10 col-md-offset-1 leftzero">
             <ol class="breadcrumb"><li><a href="/" >Home</a></li>
             <li class="active">Bari Bari Crew</li></ol>            
             </div>
@@ -85,45 +85,83 @@
 <div id="company-page-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-            <h1 class="artist-title2">久保田利伸FANCLUB 年会費コンビニ決済</h1>
-			<center><img src="/baribaricrew/images/logo.png" alt="BARI BARI CREW" /></center>
-				<div id="main" class="top clearfix">
-					<div class="right form">
-						<h2 class="attn" style="text-align: center;">会員継続の方</h2>
-						<p style="text-align: center; font-size: 20px; margin-top: 10px;">年会費：5000円</h2>
-						<form action="index.php" method="post">
-						<input type="hidden" name="action" value="cart" />
-						<input type="hidden" name="flg" value="edit" />
-						<table width=100% frame="box">
-							<tr>
-								<td>会員番号</td>
-								<td>
-									{if $errors.edit_login}<p class="error">{$errors.edit_login}</p>{/if}
-									{if $errors.edit_no}<p class="error">{$errors.edit_no}</p>{/if}
-									<input type="text" name="edit_no" value="{$edit_no|escape}" style="width: 244px" /><br>
-									※半角数字8桁
-								</td>
-							</tr>
-							<tr>
-								<td>パスワード</td>
-								<td>
-									{if $errors.edit_pass}<p class="error">{$errors.edit_pass}</p>{/if}
-									<input name="edit_pass" type="password" value="{$edit_pass|escape}" style="width: 244px" /><br>
-									※会報121・122号ページのパスワード<br />
-									※半角英数字
-								</td>
-							</tr>
-						</table>
-						</form>
-					<div class="btn bottomthirty" style="font-size: 20px; margin-top: 15px;"><center>会員継続の手続きに進む</center></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+            <div class="col-lg-10 col-lg-offset-1">
+                <h1 class="artist-title2">久保田利伸FANCLUB 年会費コンビニ決済</h1>
+                <div id="main" class="top clearfix">
+                    <div class="col-lg-6 leftzero">
+                    <div class="left">
+                        <h2>新規会員の方</h2>
+                        <p class="caption">入会金：500円　年会費：5000円</p>
+                        <div class="rule">
+                            <p>同意事項<p>
+                            <p>久保田利伸オフィシャルファンクラブBARI BARI CREWにご入会に際しては、以下の事項を承諾しているものとみなされます。<br />
+                            ・会員の有効期間は、年会費入金月の翌月から1年間です。<br />
+                            ・年会費は5,000円です。継続される際は毎年有効期限の切れる前までにお手続きください。<br />
+                            初年度のみ入会金500円にお支払いいただきます。<br />
+                            ・会員の権利は登録されたご本人様のみが有し、他者(親族を含む)への譲渡、使用許諾、売買等の行為は認められません。<br />
+                            ・ご入金頂いた入会金・年会費は、会員有効期間中に脱会のお申し出があっても払戻しは致しません。<br />
+                            ・法人のご入会はできません。<br />
+                            ・会員の個人情報の取り扱いについては、弊社個人情報保護方針(ホームページに掲載)に従います。<br />
+                            ・ご登録情報の変更がある場合は、所定の方法で変更の届け出をするものとします。</p>
+                        </div>
+                        <div class="form">
+                            <form action="index.php" method="post">
+                                <input type="hidden" name="action" value="cart" />
+                                <input type="hidden" name="flg" value="input" />
+                                <table width=100% frame="box">
+                                    <tr>
+                                        <td>パスワード</td>
+                                        <td>
+                                            {if $errors.input_login}<p class="error">{$errors.input_login}</p>{/if}
+                                            {if $errors.input_pass}<p class="error">{$errors.input_pass}</p>{/if}
+                                            <input name="input_pass" type="password" value="{$input_pass|escape}" class="text" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                        <p>※「新規入会について」のメールに記載しております。<br />
+                        ※半角英数字</p>
+                        <div class="btn">新規入会の手続きに進む</div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6 leftzero">
+                    <div class="right">
+                        <h2>会員継続の方</h2>
+                        <p class="caption">年会費：5000円</p>
+                        <div class="form">
+                            <form action="index.php" method="post">
+                                <input type="hidden" name="action" value="cart" />
+                                <input type="hidden" name="flg" value="edit" />
+                                <table width=100% frame="box">
+                                    <tr>
+                                        <td>会員番号</td>
+                                        <td>
+                                            {if $errors.edit_login}<p class="error">{$errors.edit_login}</p>{/if}
+                                            {if $errors.edit_no}<p class="error">{$errors.edit_no}</p>{/if}
+                                            <input type="text" name="edit_no" value="{$edit_no|escape}" class="text" />
+                                            <br><p style="margin-bottom: 0px;">※半角数字8桁</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>パスワード</td>
+                                        <td>
+                                            {if $errors.edit_pass}<p class="error">{$errors.edit_pass}</p>{/if}
+                                            <input name="edit_pass" type="password" value="{$edit_pass|escape}" class="text" />
+                                            <br><p style="margin-bottom: 0px;">※会報121・122号ページのパスワード<br />
+                                            ※半角英数字</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                        <div class="btn">会員継続の手続きに進む</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
 
 <div id="footer">
 	<div class="container">

@@ -5,12 +5,13 @@
             <p class="news-name"><?= $ary_names[$current]['en'] ?></p>
             </div>
             <div class="snsbar">
+
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <a href="https://www.facebook.com/toshinobukubota" target="_blank">
+                    <a href="<?=$ary_sns[$current]['Facebook']?>" target="_blank">
                     <i class="fa fa-facebook-official snsicon" aria-hidden="true"></i></a>
-                    <a href="https://twitter.com/kubota_4_real" target="_blank">
+                    <a href="<?=$ary_sns[$current]['Twitter']?>" target="_blank">
                     <i class="fa fa-twitter-square snsicon" aria-hidden="true"></i></a>
-                    <a href="https://www.youtube.com/user/toshinobukubotaSMEJ" target="_blank">
+                    <a href="<?=$ary_sns[$current]['Youtube']?>" target="_blank">
                     <i class="fa fa-youtube-square snsicon" aria-hidden="true"></i></a>
                 </div>
             </div>

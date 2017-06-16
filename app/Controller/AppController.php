@@ -424,6 +424,31 @@ class AppController extends Controller {
 		);
 	}
 
+	function getArtistSNS(){
+		return array(
+			'kubota' => [
+				'Facebook' => 'https://www.facebook.com/toshinobukubota',
+				'Twitter' => 'https://twitter.com/kubota_4_real',
+				'Youtube' => 'https://www.youtube.com/user/toshinobukubotaSMEJ'
+			],
+			'urashima' => [
+				'Facebook' => 'https://www.facebook.com/urashimarinko',
+				'Twitter' => 'https://twitter.com/urashima_rinko',
+				'Youtube' => 'https://www.youtube.com/user/funkyjamchannel'
+			],
+			'mori' => [
+				'Facebook' => 'https://www.facebook.com/moridaisukeofficial',
+				'Twitter' => 'https://twitter.com/morimoridaisuke',
+				'Youtube' => 'https://www.youtube.com/user/warnermusicjapan/search?query=%E6%A3%AE%E5%A4%A7%E8%BC%94'
+			],
+			'bes' => [
+				'Facebook' => 'https://www.facebook.com/BESofficial',
+				'Twitter' => 'https://twitter.com/brown_eyed_soul',
+				'Youtube' => 'https://www.youtube.com/results?search_query=brown+eyed+soul'
+			],
+		);
+	}
+
 	/*
 	 * 都道府配列取得
 	 */

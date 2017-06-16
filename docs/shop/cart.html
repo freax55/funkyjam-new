@@ -94,7 +94,7 @@
 <div id="artistnav">
     <div class="container">
     	<div class="row">
-        	<div class="col-lg-10 col-lg-offset-1">
+        	<div class="col-lg-8 col-lg-offset-2">
 
 				<p>お申し込み内容は以下の通りです。<br>
 				よろしければ、お支払い方法とお客様情報を入力し、「<strong>登録内容確認</strong>」ボタンをおしてください。</p>
@@ -103,11 +103,8 @@
 				<table width=100% frame="box">
 					<tr>
 						<th>商品画像</th>
-						<th>商品名</th>
-						<th>色・サイズ</th>
-						<th>料金</th>
-						<th>個数</th>
-						<th>&nbsp;</th>
+						<th>商品名／色／サイズ</th>
+						<th>料金／個数</th>
 					</tr>
 					{assign var=total value=0}
 					{assign var=quantity value=0}
@@ -131,9 +128,9 @@
 							</p>
 							{/if}
 							{$itemList[$item.item_code].name|escape}
-							　 （商品コード {$item.item_code|escape}）
-						</td>
-						<td>
+							<br>
+							商品コード {$item.item_code|escape}
+							<br>
 							{if $itemList[$item.item_code].color}
 							{$itemList[$item.item_code].color|escape}
 							{/if}
@@ -150,17 +147,16 @@
 							{$itemList[$item.item_code].price|number_format|escape}
 							円
 							{assign var=total value=$total+$itemList[$item.item_code].price*$item.quantity}
-						</td>
-						<td>
+							<br>	
 							{$item.quantity}
 							個
 							{assign var=quantity value=$quantity+$item.quantity}
-						</td>
-						<td width="7%" align="middle"><form action="index.php" method="post" style="margin: 0; padding:0; ">
+							<br>						
+							<div width="50%" align="middle"><form action="index.php" method="post" align="left" style="margin: 0; padding:0; ">
 							<input type="submit" name="Submit" value="取消" />
 							<input type="hidden" name="action" value="remove" />
 							<input type="hidden" name="item_code" value="{$item.item_code}" />
-						</form></td>
+						</form></div>
 					</tr>
 					{/foreach}
 				</table>
@@ -224,30 +220,29 @@
 								<td>
 									{if $errors.member_no}<p class="error">※{$errors.member_no|escape}</p>{/if}
 									{if $errors.cart}<p class="error">※{$errors.cart|escape}</p>{/if}
-									<input name="member_no" id="member_no" value="{$member_no|escape}" size="50" maxlength="40" />
+									<input name="member_no" id="member_no" value="{$member_no|escape}" size="35" maxlength="40" />
 									(例：99999999)
 								</td>
 								</tr>
 								<tr>
 								<td>お名前<strong>*</strong></td>
 								<td>
-										{if $errors.name}<p class="error">※{$errors.name|escape}</p>{/if}
+								{if $errors.name}<p class="error">※{$errors.name|escape}</p>{/if}
 								姓
-								<input name="last_name" type="text" id="last_name" value="{$last_name|escape}" />
+								<input name="last_name" type="text" id="last_name" value="{$last_name|escape}" size="11"/>
 								名
-								<input name="first_name" type="text" id="first_name" value="{$first_name|escape}" />
-								(例：久保田　利伸)</td>
+								<input name="first_name" type="text" id="first_name" value="{$first_name|escape}" size="11"/>
+								<br>(例：久保田 利伸)</td>
 								</tr>
 								<tr>
-								<td>お名前（カナ）<strong>*</strong></td>
+								<td>カナ<strong>*</strong></td>
 								<td>
 										{if $errors.kana}<p class="error">※{$errors.kana|escape}</p>{/if}
 								セイ
-								<input name="last_kana" type="text" id="last_kana" value="{$last_kana|escape}" />
+								<input name="last_kana" type="text" id="last_kana" value="{$last_kana|escape}" size="11" />
 								メイ
-								<input name="first_kana" type="text" id="first_kana" value="{$first_kana|escape}" />
-								
-								(例：クボタ　トシノブ)</td>
+								<input name="first_kana" type="text" id="first_kana" value="{$first_kana|escape}" size="11" />
+								<br>(例：クボタ トシノブ)</td>
 								</tr>
 								<tr>        
 								<td>住所<strong>*</strong></td>
@@ -259,27 +254,27 @@
 								<a href="http://yuujirou.twinspark.co.jp/" target="_blank">郵便番号検索サイト</a><br />
 								
 										{if $errors.address}<p class="error">※{$errors.address|escape}</p>{/if}
-								<input name="address1" value="{$address1|escape}" size="50" maxlength="40" />
+								<input name="address1" value="{$address1|escape}" size="35" maxlength="40" />
 								(例：東京都港区西麻布)<br />
-								<input name="address2" value="{$address2|escape}" size="50" maxlength="40" />
+								<input name="address2" value="{$address2|escape}" size="35" maxlength="40" />
 								(例：1-2-3)<br />
-								<input name="address3" value="{$address3|escape}" size="40" maxlength="30" />
+								<input name="address3" value="{$address3|escape}" size="35" maxlength="30" />
 								(例：久保田マンション100号室)</td>
 								</tr>
 								<tr>
 								<td>Email<strong>*</strong></td>
 								<td>
 										{if $errors.mail}<p class="error">※{$errors.mail|escape}</p>{/if}
-								<input name="mail" id="mail" value="{$mail|escape}" size="50" />
+								<input name="mail" id="mail" value="{$mail|escape}" size="35" />
 								(例：info@funkyjam.com)<br />
-								▼確認のためもう一度入力してください<br /><input name="confirm" id="confirm" value="{$confirm|escape}" size="50" /></td>
+								▼確認のためもう一度入力してください<br /><input name="confirm" id="confirm" value="{$confirm|escape}" size="35" /></td>
 								</tr>
 								<tr>
 								<td>連絡先電話番号<strong>*</strong></td>
 								<td>
 									{if $errors.tel}<p class="error">※{$errors.tel|escape}</p>{/if}
 									<input name="tel1" id="tel1" value="{$tel1|escape}" size="5" maxlength="5" /> - <input name="tel2" id="tel2" value="{$tel2|escape}" size="5" maxlength="5" /> - <input name="tel3" id="tel3" value="{$tel3|escape}" size="5" maxlength="5" />
-									(日中ご連絡のつく電話番号をおいれください　例：03-1234-5678)</td>
+									<br>(日中ご連絡のつく電話番号をお入れください)</td>
 								</tr>
 								<tr id="magazine">
 									<td>メールマガジン</td>
