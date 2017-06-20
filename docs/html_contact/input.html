@@ -89,55 +89,25 @@
 
             	<h1 class="artist-title2">お問い合わせ</h1>
                 <form action="index.php" method="post">
-                    <table width=100% frame="box">
-                        <tr>
-                            <td class="wd137">お名前</td>
-                            <td>
-                                <input style="width: 224px" type="text" name="form[name]" value=""/>
-                                <p class="attn" >記入例：久保田利伸</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>メールアドレス</td>
-                            <td>
-                                <input style="width: 224px" name="form[mail]" type="text" value=""/>
-                                <p class="attn" >半角英数字でご記入ください。</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>メールアドレス再確認</td>
-                            <td>
-                                <input style="width: 224px" name="form[mail2]" type="text" value=""/>
-                                <p class="attn" >確認のため再度ご記入ください。</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>性別</td>
-                            <td>
+                            <p class="attn">お名前（記入例：久保田利伸）</p>
+                                <input class="ctct" style="width: 70%" type="text" name="form[name]" value=""/>
+                            <p class="attnc">メールアドレス（半角英数字でご記入ください）</p>
+                                <input class="ctct" style="width: 70%" name="form[mail]" type="text" value=""/>
+                            <p class="attnc">メールアドレス再確認（再度ご記入ください）</p>
+                                <input class="ctct" style="width: 70%" name="form[mail2]" type="text" value=""/>
+                            <p class="attnc">性別</p>
                             <label>
                                 <input type="radio" name="form[sex]" value="女性">&nbsp;女性&nbsp;
                             </label>
                             <label>
                                 <input type="radio" name="form[sex]" value="男性">&nbsp;男性
                             </label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>年齢</td>
-                            <td>
-                                <input style="width: 54px;" name="form[age]" type="text" value="" maxlength="3">&nbsp;歳
-                                <p class="attn" >半角数字でご記入ください。</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>職業</td>
-                            <td>
-                                <input name="form[job]" type="text" value=""/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>種別</td>
-                            <td>
+                            <br>
+                            <p class="attnc">年齢（半角数字でご記入ください）</p>
+                                <input class="ctct" style="width: 54px;" name="form[age]" type="text" value="" maxlength="3">&nbsp;<font color="#888">歳</font>
+                            <p class="attnc">職業</p>
+                                <input class="ctct" name="form[job]" type="text" value=""/>
+                            <p class="attnc">種別</p>
                                 <select name="form[type]">
                                     <option value="">下記からお選びください</option>
                                     <option value="久保田利伸について">久保田利伸について</option>
@@ -149,24 +119,13 @@
                                     <option value="ホームページについて">ホームページについて</option>
                                     <option value="その他">その他</option>
                                 </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>内容</td>
-                            <td>
-                            <textarea name="form[content]" cols="75" rows="10" style="width: 100%;"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>メールマガジン</td>
-                            <td>
+                            <p class="attnc">内容</p>
+                            <textarea class="ctct" name="form[content]" cols="75" rows="10" style="width: 100%;"></textarea>
+                            <br>
                                 <input name="form[magazine]" type="hidden" value="" />
                                 <label><input name="form[magazine]" type="checkbox" value="1" checked='checked' />&nbsp;メルマガを購読する</label><br>
                                 <p class="attn" >ファンキー・ジャム所属アーティストの最新情報をお届けします。<br>
                                 不要な方はチェックをはずして下さい。</p>
-                            </td>
-                        </tr>
-                    </table>
                     <input class="btn-fix" type="submit" value="内容を確認する" />
                     <input type="hidden" name="action" value="confirm" />
                 </form>

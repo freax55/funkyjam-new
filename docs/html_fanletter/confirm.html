@@ -88,28 +88,13 @@
 
                 <p class="lead">下記の内容で送信しますか？</p>
                 <form action="index.php" method="post">
-                    <table width=100% frame="box">
-                        <tr>
-                            <td style="width: 166px;">お名前</td>
-                            <td>{$form.name|escape}</td>
-                        </tr>
-                        <tr>
-                            <td>メールアドレス</td>
-                            <td>{$form.mail|escape}</td>
-                        </tr>
-                        <tr>
-                            <td>宛先</td>
-                            <td>{$mailConfig[$form.to].nameJa|escape}</td>
-                        </tr>
-                        <tr>
-                            <td>ファンレター内容</td>
-                            <td>{$form.content|escape|nl2br}</td>
-                        </tr>
-                        <tr>
-                            <td>メールマガジン</td>
-                            <td>メルマガを購読{if $form.magazine}する{else}しない{/if}</td>
-                        </tr>
-                    </table>
+                        <p class="attnc">お名前：{$form.name|escape}</p>
+                        <p class="attnc">メールアドレス：{$form.mail|escape}</p>
+                        <p class="attnc">宛先：{$mailConfig[$form.to].nameJa|escape}</p>
+                        <p class="attnc">ファンレター内容：</p>
+                        <p class="attn">{$form.content|escape|nl2br}</p>
+                        <p class="attnc">メルマガを購読{if $form.magazine}する{else}しない{/if}</p>
+                        
                         <input class="btn-fix" type="submit" value="送信する" />&nbsp;&nbsp;&nbsp;&nbsp;<input class="btn-fix" class="return" type="button" value="戻る" onclick="location.href='./?action=input';" />
                     <input type="hidden" name="action" value="process" />
                 </form>

@@ -86,51 +86,24 @@
         <div class="row"> 
             <div class="col-md-8 col-md-offset-2">
 
-
 			<h2>お問い合わせ</h2>
-				<form action="/contact/" novalidate="novalidate" id="MagazineIndexForm" method="post" accept-charset="utf-8">				
-				<table width=100% frame="box">
-					<tbody>
-							<tr>
-								<td class="wd137">お名前</td>
-								<td>{$form.name|escape}</td>
-							</tr>
-							<tr>
-								<td>メールアドレス</td>
-								<td>{$form.mail|escape}</td>
-							</tr>
-							{if $form.sex}
-							<tr>
-								<td>性別</td>
-								<td>{$form.sex}</td>
-							</tr>
-							{/if}
-							{if $form.age}
-							<tr>
-								<td>年齢</td>
-								<td>{$form.age|escape}&nbsp;歳</td>
-							</tr>
-							{/if}
-							{if $form.job}
-							<tr>
-								<td>職業</td>
-								<td>{$form.job|escape}</td>
-							</tr>
-							{/if}
-							<tr>
-								<td>種別</td>
-								<td>{$form.type|escape}</td>
-							</tr>
-							<tr>
-								<td>内容</td>
-								<td>{$form.content|escape|nl2br}</td>
-							</tr>
-							<tr>
-								<td>メールマガジン</td>
-								<td>メルマガを購読{if $form.magazine}する{else}しない{/if}</td>
-							</tr>
-					</tbody>
-				</table>
+				<form action="/contact/" novalidate="novalidate" id="MagazineIndexForm" method="post" accept-charset="utf-8">
+					<p class="attn">お名前：{$form.name|escape}</p>
+					<p class="attnc">メールアドレス：{$form.mail|escape}</p>
+				{if $form.sex}
+					<p class="attnc">性別：{$form.sex}</p>
+				{/if}
+				{if $form.age}
+					<p class="attnc">年齢：{$form.age|escape}&nbsp;歳</p>
+				{/if}
+				{if $form.job}
+					<p class="attnc">職業：{$form.job|escape}</p>
+				{/if}
+					<p class="attnc">種別：{$form.type|escape}</p>
+					<p class="attnc">内容：</p>
+					<p>{$form.content|escape|nl2br}</p>
+					<p class="attnc">メルマガを購読{if $form.magazine}する{else}しない{/if}</p>
+
                     <input class="btn-fix" type="submit" value="送信する" />&nbsp;&nbsp;&nbsp;&nbsp;<input class="return btn-fix" type="button" value="戻る" onclick="location.href='./?action=input';" />
                     <input type="hidden" name="action" value="process" />		
 				</form>
