@@ -27,31 +27,31 @@
             <div class="sp-slides">
                 <div class="sp-slide">
                 <a href="artist/kubota">
-                <img class="sp-image" src="img/portfolio/header-bg.jpg" /></a>
+                <img class="sp-image" src="/img/portfolio/header-bg.jpg" /></a>
                 </div>
                 <div class="sp-slide">
                 <a href="artist/kubota">
-                <img class="sp-image" src="img/portfolio/header-bg2.jpg" /></a>
+                <img class="sp-image" src="/img/portfolio/header-bg2.jpg" /></a>
                 </div>
                 <div class="sp-slide">
                 <a href="artist/kubota">
-                <img class="sp-image" src="img/portfolio/header-bg3.jpg" /></a>
+                <img class="sp-image" src="/img/portfolio/header-bg3.jpg" /></a>
                 </div>
                 <div class="sp-slide">
                 <a href="artist/kubota">
-                <img class="sp-image" src="img/portfolio/header-bg4.jpg" /></a>
+                <img class="sp-image" src="/img/portfolio/header-bg4.jpg" /></a>
                 </div>
                 <div class="sp-slide">
                 <a href="artist/kubota">
-                <img class="sp-image" src="img/portfolio/header-bg5.jpg" /></a>
+                <img class="sp-image" src="/img/portfolio/header-bg5.jpg" /></a>
                 </div>
             </div>
             <div class="sp-thumbnails">
-                <img class="sp-thumbnail" src="img/portfolio/header-bg.jpg"/>
-                <img class="sp-thumbnail" src="img/portfolio/header-bg2.jpg"/>
-                <img class="sp-thumbnail" src="img/portfolio/header-bg3.jpg"/>
-                <img class="sp-thumbnail" src="img/portfolio/header-bg4.jpg"/>
-                <img class="sp-thumbnail" src="img/portfolio/header-bg5.jpg"/>
+                <img class="sp-thumbnail" src="/img/portfolio/header-bg.jpg"/>
+                <img class="sp-thumbnail" src="/img/portfolio/header-bg2.jpg"/>
+                <img class="sp-thumbnail" src="/img/portfolio/header-bg3.jpg"/>
+                <img class="sp-thumbnail" src="/img/portfolio/header-bg4.jpg"/>
+                <img class="sp-thumbnail" src="/img/portfolio/header-bg5.jpg"/>
             </div>
         </div>
     </header>
@@ -207,28 +207,28 @@
                 <div class="col-xs-6 col-md-3 col-lg-3 leftbar">
                     <div class="portfolio-item">
                     <a href="https://www.facebook.com/toshinobukubota" target="_blank" >
-                    <img src="img/portfolio/TKFacebook.png" class="img-responsive" alt="Toshinobu Kubota Facebook"> 
+                    <img src="/img/portfolio/TKFacebook.png" class="img-responsive" alt="Toshinobu Kubota Facebook"> 
                     </a> 
                     </div>
                 </div>
                 <div class="col-xs-6 col-md-3 col-lg-3 rightbar">
                     <div class="portfolio-item">
                     <a href="https://www.facebook.com/urashimarinko" target="_blank" >
-                    <img src="img/portfolio/RUFacebook.png" class="img-responsive" alt="Rinko Urashima Facebook"> 
+                    <img src="/img/portfolio/RUFacebook.png" class="img-responsive" alt="Rinko Urashima Facebook"> 
                     </a> 
                     </div>
                 </div>
                 <div class="col-xs-6 col-md-3 col-lg-3 leftbar">
                     <div class="portfolio-item">
                     <a href="https://www.facebook.com/moridaisukeofficial" target="_blank" >
-                    <img src="img/portfolio/DMFacebook.png" class="img-responsive" alt="Daisuke Mori Facebook"> 
+                    <img src="/img/portfolio/DMFacebook.png" class="img-responsive" alt="Daisuke Mori Facebook"> 
                     </a> 
                     </div>
                 </div>
                 <div class="col-xs-6 col-md-3 col-lg-3 rightbar">
                     <div class="portfolio-item">
                     <a href="https://www.facebook.com/BESofficial" target="_blank" >
-                    <img src="img/portfolio/BESFacebook.png" class="img-responsive" alt="BSE Facebook"> 
+                    <img src="/img/portfolio/BESFacebook.png" class="img-responsive" alt="BSE Facebook"> 
                     </a> 
                     </div>
                 </div>
@@ -236,11 +236,11 @@
             <div class="row banner-pad">
                 <div class="col-sm-6 col-md-6 col-lg-6 portfolio-item">
                     <a href="/artist/kubota/fanclub.html">
-                    <img src="img/portfolio/Baribari-top.jpg" class="img-responsive" alt="Bari Bari Crew"> </a> 
+                    <img src="/img/portfolio/Baribari-top.jpg" class="img-responsive" alt="Bari Bari Crew"> </a> 
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-6 portfolio-item">
                     <a href="/mori/">
-                    <img src="img/portfolio/morinobanner.jpg" class="img-responsive" alt="Mori no Nakama"> </a> 
+                    <img src="/img/portfolio/morinobanner.jpg" class="img-responsive" alt="Mori no Nakama"> </a> 
                 </div>
             </div>
         </div>
@@ -256,29 +256,29 @@
             <div class="row">
                 <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
                     <a href="/shop">
-                    <img src="img/portfolio/FJ-Banner.jpg" class="img-responsive" alt="FJ Shop"> </a> 
+                    <img src="/img/portfolio/FJ-Banner.jpg" class="img-responsive" alt="FJ Shop"> </a> 
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
                     <a href="/studio">
-                    <img src="img/portfolio/studio-top.jpg" class="img-responsive" alt="Studio"></a> 
+                    <img src="/img/portfolio/studio-top.jpg" class="img-responsive" alt="Studio"></a> 
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
                     <a href="http://cooljapanmusic.com/jammin/">
-                    <img src="img/portfolio/Jammin.jpg" class="img-responsive" alt="Studio"> </a> 
+                    <img src="/img/portfolio/Jammin.jpg" class="img-responsive" alt="Studio"> </a> 
                 </div>
             </div>
             <div class="row banner-pad">
                 <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
                     <a href="https://twitter.com/funky_manager">
-                    <img src="img/portfolio/Twitter-Banner.png" class="img-responsive" alt="Twitter"> </a> 
+                    <img src="/img/portfolio/Twitter-Banner.png" class="img-responsive" alt="Twitter"> </a> 
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
                     <a href="/art">
-                    <img src="img/portfolio/Art-Banner.png" class="img-responsive" alt="Art"> </a> 
+                    <img src="/img/portfolio/Art-Banner.png" class="img-responsive" alt="Art"> </a> 
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
                     <a href="/premium/">
-                    <img src="img/portfolio/Premium-Banner.jpg" class="img-responsive" alt="FJ Premium"> </a> 
+                    <img src="/img/portfolio/Premium-Banner.jpg" class="img-responsive" alt="FJ Premium"> </a> 
                 </div>
             </div>
         </div>
