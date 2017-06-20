@@ -22,6 +22,7 @@ foreach($artists as $v){
 	Router::connect('/artist/:name/profile_detail', array('controller' => 'artist', 'name' => $v, 'action' => 'contents'));
 	Router::connect('/artist/:name/discography', array('controller' => 'artist', 'name' => $v, 'action' => 'contents'));
 	Router::connect('/artist/:name/performance', array('controller' => 'artist', 'name' => $v, 'action' => 'contents'));
+	Router::connect('/artist/:name/gallery', array('controller' => 'artist', 'name' => $v, 'action' => 'contents'));
 	// Router::connect('/artist/:name/otherwork', array('controller' => 'artist', 'name' => $v, 'action' => 'contents'));	
 	Router::connect('/artist/*', array('controller' => 'artist', 'action' => 'news_contents'));
 }
