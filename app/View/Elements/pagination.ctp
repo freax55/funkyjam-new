@@ -1,4 +1,4 @@
-<div class="pager" style="margin-top: 15px;">
+<div class="pager topthirty">
     <ol>
 		<?php
 		echo $this->Paginator->first('<<', array('tag' => 'li'));
