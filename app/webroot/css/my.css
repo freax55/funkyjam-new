@@ -777,3 +777,15 @@ p {
   font-weight: bold;
   line-height: 1.4;
 }
+.detail td, th {
+    color: #888;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    color: #888;
+    border: 0px;
+    padding: 10px 15px 10px 15px;
+    text-align: left;
+    vertical-align: middle;
+}
+
