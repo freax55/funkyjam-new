@@ -14,7 +14,8 @@ class Post extends AppModel {
 			],
 			'order' => [
 				'ID' => 'ASC'
-			]
+			],
+			'recursive' => 2,
 		]);
 		if($posts) {
 			return $posts;
@@ -49,13 +50,28 @@ class Post extends AppModel {
 				]
 			]
 		]);
+		App::uses('Postmeta', 'Model');
+		$Pm = new Postmeta();
+		$Pm->bindModel([
+			'belongsTo' => [
+				'Post' => [
+					"className" => "Post",
+					"foreignKey" => "meta_value",
+					'fields' => [
+						'ID',
+						'guid',
+					]
+				]
+			]
+		]);
 	}
 
-	// function getNewsList($aritst = null){
+	// function getNewsList($aritst){
 	// 	$this->bindThumbnail();
-	// 	if($artist != null) {
-	// 		$
-	// 	}
+	// 	// if($artist != null) {
+	// 	// 	$
+	// 	// }
+
 
 	// }
 

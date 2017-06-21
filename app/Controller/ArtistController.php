@@ -11,37 +11,39 @@ class ArtistController extends AppController {
 
 	public function index()
 	{
-		$d = $this->Term->find('list', [
-			'conditions' => [
-				'Term.name LIKE' => '%' . 'news',
-			],
-			'fields' => [
-				'Term.term_id',
-				'Term.term_id',
-			]
-			// 'recursive' => -1
-		]);
+		// $this->redirect()
+		// $d = $this->Term->find('list', [
+		// 	'conditions' => [
+		// 		'Term.name LIKE' => '%' . 'news',
+		// 	],
+		// 	'fields' => [
+		// 		'Term.term_id',
+		// 		'Term.term_id',
+		// 	]
+		// 	// 'recursive' => -1
+		// ]);
 
-		$n = $this->TermRelationship->find('list', [
-			'conditions' => [
-			 	'TermRelationship.term_taxonomy_id' => $d
-			],
-			'fields' => [
-				'object_id',
-				'object_id'
-			]
-		]);
+		// $n = $this->TermRelationship->find('list', [
+		// 	'conditions' => [
+		// 	 	'TermRelationship.term_taxonomy_id' => $d
+		// 	],
+		// 	'fields' => [
+		// 		'object_id',
+		// 		'object_id'
+		// 	]
+		// ]);
 
-		$ne = $this->Post->find('all', [
-			'conditions' => [
-				'post_status' => 'publish',
-				'ID' => $n
-			],
-			'fields' => [
-				'ID',
-				'post_title'
-			]
-		]);
+		// $ne = $this->Post->find('all', [
+		// 	'conditions' => [
+		// 		'post_status' => 'publish',
+		// 		'ID' => $n
+		// 	],
+		// 	'fields' => [
+		// 		'ID',
+		// 		'post_title'
+		// 	]
+		// ]);
+		// $
 
 		// $this->prd($ne);
 
@@ -49,10 +51,11 @@ class ArtistController extends AppController {
 		// $this->prd($n);
 
 		// $this->prd($d);
-		$this->pageInit();
+		// $this->pageInit();
 		$data = $this->_artistsData();
-		$action = $data['action'];
+		// $action = $data['action'];
 		$term_name = $data['current'] . '/news';
+		$this->redirect('/artist/' . $term_name . '/');
 		$is_contents = true;
 		$content = null;
 		// $this->prd($term_name);
@@ -129,6 +132,7 @@ class ArtistController extends AppController {
 	}
 
 
+
 	public function contents()
 	{
 		// 各種変数取得
@@ -177,6 +181,19 @@ class ArtistController extends AppController {
 		]);
 		$this->render('contents');
 	}
+
+	function get_news_list($artist) {
+		$term = $artist . '/news';
+		$ids = $this->TermRelationship->getObjectIds($term);
+		foreach($ids as $v) {
+			$ary[] = $v['TermRelationship']['object_id'];
+		}
+		$this->Post->bindThumbnail();
+		$list = $this->Post->getPostsById($ary);
+		$this->set(['news_list' => $list]);
+	}
+
+
 
 	// public function profile()
 	// {
@@ -344,6 +361,7 @@ class ArtistController extends AppController {
 		$ary_params = $this->getArtistParams();
 		$ary_names = $this->getArtistNames();
 		$path = explode('/', $url);
+		$this->get_news_list($path[1]);
 		$controll = $path[0];
 		if(isset($path[1]) && isset(array_flip($ary_params)[$path[1]])) {
 			$action = !empty($path[2])?$path[2]:'index';//str_replace(array_merge($ary_path,[$controller, '/']), ['', '', '', '', '', ''], $url);

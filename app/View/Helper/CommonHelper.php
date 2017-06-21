@@ -656,33 +656,6 @@ EOM;
 		return implode(DS, $uri);
 	}
 
-	// 営業時間を組み立てる
-	function getBusinessTime($bt=array()){
-		$business_time = "";
-		if ($bt['business_time_24'] == 1) {
-			$business_time.= '24時間営業';
-		} else {
-			if ($bt['business_time_start_hinode'] == 1) {
-				$business_time.= '日の出〜';
-			} else {
-				$business_time.= $bt['business_time_start'] . '&nbsp;〜&nbsp;';
-			}
-			if ($bt['business_time_end_last'] == 1) {
-				$business_time.= 'LAST';
-			} else {
-				if (substr($bt['business_time_end'], 0, 2) == "00") {
-					$business_time.= '24:00';
-				} else if (substr($bt['business_time_end'], 0, 1) == 0) {
-					$business_time.= '翌' . $bt['business_time_end'];
-				} else {
-					$business_time.= $bt['business_time_end'];
-				}
-			}
-		}
-		return $business_time;
-	}
-
-
 	function ifeReturn($field, $words=[]) {
 		if ($field == 'y') {
 			return $words['y'];
@@ -690,6 +663,10 @@ EOM;
 			return $words['n'];
 		}
 	}
+
+	/*
+	** fj method
+	*/
 
 	function getContentList() {
 		$contents = array(
@@ -699,5 +676,15 @@ EOM;
 			'performance' => 'Performance',
 		);
 		return $contents;
+	}
+
+	function checkWithinWeek($datetime, $days) {
+		$date = $this->date4mat($datetime, 'Y-m-d');
+		$timestamp = $this->dateTime2UnixTime($date . ' 00:00:00');
+		if((strtotime('tomorrow') - $timestamp) < (60*60*24*$days)){
+			return true;
+		} else {
+			return false;
+		}
 	}
 }
