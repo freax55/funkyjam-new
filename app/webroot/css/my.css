@@ -784,11 +784,15 @@ p {
     line-height: 28px;
     color: #888;
     border: 0px;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px 10px 0px;
     text-align: left;
     vertical-align: top;
     border-style: none;
 }
 .detail {
     border-style: none;
+}
+.detailp {    
+    margin-bottom: 15px;
+
 }
