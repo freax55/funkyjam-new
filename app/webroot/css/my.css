@@ -777,7 +777,7 @@ p {
   font-weight: bold;
   line-height: 1.4;
 }
-.detail td, th {
+.detail table, td, th {
     color: #888;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -786,6 +786,7 @@ p {
     border: 0px;
     padding: 10px 15px 10px 15px;
     text-align: left;
-    vertical-align: middle;
+    vertical-align: top;
+    border-style: none;
 }
 
