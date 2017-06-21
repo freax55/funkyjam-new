@@ -1,0 +1,86 @@
+.headLogo {
+  margin-bottom: 20px;
+}
+.sttb {
+  border:0px black solid; 
+  float:left; 
+  margin-right: 20px;
+}
+.stp {
+  font-size: 14px;
+}
+.stp2 {
+  font-size: 14px; 
+  line-height: 22px;  
+  padding-top: 10px;
+  padding-bottom: 10px
+}
+.storep {
+  width: 52px;
+  height: 17px;
+  background-image: url(/img/portfolio/icon_color.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  line-height: 0;
+  vertical-align: middle;
+  text-indent: -9999px;
+  font-size: 1px;
+}
+.storep2 {
+  width: 52px;
+  height: 17px;
+  background-image: url(../img/portfolio/icon_size.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  line-height: 0;
+  vertical-align: middle;
+  text-indent: -9999px;
+  font-size: 1px;
+}
+.storep3 {
+  width: 52px;
+  height: 17px;
+  background-image: url(../img/portfolio/icon_price.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  line-height: 0;
+  vertical-align: middle;
+  text-indent: -9999px;
+  font-size: 1px;
+}
+.stf {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 3px;
+}
+.st-title {
+  margin-top: 1px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.stimg {
+  font-size: 12px; 
+  line-height: 16px; 
+  margin-top: 5px; 
+  margin-bottom: 10px;
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border-radius: 4px;
+}
