@@ -73,7 +73,7 @@
             <?php
             $i = 0;
             foreach($news_list as $v) {
-                if($i>12){
+                if($i>11){
                     break;
                 }
             ?>
