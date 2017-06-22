@@ -1,5 +1,4 @@
 
-
 <!-- Header -->
 <script>
  $( document ).ready(function( $ ) {
@@ -57,12 +56,9 @@
     </header>
 </div>
 
-
 <!-- Artist Section -->
 
 <?= view::element('part_artist_menu') ?>
-
-
 
 <!-- News Section -->
 <div id="news-section-top">
@@ -100,7 +96,6 @@
         </div>
     </div>
 </div>
-
 
 <!-- SNS Section -->
 <div id="SNS-section">
@@ -151,7 +146,6 @@
     </div>
 </div>
 
-
 <!-- Banner Section -->
 <div id="bar-section">
     <div class="container">
@@ -189,13 +183,5 @@
     </div>
 </div>
 
-
-
-
 <!-- Introduction Section -->
-
 <?= view::element('part_introduction') ?>
-
-
-
-
