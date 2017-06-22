@@ -803,3 +803,13 @@ p {
     font-weight: bold;
     line-height: 1.4;
 }
+.attnc {
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+.ctct {
+  height: 35px;
+  padding: 0.3em 0.6em !important;
+  border: 2px solid #ddd !important;
+}
+
