@@ -129,6 +129,12 @@ class RootController extends AppController {
 
 
 		// ↑　kokomade
+
+		// $news
+
+
+
+
 		$this->pageInit();
 		// $pst = $this->Postmeta->find('all');
 

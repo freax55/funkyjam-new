@@ -16,7 +16,7 @@ CakeLog::config('error', array(
 	'file' => 'error',
 ));
 
-define('MYDOMAIN', 'fj-new.untamed.com');
+define('MYDOMAIN', 'fj-new.untamed.co.jp');
 define('MYDOMAIN_DEV', 'fj-new.dev');
 define('MYHOST', env('HTTP_HOST'));
 
