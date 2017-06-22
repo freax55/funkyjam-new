@@ -162,6 +162,12 @@ class AppController extends Controller {
 			'noindex'               => false,
 			'canonical'             => false,
 		]);
+		if (isset($this->params->url)) {
+			$uri = $this->params->url;
+				if (!empty($uri) && substr($uri, -1) != '/' && strpos($uri, '.xml') == false && empty($this->params->query)) {
+				$this->redirect('/' . $uri . '/', 301);
+			}
+		}
 	}
 
 	/**

@@ -34,7 +34,7 @@ class TermRelationship extends AppModel {
 		$ids = $this->find('all', [
 			'conditions' => [
 				'term_taxonomy_id' => $term_id
-			] 
+			]
 		]);
 		if($ids) {
 			return $ids;

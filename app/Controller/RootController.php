@@ -4,7 +4,9 @@ class RootController extends AppController {
 	public $name = 'Root';
 	public $uses = array(
 		'Post',
-		'Postmeta'
+		'Postmeta',
+		'TermRelationship',
+		'Term'
 	);
 
 	// function getInnerHtml($node){
@@ -131,19 +133,64 @@ class RootController extends AppController {
 		// ↑　kokomade
 
 		// $news
+		$artists = $this->getArtistParams();
+		foreach ($artists as $v) {
+			$term_name[] = $v . '/news';
+		}
 
-
-
-
+		$object_ids = $this->TermRelationship->getObjectIds($term_name);
+		// $this->prd($object_ids);
+		foreach($object_ids as $id) {
+			$ids[] = $id['TermRelationship']['object_id'];
+			$idsbyartist[$id['TermRelationship']['object_id']] = strstr($id['Term']['name'], '/', true);
+		}
+		// $this->prd($idsbyartist);
+		$fields = [
+			'fields' => [
+				'ID',
+				'post_title',
+				'post_date'
+			]
+		];
+		$this->Post->bindThumbnail();
+		$posts = $this->Post->getPostsById($ids, $fields);
+		// $this->prd($posts);
+		foreach($posts as $post){
+			$artist_name = $idsbyartist[$post['Post']['ID']];
+			$count[$artist_name][] = 1;
+			$_posts[$post['Post']['ID']] = $post;
+			$_posts[$post['Post']['ID']]['Post']['order'] = count($count[$artist_name]);
+			$_posts[$post['Post']['ID']]['Post']['aritist_name'] = $artist_name;
+		}
+		// $this->prd($_posts);
 		$this->pageInit();
-		// $pst = $this->Postmeta->find('all');
-
-		// $this->prd($pst);
 		$this->set([
 			'title' => 'fankyjam',
 			'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',//DESCRIPTION,
+			'news_list' => $_posts
 		]);
 	}
+
+	function get_news_list() {
+		$artists = $this->getArtistParams();
+
+		foreach($artists as $v) {
+			$ids = [];
+			$ids = $this->TermRelationship->getObjectIds($term);
+		}
+
+
+
+		$term = $artist . '/news';
+		$ids = $this->TermRelationship->getObjectIds($term);
+		foreach($ids as $v) {
+			$ary[] = $v['TermRelationship']['object_id'];
+		}
+		$this->Post->bindThumbnail();
+		$list = $this->Post->getPostsById($ary);
+		$this->set(['news_list' => $list]);
+	}
+
 
 	public function company() {
 		$action = $this->params->params['action'];

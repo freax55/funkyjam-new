@@ -5,7 +5,11 @@
         <div class="row bottomsixty">
             <section>
 			<?php
+			$i = 0;
 			foreach($news_list as $k => $v) {
+				if($i>12){
+					break;
+				}
 			?>
 				<div class="col-sm-6 col-md-3 col-lg-3">
 					<article class="home-news-item">
@@ -24,6 +28,7 @@
 				</div>
 
 			<?php
+			$i++;
 			}
 			?>
             </section>  

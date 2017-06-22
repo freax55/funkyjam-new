@@ -5,18 +5,23 @@ class Post extends AppModel {
 	var $useDbConfig = 'dbwp';
 	var $primaryKey = 'ID';
 
-	function getPostsById($ids) {
-		$posts = $this->find('all', [
+	function getPostsById($ids, $fields=[]) {
+
+		$_options = [
 			'conditions' => [
 				'ID' => $ids,
 				'post_status' => 'publish',
 				'post_type' => 'post'
 			],
 			'order' => [
-				'ID' => 'ASC'
+				// 'ID' => 'ASC'
+				'post_date' => 'DESC'
 			],
 			'recursive' => 2,
-		]);
+		];
+		$options = array_merge($_options, $fields);
+		// debug($options);
+		$posts = $this->find('all', $options);
 		if($posts) {
 			return $posts;
 		} else {
@@ -24,7 +29,7 @@ class Post extends AppModel {
 		}
 	}
 
-	function getNewsOptionsById($ids) {
+	function getNewsOptionsById($ids, $fields=null) {
 		$options = array(
 			'conditions' => [
 				'ID' => $ids,
@@ -32,12 +37,15 @@ class Post extends AppModel {
 				'post_type' => 'post'
 			],
 			'order' => [
-				'ID' => 'ASC'
+				// 'ID' => 'ASC'
+				'post_date' => 'DESC'
 			],
 			'limit' => 1
 		);
 		return $options;
 	}
+
+	// function 
 
 	function bindThumbnail() {
 		$this->bindModel([
