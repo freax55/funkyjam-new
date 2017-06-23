@@ -56,7 +56,7 @@ class ImportShell extends Shell {
 					$title = $xpath->query('.//h3', $entry)->item(0)->nodeValue;
 					// リリース(配列)
 					@$_release = $xpath->query('.//*[@class="release"]', $entry)->item(0)->nodeValue;
-					$release = explode("\n", $_release);
+					$release = explode("\n", str_replace('.', '/', $_release));
 					foreach($release as $k => $v) {
 						$release[$k] = preg_replace('/[\n\r\t]/', '', $v);
 					}

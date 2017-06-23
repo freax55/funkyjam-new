@@ -7,60 +7,18 @@ class ArtistController extends AppController {
 		'Postmeta',
 		'Term',
 		'TermRelationship',
+		'Discography'
 	];
 
 	public function index()
 	{
-		// $this->redirect()
-		// $d = $this->Term->find('list', [
-		// 	'conditions' => [
-		// 		'Term.name LIKE' => '%' . 'news',
-		// 	],
-		// 	'fields' => [
-		// 		'Term.term_id',
-		// 		'Term.term_id',
-		// 	]
-		// 	// 'recursive' => -1
-		// ]);
-
-		// $n = $this->TermRelationship->find('list', [
-		// 	'conditions' => [
-		// 	 	'TermRelationship.term_taxonomy_id' => $d
-		// 	],
-		// 	'fields' => [
-		// 		'object_id',
-		// 		'object_id'
-		// 	]
-		// ]);
-
-		// $ne = $this->Post->find('all', [
-		// 	'conditions' => [
-		// 		'post_status' => 'publish',
-		// 		'ID' => $n
-		// 	],
-		// 	'fields' => [
-		// 		'ID',
-		// 		'post_title'
-		// 	]
-		// ]);
-		// $
-
-		// $this->prd($ne);
-
-
-		// $this->prd($n);
-
-		// $this->prd($d);
-		// $this->pageInit();
 		$data = $this->_artistsData();
 		// $action = $data['action'];
 		$term_name = $data['current'] . '/news';
 		$this->redirect('/artist/' . $term_name . '/');
 		$is_contents = true;
 		$content = null;
-		// $this->prd($term_name);
 		$ob_ids = $this->TermRelationship->getObjectIds($term_name);
-		// $this->prd($ob_ids);
 		if($ob_ids){
 			foreach($ob_ids as $id) {
 				$ids[] = $id['TermRelationship']['object_id'];
@@ -68,8 +26,6 @@ class ArtistController extends AppController {
 		} else {
 			$is_contents = false;
 		}
-		// $this->prd($ids);
-
 
 		$this->set([
 			'title' => 'fankyjam',
@@ -131,8 +87,6 @@ class ArtistController extends AppController {
 		$this->render('news');
 	}
 
-
-
 	public function contents()
 	{
 		// 各種変数取得
@@ -181,6 +135,27 @@ class ArtistController extends AppController {
 		]);
 		$this->render('contents');
 	}
+
+	public function discography()
+	{
+		// 各種変数取得
+		$data = $this->_artistsData();
+		$action = $data['action'];
+		$term_name = $data['current'] . '/' . (($action == 'index')?'news':$action);
+		$is_contents = true;
+		$content = null;
+
+		$data_discs = $this->Discography->getData($data['current']);
+		// $this->prd($data_discs);
+		$this->pageInit();
+		$this->set([
+			'data_discs' => $data_discs,
+			'title' => 'fankyjam',
+			'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',
+		]);
+		// $this->render('contents');
+	}
+
 
 	function get_news_list($artist) {
 		$term = $artist . '/news';
@@ -283,16 +258,6 @@ class ArtistController extends AppController {
 		]);
 		$this->render('contents');
 	}
-
-	// public function discography()
-	// {
-	// 	$this->pageInit();
-	// 	$this->set([
-	// 		'title' => 'fankyjam',
-	// 		'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',
-	// 	]);
-	// 	$this->render('contents');
-	// }
 
 	// public function performance()
 	// {

@@ -13,7 +13,17 @@ class Discography extends AppModel {
 	// 	);
 	// }
 
-
-
+	function getData($artist, $extend_options = null){
+		$options = [
+			'conditions' => [
+				'artist' => $artist
+			],
+			'order' => [
+				'release' => 'DESC'
+			]
+		];
+		$data = $this->find('all', $options);
+		return $data;
+	}
 
 }
