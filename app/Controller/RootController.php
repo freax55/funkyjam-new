@@ -135,6 +135,7 @@ class RootController extends AppController {
 
 		// $news
 		$artists = $this->getArtistParams();
+		$artists[] = 'extend';
 		foreach ($artists as $v) {
 			$term_name[] = $v . '/news';
 		}
@@ -150,7 +151,8 @@ class RootController extends AppController {
 			'fields' => [
 				'ID',
 				'post_title',
-				'post_date'
+				'post_date',
+				'post_name'
 			]
 		];
 		$this->Post->bindThumbnail();

@@ -72,6 +72,7 @@
                 if($i>11){
                     break;
                 }
+                $is_banner = ($news_list[$v]['Post']['aritist_name'] == 'extend')?true:false;
             ?>
                 <div class="col-sm-6 col-md-3 col-lg-3">
                     <article class="home-news-item">
@@ -79,8 +80,13 @@
                         if($this->common->checkWithinWeek($news_list[$v]['Post']['post_date'], 7)) {
                             print '<span class="bg-red p3-5 white blink blink-left box-shadow">NEW</span>';
                         }
+                        if($is_banner) {
+                            $link = '/' . str_replace('-', '/', $news_list[$v]['Post']['post_name']) . '/';
+                        } else {
+                            $link = ('/artist/' . $news_list[$v]['Post']['aritist_name'] . '/news/') . (($news_list[$v]['Post']['order']==1)?'':('page:' . ($news_list[$v]['Post']['order']) . '/'));
+                        }
                         ?>
-                        <a href="/artist/<?= $news_list[$v]['Post']['aritist_name'] ?>/news/<?= ($news_list[$v]['Post']['order']==1)?'':('page:' . ($news_list[$v]['Post']['order']) . '/') ?>">
+                        <a href="<?= $link ?>">
                             <img src="<?= (isset($news_list[$v]['Postmeta']['Post']))?$news_list[$v]['Postmeta']['Post']['guid']:'/img/portfolio/no-image.jpg' ?>" alt="" class="img-responsive" />   
                             <div class="home-news-overlay blk-back">
                             <h3><?= $news_list[$v]['Post']['post_title'] ?></h3>
