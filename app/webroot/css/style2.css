@@ -988,7 +988,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 .home-news-item>a img {
     width: 100%;
-    height: auto;
+    max-height: 145.83px;
 }
 
 .home-news-item>a:focus .home-news-overlay {
