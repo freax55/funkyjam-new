@@ -5,13 +5,13 @@ class Discography extends AppModel {
 	var $useDbConfig = 'dbwp';
 	// var $primaryKey = 'ID';
 
-	function getDiscTypes() {
-		return array(
-			'album',
-			'bestalbum',
-			'single',
-		);
-	}
+	// function getDiscTypes() {
+	// 	return array(
+	// 		'album',
+	// 		'bestalbum',
+	// 		'single',
+	// 	);
+	// }
 
 
 
