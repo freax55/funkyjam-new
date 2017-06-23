@@ -816,3 +816,7 @@ p {
   padding: 0.3em 0.6em !important;
   border: 2px solid #ddd !important;
 }
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
