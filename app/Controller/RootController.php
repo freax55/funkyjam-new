@@ -6,7 +6,8 @@ class RootController extends AppController {
 		'Post',
 		'Postmeta',
 		'TermRelationship',
-		'Term'
+		'Term',
+		'Option'
 	);
 
 	// function getInnerHtml($node){
@@ -162,12 +163,22 @@ class RootController extends AppController {
 			$_posts[$post['Post']['ID']]['Post']['order'] = count($count[$artist_name]);
 			$_posts[$post['Post']['ID']]['Post']['aritist_name'] = $artist_name;
 		}
-		// $this->prd($_posts);
+		$custom_order_ids = $this->Option->find('first', [
+			'conditions' => [
+				'option_name' => 'custom_order'
+			],
+			'fileds' => [
+				'option_value'
+			] 
+		]);
+		$ary_custom_order = json_decode($custom_order_ids['Option']['option_value'], true);
+		// $this->prd($ary_custom_order);
 		$this->pageInit();
 		$this->set([
 			'title' => 'fankyjam',
 			'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',//DESCRIPTION,
-			'news_list' => $_posts
+			'news_list' => $_posts,
+			'ary_custom_order' => $ary_custom_order
 		]);
 	}
 

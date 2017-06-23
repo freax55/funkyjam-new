@@ -68,7 +68,7 @@
             <section>
             <?php
             $i = 0;
-            foreach($news_list as $v) {
+            foreach($ary_custom_order as $v) {
                 if($i>11){
                     break;
                 }
@@ -76,14 +76,14 @@
                 <div class="col-sm-6 col-md-3 col-lg-3">
                     <article class="home-news-item">
                         <?php
-                        if($this->common->checkWithinWeek($v['Post']['post_date'], 7)) {
+                        if($this->common->checkWithinWeek($news_list[$v]['Post']['post_date'], 7)) {
                             print '<span class="bg-red p3-5 white blink blink-left box-shadow">NEW</span>';
                         }
                         ?>
-                        <a href="/artist/<?= $v['Post']['aritist_name'] ?>/news/<?= ($v['Post']['order']==1)?'':('page:' . ($v['Post']['order']) . '/') ?>">
-                            <img src="<?= (isset($v['Postmeta']['Post']))?$v['Postmeta']['Post']['guid']:'/img/portfolio/no-image.jpg' ?>" alt="" class="img-responsive" />   
+                        <a href="/artist/<?= $news_list[$v]['Post']['aritist_name'] ?>/news/<?= ($news_list[$v]['Post']['order']==1)?'':('page:' . ($news_list[$v]['Post']['order']) . '/') ?>">
+                            <img src="<?= (isset($news_list[$v]['Postmeta']['Post']))?$news_list[$v]['Postmeta']['Post']['guid']:'/img/portfolio/no-image.jpg' ?>" alt="" class="img-responsive" />   
                             <div class="home-news-overlay blk-back">
-                            <h3><?= $v['Post']['post_title'] ?></h3>
+                            <h3><?= $news_list[$v]['Post']['post_title'] ?></h3>
                             </div>
                         </a>
                     </article>
