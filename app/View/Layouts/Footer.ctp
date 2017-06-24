@@ -19,7 +19,6 @@
 <script type="text/javascript" src="/js/jquery.prettyPhoto.js"></script> 
 <script type="text/javascript" src="/js/jquery.isotope.js"></script> 
 <script type="text/javascript" src="/js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="/js/contact_me.js"></script> 
 
 <!-- Javascripts
     ================================================== --> 
