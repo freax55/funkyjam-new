@@ -209,5 +209,3 @@ $artist = 'kubota';
 
 
 
-                        <div id="pageTop"><a style="padding-top: 8px; padding-left: 0px;" href="menu"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a></div>
-

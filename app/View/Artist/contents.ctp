@@ -144,13 +144,6 @@
 
 
 
-<div id="pageTop">
-    <a class="topnav" href="menu">
-        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
-    </a>
-</div>
-
-
 
 
 
