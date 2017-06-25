@@ -375,7 +375,7 @@ header p {
 	background-color: #111111;
 	border: 2px solid #fff;
 	border-radius: 4px;
-	margin-top: 5px;
+	margin-top: 0px;
 	font-size: 15px;
 	transition: all 0.5s;
 }
@@ -442,7 +442,7 @@ header p {
 	background-color: #444444;
 	border: 2px solid #fff;
 	border-radius: 4px;
-	margin-top: 5px;
+	margin-top: 0px;
 	font-size: 15px;
 	transition: all 0.5s;
 }
@@ -1892,4 +1892,9 @@ height: 100%;
 	filter:alpha(opacity=50);
     -moz-opacity: 0.5;
     opacity: 0.5;
+}
+@media (min-width: 769px) {
+  .navbar-toggle {
+    display: none;
+  }
 }
