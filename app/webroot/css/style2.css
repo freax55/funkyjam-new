@@ -1887,9 +1887,3 @@ height: 100%;
     -moz-opacity: 0.5;
     opacity: 0.5;
 }
-.navbar {
-  position: relative;
-  min-height: 55px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
-}
