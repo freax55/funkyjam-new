@@ -1695,6 +1695,12 @@ height: 100%;
     padding-left:0;
 }
 }
+@media (max-width: 479px) {  
+#slider-section-top {
+  padding: 58px 0px 0px 0px;
+  background-color: #f6f6f6;
+}
+}
 @font-face {
   font-family: 'icomoon';
   src:  url('fonts/icomoon.eot?xwvuca');
