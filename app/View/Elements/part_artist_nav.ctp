@@ -6,7 +6,7 @@
             </div>
             <div class="snsbar">
 
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 sns-r">
                     <a href="<?=$ary_sns[$current]['Facebook']?>" target="_blank">
                     <i class="fa fa-facebook-official snsicon" aria-hidden="true"></i></a>
                     <a href="<?=$ary_sns[$current]['Twitter']?>" target="_blank">
