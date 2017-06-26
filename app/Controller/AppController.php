@@ -164,8 +164,8 @@ class AppController extends Controller {
 		]);
 		if (isset($this->params->url)) {
 			$uri = $this->params->url;
-			debug($this->params);
-				if (!empty($uri) && substr($uri, -1) != '/'&& strpos($uri, '.xml') === false && empty($this->params->query)) {
+			// debug($this->params);
+				if (!empty($uri) && substr($uri, -1) != '/'&& strpos($uri, '.xml') === false /*&& empty($this->params->query)*/) {
 				$this->redirect('/' . $uri . '/', 301);
 			}
 		}
