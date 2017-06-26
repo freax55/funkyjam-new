@@ -20,10 +20,11 @@
                 <?php
                 // ワードプレスに該当する投稿がなければ予備のページを呼び出す
                 if ($is_contents === true) {
-                    print $content[0]['Post']['post_content'];
+                    print View::element('part_news_content');
+                    // print $content[0]['Post']['post_content'];
                 } else {
                     $file_term = str_replace('/', '_', $term_name);
-                    print view::element('content_' . $file_term);
+                    print View::element('content_' . $file_term);
                 }
                 ?>
 

@@ -2,7 +2,7 @@
 App::uses('Controller', 'Controller');
 class AppController extends Controller {
 	public $components = ['Cookie', 'Session'];
-	public $helpers = ['Session', 'Common', 'BreadCrumb'];
+	public $helpers = ['Session', 'Common', 'BreadCrumb', 'WpView'];
 	public $paginate = [];
 	var $pages = [
 		'root' => [
