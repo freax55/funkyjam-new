@@ -147,11 +147,6 @@ class ArtistController extends AppController {
 
 		$data_discs = $this->Discography->getDataGroupbyType($data['current']);
 		
-		// $data_discs_types_key = Hash::extract($data_discs, 'Discography.{n}[type = album].discography_id');
-		// $this->prd($data_discs_types_key);
-
-
-		// $this->prd($data_discs);
 		$this->pageInit();
 		$_action = Inflector::camelize(($action == 'index')?'news':$action);
 		$this->topicPath(
@@ -168,7 +163,6 @@ class ArtistController extends AppController {
 			'title' => 'fankyjam',
 			'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',
 		]);
-		// $this->render('contents');
 	}
 
 

@@ -28,7 +28,7 @@
 
 			<?php
 			foreach ($disctypes[$current] as $k => $v) {
-				print '<p class="DiscographyTitle2 line">Album</p>';
+				print '<p class="DiscographyTitle2 line" id="' . $k . '">' . $v . '</p>';
                 $d = $data_discs[$k];
 				foreach($d as $v1) {
 					$v1 = $v1['Discography'];
