@@ -73,7 +73,7 @@ class ArtistController extends AppController {
 				$content[0]['Post']['post_title']
 			],
 			[
-				'/artist/' . $data['current']
+				'/artist/' . $data['current'] . '/news/'
 			]
 		);
 
@@ -121,7 +121,7 @@ class ArtistController extends AppController {
 				$_action
 			],
 			[
-				'/artist/' . $data['current']
+				'/artist/' . $data['current'] . '/news/'
 			]
 		);
 		
@@ -155,7 +155,7 @@ class ArtistController extends AppController {
 				$_action
 			],
 			[
-				'/artist/' . $data['current']
+				'/artist/' . $data['current'] . '/news/'
 			]
 		);
 		$this->set([
