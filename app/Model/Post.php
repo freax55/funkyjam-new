@@ -15,7 +15,7 @@ class Post extends AppModel {
 			],
 			'order' => [
 				// 'ID' => 'ASC'
-				'post_date' => 'ASC'
+				'post_date' => 'DESC'
 			],
 			'recursive' => 2,
 		];
@@ -38,7 +38,7 @@ class Post extends AppModel {
 			],
 			'order' => [
 				// 'ID' => 'ASC'
-				'post_date' => 'ASC'
+				'post_date' => 'DESC'
 			],
 			'limit' => 1
 		);
