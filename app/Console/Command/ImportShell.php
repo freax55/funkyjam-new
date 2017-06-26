@@ -88,10 +88,16 @@ class ImportShell extends Shell {
 								if(empty($v1)) {
 									continue;
 								}
-								$ary_contents[str_replace('<li>', '', $v1)] = 'li';
+								$ary_contents[] = [
+									'tag' => 'li',
+									'tt' => str_replace('<li>', '', $v1),
+								];
 							}
 						} else {
-							$ary_contents[$v] = 'p';
+							$ary_contents[$v] = [
+								'tag' => 'p',
+								'tt' => $v
+							];
 						}
 					}
 					// 外部リンク

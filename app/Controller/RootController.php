@@ -13,7 +13,7 @@ class RootController extends AppController {
 	public function index() {
 		// // $this->args[0] = 'kubota';
 		// // $this->prd($this->args);
-		// 	$name = 'kubota';
+		// 	$name = 'bes';
 		// // if (isset($this->args[0]) && $this->args[0] != "") {
 		// 	// $html = fopen(ASSETS . 'files/html/' . $this->args[0] . '.html', 'r');
 		// 	// $html = fopen(ASSETS . 'files/html/' . $name . '.html', 'r');
@@ -56,7 +56,7 @@ class RootController extends AppController {
 		// 			$title = $xpath->query('.//h3', $entry)->item(0)->nodeValue;
 		// 			// リリース(配列)
 		// 			@$_release = $xpath->query('.//*[@class="release"]', $entry)->item(0)->nodeValue;
-		// 			$release = explode("\n", $_release);
+		// 			$release = explode("\n", str_replace('.', '/', $_release));
 		// 			foreach($release as $k => $v) {
 		// 				$release[$k] = preg_replace('/[\n\r\t]/', '', $v);
 		// 			}
@@ -111,11 +111,11 @@ class RootController extends AppController {
 		// 				'link' => json_encode($ary_links),
 		// 			];
 		// 			// $this->prd($insert);
-		// 			// $datas[] = $insert;
+		// 			$datas[] = $insert;
 		// 		}
 		// 	}
-			// $this->prd($datas);
-		// ↑　kokomade
+		// 	$this->prd($datas);
+		// // ↑　kokomade
 
 		// $news
 		$artists = $this->getArtistParams();
@@ -167,6 +167,17 @@ class RootController extends AppController {
 			'ary_custom_order' => $ary_custom_order
 		]);
 	}
+
+	// DOM method
+	function getInnerHtml($node){
+	    $children = $node->childNodes;
+	    $html = '';
+	    foreach($children as $child){
+	        $html .= $node->ownerDocument->saveHTML($child);
+	    }
+	    return $html;
+	}
+
 
 	function get_news_list() {
 		$artists = $this->getArtistParams();

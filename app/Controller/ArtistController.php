@@ -145,7 +145,12 @@ class ArtistController extends AppController {
 		$is_contents = true;
 		$content = null;
 
-		$data_discs = $this->Discography->getData($data['current']);
+		$data_discs = $this->Discography->getDataGroupbyType($data['current']);
+		
+		// $data_discs_types_key = Hash::extract($data_discs, 'Discography.{n}[type = album].discography_id');
+		// $this->prd($data_discs_types_key);
+
+
 		// $this->prd($data_discs);
 		$this->pageInit();
 		$this->set([

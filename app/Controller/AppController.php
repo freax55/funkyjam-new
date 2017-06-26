@@ -455,6 +455,31 @@ class AppController extends Controller {
 		);
 	}
 
+	function getDiscTypes($artist) {
+		return array(
+			'kubota' => [
+				'album' => 'Album',
+				'bestalbum' => 'Best Album',
+				'usalbum' => 'U.S. Album',
+				'single' => 'Single',
+				'dvd' => 'DVD/Vides',
+				'book' => 'Book'
+			],
+			'urashima' => [
+				'album' => 'Album'
+			],
+			'mori' => [
+				'album' => 'Album',
+				'single' => 'Single',
+				'dom' => 'Digital only Movie'
+			],
+			'bes' => [
+				'album' => 'Album'
+			],
+		);
+
+	}
+
 	/*
 	 * 都道府配列取得
 	 */

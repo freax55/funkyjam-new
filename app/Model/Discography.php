@@ -26,4 +26,21 @@ class Discography extends AppModel {
 		return $data;
 	}
 
+	function getDataGroupbyType($artist, $extend_options = null){
+		$ary = null;
+		$options = [
+			'conditions' => [
+				'artist' => $artist
+			],
+			'order' => [
+				'release' => 'DESC'
+			]
+		];
+		$data = $this->find('all', $options);
+		foreach($data as $v) {
+			$ary[$v['Discography']['type']][] = $v;
+		}
+		return $ary;
+	}
+
 }

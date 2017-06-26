@@ -687,4 +687,56 @@ EOM;
 			return false;
 		}
 	}
+
+	function get_disc_types() {
+		return array(
+			'kubota' => [
+				'album' => 'Album',
+				'bestalbum' => 'Best Album',
+				'usalbum' => 'U.S. Album',
+				'single' => 'Single',
+				'dvd' => 'DVD/Vides',
+				'book' => 'Book'
+			],
+			'urashima' => [
+				'album' => 'Album'
+			],
+			'mori' => [
+				'album' => 'Album',
+				'single' => 'Single',
+				'dom' => 'Digital only Movie'
+			],
+			'bes' => [
+				'album' => 'Album'
+			],
+		);
+	}
+
+	function get_code_tracklist($track_title, $tag, $class=null){
+		switch ($tag) {
+			case 'li':
+				$code = '<li' . (($class == null)?'':' ' . $class) . '>' . $track_title . '</li>';
+				break;
+			case 'value':
+				$code = '<p' . (($class == null)?'':' ' . $class) . '>' . $track_title . '</p>';
+				break;
+			default:
+				$code = null;
+				break;
+		}
+		echo $code;
+	}
+
+	function get_code_links($json){
+		$ary = json_decode($json, true);
+		foreach($ary as $v) {
+			if(strpos($v, 'amazon.co.jp') !== false){
+				echo '<li class="clearfix2"><a href="' . str_replace('http:', 'https:', $v) . '" target="_blank"><img src="/img/portfolio/btn_amazon.jpg" alt="amazon.co.jpで買う"></a></li>';
+			} elseif(strpos($v, 'sonymusicshop.jp') !== false){
+				echo '<li class="clearfix2"><a href="' . str_replace('http:', 'https:', $v) . '" target="_blank"><img src="/img/portfolio/btn_sony.jpg" alt="CD/DVD Sop Sony Music Shopで買う"></a></li>';
+			}
+		}
+		return;
+	}
+
 }
