@@ -43,7 +43,7 @@
 					if(!empty($v1['label'])) {
 						print '<p class="mfive">' . $v1['label'] . '</p>';
 					}
-					print '<p class="DiscographyTitle">' . $v1['title'] . '</p>';
+					print '<p class="DiscographyTitle" id="' . $v1['old_id'] . '">' . $v1['title'] . '</p>';
 					if(!empty(json_decode($v1['release_multi']))){
 						$release = implode("\n", json_decode($v1['release_multi'], true));
 						print '<p class="release">' . $release . '</p>';
