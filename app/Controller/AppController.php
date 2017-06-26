@@ -435,25 +435,25 @@ class AppController extends Controller {
 			'kubota' => [
 				'Facebook' => 'https://www.facebook.com/toshinobukubota',
 				'Twitter' => 'https://twitter.com/kubota_4_real',
-				'Youtube' => 'https://www.youtube.com/user/toshinobukubotaSMEJ'
+				'Youtube' => 'https://www.youtube.com/user/toshinobukubotaSMEJ',
 				'English' => 'http://cooljapanmusic.com/toshi-kubota-update'
 			],
 			'urashima' => [
 				'Facebook' => 'https://www.facebook.com/urashimarinko',
 				'Twitter' => 'https://twitter.com/urashima_rinko',
-				'Youtube' => 'https://www.youtube.com/user/funkyjamchannel'
+				'Youtube' => 'https://www.youtube.com/user/funkyjamchannel',
 				'English' => 'http://cooljapanmusic.com/rinko-update'
 			],
 			'mori' => [
 				'Facebook' => 'https://www.facebook.com/moridaisukeofficial',
 				'Twitter' => 'https://twitter.com/morimoridaisuke',
-				'Youtube' => 'https://www.youtube.com/user/warnermusicjapan/search?query=%E6%A3%AE%E5%A4%A7%E8%BC%94'
+				'Youtube' => 'https://www.youtube.com/user/warnermusicjapan/search?query=%E6%A3%AE%E5%A4%A7%E8%BC%94',
 				'English' => 'http://cooljapanmusic.com/mori-update'
 			],
 			'bes' => [
 				'Facebook' => 'https://www.facebook.com/BESofficial',
 				'Twitter' => 'https://twitter.com/brown_eyed_soul',
-				'Youtube' => 'https://www.youtube.com/results?search_query=brown+eyed+soul'
+				'Youtube' => 'https://www.youtube.com/results?search_query=brown+eyed+soul',
 				'English' => 'http://cooljapanmusic.com/bes-update'
 			],
 		);
