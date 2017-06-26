@@ -50,29 +50,30 @@
 					}
 					if(!empty(json_decode($v1['tracks']))) {
 						$tracks = json_decode($v1['tracks'], true);
-						// pr($tracks);
+						$tracks_string = '';
 						foreach($tracks as $kt => $vt) {
 							if($vt['tag'] == 'li'){
 								if($kt == 0){
-									print '<ol>';
+									$tracks_string .= '<ol>' . "\n";//print '<ol>';
 								} else {
-									if($tracks[$kt-1]['tag'] != 'li'){
-										print '<ol>';
+									if($tracks[($kt-1)]['tag'] != 'li'){
+										$tracks_string .= '<ol>' . "\n";//print '<ol>';
 									}	
 								}
 							}
 							$class = ($vt['tag'] == 'p')?'class="bold"':null;
-							// pr($vt);
-							print $this->common->get_code_tracklist($vt['tt'], $vt['tag'], $class);
+							$tracks_string .= $this->common->get_code_tracklist($vt['tt'], $vt['tag'], $class) . "\n";//print $this->common->get_code_tracklist($vt['tt'], $vt['tag'], $class);
+
 							if(isset($tracks[$kt+1])){
-								if($tracks[$kt+1] != 'li'){
-									print '</ol>';
+								if($tracks[$kt+1]['tag'] != 'li'){
+									$tracks_string .= '</ol>' . "\n";//print '</ol>';
 								}
 							}
 						}
 						if($vt['tag'] == 'li'){
-							print '</ol>';
+							$tracks_string .= '</ol>' . "\n";//print '</ol>';
 						}
+						print $tracks_string;
 					}
 					if(!empty(json_decode($v1['link']))){
 						print '<ul class="disco-topten">';

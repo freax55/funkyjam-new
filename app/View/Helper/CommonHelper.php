@@ -717,14 +717,14 @@ EOM;
 			case 'li':
 				$code = '<li' . (($class == null)?'':' ' . $class) . '>' . $track_title . '</li>';
 				break;
-			case 'value':
+			case 'p':
 				$code = '<p' . (($class == null)?'':' ' . $class) . '>' . $track_title . '</p>';
 				break;
 			default:
 				$code = null;
 				break;
 		}
-		echo $code;
+		return $code;
 	}
 
 	function get_code_links($json){

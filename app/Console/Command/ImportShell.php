@@ -94,7 +94,7 @@ class ImportShell extends Shell {
 								];
 							}
 						} else {
-							$ary_contents[$v] = [
+							$ary_contents[] = [
 								'tag' => 'p',
 								'tt' => $v
 							];
