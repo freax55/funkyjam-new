@@ -153,6 +153,16 @@ class ArtistController extends AppController {
 
 		// $this->prd($data_discs);
 		$this->pageInit();
+		$_action = Inflector::camelize(($action == 'index')?'news':$action);
+		$this->topicPath(
+			[
+				$data['names'][$data['current']]['en'],//$ary_name['en'],
+				$_action
+			],
+			[
+				'/artist/' . $data['current']
+			]
+		);
 		$this->set([
 			'data_discs' => $data_discs,
 			'title' => 'fankyjam',
