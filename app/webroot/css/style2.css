@@ -1134,6 +1134,13 @@ a.showf:hover h3.jp{
 	font-size: 20px;
 	margin-bottom: 10px;
 }
+.DiscographyTitle2{
+	padding: 0px 0px 5px 0px;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
 .release {
 	margin-bottom: 15px;
 }
@@ -1897,4 +1904,10 @@ height: 100%;
   .navbar-toggle {
     display: none;
   }
+}
+.disco-topten {
+	margin-top: 15px;
+}
+.mfive {
+	margin-bottom: 5px;
 }

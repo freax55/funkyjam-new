@@ -26,13 +26,14 @@
 			print '</ol>';
 			?>
 
-			<div class="row topthirty">
 			<?php
 			foreach ($disctypes[$current] as $k => $v) {
-				$d = $data_discs[$k];
+				print '<p class="DiscographyTitle2 line">Album</p>';
+                $d = $data_discs[$k];
 				foreach($d as $v1) {
 					$v1 = $v1['Discography'];
 					if(!empty($v1['img'])){
+                        print '<div class="row topthirty">';
 						print '<div class="col-sm-3 release">';
 						print '<img src="/img/portfolio/' . $v1['img'] . '" alt="">';
 						print '</div>';
@@ -40,7 +41,7 @@
 					$release = null;
 					print '<div class="col-sm-9">';
 					if(!empty($v1['label'])) {
-						print '<p>' . $v1['label'] . '</p>';
+						print '<p class="mfive">' . $v1['label'] . '</p>';
 					}
 					print '<p class="DiscographyTitle">' . $v1['title'] . '</p>';
 					if(!empty(json_decode($v1['release_multi']))){
@@ -74,15 +75,14 @@
 						}
 					}
 					if(!empty(json_decode($v1['link']))){
-						print '<ul>';
+						print '<ul class="disco-topten">';
 						$this->common->get_code_links($v1['link']);
 						print '</ul>';
 					}
-					print '</div>';
+					print '</div></div>';
 				}
 			}
 			?>
-			</div>
 		</div>
 		<?= view::element('part_side_artist') ?>
 	</div>
