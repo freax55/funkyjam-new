@@ -61,7 +61,7 @@
 									}	
 								}
 							}
-							$class = ($vt['tag'] == 'p')?'class="bold"':null;
+							$class = ($vt['tag'] == 'p')?'class="bold mfive"':null;
 							$tracks_string .= $this->common->get_code_tracklist($vt['tt'], $vt['tag'], $class) . "\n";//print $this->common->get_code_tracklist($vt['tt'], $vt['tag'], $class);
 
 							if(isset($tracks[$kt+1])){
