@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" sizes="72x72" src="/img/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" src="/img/apple-touch-icon-114x114.png">
 
-    <!-- Bootstrap -->
+<!-- Bootstrap -->
     <link href="/css/common2.css?v=<?= VERSION_CSS ?>" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.css?v=<?= VERSION_CSS ?>">
     <link rel="stylesheet" type="text/css" href="/fonts/font-awesome/css/font-awesome.css?v=<?= VERSION_CSS ?>">
@@ -22,6 +22,7 @@
     ================================================== -->
     <link rel="stylesheet" type="text/css"  href="/css/style2.css">
     <link rel="stylesheet" type="text/css" href="/css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="/css/component.css" />
     <link rel="stylesheet" type="text/css"  href="/css/my.css">
     <link rel="stylesheet" type="text/css" href="/css/slider-pro.min.css" media="screen" />
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
