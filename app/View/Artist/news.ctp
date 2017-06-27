@@ -1,6 +1,6 @@
 <!-- Header -->
 <header class="text-center" name="home">
-    <img class="other-banner" src="/img/artist-header-bg.jpg" alt="Funkyjam">
+    <img class="other-banner" src="/img/artist-header-bg-<?= $current ?>.jpg" alt="Funkyjam">
 </header>
 
 
