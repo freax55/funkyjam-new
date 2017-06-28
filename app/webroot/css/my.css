@@ -841,4 +841,9 @@ p {
   padding-left: 7.5px;
   }
 }
-
+.daybottom {
+  margin-bottom: 30px;
+}
+.daytop {
+  margin-top: 5px;
+} 
