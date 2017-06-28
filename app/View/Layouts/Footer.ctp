@@ -46,5 +46,15 @@ $(document).ready(function() {
 <script src="/js/common.js?v=<?= VERSION_JS ?>"></script>
 <script src="/js/jquery.tada.js"></script>
 
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#lightgallery').lightGallery();
+});
+</script>
+<script src="/js/lightgallery.js"></script>
+<script src="/js/lg-fullscreen.js"></script>
+<script src="/js/lg-thumbnail.js"></script>
+<script src="/js/lg-zoom.js"></script>
+
 </body>
 </html>
