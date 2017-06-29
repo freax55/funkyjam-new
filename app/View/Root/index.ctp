@@ -145,7 +145,7 @@
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-6 portfolio-item">
                     <a href="/mori/">
-                    <img src="/img/portfolio/morinobanner.jpg" class="img-responsive" alt="Mori no Nakama"> </a> 
+                    <img src="/img/portfolio/morinobanner.jpg" target="_blank" class="img-responsive" alt="Mori no Nakama"> </a> 
                 </div>
             </div>
         </div>

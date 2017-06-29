@@ -32,7 +32,7 @@
                 <div class="col-sm-6 col-md-3 col-lg-3">
                     <article class="home-news-item sample5">
                     <a class="showf" href="/artist/mori/news">
-                    <img src="/img/portfolio/MoriTop.jpg" class="img-responsive" alt="Daisuke Mori">
+                    <img src="/img/portfolio/Mori_Top.jpg" class="img-responsive" alt="Daisuke Mori">
                     <div class="home-news-overlay blk-back f18">
                     <h3 class="en">Daisuke Mori</h3>
                         <div class="mask">

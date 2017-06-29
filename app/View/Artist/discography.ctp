@@ -85,5 +85,4 @@
 		<?= view::element('part_side_artist') ?>
 	</div>
 </div>
-<?= view::element('part_artist_news') ?>
 
