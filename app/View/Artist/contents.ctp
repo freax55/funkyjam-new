@@ -129,6 +129,9 @@
 
 
 ?>
-
+    </div>
 </div>
+
+<?= view::element('part_side_artist') ?>
+
 </div>
