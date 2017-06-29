@@ -15,6 +15,8 @@
                     <i class="fa fa-youtube-square snsicon" aria-hidden="true"></i></a>
                     <a href="<?=$ary_sns[$current]['English']?>" target="_blank">
                     <i class="fa fa-plane snsicon" aria-hidden="true"></i></a>
+                    <a href="<?=$ary_sns[$current]['Sony']?>" target="_blank">
+                    <i class="fa fa-music snsicon" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>

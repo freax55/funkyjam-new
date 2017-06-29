@@ -438,6 +438,7 @@ class AppController extends Controller {
 				'Twitter' => 'https://twitter.com/kubota_4_real',
 				'Youtube' => 'https://www.youtube.com/user/toshinobukubotaSMEJ',
 				'English' => 'http://cooljapanmusic.com/toshi-kubota-update'
+				'Sony' => 'http://www.sonymusic.co.jp/artist/ToshinobuKubota/'
 			],
 			'urashima' => [
 				'Facebook' => 'https://www.facebook.com/urashimarinko',
