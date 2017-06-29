@@ -1,7 +1,6 @@
 <!-- Header -->
 <?= view::element('part_artist_header') ?>
 
-
 <div id="breadcrumb">
     <div class="container">
         <div class="row">

@@ -823,3 +823,27 @@ p {
 .sns-r {
   padding-right: 17px;
 }
+.artistsb {
+  margin-top: 30px;
+}
+.artistsb2 {
+  margin-top: 30px;
+}
+@media (max-width: 768px) {
+  .artistsb {
+  margin-top: 15px;
+  padding-right: 7.5px;
+  }
+}
+@media (max-width: 768px) {
+  .artistsb2 {
+  margin-top: 15px;
+  padding-left: 7.5px;
+  }
+}
+.daybottom {
+  margin-bottom: 5px;
+}
+.daytop {
+  margin-top: 5px;
+} 

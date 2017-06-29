@@ -7,6 +7,6 @@ $title = $content[0]['Post']['post_title'];
 ?>
 
 
-<p><?= $this->common->date4mat($date, 'Y.m.d') ?></p>
-<h1><?= $title ?></h1>
+<p class="daybottom"><?= $this->common->date4mat($date, 'Y.m.d') ?></p>
+<h1 class="daytop"><?= $title ?></h1>
 <?= $this->WpView->wpautop($content[0]['Post']['post_content']) ?>
