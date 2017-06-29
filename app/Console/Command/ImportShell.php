@@ -9,7 +9,7 @@ class ImportShell extends Shell {
 		'Discography'
 	);
 
-	function import_descography_from_html() {
+	function import_discography_from_html() {
 		if (isset($this->args[0]) && $this->args[0] != "") {
 			$name = $this->args[0];
 			if(!in_array($name, array('kubota','urashima','mori','bes'))){
@@ -77,7 +77,7 @@ class ImportShell extends Shell {
 					}
 					$ary_contents = [];
 					foreach($ary as $v) {
-						if($v == $title || $v == $release || $v == $label || @strpos($v, $release[0]) !== false) {
+						if($v == $title || $v == $release || $v == $label || @strpos($v, $release[0]) !== false || @strpos(str_replace('.', '/', $v), $release[0]) !== false) {
 							continue;
 						}
 						$v = preg_replace('/[\n\r\t]/', '', $v);

@@ -1,16 +1,11 @@
 <!-- Header -->
-<header class="text-center" name="home">
-    <img class="other-banner" src="/img/artist-header-bg-<?= $current ?>.jpg" alt="Funkyjam">
-</header>
-
-
+<?= view::element('part_artist_header') ?>
 <div id="breadcrumb">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
             <?= $this->BreadCrumb->show($path) ?>
             </div>
-
 
 <?= view::element('part_artist_nav') ?>
 

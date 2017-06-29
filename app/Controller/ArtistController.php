@@ -7,7 +7,8 @@ class ArtistController extends AppController {
 		'Postmeta',
 		'Term',
 		'TermRelationship',
-		'Discography'
+		'Discography',
+		'Option'
 	];
 
 	public function index()
@@ -337,6 +338,8 @@ class ArtistController extends AppController {
 		$path = explode('/', $url);
 		$this->get_news_list($path[1]);
 		$controll = $path[0];
+		$header_id = $this->Option->getIdArtistHeader($path[1])['Option']['option_value'];
+		$header = $this->Post->getArtistHeader($header_id);
 		if(isset($path[1]) && isset(array_flip($ary_params)[$path[1]])) {
 			$action = !empty($path[2])?$path[2]:'index';//str_replace(array_merge($ary_path,[$controller, '/']), ['', '', '', '', '', ''], $url);
 			$this->set([
@@ -344,7 +347,8 @@ class ArtistController extends AppController {
 				'ary_params' => $ary_params,
 				'ary_names' => $ary_names,
 				'current' => $path[1],
-				'action' => $action
+				'action' => $action,
+				'header_image_path' => $header,
 			]);
 			return array('params' => $ary_params, 'names' => $ary_names, 'controller' => $path[0], 'current' => $path[1], 'action' => $action);
 		} else {

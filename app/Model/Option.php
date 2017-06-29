@@ -5,6 +5,15 @@ class Option extends AppModel {
 	var $useDbConfig = 'dbwp';
 	var $primaryKey = 'option_id';
 
+	function getIdArtistHeader($artist){
+		$option_name = 'header_' . $artist;
+		return $this->find('first', [
+			'conditions' => [
+				'Option.option_name' => $option_name,
+			],
+		]);
+
+	}
 	// function getTerm($name) {
 	// 	$term = $this->find('first', [
 	// 		'conditions' => [

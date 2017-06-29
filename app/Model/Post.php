@@ -29,6 +29,18 @@ class Post extends AppModel {
 		}
 	}
 
+	function getArtistHeader($id){
+		$post_header = $this->find('first',[
+			'conditions' => [
+				'ID' => $id
+			],
+			'fields' => [
+				'guid'
+			]
+		]);
+		return strstr($post_header['Post']['guid'], '/img/');
+	}
+
 	function getNewsOptionsById($ids, $fields=null) {
 		$options = array(
 			'conditions' => [

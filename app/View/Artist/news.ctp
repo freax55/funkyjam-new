@@ -1,7 +1,5 @@
 <!-- Header -->
-<header class="text-center" name="home">
-    <img class="other-banner" src="/img/artist-header-bg.jpg" alt="Funkyjam">
-</header>
+<?= view::element('part_artist_header') ?>
 
 
 <div id="breadcrumb">
