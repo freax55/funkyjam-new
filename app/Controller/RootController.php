@@ -186,9 +186,6 @@ class RootController extends AppController {
 			$ids = [];
 			$ids = $this->TermRelationship->getObjectIds($term);
 		}
-
-
-
 		$term = $artist . '/news';
 		$ids = $this->TermRelationship->getObjectIds($term);
 		foreach($ids as $v) {
@@ -204,6 +201,7 @@ class RootController extends AppController {
 		$action = $this->params->params['action'];
 		$content_company = $this->Postmeta->getPostPages($action);
 		$this->pageInit();
+		$this->_getHeader();
 		$_action = Inflector::camelize($this->params->params['action']);
 		$this->topicPath(
 			[
@@ -226,6 +224,7 @@ class RootController extends AppController {
 		$action = $this->params->params['action'];
 		$content_company = $this->Postmeta->getPostPages($action);
 		$this->pageInit();
+		$this->_getHeader();
 		$_action = Inflector::camelize($this->params->params['action']);
 		$this->topicPath(
 			[
@@ -254,6 +253,7 @@ class RootController extends AppController {
 		$action = $this->params->params['action'];
 		$content_company = $this->Postmeta->getPostPages($action);
 		$this->pageInit();
+		$this->_getHeader();
 		$_action = Inflector::camelize($this->params->params['action']);
 		$this->topicPath(
 			[
@@ -282,6 +282,7 @@ class RootController extends AppController {
 		$action = $this->params->params['action'];
 		$content_company = $this->Postmeta->getPostPages($action);
 		$this->pageInit();
+		$this->_getHeader();
 		$_action = Inflector::camelize($this->params->params['action']);
 		$this->topicPath(
 			[
@@ -309,6 +310,7 @@ class RootController extends AppController {
 		$action = $this->params->params['action'];
 		$content_company = $this->Postmeta->getPostPages($action);
 		$this->pageInit();
+		$this->_getHeader();
 		$_action = Inflector::camelize($this->params->params['action']);
 		$this->topicPath(
 			[
@@ -336,6 +338,7 @@ class RootController extends AppController {
 		$action = $this->params->params['action'];
 		$content_company = $this->Postmeta->getPostPages($action);
 		$this->pageInit();
+		$this->_getHeader();
 		$_action = Inflector::camelize($this->params->params['action']);
 		$this->topicPath(
 			[
@@ -363,6 +366,7 @@ class RootController extends AppController {
 		$action = $this->params->params['action'];
 		$content_company = $this->Postmeta->getPostPages($action);
 		$this->pageInit();
+		$this->_getHeader();
 		$_action = Inflector::camelize($this->params->params['action']);
 		$this->topicPath(
 			[
@@ -390,6 +394,7 @@ class RootController extends AppController {
 		// $action = $this->params->params['action'];
 		// $content_company = $this->Postmeta->getPostPages($action);
 		$this->pageInit();
+		$this->_getHeader();
 		$_action = Inflector::camelize($this->params->params['action']);
 		$this->topicPath(
 			[
@@ -406,6 +411,15 @@ class RootController extends AppController {
 			'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。アーティストのマネージメント、プロモーションを担当して頂ける人材を探しております。応募される方は履歴書(3カ月以内に撮影した顔写真貼付)と職務経歴書をご郵送下さい。',
 		]);
 		// $this->render('contents');
+	}
+
+	public function _getHeader(){
+		$header_id = $this->Option->getIdArtistHeader('pages')['Option']['option_value'];
+		$header = $this->Post->getArtistHeader($header_id);
+		$this->set([
+			'header_image_path' => $header,
+		]);
+		return;
 	}
 
 }

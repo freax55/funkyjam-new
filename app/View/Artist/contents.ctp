@@ -136,9 +136,3 @@
 <?= view::element('part_side_artist') ?>
 
 <?= view::element('part_artist_news') ?>
-
-
-
-
-
-
