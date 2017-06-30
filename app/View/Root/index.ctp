@@ -8,7 +8,8 @@
             <div class="sp-slides">
             <?php
             foreach($ary_header as $v){
-                $header_link = '/artist' . ($news_list[$v['news_id']]['Post']['artist_name']) . '/news' . (($news_list[$v['news_id']]['Post']['order']==1)?'':('/page:' . ($news_list[$v['news_id']]['Post']['order']))) . '/';
+
+                $header_link = '/artist/' . ($news_list[$v['news_id']]['Post']['artist_name']) . '/news' . (($news_list[$v['news_id']]['Post']['order']==1)?'':('/page:' . ($news_list[$v['news_id']]['Post']['order']))) . '/';
                 $header_image_src = strstr($v['image'], '/img/');
                 print '<div class="sp-slide">';
                 print '<a href="' . $header_link . '">';
@@ -40,12 +41,13 @@
         <div class="row">
             <section>
             <?php
+
             $i = 0;
             foreach($ary_custom_order as $v) {
                 if($i>11){
                     break;
                 }
-                $is_banner = ($news_list[$v]['Post']['aritist_name'] == 'extend')?true:false;
+                $is_banner = ($news_list[$v]['Post']['artist_name'] == 'extend')?true:false;
             ?>
                 <div class="col-sm-6 col-md-3 col-lg-3">
                     <article class="home-news-item">
@@ -56,7 +58,7 @@
                         if($is_banner) {
                             $link = '/' . str_replace('-', '/', $news_list[$v]['Post']['post_name']) . '/';
                         } else {
-                            $link = ('/artist/' . $news_list[$v]['Post']['aritist_name'] . '/news') . (($news_list[$v]['Post']['order']==1)?'':('/page:' . ($news_list[$v]['Post']['order']) . '/'));
+                            $link = ('/artist/' . $news_list[$v]['Post']['artist_name'] . '/news') . (($news_list[$v]['Post']['order']==1)?'':('/page:' . ($news_list[$v]['Post']['order']) . '/'));
                         }
                         ?>
                         <a href="<?= $link ?>">

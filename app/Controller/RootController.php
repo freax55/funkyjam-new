@@ -42,7 +42,7 @@ class RootController extends AppController {
 			$count[$artist_name][] = 1;
 			$_posts[$post['Post']['ID']] = $post;
 			$_posts[$post['Post']['ID']]['Post']['order'] = count($count[$artist_name]);
-			$_posts[$post['Post']['ID']]['Post']['aritist_name'] = $artist_name;
+			$_posts[$post['Post']['ID']]['Post']['artist_name'] = $artist_name;
 		}
 		$custom_order_ids = $this->Option->find('first', [
 			'conditions' => [
