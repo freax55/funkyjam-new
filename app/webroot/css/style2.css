@@ -1362,8 +1362,9 @@ a.showf:hover h3.jp{
 }
 .baribaritext {
   font-size: 16px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: left;
   color: #888;
 }
 .baribarith {
@@ -1372,6 +1373,9 @@ a.showf:hover h3.jp{
   padding: 5px 10px 5px 10px;
   color: #fff;
   font-size: 13px;
+}
+.bbt {
+  text-align: left;
 }
 .cdtd {
   background-color: #666;
