@@ -1,56 +1,29 @@
 
 <!-- Header -->
-<script>
- $( document ).ready(function( $ ) {
-  $('#thumb-h').sliderPro({
-    width:1140,//横幅
-    height: 420,
-    buttons: false,//ナビゲーションボタン
-    shuffle: true,//スライドのシャッフル
-    thumbnailWidth: 225,//サムネイルの横幅
-    thumbnailHeight: 80,//サムネイルの縦幅
-    slideDistance:0,//スライド同士の距離
-    breakpoints: {
-      480: {//表示方法を変えるサイズ
-    thumbnailWidth: 110,
-    thumbnailHeight: 40
-      }
-    }
-  });
-});
-</script>
+
 
 <div id="slider-section-top">
     <header class="text-center" name="home">
         <div id="thumb-h" class="slider-pro">
             <div class="sp-slides">
-                <div class="sp-slide">
-                <a href="artist/kubota">
-                <img class="sp-image" src="/img/portfolio/header-bg.jpg" /></a>
-                </div>
-                <div class="sp-slide">
-                <a href="artist/kubota">
-                <img class="sp-image" src="/img/portfolio/header-bg2.jpg" /></a>
-                </div>
-                <div class="sp-slide">
-                <a href="artist/kubota">
-                <img class="sp-image" src="/img/portfolio/header-bg3.jpg" /></a>
-                </div>
-                <div class="sp-slide">
-                <a href="artist/kubota">
-                <img class="sp-image" src="/img/portfolio/header-bg4.jpg" /></a>
-                </div>
-                <div class="sp-slide">
-                <a href="artist/kubota">
-                <img class="sp-image" src="/img/portfolio/header-bg5.jpg" /></a>
-                </div>
+            <?php
+            foreach($ary_header as $v){
+                $header_link = '/artist/' . ($news_list[$v['news_id']]['Post']['artist_name']) . '/news' . (($news_list[$v['news_id']]['Post']['order']==1)?'':('/page:' . ($news_list[$v['news_id']]['Post']['order']))) . '/';
+                $header_image_src = strstr($v['image'], '/img/');
+                print '<div class="sp-slide">';
+                print '<a href="' . $header_link . '">';
+                print '<img class="sp-image" src="' . $header_image_src . '" alt="' . $news_list[$v['news_id']]['Post']['post_title'] . '">';
+                print '</div>';
+            }
+
+            ?>
             </div>
             <div class="sp-thumbnails">
-                <img class="sp-thumbnail" src="/img/portfolio/header-bg.jpg"/>
-                <img class="sp-thumbnail" src="/img/portfolio/header-bg2.jpg"/>
-                <img class="sp-thumbnail" src="/img/portfolio/header-bg3.jpg"/>
-                <img class="sp-thumbnail" src="/img/portfolio/header-bg4.jpg"/>
-                <img class="sp-thumbnail" src="/img/portfolio/header-bg5.jpg"/>
+            <?php
+            foreach ($ary_header as $v) {
+                print '<img class="sp-thumbnail" src="' . strstr($v['image'], '/img/') . '">';
+            }
+            ?>
             </div>
         </div>
     </header>
@@ -83,7 +56,7 @@
                         if($is_banner) {
                             $link = '/' . str_replace('-', '/', $news_list[$v]['Post']['post_name']) . '/';
                         } else {
-                            $link = ('/artist/' . $news_list[$v]['Post']['aritist_name'] . '/news/') . (($news_list[$v]['Post']['order']==1)?'':('page:' . ($news_list[$v]['Post']['order']) . '/'));
+                            $link = ('/artist/' . $news_list[$v]['Post']['aritist_name'] . '/news') . (($news_list[$v]['Post']['order']==1)?'':('/page:' . ($news_list[$v]['Post']['order']) . '/'));
                         }
                         ?>
                         <a href="<?= $link ?>">

@@ -27,7 +27,11 @@ $(document).ready(function() {
    });
 });
 </script>
-
+<?php
+if($this->name == 'Root' && $this->action == 'index'){
+  print View::element('script_slider_top');
+}
+?>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 <script type="text/javascript" src="/js/jquery.1.11.1.js"></script> 
