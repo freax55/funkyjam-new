@@ -8,7 +8,7 @@
             <div class="sp-slides">
             <?php
             foreach($ary_header as $v){
-                $header_link = '/artist/' . ($news_list[$v['news_id']]['Post']['artist_name']) . '/news' . (($news_list[$v['news_id']]['Post']['order']==1)?'':('/page:' . ($news_list[$v['news_id']]['Post']['order']))) . '/';
+                $header_link = '/artist' . ($news_list[$v['news_id']]['Post']['artist_name']) . '/news' . (($news_list[$v['news_id']]['Post']['order']==1)?'':('/page:' . ($news_list[$v['news_id']]['Post']['order']))) . '/';
                 $header_image_src = strstr($v['image'], '/img/');
                 print '<div class="sp-slide">';
                 print '<a href="' . $header_link . '">';
