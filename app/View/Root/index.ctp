@@ -140,7 +140,7 @@
                     <img src="/img/portfolio/studio-top.jpg" class="img-responsive" alt="Studio"></a> 
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
-                    <a href="http://cooljapanmusic.com/jammin/">
+                    <a href="http://cooljapanmusic.com/jammin/" target="_blank" >
                     <img src="/img/portfolio/Jammin.jpg" class="img-responsive" alt="Studio"> </a> 
                 </div>
             </div>
