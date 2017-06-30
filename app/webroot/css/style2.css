@@ -1710,7 +1710,7 @@ height: 100%;
 }
 @media (max-width: 479px) {  
 #slider-section-top {
-  padding: 58px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   background-color: #f6f6f6;
 }
 }
