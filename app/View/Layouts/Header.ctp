@@ -41,7 +41,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
 </head>
-<body>
+<body class="top-mb">
     <nav id="menu" class="navbar navbar-default navbar-fixed-top">
         <div class="container"> 
         <!-- Brand and toggle get grouped for better mobile display -->

@@ -821,7 +821,7 @@ p {
   margin-bottom: 10px;
 }
 .sns-r {
-  padding-right: 17px;
+  padding-left: 17px;
 }
 .artistsb {
   margin-top: 30px;
@@ -841,9 +841,21 @@ p {
   padding-left: 7.5px;
   }
 }
+@media (max-width: 768px) {
+  .news-name {
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+  font-size: 34px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  }
+}
 .daybottom {
   margin-bottom: 5px;
 }
 .daytop {
   margin-top: 5px;
 } 
+.top-mb {
+  margin-top: 55px;
+}
