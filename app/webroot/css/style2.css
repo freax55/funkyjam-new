@@ -1376,6 +1376,7 @@ a.showf:hover h3.jp{
 }
 .bbt {
   text-align: left;
+  margin-bottom: 15px;
 }
 .cdtd {
   background-color: #666;
@@ -1926,4 +1927,16 @@ height: 100%;
 }
 .shoplink2{
 	margin-right: 10px;
+}
+.line_b {
+	margin-left: 15px;
+	text-align: left;
+	margin-top: 30px;
+	font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 6px solid;
+    border-color: #ddd;
+    padding-bottom: 4px;
+    margin-bottom: 20px;
 }
