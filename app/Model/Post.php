@@ -5,13 +5,76 @@ class Post extends AppModel {
 	var $useDbConfig = 'dbwp';
 	var $primaryKey = 'ID';
 
+
+	function getCustomPostNewsAll($fields=[]){
+		// $post_type = $artist . '_news';
+		$_options = [
+			'conditions' => [
+				// 'ID' => $ids,
+				'post_status' => 'publish',
+				'post_type like ' => '%_news',
+			],
+			'order' => [
+				// 'ID' => 'ASC'
+				'post_date' => 'DESC'
+			],
+			'recursive' => 2,
+		];
+		$options = array_merge($_options, $fields);
+		$posts = $this->find('all', $options);
+		return $posts;
+	}
+
+	function getCustomPost($artist, $fields=[]){
+		$post_type = $artist . '_news';
+		$_options = [
+			'conditions' => [
+				// 'ID' => $ids,
+				'post_status' => 'publish',
+				'post_type' => $post_type
+			],
+			'order' => [
+				// 'ID' => 'ASC'
+				'post_date' => 'DESC'
+			],
+			'recursive' => 2,
+		];
+		$options = array_merge($_options, $fields);
+		$posts = $this->find('all', $options);
+		return $posts;
+	}
+
+	function getCustomPostOptions($artist='',$ids=[],$fields=[],$limit=''){
+		$_options = [
+			'conditions' => [
+				'post_status' => 'publish',
+			],
+			'order' => [
+				'post_date' => 'DESC'
+			],
+			// 'recursive' => 2,
+		];
+		if($artist!=''){
+			$_options['conditions']['post_type'] = $artist . '_news';
+		}
+		if(!empty($ids)){
+			$_options['conditions']['ID'] = $ids;	
+		}
+		if($limit!=''){
+			$_options['limit'] = $limit;
+		}
+		$options = array_merge($_options, $fields);
+		return $options;
+	}
+
+
 	function getPostsById($ids, $fields=[]) {
 
 		$_options = [
 			'conditions' => [
 				'ID' => $ids,
 				'post_status' => 'publish',
-				'post_type' => 'post'
+				// 'post_type' => 'post'
 			],
 			'order' => [
 				// 'ID' => 'ASC'
@@ -46,7 +109,7 @@ class Post extends AppModel {
 			'conditions' => [
 				'ID' => $ids,
 				'post_status' => 'publish',
-				'post_type' => 'post'
+				// 'post_type' => 'post'
 			],
 			'order' => [
 				// 'ID' => 'ASC'

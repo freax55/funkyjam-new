@@ -15,30 +15,32 @@ class RootController extends AppController {
 		$header_option = $this->Option->getIdArtistHeader('top');
 		$ary_header = json_decode($header_option['Option']['option_value'],true);
 		// $news
-		$artists = $this->getArtistParams();
-		$artists[] = 'extend';
-		foreach ($artists as $v) {
-			$term_name[] = $v . '/news';
-		}
+		// $artists = $this->getArtistParams();
+		// $artists[] = 'extend';
+		// foreach ($artists as $v) {
+		// 	$term_name[] = $v . '/news';
+		// }
 
-		$object_ids = $this->TermRelationship->getObjectIds($term_name);
-		foreach($object_ids as $id) {
-			$ids[] = $id['TermRelationship']['object_id'];
-			$idsbyartist[$id['TermRelationship']['object_id']] = strstr($id['Term']['name'], '/', true);
-		}
+		// $object_ids = $this->TermRelationship->getObjectIds($term_name);
+		// foreach($object_ids as $id) {
+		// 	$ids[] = $id['TermRelationship']['object_id'];
+		// 	$idsbyartist[$id['TermRelationship']['object_id']] = strstr($id['Term']['name'], '/', true);
+		// }
 		$fields = [
 			'fields' => [
 				'ID',
 				'post_title',
 				'post_date',
-				'post_name'
+				'post_name',
+				'post_type',
 			]
 		];
 		$this->Post->bindThumbnail();
-		$posts = $this->Post->getPostsById($ids, $fields);
+		// $posts = $this->Post->getPostsById($ids, $fields);
+		$posts = $this->Post->getCustomPostNewsAll($fields);
 		// $this->prd($posts);
 		foreach($posts as $post){
-			$artist_name = $idsbyartist[$post['Post']['ID']];
+			$artist_name = str_replace('_news', '', $post['Post']['post_type']);
 			$count[$artist_name][] = 1;
 			$_posts[$post['Post']['ID']] = $post;
 			$_posts[$post['Post']['ID']]['Post']['order'] = count($count[$artist_name]);

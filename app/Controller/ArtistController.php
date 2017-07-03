@@ -52,21 +52,32 @@ class ArtistController extends AppController {
 		$content = null;
 
 		// 該当記事取得
-		$ob_ids = $this->TermRelationship->getObjectIds($term_name);
-		if($ob_ids) {
-			foreach($ob_ids as $id) {
-				$ids[] = $id['TermRelationship']['object_id'];
-			}
-			$this->paginate = $this->Post->getNewsOptionsById($ids);
-			$content = $this->paginate('Post');
+		// $ob_ids = $this->TermRelationship->getObjectIds($term_name);
+		// if($ob_ids) {
+		// 	foreach($ob_ids as $id) {
+		// 		$ids[] = $id['TermRelationship']['object_id'];
+		// 	}
 
-			if($this->params['paging']['Post']['count'] == 0) {
-				$is_contents = false;
-			}
-		} else {
+		// 	// $this->paginate = $this->Post->getNewsOptionsById($ids);
+		// 	$content = $this->paginate('Post');
+
+		// 	if($this->params['paging']['Post']['count'] == 0) {
+		// 		$is_contents = false;
+		// 	}
+		// } else {
+		// 	$is_contents = false;
+		// }
+
+		// 記事取得
+		// $posts = $this->Post->getCustomPost()
+		$this->paginate = $this->Post->getCustomPostOptions($data['current'],[],[],1);
+		// $this->prd($this->Post->getCustomPostOptions($data['current'],[],[],1));
+		$content = $this->paginate('Post');
+		if($this->params['paging']['Post']['count'] == 0) {
 			$is_contents = false;
 		}
 
+		// $this->prd($content);
 		$this->pageInit();
 		$this->topicPath(
 			[
@@ -168,13 +179,15 @@ class ArtistController extends AppController {
 
 
 	function get_news_list($artist) {
-		$term = $artist . '/news';
-		$ids = $this->TermRelationship->getObjectIds($term);
-		foreach($ids as $v) {
-			$ary[] = $v['TermRelationship']['object_id'];
-		}
+		// $term = $artist . '/news';
+		// $ids = $this->TermRelationship->getObjectIds($term);
+		// foreach($ids as $v) {
+		// 	$ary[] = $v['TermRelationship']['object_id'];
+		// }
+
 		$this->Post->bindThumbnail();
-		$list = $this->Post->getPostsById($ary);
+		// $list = $this->Post->getPostsById($ary);
+		$list = $this->Post->getCustomPost($artist);
 		$this->set(['news_list' => $list]);
 	}
 
