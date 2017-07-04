@@ -1,5 +1,6 @@
 <script>
 	$( document ).ready(function( $ ) {
+		$('#slider-section-top').removeClass('hide');
 		$('#thumb-h').sliderPro({
 			width:1140,//横幅
 			height: 420,
@@ -15,6 +16,9 @@
 				}
 			}
 		});
-		$('#slider-section-top').removeClass('hide');
+		// setTimeout(
+		// 	$('#slider-section-top').removeClass('hide'), 500
+		// );
+	
 	});
 </script>
