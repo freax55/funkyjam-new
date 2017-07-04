@@ -1139,6 +1139,8 @@ a.showf:hover h3.jp{
 	font-weight: bold;
 	font-size: 20px;
 	margin-bottom: 10px;
+	margin-top:-55px;
+    padding-top:55px;
 }
 .DiscographyTitle2{
 	padding: 0px 0px 5px 0px;
