@@ -27,29 +27,9 @@ $(document).ready(function() {
    });
 });
 </script>
-<script>
-$(function(){
-  $('a[href^=#]').click(function() {
-    var speed = 400;
-    var href= $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var headerHeight = 55; //固定ヘッダーの高さ
-    var position = target.offset().top - headerHeight; //ターゲットの座標からヘッダの高さ分引く
-    $('body,html').animate({scrollTop:position}, speed, 'swing');
-    return false;
-  });
-});
-</script>
 <?php
 if($this->name == 'Root' && $this->action == 'index'){
   print View::element('script_slider_top');
-?>
-<script>
-  $(function(){
-      $('#slider-section-top').removeClass('hide');
-  });
-</script>
-<?php
 }
 ?>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
