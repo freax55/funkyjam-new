@@ -43,6 +43,13 @@ $(function(){
 <?php
 if($this->name == 'Root' && $this->action == 'index'){
   print View::element('script_slider_top');
+?>
+<script>
+  $(function(){
+      $('#slider-section-top').removeClass('hide');
+  });
+</script>
+<?php
 }
 ?>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 

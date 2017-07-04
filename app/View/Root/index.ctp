@@ -2,7 +2,7 @@
 <!-- Header -->
 
 
-<div id="slider-section-top">
+<div id="slider-section-top" class="hide">
     <header class="text-center" name="home">
         <div id="thumb-h" class="slider-pro">
             <div class="sp-slides">
@@ -46,6 +46,10 @@
             foreach($ary_custom_order as $v) {
                 if($i>11){
                     break;
+                }
+                if(strpos($news_list[$v]['Post']['post_type'], '_news') === false) {
+                    $i++;
+                    continue;
                 }
                 $is_banner = ($news_list[$v]['Post']['artist_name'] == 'extend')?true:false;
             ?>
