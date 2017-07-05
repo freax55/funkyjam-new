@@ -14,18 +14,7 @@ class RootController extends AppController {
 		//header
 		$header_option = $this->Option->getIdArtistHeader('top');
 		$ary_header = json_decode($header_option['Option']['option_value'],true);
-		// $news
-		// $artists = $this->getArtistParams();
-		// $artists[] = 'extend';
-		// foreach ($artists as $v) {
-		// 	$term_name[] = $v . '/news';
-		// }
-
-		// $object_ids = $this->TermRelationship->getObjectIds($term_name);
-		// foreach($object_ids as $id) {
-		// 	$ids[] = $id['TermRelationship']['object_id'];
-		// 	$idsbyartist[$id['TermRelationship']['object_id']] = strstr($id['Term']['name'], '/', true);
-		// }
+		// news
 		$fields = [
 			'fields' => [
 				'ID',
@@ -36,9 +25,7 @@ class RootController extends AppController {
 			]
 		];
 		$this->Post->bindThumbnail();
-		// $posts = $this->Post->getPostsById($ids, $fields);
 		$posts = $this->Post->getCustomPostNewsAll($fields);
-		// $this->prd($posts);
 		foreach($posts as $post){
 			$artist_name = str_replace('_news', '', $post['Post']['post_type']);
 			$count[$artist_name][] = 1;
@@ -55,7 +42,7 @@ class RootController extends AppController {
 			] 
 		]);
 		$ary_custom_order = json_decode($custom_order_ids['Option']['option_value'], true);
-		// $this->prd($_posts);
+
 		$this->pageInit();
 		$this->set([
 			'title' => 'fankyjam',
@@ -66,34 +53,22 @@ class RootController extends AppController {
 		]);
 	}
 
-	// DOM method
-	function getInnerHtml($node){
-	    $children = $node->childNodes;
-	    $html = '';
-	    foreach($children as $child){
-	        $html .= $node->ownerDocument->saveHTML($child);
-	    }
-	    return $html;
-	}
+	// function get_news_list() {
+	// 	$artists = $this->getArtistParams();
 
-
-	function get_news_list() {
-		$artists = $this->getArtistParams();
-
-		foreach($artists as $v) {
-			$ids = [];
-			$ids = $this->TermRelationship->getObjectIds($term);
-		}
-		$term = $artist . '/news';
-		$ids = $this->TermRelationship->getObjectIds($term);
-		foreach($ids as $v) {
-			$ary[] = $v['TermRelationship']['object_id'];
-		}
-		$this->Post->bindThumbnail();
-		$list = $this->Post->getPostsById($ary);
-		$this->set(['news_list' => $list]);
-	}
-
+	// 	foreach($artists as $v) {
+	// 		$ids = [];
+	// 		$ids = $this->TermRelationship->getObjectIds($term);
+	// 	}
+	// 	$term = $artist . '/news';
+	// 	$ids = $this->TermRelationship->getObjectIds($term);
+	// 	foreach($ids as $v) {
+	// 		$ary[] = $v['TermRelationship']['object_id'];
+	// 	}
+	// 	$this->Post->bindThumbnail();
+	// 	$list = $this->Post->getPostsById($ary);
+	// 	$this->set(['news_list' => $list]);
+	// }
 
 	public function company() {
 		$action = $this->params->params['action'];
@@ -142,12 +117,6 @@ class RootController extends AppController {
 	}
 
 	public function scout() {
-		// $this->pageInit();
-		// $this->set([
-		// 	'title' => 'fankyjam',
-		// 	'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。弊社ではシンガー・ソングライター、ヴォーカリスト、作曲家、作詞家への志望者を募集しております。真剣にプロを目指す方であればどなたでも応募下さい。',
-		// ]);
-		// $this->render('contents');
 		$action = $this->params->params['action'];
 		$content_company = $this->Postmeta->getPostPages($action);
 		$this->pageInit();
@@ -171,12 +140,6 @@ class RootController extends AppController {
 	}
 
 	public function studio() {
-		// $this->pageInit();
-		// $this->set([
-		// 	'title' => 'fankyjam',
-		// 	'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。弊社アーティストが使用するレコーディングスタジオ、THE BASEMENT of Funky Jamですが、プロユースのスタジオとして、レンタルのお申込みを承っております。',
-		// ]);
-		// $this->render('contents');
 		$action = $this->params->params['action'];
 		$content_company = $this->Postmeta->getPostPages($action);
 		$this->pageInit();
@@ -198,13 +161,8 @@ class RootController extends AppController {
 		]);
 		$this->render('contents');
 	}
+
 	public function privacy() {
-		// $this->pageInit();
-		// $this->set([
-		// 	'title' => 'fankyjam',
-		// 	'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。弊社アーティストが使用するレコーディングスタジオ、THE BASEMENT of Funky Jamですが、プロユースのスタジオとして、レンタルのお申込みを承っております。',
-		// ]);
-		// $this->render('contents');
 		$action = $this->params->params['action'];
 		$content_company = $this->Postmeta->getPostPages($action);
 		$this->pageInit();
@@ -226,13 +184,8 @@ class RootController extends AppController {
 		]);
 		$this->render('contents');
 	}
+
 	public function art() {
-		// $this->pageInit();
-		// $this->set([
-		// 	'title' => 'fankyjam',
-		// 	'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。弊社アーティストが使用するレコーディングスタジオ、THE BASEMENT of Funky Jamですが、プロユースのスタジオとして、レンタルのお申込みを承っております。',
-		// ]);
-		// $this->render('contents');
 		$action = $this->params->params['action'];
 		$content_company = $this->Postmeta->getPostPages($action);
 		$this->pageInit();
@@ -254,13 +207,8 @@ class RootController extends AppController {
 		]);
 		$this->render('contents');
 	}
+
 	public function baribaricrew() {
-		// $this->pageInit();
-		// $this->set([
-		// 	'title' => 'fankyjam',
-		// 	'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。弊社アーティストが使用するレコーディングスタジオ、THE BASEMENT of Funky Jamですが、プロユースのスタジオとして、レンタルのお申込みを承っております。',
-		// ]);
-		// $this->render('contents');
 		$action = $this->params->params['action'];
 		$content_company = $this->Postmeta->getPostPages($action);
 		$this->pageInit();
@@ -282,15 +230,8 @@ class RootController extends AppController {
 		]);
 		$this->render('contents');
 	}
+
 	public function fanletter() {
-		// $this->pageInit();
-		// $this->set([
-		// 	'title' => 'fankyjam',
-		// 	'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。弊社アーティストが使用するレコーディングスタジオ、THE BASEMENT of Funky Jamですが、プロユースのスタジオとして、レンタルのお申込みを承っております。',
-		// ]);
-		// $this->render('contents');
-		// $action = $this->params->params['action'];
-		// $content_company = $this->Postmeta->getPostPages($action);
 		$this->pageInit();
 		$this->_getHeader();
 		$_action = Inflector::camelize($this->params->params['action']);
@@ -319,5 +260,15 @@ class RootController extends AppController {
 		]);
 		return;
 	}
+
+	// DOM method
+	function getInnerHtml($node){
+		$children = $node->childNodes;
+		$html = '';
+		foreach($children as $child){
+			$html .= $node->ownerDocument->saveHTML($child);
+		}
+	return $html;
+}
 
 }

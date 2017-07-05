@@ -16,9 +16,5 @@
 				}
 			}
 		});
-		// setTimeout(
-		// 	$('#slider-section-top').removeClass('hide'), 500
-		// );
-	
 	});
 </script>
