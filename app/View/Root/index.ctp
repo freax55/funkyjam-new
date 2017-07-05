@@ -123,7 +123,7 @@
                     <img src="/img/portfolio/Baribari-top.jpg" class="img-responsive" alt="Bari Bari Crew"> </a> 
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-6 portfolio-item">
-                    <a href="/mori/">
+                    <a href="/mori/" target="_blank">
                     <img src="/img/portfolio/morinobanner.jpg" target="_blank" class="img-responsive" alt="Mori no Nakama"> </a> 
                 </div>
             </div>
