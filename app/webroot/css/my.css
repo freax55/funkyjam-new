@@ -859,3 +859,42 @@ p {
 .top-mb {
   margin-top: 55px;
 }
+#jp_container_1{
+    border:solid 5px #ccc;
+    width:300px;
+    margin:5px;
+    position:relative;
+    background:#000;
+}
+.track-name{
+    color:#fff;
+    font-size: 15px;
+    padding:15px 42px;
+    font-weight: bold;
+    line-height: 30px;
+    -webkit-transition: all 0.3s ease;
+    -webkit-transition-delay: 0s;
+    transition: all 0.3s ease 0s;
+}
+.track-name.active{
+    color:#59e2fb;
+}
+.jp-play{
+    position: absolute;
+    left: 5px;
+    top: 18px;
+    width: 33px;
+    height: 30px;
+    background: url(http://webism.jp/image/jplayer/play.png) center top no-repeat;
+    cursor: pointer;
+}
+.jp-pause{
+    position: absolute;
+    left: 5px;
+    top: 18px;
+    width: 33px;
+    height: 30px;
+    background: url(http://webism.jp/image/jplayer/play.png) center bottom no-repeat;
+    cursor: pointer;
+    display: none;
+}

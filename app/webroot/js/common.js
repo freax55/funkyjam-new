@@ -65,3 +65,68 @@ function iine(id,type) {
     alert("既に「参考になった」を押しています！");
   });
 }
+
+jQuery(function($){
+    $("#jquery_jplayer_1").jPlayer({
+    ready: function () {// jPlayer の準備ができたら実行される処理を記述
+      $(this).jPlayer("setMedia", {
+        mp3: "/sound.mp3" //再生するメディアを指定 カンマ区切りで複数指定できる。
+      });
+    },
+    cssSelectorAncestor: '#jp_container_1', // コントロール部分をラップしているコンテナ
+    cssSelector: {play: '.jp-play',pause: '.jp-pause'}, // cssセレクタを指定、それぞれメソッドに対応
+    loop: false, // ループ再生　
+    volume: 0.2, // ボリューム 0~1で指定
+    swfPath: "/jplayer", // Jplayer.swfのパス html5で再生されなかった場合、フラッシュで再生される
+    ssupplied: 'mp3', // フォーマット（カンマ区切りで複数指定できる、優先度は左が高い）
+    play: function(){
+            // 再生時の処理
+            $('.track-name').addClass('active');
+    },
+    pause: function(){
+      // ポーズ時の処理
+            $('.track-name').removeClass('active');
+    },
+    ended: function(){
+      // 最後まで流れた時の処理
+            $('.track-name').removeClass('active');
+    }
+    });
+});
+
+
+// サウンド設定　　--------------------------------------------------------------------------------||
+//----------------------------------------------------------------------------------------------||
+
+$(function() {
+  //トラッククリック
+  var t = $("#sound");
+  t.click(function(){
+    var s = "/sound.mp3";
+    if($(this).hasClass("playing") == false){
+      //playingクラス評価 持ってない場合
+      $(t).removeClass("playing");
+      $(this).addClass("playing");
+      playSound(s);
+    }else{
+      //playingクラス評価 持っている場合
+      $(this).removeClass("playing");
+      stopSound();
+    }
+    return false;
+  });
+  //再生
+  function playSound(s){
+    $('embed').remove();
+    $('body').append('<embed src="' + s +'"' + 'autostart="true" hidden="true" loop="true">');
+     $("#sound img").attr('src', '/images/soundBtn_n.png');
+  }
+  //停止
+  function stopSound(){
+    $('embed').remove();
+    $("#sound img").attr('src', '/images/soundBtn_y.png'); 
+  }
+});
+
+
+
