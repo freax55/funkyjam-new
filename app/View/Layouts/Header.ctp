@@ -33,6 +33,7 @@
     <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="/js/jquery.sliderPro.min.js"></script>
     <script type="text/javascript" href="/js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -60,7 +61,8 @@
                 <li><a href="/studio">Studio</a></li>
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="http://cooljapanmusic.com/toshi-kubota-update/" target="_blank" ><span style="color:#FF9933;">English</span></a></li>
-                <li style="padding-top: 6px;"><div id="jquery_jplayer_1"></div><!-- ここにaudioタグが入ります -->
+                <li style="padding-top: 6px;">
+                <div id="jquery_jplayer_1"></div><!-- ここにaudioタグが入ります -->
                 <div id="jp_container_1"><!-- インターフェース部分 -->
                 <div class="track-name"></div>
                 <div class="jp-play"></div><!-- 再生 -->
