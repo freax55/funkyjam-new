@@ -44,7 +44,6 @@ if($this->name == 'Root' && $this->action == 'index'){
 
 <!-- Javascripts
     ================================================== --> 
-<script type="text/javascript" src="/js/main.js"></script>
 <script type="text/javascript" src="/js/main2.js"></script>
 
 <script src="/js/jquery.min.js"></script>
