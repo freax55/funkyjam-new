@@ -875,7 +875,6 @@ p {
 .jp-play{
     left: 5px;
     top: 18px;
-    width: 23px;
     height: 22px;
     background: url(/img/play.png) center top no-repeat;
     cursor: pointer;
@@ -883,7 +882,6 @@ p {
 .jp-pause{
     left: 5px;
     top: 18px;
-    width: 33px;
     height: 30px;
     background: url(/img/play.png) center bottom no-repeat;
     cursor: pointer;
