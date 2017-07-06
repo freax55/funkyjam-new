@@ -47,7 +47,6 @@ if($this->name == 'Root' && $this->action == 'index'){
 <script type="text/javascript" src="/js/main.js"></script>
 <script type="text/javascript" src="/js/main2.js"></script>
 
-<script src="/js/jquery.min.js"></script>
 <script src="/js/common.js?v=<?= VERSION_JS ?>"></script>
 <script src="/js/jquery.tada.js"></script>
 
