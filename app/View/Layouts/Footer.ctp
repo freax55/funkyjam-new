@@ -48,7 +48,6 @@ if($this->name == 'Root' && $this->action == 'index'){
 <script src="/js/jquery.min.js"></script>
 <script src="/js/common.js?v=<?= VERSION_JS ?>"></script>
 <script src="/js/jquery.tada.js"></script>
-<script type="text/javascript" src="/js/SmoothScroll.js"></script> 
 <script type="text/javascript" src="/js/jquery.jplayer.min.js"></script>
 
 <script type="text/javascript">
