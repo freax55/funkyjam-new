@@ -77,7 +77,7 @@ jQuery(function($){
     cssSelector: {play: '.jp-play',pause: '.jp-pause'}, // cssセレクタを指定、それぞれメソッドに対応
     loop: false, // ループ再生　
     volume: 0.2, // ボリューム 0~1で指定
-    swfPath: "js/jplayer", // Jplayer.swfのパス html5で再生されなかった場合、フラッシュで再生される
+    swfPath: "/js/jplayer", // Jplayer.swfのパス html5で再生されなかった場合、フラッシュで再生される
     ssupplied: 'mp3', // フォーマット（カンマ区切りで複数指定できる、優先度は左が高い）
     play: function(){
             // 再生時の処理
