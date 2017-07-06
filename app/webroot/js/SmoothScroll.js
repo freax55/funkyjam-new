@@ -80,56 +80,7 @@ function initTest() {
     }
 }
 
-/**
- * Sets up scrolls array, determines if frames are involved.
- */
-function init() {
-  
-    if (!document.body) return;
 
-    var body = document.body;
-    var html = document.documentElement;
-    var windowHeight = window.innerHeight; 
-    var scrollHeight = body.scrollHeight;
-    
-    // check compat mode for root element
-    root = (document.compatMode.indexOf('CSS') >= 0) ? html : body;
-    activeElement = body;
-    
-    initTest();
-    initDone = true;
-
-    // Checks if this script is running in a frame
-    if (top != self) {
-        isFrame = true;
-    }
-
-    /**
-     * This fixes a bug where the areas left and right to 
-     * the content does not trigger the onmousewheel event
-     * on some pages. e.g.: html, body { height: 100% }
-     */
-    else if (scrollHeight > windowHeight &&
-            (body.offsetHeight <= windowHeight || 
-             html.offsetHeight <= windowHeight)) {
-
-        html.style.height = 'auto';
-        setTimeout(refresh, 10);
-
-        // clearfix
-        if (root.offsetHeight <= windowHeight) {
-            var underlay = document.createElement("div"); 	
-            underlay.style.clear = "both";
-            body.appendChild(underlay);
-        }
-    }
-
-    // disable fixed background
-    if (!options.fixedBackground && !isExcluded) {
-        body.style.backgroundAttachment = "scroll";
-        html.style.backgroundAttachment = "scroll";
-    }
-}
 
 
 /************************************************
