@@ -77,7 +77,7 @@ jQuery(function($){
     cssSelector: {play: '.jp-play',pause: '.jp-pause'}, // cssセレクタを指定、それぞれメソッドに対応
     loop: false, // ループ再生　
     volume: 0.2, // ボリューム 0~1で指定
-    swfPath: "/jplayer", // Jplayer.swfのパス html5で再生されなかった場合、フラッシュで再生される
+    swfPath: "js/jplayer", // Jplayer.swfのパス html5で再生されなかった場合、フラッシュで再生される
     ssupplied: 'mp3', // フォーマット（カンマ区切りで複数指定できる、優先度は左が高い）
     play: function(){
             // 再生時の処理
@@ -93,40 +93,4 @@ jQuery(function($){
     }
     });
 });
-
-
-// サウンド設定　　--------------------------------------------------------------------------------||
-//----------------------------------------------------------------------------------------------||
-
-$(function() {
-  //トラッククリック
-  var t = $("#sound");
-  t.click(function(){
-    var s = "/sound.mp3";
-    if($(this).hasClass("playing") == false){
-      //playingクラス評価 持ってない場合
-      $(t).removeClass("playing");
-      $(this).addClass("playing");
-      playSound(s);
-    }else{
-      //playingクラス評価 持っている場合
-      $(this).removeClass("playing");
-      stopSound();
-    }
-    return false;
-  });
-  //再生
-  function playSound(s){
-    $('embed').remove();
-    $('body').append('<embed src="' + s +'"' + 'autostart="true" hidden="true" loop="true">');
-     $("#sound img").attr('src', '/images/soundBtn_n.png');
-  }
-  //停止
-  function stopSound(){
-    $('embed').remove();
-    $("#sound img").attr('src', '/images/soundBtn_y.png'); 
-  }
-});
-
-
 
