@@ -877,7 +877,7 @@ p {
     top: 18px;
     width: 23px;
     height: 20px;
-    background: url(http://webism.jp/image/jplayer/play.png) center top no-repeat;
+    background: url(/img/play.png) center top no-repeat;
     cursor: pointer;
 }
 .jp-pause{
@@ -885,7 +885,7 @@ p {
     top: 18px;
     width: 33px;
     height: 30px;
-    background: url(http://webism.jp/image/jplayer/play.png) center bottom no-repeat;
+    background: url(/img/play.png) center bottom no-repeat;
     cursor: pointer;
     display: none;
 }
