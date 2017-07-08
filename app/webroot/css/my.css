@@ -745,7 +745,7 @@ p {
 }*/
 }
 
-@media (min-width: 768px){
+@media (min-width: 1020px){
 .navbar-nav{
     margin: 0 auto;
     display: table;
