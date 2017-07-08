@@ -695,7 +695,7 @@ EOM;
 				'bestalbum' => 'Best Album',
 				'usalbum' => 'U.S. Album',
 				'single' => 'Single',
-				'dvd' => 'DVD/Vides',
+				'dvd' => 'DVD/Videos',
 				'book' => 'Book'
 			],
 			'urashima' => [

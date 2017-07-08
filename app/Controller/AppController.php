@@ -84,24 +84,6 @@ class AppController extends Controller {
 	// 		'title' => 'ログイン',
 	// 		'status' => false,
 	// 	],
-	// 	'text' => [
-	// 		'url' => 'text',
-	// 		'title' => '汎用テキスト管理',
-	// 		'status' => true,
-	// 		'submenu' => [
-	// 			'view',
-	// 			'add',
-	// 		]
-	// 	],
-	// 	'area' => [
-	// 		'url' => 'area',
-	// 		'title' => 'エリア管理',
-	// 		'status' => true,
-	// 		'submenu' => [
-	// 			'view',
-	// 			'add',
-	// 		]
-	// 	],
 	// 	'user' => [
 	// 		'url' => 'user',
 	// 		'title' => 'ユーザー管理',
@@ -466,7 +448,7 @@ class AppController extends Controller {
 				'bestalbum' => 'Best Album',
 				'usalbum' => 'U.S. Album',
 				'single' => 'Single',
-				'dvd' => 'DVD/Vides',
+				'dvd' => 'DVD/Videos',
 				'book' => 'Book'
 			],
 			'urashima' => [
