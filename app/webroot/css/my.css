@@ -261,6 +261,8 @@ figure {
 }
 img {
   vertical-align: middle;
+  max-width: 100%; 
+  height:auto;
 }
 .img-responsive {
   display: block;
@@ -890,8 +892,4 @@ p {
 .sancor {
     margin-top: -55px;
     padding-top: 55px;
-}
-img { 
-  max-width: 100%; 
-  height:auto;
 }
