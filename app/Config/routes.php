@@ -10,6 +10,7 @@ Router::connect('/art', array('controller' => 'root', 'action' => 'art'));
 Router::connect('/baribaricrew', array('controller' => 'root', 'action' => 'baribaricrew'));
 Router::connect('/fanletter', array('controller' => 'root', 'action' => 'fanletter'));
 Router::connect('/fanclub_ticket', array('controller' => 'root', 'action' => 'fanclub_ticket'));
+Router::connect('/message', array('controller' => 'root', 'action' => 'message'));
 
 
 App::uses('AppController', 'Controller');
