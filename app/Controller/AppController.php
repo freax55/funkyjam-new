@@ -153,6 +153,14 @@ class AppController extends Controller {
 		}
 	}
 
+	function afterFilter() {
+		if(Configure::read('debug') == 0) {
+	        if ($this->response->statusCode() == '404'){
+	            $this->redirect('/', '301');
+	        }
+		}
+    }
+
 	/**
 	 * セッション有無を返す
 	 * @return array
