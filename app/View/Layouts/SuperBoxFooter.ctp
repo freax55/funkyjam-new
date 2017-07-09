@@ -5,7 +5,7 @@
 <script>window.jQuery || document.write('<script src="/js/jquery.1.8.3.min.js"><\/script>')</script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
-<script src="/js/common.js"></script>
+<!-- <script src="/js/common.js"></script> -->
 <script src="/js/admin.js?v=<?= VERSION_JS ?>"></script>
 <?php
 // if (isset($coordinate)) { print '<script src="//maps.google.com/maps/api/js?sensor=false"></script>'; }

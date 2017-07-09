@@ -75,7 +75,13 @@ class AppController extends Controller {
 			'title' => "FANCLUB",
 			'url' => "/fanclub/",
 			'submenu' => 0,
-		],		
+		],
+		'discography_data' => [
+			'title' => "ディスコグラフィ編集",
+			'url' => "/discography_data/",
+			'submenu' => 0,
+		],
+
 	];
 
 	// var $pages_admin = [
