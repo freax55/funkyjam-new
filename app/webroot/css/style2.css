@@ -1907,11 +1907,6 @@ height: 100%;
     -moz-opacity: 0.5;
     opacity: 0.5;
 }
-@media (min-width: 1020px) {
-  .navbar-toggle {
-    display: none;
-  }
-}
 .disco-topten {
 	margin-top: 15px;
 }

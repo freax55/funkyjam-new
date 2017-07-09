@@ -894,6 +894,11 @@ p {
     padding-top: 55px;
 }
 @media (min-width: 1020px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+@media (min-width: 1020px) {
   .navbar-header {
     float: left;
   }
