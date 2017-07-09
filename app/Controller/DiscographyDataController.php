@@ -27,7 +27,9 @@ class DiscographyDataController extends AppController {
 		$this->paginate = $this->Discography->getOptions($artist, $extend);
 		$data = $this->paginate('Discography');
 		$this->set([
-			'data' => $data
+			'data' => $data,
+			'artist' => $artist,
+			'type' => $type
 		]);
 		$this->layout = 'SuperBox';
 		// $this->prd($data);

@@ -3,7 +3,7 @@
 // $case = 0;
 ?>
 <div class="box" style="margin: 10px;">
-	<h2>ディスコグラフィー管理</h2>
+	<h2>ディスコグラフィー管理 (<?= $artist ?>/<?= $type ?>)</h2>
 	<div style="margin-bottom:10px;">
 		<div>
 		<?php
