@@ -734,6 +734,19 @@ EOM;
 				echo '<li class="clearfix2"><a href="' . str_replace('http:', '', $v) . '" target="_blank"><img src="/img/portfolio/btn_amazon.jpg" alt="amazon.co.jpで買う" class="shoplink shoplink2"></a></li>';
 			} elseif(strpos($v, '.sonymusic') !== false){
 				echo '<li class="clearfix2"><a href="' . $v . '" target="_blank"><img src="/img/portfolio/btn_sony.jpg" alt="CD/DVD Sop Sony Music Shopで買う" class="shoplink"></a></li>';
+			} elseif(strpos($v, 'itunes.apple.com/') !== false){
+				echo '<li class="clearfix2"><a href="' . $v . '" target="_blank"><img src="/img/portfolio/btn_itunes.jpg" alt="iTunesで入手" class="shoplink"></a></li>';
+			} elseif(strpos($v, 'tower.jp/') !== false){
+				echo '<li class="clearfix2"><a href="' . $v . '" target="_blank"><img src="/img/portfolio/btn_tower.jpg" alt="TOWER RECORDS ONLINE" class="shoplink"></a></li>';
+			} elseif(strpos($v, 'tsutaya.co.jp/') !== false){
+				echo '<li class="clearfix2"><a href="' . $v . '" target="_blank"><img src="/img/portfolio/btn_tsutaya.jpg" class="shoplink"></a></li>';
+			} elseif(strpos($v, 'https://www.funkyjam.com/shop/') !== false){
+				echo '<li class="clearfix2"><a href="' . $v . '" target="_blank"><img src="/img/portfolio/btn_fjshop.jpg" class="shoplink"></a></li>';
+			} else {
+				$host = parse_url($v, PHP_URL_HOST);
+				$host = str_replace(['www.', 'shop.'], ['', ''], str_replace(strrchr($host, '.'), '', $host));
+				// $host = strrchr(str_replace('www.', '', $host), '.');
+				echo '<li class="clearfix2"><a href="' . $v . '" target="_blank">' . $host .'で買う</a></li>';
 			}
 		}
 		return;

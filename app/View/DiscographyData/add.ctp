@@ -1,6 +1,6 @@
 <div class="box">
 	<h2>ディスコグラフィー編集</h2>
-	<div style="text-align:right;"><a href="/discography_data/index/<?= $artist ?>/<?= $type ?>/">一覧に戻る</a></div>
+	<div style="text-align:right; margin-bottom:10px;"><a href="/discography_data/index/<?= $artist ?>/<?= $type ?>/" class="btn btn-sm btn-default">一覧に戻る</a></div>
 	<?= $this->Form->create('Discography', array('novalidate' => true, 'name'=>'myForm', 'action'=>'post', 'url'=>'/discography_data/post/', 'type' => 'file')) ?>
 	<?php
 	print $this->Form->input('discography_id', array(

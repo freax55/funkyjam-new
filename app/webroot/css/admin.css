@@ -316,8 +316,8 @@ span.ex{
 	background: #f0f0f0;
 }
 .box h2{
-	margin: 0 0 20px 0;
-/*	font-size: 123.1%;*/
+	margin: 0;
+	font-size: 20px;
 }
 .box h3{
 	padding: 5px 12px;
