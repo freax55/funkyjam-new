@@ -1004,3 +1004,7 @@ p {
     display: none;
   }
 }
+.sound-pdg {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}

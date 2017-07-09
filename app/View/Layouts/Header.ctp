@@ -60,7 +60,7 @@
                 <li><a href="/studio">Studio</a></li>
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="http://cooljapanmusic.com/toshi-kubota-update/" target="_blank" ><span style="color:#FF9933;">English</span></a></li>
-                <li style="padding-top: 6px;">
+                <li class="sound-pdg">
                 <div id="jquery_jplayer_1"></div><!-- ここにaudioタグが入ります -->
                 <div id="jp_container_1"><!-- インターフェース部分 -->
                 <div class="track-name"></div>
