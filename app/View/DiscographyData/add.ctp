@@ -23,8 +23,8 @@
 
 	<table class="table table-bordered" style="padding-top:10px;">
 		<tr>
-			<th style="width:33%;">公開設定</th>
-			<td style="white-space:nowrap">
+			<th style="width:24%;">公開設定</th>
+			<td>
 				<?php
 					print $this->Form->radio('publish', array('y' => '公開', 'n' => '非公開'), array(
 						'legend' => false,
@@ -34,9 +34,9 @@
 			</td>
 		</tr>
 		<tr>
-			<th style="white-space:nowrap">タイトル<?= $this->common->getMust() ?></th>
+			<th>タイトル</th>
 			<td>
-				<div class="fl mr5">
+				<div>
 					<?php
 					print $this->Form->input('title', array(
 						'label' => false,
@@ -52,7 +52,7 @@
 		<tr>
 			<th>タイトルの上に付くテキスト(任意)</th>
 			<td>
-				<div class="fl mr5">
+				<div>
 					<?php
 					print $this->Form->input('label', array(
 						'label' => false,
@@ -79,10 +79,10 @@
 		}
 		?>
 		<tr>
-			<th>発売日テキスト</th>
+			<th>発売日テキスト<br><span style="font-size:12px; color:#e00;">・入力したテキストがそのまま表示されます。日付部分はデータ化しますので必ず「20xx/xx/xx」の書式で統一してください</span></th>
 			<td>
 
-				<div class="fl mr5">
+				<div>
 					<?php
 					print $this->Form->input('release_multi1', array(
 						'label' => false,
@@ -96,9 +96,9 @@
 			</td>
 		</tr>
 		<tr>
-			<th>発売日(追加入力)</th>
+			<th>発売日(追加入力)<br><span style="font-size:12px; color:#e00;">・リリースが複数ある場合は、この欄に追加してください</span></th>
 			<td>
-				<div class="fl mr5">
+				<div>
 					<?php
 					print $this->Form->input('release_multi2', array(
 						'label' => false,
@@ -114,7 +114,7 @@
 			</td>
 		</tr>
 		<tr>
-			<th style="white-space:nowrap">外部リンク</th>
+			<th>外部リンク<br><span style="font-size:12px; color:#e00;">・リンク先が複数ある場合は、必ず改行してください</span></th>
 			<td>
 				<?php
 				print $this->Form->input('link', array(
