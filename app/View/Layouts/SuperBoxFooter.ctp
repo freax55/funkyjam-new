@@ -1,14 +1,14 @@
-<div id="footer">
-	<address>&copy; <?= date("Y") ?> <?= SITENAME ?></address>
-</div>
-
-<script src="/js/jquery.min.js"></script>
+<?php
+// print $this->element('sql_dump');
+?>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery.1.8.3.min.js"><\/script>')</script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/common.js"></script>
-<script src="/js/admin.js"></script>
+<script src="/js/admin.js?v=<?= VERSION_JS ?>"></script>
 <?php
-if (isset($coordinate)) { print '<script src="//maps.google.com/maps/api/js"></script>'; }
+// if (isset($coordinate)) { print '<script src="//maps.google.com/maps/api/js?sensor=false"></script>'; }
 if (isset($javascript)) {
 	foreach ($javascript as $v) {
 		print '<script src="/js/' .$v. '.js"></script>';
@@ -18,12 +18,6 @@ if (isset($javascript)) {
 <script>
 $(function(){
 	$('.error-message').prepend('<i class="icon icon-exclamation-sign"></i> ');
-	$("#submenu h4").click(function(){
-		$(this).next("ul").slideDown('fast', 'linear')
-		.siblings("ul:visible").slideUp('fast', 'linear');
-		$(this).toggleClass("active");
-		$(this).siblings("h4").removeClass("active");
-	});
 	<?php
 	// 受け取った配列をエレメントとして書き出す（onload）
 	if (!empty($scripts_onload)) {
@@ -31,8 +25,6 @@ $(function(){
 			print View::element($scripts_onload[$i]);
 		}
 	}
-	// 二重サブミット防止
-	print View::element("script_disable_on_submit");
 	?>
 });
 <?php
@@ -44,6 +36,10 @@ if (!empty($scripts)) {
 }
 ?>
 </script>
-
+<script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tt"]').tooltip();
+    })
+</script>
 </body>
 </html>

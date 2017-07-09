@@ -732,7 +732,7 @@ EOM;
 		foreach($ary as $v) {
 			if(strpos($v, 'amazon.co.jp') !== false){
 				echo '<li class="clearfix2"><a href="' . str_replace('http:', 'https:', $v) . '" target="_blank"><img src="/img/portfolio/btn_amazon.jpg" alt="amazon.co.jpで買う" class="shoplink shoplink2"></a></li>';
-			} elseif(strpos($v, 'sonymusicshop.jp') !== false){
+			} elseif(strpos($v, '.sonymusic') !== false){
 				echo '<li class="clearfix2"><a href="' . str_replace('http:', 'https:', $v) . '" target="_blank"><img src="/img/portfolio/btn_sony.jpg" alt="CD/DVD Sop Sony Music Shopで買う" class="shoplink"></a></li>';
 			}
 		}

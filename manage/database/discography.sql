@@ -16,3 +16,5 @@ CREATE TABLE `wp_discographies` (
   KEY `release` (`release`),
   KEY `artist` (`artist`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+
+ALTER TABLE `wp_discographies` ADD `publish` enum('y','n') NOT NULL DEFAULT 'y' AFTER `discography_id`;

@@ -5,15 +5,6 @@
 	<main id="column-main-pane2-right">
 		<?php echo $this->fetch('content'); ?>
 		<?php
-		if (isset($params['named']['tag'])) {
-			$tags = explode(',', $params['named']['tag']);
-			if (
-				in_array('av', $tags) ||
-				in_array('av_joyuu', $tags)
-			) {
-				print View::element('part_special_av');
-			}
-		}
 		?>
 	</main>
 	<aside id="column-right">
