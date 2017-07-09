@@ -110,7 +110,7 @@ class RootController extends AppController {
 		
 		$this->set([
 			'content' => isset($content_company[0]) ? $content_company[0]:null,
-			'title' => 'Funky Jam',
+			'title' => 'Recruit | Funky Jam',
 			'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。アーティストのマネージメント、プロモーションを担当して頂ける人材を探しております。応募される方は履歴書(3カ月以内に撮影した顔写真貼付)と職務経歴書をご郵送下さい。',
 		]);
 		$this->render('contents');
@@ -133,7 +133,7 @@ class RootController extends AppController {
 		
 		$this->set([
 			'content' => isset($content_company[0]) ? $content_company[0]:null,
-			'title' => 'Funky Jam',
+			'title' => 'Scout | Funky Jam',
 			'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',
 		]);
 		$this->render('contents');
@@ -156,7 +156,7 @@ class RootController extends AppController {
 		
 		$this->set([
 			'content' => isset($content_company[0]) ? $content_company[0]:null,
-			'title' => 'Funky Jam',
+			'title' => 'Studio | Funky Jam',
 			'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',
 		]);
 		$this->render('contents');
@@ -179,7 +179,7 @@ class RootController extends AppController {
 		
 		$this->set([
 			'content' => isset($content_company[0]) ? $content_company[0]:null,
-			'title' => 'Funky Jam',
+			'title' => 'Privacy | Funky Jam',
 			'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',
 		]);
 		$this->render('contents');
@@ -202,7 +202,7 @@ class RootController extends AppController {
 		
 		$this->set([
 			'content' => isset($content_company[0]) ? $content_company[0]:null,
-			'title' => 'Funky Jam',
+			'title' => 'Art | Funky Jam',
 			'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',
 		]);
 		$this->render('contents');
@@ -225,7 +225,7 @@ class RootController extends AppController {
 		
 		$this->set([
 			'content' => isset($content_company[0]) ? $content_company[0]:null,
-			'title' => 'Funky Jam',
+			'title' => 'Bari Bari Crew | Funky Jam',
 			'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',
 		]);
 		$this->render('contents');
@@ -246,7 +246,7 @@ class RootController extends AppController {
 		
 		$this->set([
 			'content' => isset($content_company[0]) ? $content_company[0]:null,
-			'title' => 'Funky Jam',
+			'title' => 'Fan Letter | Funky Jam',
 			'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',
 		]);
 		// $this->render('contents');
@@ -269,7 +269,7 @@ class RootController extends AppController {
 		
 		$this->set([
 			'content' => isset($content_company[0]) ? $content_company[0]:null,
-			'title' => 'Funky Jam',
+			'title' => 'Fanclub Ticket | Funky Jam',
 			'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',
 		]);
 		$this->render('contents');
@@ -292,7 +292,7 @@ class RootController extends AppController {
 		
 		$this->set([
 			'content' => isset($content_company[0]) ? $content_company[0]:null,
-			'title' => 'Funky Jam',
+			'title' => 'Message | Funky Jam',
 			'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',
 		]);
 		$this->render('contents');
