@@ -15,7 +15,7 @@
 			</div>
 			<?php
 			// links in this page
-			$disctypes  = $this->common->get_disc_types($current);
+			$disctypes  = $this->common->get_disc_types();
 			print '<ol class="breadcrumb discocenter">';
 			foreach($disctypes[$current] as $k => $v) {
 				print '<li class="clearfix2"><a href="#' . $k . '">'. $v .'</a></li>';

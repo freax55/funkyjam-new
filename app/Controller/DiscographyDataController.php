@@ -13,6 +13,7 @@ class DiscographyDataController extends AppController {
 	// public function _index_data()
 
 	public function index($artist,$type,$sort='DESC'){
+		$this->_check_referer();
 		$limit = 100;
 		$extend = [
 			'conditions' => [
@@ -37,11 +38,28 @@ class DiscographyDataController extends AppController {
 		// $data = $this->
 	}
 
+	function _check_referer(){
+		$referer = $this->referer();
+		$check = [
+			strpos($referer, 'wp-admin/admin.php?page=fj_edit_and_add_discography.php'),
+			strpos($referer, MYDOMAIN . '/discography_data/'),
+			strpos($referer, MYDOMAIN_DEV . '/discography_data/'),
+
+		];
+		foreach($check as $v) {
+			if($v !== false) {
+				return;
+			}
+		}
+		$this->redirect("/");
+	}
+
 	/*
 	 * 新規登録
 	 */
 	public function add($artist,$type)
 	{
+		$this->_check_referer();
 		$this->set('data', null);
 		$this->adminInit();
 		$this->layout = 'SuperBox';
@@ -62,7 +80,7 @@ class DiscographyDataController extends AppController {
 	 */
 	function edit($artist,$type,$id)
 	{
-		// $this->prd($this->params);
+		$this->_check_referer();
 		$data = $this->Discography->findById($id);
 
 		$this->set('data', $data);
@@ -86,8 +104,8 @@ class DiscographyDataController extends AppController {
 	/*
 	 * 登録＆編集処理
 	 */
-	function post()
-	{
+	function post() {
+		$this->_check_referer();
 		if (isset($this->data) && !empty($this->data)) {
 			// $this->prd($this->data);
 			// // バリデート

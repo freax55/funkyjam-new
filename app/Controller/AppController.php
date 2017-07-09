@@ -449,7 +449,7 @@ class AppController extends Controller {
 		);
 	}
 
-	function getDiscTypes($artist) {
+	function getDiscTypes() {
 		return array(
 			'kubota' => [
 				'album' => 'Album',

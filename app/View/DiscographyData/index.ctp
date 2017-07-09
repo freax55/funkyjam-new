@@ -7,12 +7,12 @@
 	<div style="margin-bottom:10px;">
 		<div>
 		<?php
-			$buttons = array(
-				'add' => array(
-					'href' => $params['controller']. '/add/' . 'id' . '/'
-				)
-			);
-			print $this->common->getButtons($buttons);
+			// $buttons = array(
+			// 	'add' => array(
+			// 		'href' => $params['controller']. '/add/' . 'id' . '/'
+			// 	)
+			// );
+			// print $this->common->getButtons($buttons);
 		?>
 		</div>
 	</div>
