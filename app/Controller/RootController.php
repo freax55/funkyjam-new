@@ -87,7 +87,7 @@ class RootController extends AppController {
 		
 		$this->set([
 			'content' => isset($content_company[0]) ? $content_company[0]:null,
-			'title' => 'Funky Jam',
+			'title' => 'Company | Funky Jam',
 			'description' => 'Funky Jam（ファンキージャム）は久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。オフィシャルサイトとして、最新情報の配信や各アーティストのプロフィール＆ディスコグラフィーの紹介、グッズ＆チケット販売等を行っております。',
 		]);
 		$this->render('contents');
