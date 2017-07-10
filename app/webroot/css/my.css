@@ -884,7 +884,8 @@ p {
 .jp-pause{
     left: 5px;
     top: 18px;
-    height: 30px;
+    margin-top: 12px;
+    height: 22px;
     background: url(/img/play.png) center bottom no-repeat;
     cursor: pointer;
     display: none;
@@ -1006,5 +1007,5 @@ p {
 }
 .sound-pdg {
     padding-top: 6px;
-    padding-bottom: 6px;
+    padding-bottom: 5px;
 }
