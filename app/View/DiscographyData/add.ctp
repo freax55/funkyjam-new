@@ -122,7 +122,7 @@
 					'type' => 'textarea',
 					'value' => empty($data['Discography']['link'])?'':implode("\n", json_decode($data['Discography']['link'],true)),
 					'class' => 'form-control',
-					'rows' => 2
+					'rows' => 5
 				));
 				?>
 			</td>
