@@ -742,6 +742,8 @@ EOM;
 				echo '<li class="clearfix2"><a href="' . $v . '" target="_blank"><img src="/img/portfolio/btn_tsutaya.jpg" class="shoplink"></a></li>';
 			} elseif(strpos($v, 'https://www.funkyjam.com/shop/') !== false){
 				echo '<li class="clearfix2"><a href="' . $v . '" target="_blank"><img src="/img/portfolio/btn_fjshop.jpg" class="shoplink"></a></li>';
+			} elseif(strpos($v, 'rakuten.co.jp') !== false){
+				echo '<li class="clearfix2"><a href="' . $v . '" target="_blank">楽天ブックス</a></li>';
 			} else {
 				$host = parse_url($v, PHP_URL_HOST);
 				$host = str_replace(['www.', 'shop.'], ['', ''], str_replace(strrchr($host, '.'), '', $host));
