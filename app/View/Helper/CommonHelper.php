@@ -745,10 +745,12 @@ EOM;
 			} elseif(strpos($v, 'rakuten.co.jp') !== false){
 				echo '<li class="clearfix2"><a href="' . $v . '" target="_blank">楽天ブックス</a></li>';
 			} else {
-				$host = parse_url($v, PHP_URL_HOST);
-				$host = str_replace(['www.', 'shop.'], ['', ''], str_replace(strrchr($host, '.'), '', $host));
-				// $host = strrchr(str_replace('www.', '', $host), '.');
-				echo '<li class="clearfix2"><a href="' . $v . '" target="_blank">' . $host .'で買う</a></li>';
+				if(!empty($v)){
+					$host = parse_url($v, PHP_URL_HOST);
+					$host = str_replace(['www.', 'shop.'], ['', ''], str_replace(strrchr($host, '.'), '', $host));
+					// $host = strrchr(str_replace('www.', '', $host), '.');
+					echo '<li class="clearfix2"><a href="' . $v . '" target="_blank">' . $host .'で買う</a></li>';
+				}
 			}
 		}
 		return;
