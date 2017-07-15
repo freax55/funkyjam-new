@@ -107,7 +107,7 @@ class BreadCrumbHelper extends AppHelper
 				$breadcrumb .= '<a href="'.$this->path['url'][$i].'" itemprop="url"><span itemprop="title">' .$this->path['title'][$i]. '</span></a>';
 			} else {
 				$breadcrumb .= '<li>';
-				$breadcrumb .= '<strong class="active">' .$this->path['title'][$i]. '</strong>';
+				$breadcrumb .= '<span class="active">' .$this->path['title'][$i]. '</span>';
 			}
 			$breadcrumb .= '</li>';
 		$i++;
