@@ -58,7 +58,7 @@
 */
 ?>
 <!-- text Section -->
-<div id="text-section">
+<div id="artist-page-section">
     <?php
     // ワードプレスに該当する投稿がなければ予備のページを呼び出す
     if ($is_contents === true) {
