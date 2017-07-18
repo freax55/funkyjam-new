@@ -413,7 +413,7 @@ class AppController extends Controller {
 				'en' => 'Toshinobu Kubota'
 			],
 			'urashima' => [
-				'jp' => '浦島りんこ',
+				'jp' => '浦嶋りんこ',
 				'en' => 'Rinko Urashima'
 			],
 			'mori' => [
