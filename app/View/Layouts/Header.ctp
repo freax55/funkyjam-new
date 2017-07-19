@@ -33,7 +33,6 @@
     <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="/js/jquery.sliderPro.min.js"></script>
     <script type="text/javascript" href="/js/modernizr.custom.js"></script>
-    <script type="text/javascript" href="/js/ofi.min.js"></script>
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
