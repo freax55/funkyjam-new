@@ -1766,6 +1766,11 @@ height: 100%;
     left: 0;
     top: 0;
 }
+.object-fit-img {
+  object-fit: cover;
+  object-position: bottom;
+  font-family: 'object-fit: cover; object-position: bottom;'
+}
 .company-banner {
     height: 200px;
     width: 100%;

@@ -27,6 +27,9 @@ $(document).ready(function() {
    });
 });
 </script>
+<script>
+  objectFitImages('img.object-fit-img');
+</script>
 <?php
 if($this->name == 'Root' && $this->action == 'index'){
   print View::element('script_slider_top');
