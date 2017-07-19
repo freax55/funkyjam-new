@@ -27,9 +27,6 @@ $(document).ready(function() {
    });
 });
 </script>
-<script>
-  objectFitImages('img.object-fit-img');
-</script>
 <?php
 if($this->name == 'Root' && $this->action == 'index'){
   print View::element('script_slider_top');
@@ -58,6 +55,9 @@ if($this->name == 'Root' && $this->action == 'index'){
 $(document).ready(function(){
     $('#lightgallery').lightGallery();
 });
+</script>
+<script>
+  objectFitImages('img.object-fit-img');
 </script>
 <script src="/js/lightgallery.js"></script>
 <script src="/js/lg-fullscreen.js"></script>
