@@ -182,23 +182,51 @@ class FileHandlerComponent extends Component{
 		return $result;
 	}
 
-	function uploadImage($model, $file, $field)
+	// function uploadImage($model, $file, $field)
+	// {
+	// 	$upload_dir = IMG_DIR . strtolower(implode("_", $this->Controller->explodeCase($model))) . DS;
+	// 	$img_id = $this->Controller->getRandStr(16);
+	// 	$file_name = $file["name"];
+	// 	$file_type = $file["type"];
+	// 	$file_tmp  = $file["tmp_name"];
+	// 	$file_ext  = '.' . substr($file_name, strrpos($file_name, '.') + 1);
+
+	// 	if (!strstr($file_name, ".gif") || !strstr($file_name, ".jpg") || !strstr($file_name, ".jpeg") || !strstr($file_name, ".png")) {
+	// 		$this->Controller->flash("このファイル形式はサポートしていません。", "/admin/");
+	// 	}
+	// 	$new_name = $img_id. "_".$field.$file_ext;
+	// 	if (move_uploaded_file($file_tmp, $upload_dir . $new_name)) {
+	// 		if (isset($this->Controller->data[$model][$field])) {
+	// 			unlink($upload_dir . $this->Controller->data[$model][$field]);
+	// 		}
+	// 		// DBインサート用データ生成
+	// 		$this->Controller->request->data[$model][$field] = $new_name;
+	// 		return true;
+	// 	} else {
+	// 		$this->Controller->flash("Error!!", false);
+	// 		exit;
+	// 	}
+	// }
+
+	function uploadImage($model, $file, $field, $name)
 	{
-		$upload_dir = IMG_DIR . strtolower(implode("_", $this->Controller->explodeCase($model))) . DS;
-		$img_id = $this->Controller->getRandStr(16);
+		$upload_dir = ASSETS. 'img/portfolio' .DS;
+		// $img_id = $this->Controller->getRandStr(16);
 		$file_name = $file["name"];
 		$file_type = $file["type"];
 		$file_tmp  = $file["tmp_name"];
 		$file_ext  = '.' . substr($file_name, strrpos($file_name, '.') + 1);
 
-		if (!strstr($file_name, ".gif") || !strstr($file_name, ".jpg") || !strstr($file_name, ".jpeg") || !strstr($file_name, ".png")) {
-			$this->Controller->flash("このファイル形式はサポートしていません。", "/admin/");
-		}
-		$new_name = $img_id. "_".$field.$file_ext;
+		// if (!strstr($file_name, ".gif") || !strstr($file_name, ".jpg") || !strstr($file_name, ".jpeg") || !strstr($file_name, ".png")) {
+		// 	$this->Controller->flash("このファイル形式はサポートしていません。", "/admin/");
+		// }
+		$img_id = $name.'_'.date('ynjHis');
+		$new_name = $img_id.$file_ext;
 		if (move_uploaded_file($file_tmp, $upload_dir . $new_name)) {
-			if (isset($this->Controller->data[$model][$field])) {
-				unlink($upload_dir . $this->Controller->data[$model][$field]);
-			}
+			chmod($upload_dir . $new_name, 0666);
+			// if (isset($this->Controller->data[$model][$field])) {
+			// 	unlink($upload_dir . $this->Controller->data[$model][$field]);
+			// }
 			// DBインサート用データ生成
 			$this->Controller->request->data[$model][$field] = $new_name;
 			return true;
@@ -208,14 +236,5 @@ class FileHandlerComponent extends Component{
 		}
 	}
 
-	function getScreenShot($w, $h, $url, $dir, $name, $quality=100) {
-		try {
-			$file = $dir . $name . '.png';
-	 		shell_exec('/usr/local/bin/wkhtmltoimage --quality ' . $quality . ' --width ' . $w . ' --height ' . $h . ' ' . $url . ' ' . $file);
-		} catch (Exception $e) {
-			debug($e);
-			return false;
-		}
-	}
 }
 ?>

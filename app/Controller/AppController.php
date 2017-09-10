@@ -119,26 +119,6 @@ class AppController extends Controller {
 	 */
 	function beforeFilter() {
 		parent::beforeFilter();
-		/*
-		 * 管理画面ログイン認証
-		 * URLが管理画面だった場合にチェックを行い、直アクセス・認証なしPOSTでのDB操作を防止する。
-		 */
-		// if (strpos($this->params->url, 'admin') !== false) {
-		// 	if ($this->params->params['controller'] != 'user') {
-		// 		$this->needAuth = (bool)true;
-		// 		if (!$this->getAuth()) {
-		// 			$this->redirect('/admin/');
-		// 		}
-		// 	}
-		// 	if ($this->needAuth === true) {
-		// 		$auth_user = $this->Session->read('User');
-		// 		if ($auth_user != null) {
-		// 			if ($auth_user['Role'][$this->params->params['controller'] . '_status'] == 'n') {
-		// 				$this->redirect('/admin/');
-		// 			}
-		// 		}
-		// 	}
-		// }
 		// グローバル変数定義
 		$this->set([
 			'params'                => $this->params->params,
@@ -327,33 +307,13 @@ class AppController extends Controller {
 	function pageInit($isSP = null) {
 
 		$_name = strtolower(implode("_", $this->explodeCase($this->name)));
-		// if ($isSP == 'sp') {
-		// 	$this->set([
-		// 		'title'        => $this->pages[$this->params->params['controller']]['title'] . SEP . SITENAME,
-		// 		'keywords'     => false,
-		// 		'description'  => '「' . $this->pages[$this->params->params['controller']]['title'] . '」' . DESCRIPTION,
-		// 		'current'      => $_name,
-		// 	]);
-		// 	$this->layout = 'Sp';
-		// } else {
-		// 	$this->set([
-		// 		'title'        => $this->pages[$this->params->params['controller']]['title'] . SEP . SITENAME,
-		// 		'keywords'     => false,
-		// 		'description'  => '「' . $this->pages[$this->params->params['controller']]['title'] . '」' . DESCRIPTION,
-		// 		'h1'           => H1,
-		// 		'current'      => $_name,
-		// 		'right_column' => [
-		// 			'side_common'
-		// 		]
-		// 	]);
-			if ($_name != "root") {
-				$this->topicPath(
-					[$this->pages[$_name]['title']],
-					[$this->pages[$_name]['url']]
-				);
-			}
-			$this->layout = 'Pane1';
-		// }
+		if ($_name != "root") {
+			$this->topicPath(
+				[$this->pages[$_name]['title']],
+				[$this->pages[$_name]['url']]
+			);
+		}
+		$this->layout = 'Pane1';
 	}
 
 	function adminInit() {
@@ -734,144 +694,6 @@ class AppController extends Controller {
 		return $prefs;
 	}
 
-	function getAreas($pref_id=0)
-	{
-		$options['fields'] = [
-			'Area.id',
-			'Area.pref_id',
-			'Area.name',
-			'Area.cnt'
-		];
-
-		// 都道府県ごとのエリア一覧
-		if ($pref_id != 0) {
-			$options['conditions'] = [
-				'Area.pref_id' => $pref_id
-			];
-		// 全県のエリア一覧
-		} else {
-
-		}
-		$data_areas = $this->Area->find('all', $options);
-
-		// エリアを都道府県IDごとにまとめる
-		for ($i=1; $i<=47; $i++) {
-			foreach ($data_areas as $v) {
-				$v = $v['Area'];
-				if ($i == $v['pref_id']) {
-					$areas[$i][$v['id']] = [
-						'ja' => $v['name'],
-						'cnt' => $v['cnt']
-					];
-				} else {
-					continue;
-				}
-			}
-		}
-		// $shop_count_area = $this->getShopCountArea();
-		// $this->set(compact('areas'));
-		$this->set(array('areas' => $areas));
-		// return $data_areas;
-	}
-
-
-	/*
-	 * 政令指定都市配列取得
-	 */
-	function getGovCity($set=true){
-		$gov_cities = [
-			"北海道・東北" => [
-				1 => [
-					1 => '札幌市',
-				],
-				4 => [
-					262 => '仙台市'
-				]
-			],
-			"関東" => [
-				11 => [
-					529 => 'さいたま市',
-				],
-				12 => [
-					597 => '千葉市',
-				],
-				14 => [
-					718 => '横浜市',
-					736 => '川崎市',
-					743 => '相模原市',
-				]
-			],
-			"北陸・甲信越" => [
-				15 => [
-					776 => '新潟市',
-				],
-			],
-			"東海" => [
-				22 => [
-					1010 => '静岡市',
-					1013 => '浜松市',
-				],
-				23 => [
-					1053 => '名古屋市',
-				],
-			],
-			"関西" => [
-				26 => [
-					1170 => '京都市',
-				],
-				27 => [
-					1206 => '大阪市',
-					1230 => '堺市',
-				],
-				28 => [
-					1278 => '神戸市',
-				],
-			],
-			"中国・四国" => [
-				33 => [
-					1434 => '岡山市',
-				],
-				34 => [
-					1464 => '広島市',
-				]
-			],
-			"九州・沖縄" => [
-				40 => [
-					1608 => '北九州市',
-					1615 => '福岡市',
-				],
-				43 => [
-					1721 => '熊本市',
-				]
-			],
-		];
-		if ($set) {
-			$this->set("gov_cities", $gov_cities);
-		}
-		return $gov_cities;
-	}
-
-	function getBudget($set=true) {
-		$budget = [
-			"18000" => "18,000円",
-			"21000" => "21,000円",
-			"24000" => "24,000円",
-			"27000" => "27,000円",
-			"30000" => "30,000円",
-			"33000" => "33,000円",
-			"36000" => "36,000円",
-			"39000" => "39,000円",
-			"42000" => "42,000円",
-			"45000" => "45,000円",
-			"48000" => "48,000円",
-			"xxx"   => "▼上限なし",
-		];
-		if ($set) {
-			$this->set(compact('budget'));
-		}
-		return $budget;
-	}
-
 	function getContactType(){
 		$type_contact = array(
 			1 => "久保田利伸について",
@@ -889,5 +711,17 @@ class AppController extends Controller {
 	function getTimeMill(){
 		$arrTime = explode('.',microtime(true));
 		return date('Y-m-d H:i:s', $arrTime[0]) . '.' .$arrTime[1];
+	}
+	function validImage($file, $param=[]) {
+		if ($file['error'] == 4) {
+			return true;
+		}
+		// 容量の制限
+		if (isset($param['size'])) {
+			if ($param['size'] < ceil($file['size'] / 1000)) {
+				return false;
+			}
+		}
+		return true;
 	}
 }

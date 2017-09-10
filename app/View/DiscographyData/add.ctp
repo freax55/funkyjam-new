@@ -15,13 +15,29 @@
 		'type' => 'hidden',
 		'value' => $type
 	));
-	// print $this->Form->input('old_id', array(
-	// 	'type' => 'hidden',
-	// 	'value' => $data['Discography']['old_id']
-	// ));
+	print $this->Form->input('old_id', array(
+		'type' => 'hidden',
+		'value' => $data['Discography']['old_id']
+	));
 	?>
 
 	<table class="table table-bordered" style="padding-top:10px;">
+		<tr>
+			<th style="width:24%;">アーティスト</th>
+			<td>
+				<?php
+					print $artist_name[$artist]['jp'];
+				?>
+			</td>
+		</tr>
+		<tr>
+			<th style="width:24%;">タイプ</th>
+			<td>
+				<?php
+					print $type;
+				?>
+			</td>
+		</tr>
 		<tr>
 			<th style="width:24%;">公開設定</th>
 			<td>
@@ -127,31 +143,30 @@
 				?>
 			</td>
 		</tr>
-		<?php
-		/*
 		<tr>
 			<th>画像</th>
 			<td>
 				<?php
-				// if (isset($data['Discography']['img_pc']) && $data['Discography']['img_pc'] != "") {
-				// 	// list($width, $height) = getimagesize(IMAGES. 'banner' .DS . $data['Discography']['img']);
-				// 	print '<img src="/img/banner/' . $data['Discography']['img_pc'] /*. '" width="' . $width . '" height="' . $height . '">';
-				// 	print $this->Form->input('img_pc', array('type'=>'hidden','value'=>$data['Discography']['img_pc']));
-				// 	print '<br>';
-				// 	print "<a href=\"/admin/banner/delete_image/";
-				// 	print $data['Discography']['id'] . DS . 'img_pc' . DS;
-				// 	print '" onclick="return confirm(\'画像を削除してもよろしいですか？\');" class="btn btn-danger" style="float:right">';
-				// 	print '<i class="icon icon-remove"></i> 画像を削除する</a>';
-				// }
-		// 		<input type="file" name="data[img_pc]">
-		// 		<input type="hidden" name="data[img_pc]">
-		// 	</td>
-		// </tr>
-		// */
-		// print $this->Form->input('img', array(
-		// 	'type' => 'hidden',
-		// 	'value' => $data['Discography']['img']
-		// ));
+				if (isset($data['Discography']['img']) && $data['Discography']['img'] != "") {
+					list($width, $height) = getimagesize(ASSETS. 'img/portfolio' .DS . $data['Discography']['img']);
+					print '<img src="/img/portfolio/' . $data['Discography']['img'] . '" width="' . $width . '" height="' . $height . '">';
+					print $this->Form->input('img', array('type'=>'hidden','value'=>$data['Discography']['img']));
+					print '<br>';
+					print "<a href=\"/discography_data/delete_image/";
+					print $data['Discography']['discography_id'] .DS;
+					print '" onclick="return confirm(\'画像を削除してもよろしいですか？\');" class="btn btn-danger" style="float:right">';
+					print '<i class="icon icon-remove"></i> 画像を削除する</a>';
+				}
+				?>
+				<input type="file" name="data[img]">
+				<input type="hidden" name="data[img]">
+			</td>
+		</tr>
+		<?php
+		print $this->Form->input('img', array(
+			'type' => 'hidden',
+			'value' => $data['Discography']['img']
+		));
 
 		?>
 
